@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>Starship Static Fire to Launch Intervals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #f2f2ef;
+        --surface: #ffffff;
+        --surface-2: #e9e9e4;
+        --ink: #191c20;
+        --muted: #5c626b;
+        --line: #d8d8d1;
+        --accent: #b4440a;
+        --accent-ink: #9a3a08;
+        --accent-soft: #fbe9dc;
+        --bar: #3d4756;
+        --bar-recent: #b4440a;
+        --bar-outlier: #9aa1ab;
+        --good: #2e7d4f;
+        --warn-bg: #fdf3e3;
+        --warn-line: #e3c184;
+        --shadow: 0 1px 2px rgba(20, 22, 26, 0.06), 0 4px 14px rgba(20, 22, 26, 0.05);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1114;
+          --surface: #171a1f;
+          --surface-2: #1f232a;
+          --ink: #eceef1;
+          --muted: #9aa1ab;
+          --line: #2b3038;
+          --accent: #ff8a3d;
+          --accent-ink: #ffa25e;
+          --accent-soft: #2c1d12;
+          --bar: #8b96a5;
+          --bar-recent: #ff8a3d;
+          --bar-outlier: #565e69;
+          --good: #5cc78a;
+          --warn-bg: #241b0e;
+          --warn-line: #6b5322;
+          --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 14px rgba(0, 0, 0, 0.3);
+        }
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.55;
+      }
+      .mono { font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+      main { max-width: 980px; margin: 0 auto; padding: 28px 20px 64px; }
+      h1 {
+        font-size: clamp(1.7rem, 4.5vw, 2.5rem);
+        line-height: 1.12;
+        margin: 0 0 10px;
+        letter-spacing: -0.01em;
+      }
+      .lede { font-size: 1.06rem; color: var(--muted); margin: 0 0 6px; max-width: 46rem; }
+      .lede strong { color: var(--ink); }
+      .asof { font-size: 0.85rem; color: var(--muted); margin: 0 0 26px; }
+      h2 { font-size: 1.3rem; margin: 0 0 6px; letter-spacing: -0.01em; }
+      h3 { font-size: 1rem; margin: 0 0 6px; }
+      section { margin-top: 38px; }
+      .section-sub { color: var(--muted); margin: 0 0 16px; max-width: 46rem; }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        padding: 20px;
+      }
+      /* Flight 15 status */
+      .status-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+      .status-item { background: var(--surface-2); border-radius: 8px; padding: 14px 16px; }
+      .status-item .k { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin: 0 0 4px; }
+      .status-item .v { font-size: 1.05rem; font-weight: 600; margin: 0; }
+      .status-item .d { font-size: 0.88rem; color: var(--muted); margin: 4px 0 0; }
+      .pill { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 1px 8px; border-radius: 999px; vertical-align: 2px; margin-left: 6px; }
+      .pill-done { background: var(--accent-soft); color: var(--accent-ink); }
+      .pill-wait { background: var(--warn-bg); color: var(--accent-ink); border: 1px solid var(--warn-line); }
+      /* Predictor */
+      .predictor { border-top: 1px solid var(--line); padding-top: 18px; margin-top: 4px; }
+      .predictor label { font-weight: 600; display: block; margin-bottom: 6px; }
+      .predictor .hint { color: var(--muted); font-size: 0.9rem; margin: 0 0 12px; }
+      .predictor-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+      input[type="date"] {
+        font: inherit; font-family: "IBM Plex Mono", ui-monospace, monospace;
+        padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px;
+        background: var(--surface); color: var(--ink); min-height: 44px;
+      }
+      .scenario-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+      .scenario-btns button {
+        font: inherit; font-size: 0.88rem; padding: 8px 12px; min-height: 44px;
+        border: 1px solid var(--line); border-radius: 8px; background: var(--surface-2);
+        color: var(--ink); cursor: pointer;
+      }
+      .scenario-btns button:hover { border-color: var(--accent); color: var(--accent-ink); }
+      .scenario-btns button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--accent-ink); font-weight: 600; }
+      .pred-out { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 18px; }
+      .pred-cell { border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+      .pred-cell.mid { border-color: var(--accent); background: var(--accent-soft); }
+      .pred-cell .k { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin: 0 0 4px; }
+      .pred-cell .date { font-size: 1.25rem; font-weight: 700; margin: 0; }
+      .pred-cell .d { font-size: 0.88rem; color: var(--muted); margin: 3px 0 0; }
+      .pred-note { color: var(--muted); font-size: 0.92rem; margin: 14px 0 0; }
+      .pred-note strong { color: var(--ink); }
+      /* Stats strip */
+      .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+      .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; box-shadow: var(--shadow); }
+      .stat .n { font-size: 1.9rem; font-weight: 700; line-height: 1.1; }
+      .stat .n small { font-size: 1rem; font-weight: 600; color: var(--muted); }
+      .stat .k { font-size: 0.85rem; color: var(--muted); margin: 4px 0 0; }
+      /* Chart */
+      .chart-wrap { overflow: hidden; }
+      svg text { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+      .legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.88rem; color: var(--muted); margin-top: 10px; }
+      .legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+      /* Table */
+      .table-card { padding: 6px 0; overflow: hidden; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.94rem; }
+      th, td { text-align: left; padding: 11px 14px; vertical-align: top; }
+      thead th { font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); border-bottom: 2px solid var(--line); }
+      tbody tr + tr td { border-top: 1px solid var(--line); }
+      td.num, th.num { text-align: right; font-family: "IBM Plex Mono", ui-monospace, monospace; white-space: nowrap; }
+      td.date { font-family: "IBM Plex Mono", ui-monospace, monospace; white-space: nowrap; font-size: 0.88rem; }
+      .flight-name { font-weight: 700; white-space: nowrap; }
+      .row-note { display: block; font-weight: 400; font-size: 0.82rem; color: var(--muted); margin-top: 2px; white-space: normal; }
+      .big-a { font-weight: 700; font-size: 1.05rem; }
+      /* Notes */
+      .notes { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .note-card h3 { color: var(--accent-ink); }
+      .note-card p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+      .note-card p strong { color: var(--ink); }
+      /* Sources */
+      .sources { font-size: 0.9rem; }
+      .sources li { margin-bottom: 5px; }
+      .sources a { color: var(--accent-ink); word-break: break-word; }
+      footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; }
+      @media (max-width: 720px) {
+        main { padding: 20px 14px 48px; }
+        .status-grid, .pred-out, .stats { grid-template-columns: 1fr 1fr; }
+        .notes { grid-template-columns: 1fr; }
+        .card { padding: 16px; }
+        /* Table becomes stacked cards */
+        .table-card { padding: 0; background: transparent; border: none; box-shadow: none; }
+        table, tbody, tr, td { display: block; width: 100%; }
+        thead { display: none; }
+        tbody tr {
+          background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+          box-shadow: var(--shadow); padding: 12px 16px; margin-bottom: 12px;
+        }
+        tbody tr + tr td { border-top: none; }
+        td { padding: 3px 0; display: flex; justify-content: space-between; gap: 14px; align-items: baseline; }
+        td::before { content: attr(data-label); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; color: var(--muted); flex-shrink: 0; }
+        td:first-child { display: block; padding-bottom: 6px; }
+        td:first-child::before { display: none; }
+        td.date, td.num { text-align: right; }
+        .row-note { white-space: normal; }
+      }
+      @media (max-width: 420px) {
+        .status-grid, .pred-out, .stats { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Static fire to liftoff: how long does Starship actually take?</h1>
+      <p class="lede">
+        For every Starship flight from Flight 4 through Flight 14, this page lines up the
+        <strong>final static fire of the booster</strong>, the <strong>final static fire of the ship</strong>,
+        and the <strong>launch</strong> — then measures the gap that matters: the days from
+        <strong>both vehicles done testing</strong> to liftoff. At the bottom, that history is turned
+        into a prediction window for Flight 15.
+      </p>
+      <p class="asof">Historical data compiled from Wikipedia flight reports and NASASpaceFlight coverage, read Oct 26, 2026. Flight 15 status as of the morning of Oct 26, 2026 (America/Indiana/Indianapolis). All dates are local Texas dates (CDT/CST) as reported by the sources.</p>
+
+      <section aria-labelledby="f15-heading">
+        <h2 id="f15-heading">Flight 15: where things stand</h2>
+        <p class="section-sub">Flight 15 flies Booster 22 and Ship 42 from Starbase. One of the two static fires is already in the books — which means the countdown clock this page tracks can't start until Ship 42 fires.</p>
+        <div class="card">
+          <div class="status-grid">
+            <div class="status-item">
+              <p class="k">Booster 22 — final static fire</p>
+              <p class="v">Oct 25, 2026 <span class="pill pill-done">Done</span></p>
+              <p class="d">Full-duration, all 33 engines, confirmed by SpaceX's own post on Oct 25. The booster has since been lifted off the Pad 2 mount.</p>
+            </div>
+            <div class="status-item">
+              <p class="k">Ship 42 — final static fire</p>
+              <p class="v">Not yet <span class="pill pill-wait">Pending</span></p>
+              <p class="d">Ship 42 rolled to Massey's test site on Oct 26 to begin its engine-test campaign. No static fire date has been announced.</p>
+            </div>
+            <div class="status-item">
+              <p class="k">Current planning date</p>
+              <p class="v">NET Nov 8, 2026</p>
+              <p class="d">A planning (CADENA) date, not SpaceX-confirmed. No FAA launch license had been posted as of Oct 26.</p>
+            </div>
+          </div>
+
+          <div class="predictor">
+            <label for="s42date">Predict a launch date</label>
+            <p class="hint">Pick the day you think Ship 42 completes its final static fire. The window below applies the Flights 6–14 pattern — fastest, median, and slowest “both tests done → launch” gaps — starting from whichever fire finishes last (Booster 22's Oct 25 fire is already set).</p>
+            <div class="predictor-row">
+              <input type="date" id="s42date" value="2026-10-30" min="2026-10-26" max="2026-12-31" />
+              <div class="scenario-btns" role="group" aria-label="Quick scenarios">
+                <button type="button" data-scenario="2026-10-28">Fires Oct 28</button>
+                <button type="button" data-scenario="2026-10-30">Fires Oct 30</button>
+                <button type="button" data-scenario="2026-11-02">Fires Nov 2</button>
+                <button type="button" data-scenario="2026-11-05">Fires Nov 5</button>
+              </div>
+            </div>
+            <div class="pred-out" id="predOut" aria-live="polite"></div>
+            <p class="pred-note" id="predNote"></p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="pattern-heading">
+        <h2 id="pattern-heading">The pattern across 11 flights</h2>
+        <p class="section-sub">Days from the later of the two final static fires to launch. The recent flights (6–14) cluster tightly; Flights 4 and 5 are the long poles, and Flight 5's 79 days were mostly an FAA licensing wait, not a hardware wait.</p>
+        <div class="stats" id="statsStrip" style="margin-bottom:16px;"></div>
+        <div class="card chart-wrap">
+          <div id="chart"></div>
+          <div class="legend">
+            <span><span class="sw" style="background: var(--bar-recent);"></span>Flights 6–14 (recent pattern)</span>
+            <span><span class="sw" style="background: var(--bar-outlier);"></span>Flights 4–5 (early program / licensing wait)</span>
+            <span><span class="sw" style="background: transparent; border-left: 2px dashed var(--accent); border-radius: 0; width: 2px; height: 14px; vertical-align: -2px;"></span>Median of Flights 6–14</span>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="table-heading">
+        <h2 id="table-heading">Flight by flight</h2>
+        <p class="section-sub">“Final static fire” means each vehicle's last ignition test before launch. Two ships (29 and 33) finished with a single-engine deorbit-burn test after their six-engine fire — that later date is the one used. Spin primes after a fire are not ignitions and are not counted.</p>
+        <div class="card table-card">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Flight</th>
+                <th scope="col">Booster — final static fire</th>
+                <th scope="col">Ship — final static fire</th>
+                <th scope="col">Stacked</th>
+                <th scope="col">Launch</th>
+                <th scope="col" class="num">Both done → launch</th>
+                <th scope="col" class="num">Booster fire → launch</th>
+              </tr>
+            </thead>
+            <tbody id="flightRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section aria-labelledby="notes-heading">
+        <h2 id="notes-heading">How to read this — and the caveats</h2>
+        <div class="notes" style="margin-top:14px;">
+          <div class="card note-card">
+            <h3>Why “both done” is the number that predicts</h3>
+            <p>The booster-only gap swings wildly — <strong>14 to 90 days</strong> across these flights — because the booster often fires weeks before the ship finishes (Flight 10's booster waited 81 days; Flight 9's, 54). Once <strong>both</strong> vehicles are done, the spread collapses: every flight from 6 onward launched <strong>14–31 days</strong> later. Stacking, wet dress rehearsal, and final checks fill that window.</p>
+          </div>
+          <div class="card note-card">
+            <h3>The two outliers aren't hardware stories</h3>
+            <p><strong>Flight 5 (79 days)</strong> sat stacked-ready while SpaceX waited on the FAA license — the gap was regulatory, not technical. <strong>Flight 4 (62 days)</strong> was the early program moving slower across the board. Neither is a good guide for Flight 15, which is why the predictor uses Flights 6–14.</p>
+          </div>
+          <div class="card note-card">
+            <h3>Scrubs don't move the launch date used here</h3>
+            <p>Several flights scrubbed a first attempt — Flight 13 at T−0, Flight 12 at a T−40 s hold, Flight 10 twice (a ground LOX leak, then weather), Flight 8 at T−40 s. The launch date in the table is the day the vehicle <strong>actually lifted off</strong>, so a scrub or two is already baked into these intervals.</p>
+          </div>
+          <div class="card note-card">
+            <h3>What could still break the prediction</h3>
+            <p>The historical window assumes testing finishes cleanly. It does not account for a <strong>failed or repeated Ship 42 static fire</strong>, a long stacking/WDR problem, weather, or the <strong>FAA license</strong>, which had not been posted as of Oct 26. One date also carries a small source disagreement: Flight 14's restack after its Sep 25 destack is pinned only to “by Sep 26–27,” which doesn't affect any interval.</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="sources-heading">
+        <h2 id="sources-heading">Sources</h2>
+        <p class="section-sub">Every date in the table traces to a Wikipedia flight report and/or a NASASpaceFlight article, read Oct 26, 2026.</p>
+        <div class="card sources">
+          <ul style="margin:0; padding-left:20px;">
+            <li>Flight 14 — <a href="https://en.wikipedia.org/wiki/Starship_flight_test_14">Wikipedia: Starship flight 14</a>; NSF, <a href="https://www.nasaspaceflight.com/2026/08/ship-41-engine-testing-flight-14/">Ship 41 Completes Engine Testing Ahead of Flight 14</a>; NSF, <a href="https://www.nasaspaceflight.com/2026/09/flight-14-starships-forward-path/">Flight 14's forward path</a> (destack note)</li>
+            <li>Flight 13 — <a href="https://en.wikipedia.org/wiki/Starship_flight_test_13">Wikipedia: Starship flight test 13</a>; NSF, <a href="https://www.nasaspaceflight.com/2026/07/booster-20-record-static-fire/">Booster 20 completes record duration Static Fire</a></li>
+            <li>Flight 12 — <a href="https://en.wikipedia.org/wiki/Starship_flight_test_12">Wikipedia: Starship flight test 12</a>; NSF, <a href="https://www.nasaspaceflight.com/2026/05/booster-19-33-ship-39-rollout/">Booster 19 fire and Ship 39 rollout</a>; NSF, <a href="https://www.nasaspaceflight.com/2026/04/ship-39-booster-19-static-fire/">Ship 39 and Booster 19 static fires</a></li>
+            <li>Flight 11 — <a href="https://en.wikipedia.org/wiki/Starship_flight_test_11">Wikipedia: Starship flight test 11</a></li>
+            <li>Flight 10 — <a href="https://en.wikipedia.org/wiki/Starship_flight_test_10">Wikipedia: Starship flight test 10</a></li>
+            <li>Flight 9 — <a href="https://en.wikipedia.org/wiki/Starship_flight_test_9">Wikipedia: Starship flight test 9</a></li>
+            <li>Flight 8 — <a href="https://en.wikipedia.org/wiki/Starship_flight_test_8">Wikipedia: Starship flight test 8</a></li>
+            <li>Flight 7 — <a href="https://en.wikipedia.org/wiki/Starship_flight_test_7">Wikipedia: Starship flight test 7</a>; NSF, <a href="https://www.nasaspaceflight.com/2024/12/engine-testing-booster-14-static-fire/">Booster 14 static fire</a>; NSF, <a href="https://www.nasaspaceflight.com/2024/12/faa-flight-7-go/">FAA gives Flight 7 the go-ahead</a> (Ship 33's Dec 15/16 fires)</li>
+            <li>Flight 6 — <a href="https://en.wikipedia.org/wiki/Starship_flight_test_6">Wikipedia: Starship flight test 6</a></li>
+            <li>Flight 5 — <a href="https://en.wikipedia.org/wiki/Starship_flight_test_5">Wikipedia: Starship flight test 5</a>; NSF, <a href="https://www.nasaspaceflight.com/2024/07/starship-7-30-24/">Ship 30's final firing</a></li>
+            <li>Flight 4 — <a href="https://en.wikipedia.org/wiki/Starship_flight_test_4">Wikipedia: Starship flight test 4</a>; NSF, <a href="https://www.nasaspaceflight.com/2024/06/starship-launch-fourth-time/">Starship's fourth flight test</a> (Ship 29's Mar 25/27 fires)</li>
+            <li>Flight 15 status — SpaceX post on X, Oct 25, 2026 (Booster 22 full-duration 33-engine static fire), and Starbase watcher reporting on the Ship 42/43 Massey's moves, Oct 26, 2026.</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>
+        Intervals are whole calendar days (launch date minus static-fire date), computed from the table above. The prediction is a historical-pattern estimate, not a SpaceX announcement — SpaceX had not confirmed a Flight 15 launch date as of Oct 26, 2026.
+      </footer>
+    </main>
+
+    <script>
+      // ---- Single source of truth: one row per flight, from the research table ----
+      // Dates are ISO (local Texas date as reported). a = launch - later SF, b = launch - booster SF.
+      var FLIGHTS = [
+        { flight: 14, booster: "B21",    boosterSF: "2026-08-28", ship: "S41", shipSF: "2026-08-21",
+          shipNote: "6-eng, 60 s", boosterNote: "33-eng, full duration",
+          stacked: "Sep 23, 2026", stackNote: "destacked Sep 25; restacked by Sep 26–27",
+          launch: "2026-09-28", note: "" },
+        { flight: 13, booster: "B20",    boosterSF: "2026-07-10", ship: "S40", shipSF: "2026-07-01",
+          shipNote: "6-eng", boosterNote: "33-eng, 24 s — record duration",
+          stacked: "Night of Jul 15–16, 2026", stackNote: "",
+          launch: "2026-07-24", note: "1st attempt Jul 16 scrubbed at T−0; 2nd Jul 23, weather scrub" },
+        { flight: 12, booster: "B19",    boosterSF: "2026-05-07", ship: "S39", shipSF: "2026-04-14",
+          shipNote: "6-eng, ~52–60 s", boosterNote: "33-eng, full duration",
+          stacked: "May 9, 2026", stackNote: "",
+          launch: "2026-05-22", note: "1st attempt May 21 scrubbed at T−40 s hold (QD arm pin)" },
+        { flight: 11, booster: "B15-2",  boosterSF: "2025-09-07", ship: "S38", shipSF: "2025-09-22",
+          shipNote: "6-eng, 8 s", boosterNote: "33-eng, 9 s",
+          stacked: "Oct 11, 2025", stackNote: "",
+          launch: "2025-10-13", note: "" },
+        { flight: 10, booster: "B16",    boosterSF: "2025-06-06", ship: "S37", shipSF: "2025-08-01",
+          shipNote: "6-eng (single-eng Jul 31)", boosterNote: "33-eng",
+          stacked: "Aug 23, 2025", stackNote: "",
+          launch: "2025-08-26", note: "Attempts Aug 24 (ground LOX leak) and Aug 25 (weather) scrubbed" },
+        { flight: 9,  booster: "B14-2",  boosterSF: "2025-04-03", ship: "S35", shipSF: "2025-05-12",
+          shipNote: "6-eng, 64 s", boosterNote: "33-eng",
+          stacked: "May 25, 2025", stackNote: "",
+          launch: "2025-05-27", note: "" },
+        { flight: 8,  booster: "B15-1",  boosterSF: "2025-02-09", ship: "S34", shipSF: "2025-02-11",
+          shipNote: "long-duration, ~60 s", boosterNote: "",
+          stacked: "Mar 2, 2025", stackNote: "",
+          launch: "2025-03-06", note: "1st attempt Mar 3 scrubbed at T−40 s" },
+        { flight: 7,  booster: "B14-1",  boosterSF: "2024-12-09", ship: "S33", shipSF: "2024-12-16",
+          shipNote: "single-eng deorbit fire (6-eng was Dec 15)", boosterNote: "33-eng",
+          stacked: "Jan 9, 2025", stackNote: "destacked Jan 11, restacked Jan 12",
+          launch: "2025-01-16", note: "Planned Jan 15, postponed pre-countdown for weather" },
+        { flight: 6,  booster: "B13",    boosterSF: "2024-10-24", ship: "S31", shipSF: "2024-09-18",
+          shipNote: "6-eng", boosterNote: "33-eng",
+          stacked: "Nov 14, 2024", stackNote: "",
+          launch: "2024-11-19", note: "" },
+        { flight: 5,  booster: "B12",    boosterSF: "2024-07-15", ship: "S30", shipSF: "2024-07-26",
+          shipNote: "6-eng, 2nd fire after heatshield replacement", boosterNote: "33-eng",
+          stacked: "Sep 20–21, 2024", stackNote: "restacked Oct 6 for launch",
+          launch: "2024-10-13", note: "Long gap was the FAA license wait, not vehicle testing" },
+        { flight: 4,  booster: "B11",    boosterSF: "2024-04-05", ship: "S29", shipSF: "2024-03-27",
+          shipNote: "single-eng header-tank fire (6-eng was Mar 25)", boosterNote: "33-eng",
+          stacked: "May 15, 2024", stackNote: "final stacking Jun 5",
+          launch: "2024-06-06", note: "Initially scheduled Jun 5, pushed a day" }
+      ];
+
+      var B22_FIRE = "2026-10-25";      // Booster 22 final static fire (SpaceX, Oct 25 2026)
+      var NET_DATE = "2026-11-08";      // Current CADENA planning date for Flight 15
+
+      // ---- Date helpers (parse ISO as a plain calendar date; no timezone drift) ----
+      function parseD(iso) {
+        var p = iso.split("-");
+        return new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]));
+      }
+      function addDays(iso, n) {
+        var d = parseD(iso);
+        d.setUTCDate(d.getUTCDate() + n);
+        return d;
+      }
+      function diffDays(aIso, bIso) { // b - a, whole days
+        return Math.round((parseD(bIso) - parseD(aIso)) / 86400000);
+      }
+      var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+      function fmt(d) {
+        if (typeof d === "string") d = parseD(d);
+        return MONTHS[d.getUTCMonth()] + " " + d.getUTCDate() + ", " + d.getUTCFullYear();
+      }
+      function fmtShort(iso) {
+        var d = parseD(iso);
+        return MONTHS[d.getUTCMonth()] + " " + d.getUTCDate() + ", " + d.getUTCFullYear();
+      }
+      function isoOf(d) {
+        function p2(n) { return (n < 10 ? "0" : "") + n; }
+        return d.getUTCFullYear() + "-" + p2(d.getUTCMonth() + 1) + "-" + p2(d.getUTCDate());
+      }
+
+      // ---- Derived intervals ----
+      FLIGHTS.forEach(function (f) {
+        f.laterSF = f.boosterSF > f.shipSF ? f.boosterSF : f.shipSF;
+        f.a = diffDays(f.laterSF, f.launch);
+        f.b = diffDays(f.boosterSF, f.launch);
+      });
+      var recent = FLIGHTS.filter(function (f) { return f.flight >= 6; });
+      var aVals = recent.map(function (f) { return f.a; }).sort(function (x, y) { return x - y; });
+      var REC_MIN = aVals[0];
+      var REC_MAX = aVals[aVals.length - 1];
+      var REC_MED = aVals[Math.floor(aVals.length / 2)];
+      var bAll = FLIGHTS.map(function (f) { return f.b; });
+      var B_MIN = Math.min.apply(null, bAll), B_MAX = Math.max.apply(null, bAll);
+
+      // ---- Stats strip (all numbers computed from FLIGHTS above) ----
+      document.getElementById("statsStrip").innerHTML =
+        '<div class="stat"><div class="n">' + REC_MIN + "–" + REC_MAX + ' <small>days</small></div><p class="k">Recent range, Flights 6–14: both tests done → launch</p></div>' +
+        '<div class="stat"><div class="n">' + REC_MED + ' <small>days</small></div><p class="k">Median of Flights 6–14</p></div>' +
+        '<div class="stat"><div class="n">' + Math.min.apply(null, FLIGHTS.map(function(f){return f.a;})) + ' <small>days</small></div><p class="k">Fastest ever — Flight 13 (' + fmtShort("2026-07-10") + ' booster fire → ' + fmtShort("2026-07-24") + ' launch)</p></div>' +
+        '<div class="stat"><div class="n">' + B_MIN + "–" + B_MAX + ' <small>days</small></div><p class="k">Booster fire → launch, all 11 flights — too wide to predict from alone</p></div>';
+
+      // ---- Table ----
+      var rowsHtml = FLIGHTS.map(function (f) {
+        function cell(label, inner) { return '<td data-label="' + label + '">' + inner + "</td>"; }
+        var flightCell = '<td><span class="flight-name">Flight ' + f.flight + "</span>" +
+          (f.note ? '<span class="row-note">' + f.note + "</span>" : "") + "</td>";
+        var boosterCell = cell("Booster final fire",
+          '<span><strong>' + f.booster + '</strong><br><span class="mono" style="font-size:.88rem;">' + fmtShort(f.boosterSF) + "</span>" +
+          (f.boosterNote ? '<span class="row-note">' + f.boosterNote + "</span>" : "") + "</span>");
+        var shipCell = cell("Ship final fire",
+          '<span><strong>' + f.ship + '</strong><br><span class="mono" style="font-size:.88rem;">' + fmtShort(f.shipSF) + "</span>" +
+          (f.shipNote ? '<span class="row-note">' + f.shipNote + "</span>" : "") + "</span>");
+        var stackCell = cell("Stacked",
+          '<span class="mono" style="font-size:.88rem;">' + f.stacked + "</span>" +
+          (f.stackNote ? '<span class="row-note">' + f.stackNote + "</span>" : ""));
+        var launchCell = cell("Launch", '<span class="mono" style="font-size:.88rem;">' + fmtShort(f.launch) + "</span>");
+        var aCell = '<td data-label="Both done → launch" class="num"><span class="big-a">' + f.a + " d</span></td>";
+        var bCell = '<td data-label="Booster fire → launch" class="num">' + f.b + " d</td>";
+        return "<tr>" + flightCell + boosterCell + shipCell + stackCell + launchCell + aCell + bCell + "</tr>";
+      }).join("");
+      document.getElementById("flightRows").innerHTML = rowsHtml;
+
+      // ---- Chart: horizontal bars of interval (a), hand-built SVG ----
+      (function buildChart() {
+        var data = FLIGHTS.slice().sort(function (x, y) { return y.flight - x.flight; }); // 14 at top
+        var maxVal = Math.max.apply(null, FLIGHTS.map(function (f) { return f.a; })); // 79
+        var domainMax = Math.ceil((maxVal + 5) / 10) * 10; // 90
+        var W = 900, rowH = 34, topPad = 26, bottomPad = 30, leftPad = 86, rightPad = 52;
+        var plotW = W - leftPad - rightPad;
+        var H = topPad + data.length * rowH + bottomPad;
+        function x(v) { return leftPad + (v / domainMax) * plotW; }
+        var s = '<svg viewBox="0 0 ' + W + " " + H + '" width="100%" role="img" aria-label="Bar chart of days from both static fires complete to launch, by flight" style="display:block;">';
+        // gridlines + x-axis ticks every 10 days, labeled every 20
+        for (var t = 0; t <= domainMax; t += 10) {
+          s += '<line x1="' + x(t) + '" y1="' + topPad + '" x2="' + x(t) + '" y2="' + (H - bottomPad) + '" stroke="var(--line)" stroke-width="1" opacity="' + (t % 20 === 0 ? "0.9" : "0.45") + '"/>';
+          if (t % 20 === 0) {
+            s += '<text x="' + x(t) + '" y="' + (H - bottomPad + 20) + '" text-anchor="middle" font-size="12" fill="var(--muted)">' + t + "</text>";
+          }
+        }
+        s += '<text x="' + (leftPad + plotW / 2) + '" y="' + (H - 2) + '" text-anchor="middle" font-size="12" fill="var(--muted)">days from “both tests done” to launch</text>';
+        // median reference line (Flights 6–14)
+        s += '<line x1="' + x(REC_MED) + '" y1="' + (topPad - 8) + '" x2="' + x(REC_MED) + '" y2="' + (H - bottomPad) + '" stroke="var(--accent)" stroke-width="2" stroke-dasharray="5 4"/>';
+        s += '<text x="' + (x(REC_MED) + 6) + '" y="' + (topPad - 12) + '" font-size="12" fill="var(--accent-ink)">median ' + REC_MED + " d</text>";
+        data.forEach(function (f, i) {
+          var y = topPad + i * rowH + 5;
+          var h = rowH - 12;
+          var fill = f.flight >= 6 ? "var(--bar-recent)" : "var(--bar-outlier)";
+          s += '<text x="' + (leftPad - 10) + '" y="' + (y + h / 2 + 4) + '" text-anchor="end" font-size="13" fill="var(--ink)">Flight ' + f.flight + "</text>";
+          s += '<rect x="' + x(0) + '" y="' + y + '" width="' + (x(f.a) - x(0)) + '" height="' + h + '" rx="3" fill="' + fill + '"/>';
+          s += '<text x="' + (x(f.a) + 8) + '" y="' + (y + h / 2 + 4) + '" font-size="13" font-weight="600" fill="var(--ink)">' + f.a + "</text>";
+          if (f.flight === 5) {
+            s += '<text x="' + (x(f.a) + 36) + '" y="' + (y + h / 2 + 4) + '" font-size="12" fill="var(--muted)">FAA wait</text>';
+          }
+        });
+        s += "</svg>";
+        document.getElementById("chart").innerHTML = s;
+      })();
+
+      // ---- Flight 15 predictor ----
+      var dateInput = document.getElementById("s42date");
+      var predOut = document.getElementById("predOut");
+      var predNote = document.getElementById("predNote");
+      var scenarioBtns = document.querySelectorAll("[data-scenario]");
+
+      function runPredictor() {
+        var s42 = dateInput.value;
+        scenarioBtns.forEach(function (b) {
+          b.setAttribute("aria-pressed", b.getAttribute("data-scenario") === s42 ? "true" : "false");
+        });
+        if (!s42) { predOut.innerHTML = ""; predNote.textContent = "Pick a date for Ship 42's final static fire to see the window."; return; }
+        var clockStart = s42 > B22_FIRE ? s42 : B22_FIRE;
+        var clockNote = s42 > B22_FIRE
+          ? "Ship 42's fire is the later one, so the clock starts " + fmtShort(clockStart) + "."
+          : "Booster 22's Oct 25 fire is the later one, so the clock starts " + fmtShort(clockStart) + ".";
+        function cell(k, days, d) {
+          var dt = addDays(clockStart, days);
+          return '<div class="pred-cell' + (k === "Median pace" ? " mid" : "") + '"><p class="k">' + k + "</p>" +
+            '<p class="date">' + fmt(dt) + '</p><p class="d">' + d + "</p></div>";
+        }
+        predOut.innerHTML =
+          cell("Fastest recent pace", REC_MIN, "+" + REC_MIN + " days — Flight 13's speed (" + REC_MIN + " d)") +
+          cell("Median pace", REC_MED, "+" + REC_MED + " days — half of Flights 6–14 launched sooner, half later") +
+          cell("Slowest recent pace", REC_MAX, "+" + REC_MAX + " days — Flights 7 and 14's speed (" + REC_MAX + " d)");
+        var netGap = diffDays(B22_FIRE, NET_DATE);
+        predNote.innerHTML = "If Ship 42 finishes on <strong>" + fmtShort(s42) + "</strong>: " + clockNote +
+          " For comparison, the current planning date of <strong>" + fmtShort(NET_DATE) + "</strong> is only " + netGap +
+          " days after Booster 22's fire — as fast as the quickest turnaround in the table (Flight 13's " + REC_MIN +
+          " days) — and it assumes Ship 42's testing is already complete, which it isn't yet. On the historical pattern, treat Nov 8 as the optimistic edge, not the expectation.";
+      }
+      dateInput.addEventListener("change", runPredictor);
+      dateInput.addEventListener("input", runPredictor);
+      scenarioBtns.forEach(function (b) {
+        b.addEventListener("click", function () {
+          dateInput.value = b.getAttribute("data-scenario");
+          runPredictor();
+        });
+      });
+      runPredictor();
+    </script>
+  </body>
+</html>
