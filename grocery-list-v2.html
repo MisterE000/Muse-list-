@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grocery List — Trial Copy (v2)</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 16px; color: #222; }
+  h1 { font-size: 1.5em; margin-bottom: 0; }
+  .sub { color: #666; margin-top: 4px; margin-bottom: 16px; }
+  .trial { background: #fff7e6; border-left: 4px solid #e2a63d; padding: 8px 12px; margin: 8px 0; font-size: 0.95em; }
+  h2 { font-size: 1.2em; border-bottom: 2px solid #2a7ae2; padding-bottom: 4px; margin-top: 28px; }
+  .note { background: #f0f6ff; border-left: 4px solid #2a7ae2; padding: 8px 12px; margin: 8px 0; font-size: 0.95em; }
+  ul { list-style: none; padding-left: 0; }
+  li.item { padding: 6px 0; border-bottom: 1px solid #eee; display: flex; gap: 8px; align-items: center; }
+  li.item input[type=checkbox] { transform: scale(1.3); flex: none; }
+  li.item .name { flex: 1; }
+  li.item.done .name { text-decoration: line-through; color: #999; }
+  .qty { color: #666; font-size: 0.9em; white-space: nowrap; }
+  li.item.done .qty { color: #bbb; }
+  .btns { display: flex; gap: 4px; flex: none; }
+  .btns button { font-size: 1em; line-height: 1; padding: 6px 10px; border: 1px solid #ccc; background: #f7f7f7; border-radius: 6px; cursor: pointer; }
+  .btns button:active { background: #e8e8e8; }
+  .btns button:disabled { opacity: 0.3; cursor: default; }
+  .addrow { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+  .addrow input { font-size: 1em; padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
+  .addrow input.new-name { flex: 2; min-width: 140px; }
+  .addrow input.new-qty { flex: 1; min-width: 100px; }
+  .addrow button { font-size: 1em; padding: 8px 14px; border: 1px solid #2a7ae2; background: #2a7ae2; color: #fff; border-radius: 6px; cursor: pointer; }
+  .empty { color: #999; font-style: italic; padding: 6px 0; }
+  .updated { color: #999; font-size: 0.85em; margin-top: 32px; }
+  a.home { font-size: 0.9em; }
+  .reset { margin-top: 24px; font-size: 0.9em; }
+  .reset button { padding: 6px 12px; border: 1px solid #ccc; background: #f7f7f7; border-radius: 6px; cursor: pointer; }
+</style>
+</head>
+<body>
+<p><a class="home" href="index.html">← All shared lists</a></p>
+<h1>Grocery List — Trial Copy</h1>
+<p class="sub">Mr.E and Mrs.E • A trial copy of the shared grocery list with movable items. The original list is untouched.</p>
+<div class="trial"><strong>Trial version:</strong> check an item and it drops to the bottom of its store list, and the list re-sorts alphabetically. Use ↑ ↓ to nudge an item, ✕ to remove it, and the boxes under each store to add new items. Changes are saved <em>on this device only</em> for the trial — they do not sync to the original shared list.</div>
+
+<div id="stores"></div>
+
+<h2>How this trial works</h2>
+<ul>
+  <li>→ Check the box when an item is bought — it moves to the bottom and the list re-sorts A–Z.</li>
+  <li>→ ↑ and ↓ move an item one step; that order holds until the next check or uncheck re-sorts the list.</li>
+  <li>→ ✕ removes an item. The add boxes under each store add new items.</li>
+</ul>
+
+<p class="reset"><button id="resetBtn" type="button">Reset trial to the copied list</button></p>
+<p class="updated">Trial copy made October 31, 2026, from the live grocery list of that date.</p>
+
+<script>
+"use strict";
+var STORAGE_KEY = "groceryListV2.v1";
+
+var SEED = [
+  { store: "Sam's", items: [
+    { name: "Paper towels", qty: "", done: true },
+    { name: "Paper plates", qty: "", done: false },
+    { name: "Ground turkey", qty: "", done: false },
+    { name: "High-fiber tortillas", qty: "", done: false }
+  ]},
+  { store: "Walmart", items: [
+    { name: "Eggs", qty: "", done: false },
+    { name: "Corned beef hash", qty: "1 can", done: false },
+    { name: "Milk 2%", qty: "1 gallon", done: false },
+    { name: "Sweet onions", qty: "", done: false },
+    { name: "Pizza sauce", qty: "", done: false },
+    { name: "Pizza crusts", qty: "", done: false },
+    { name: "Mozzarella", qty: "", done: false },
+    { name: "Bread", qty: "", done: false },
+    { name: "Soy sauce", qty: "", done: false },
+    { name: "Hairspray", qty: "1 can", done: false },
+    { name: "Glue stick", qty: "", done: false },
+    { name: "1/2 in PEX tee", qty: "1 — for RV accumulator (tank arrives Nov 1)", done: false },
+    { name: "Salad", qty: "1 bag", done: false },
+    { name: "White American cheese", qty: "", done: false },
+    { name: "Jelly", qty: "", done: false },
+    { name: "Coffee filters", qty: "", done: false },
+    { name: "Vaseline (petroleum jelly)", qty: "1 small tub — LawnMooer gear lube", done: false }
+  ]},
+  { store: "Aldi", items: [] },
+  { store: "Kroger", items: [] },
+  { store: "Farmers Market — Bloomington", note: "Hours: Saturdays 9:00 AM–12:30 PM — Showers Common, 401 N. Morton St. (Oct 24 & 31). Nov 7, 14 & 21: moves to Switchyard Park Pavilion, 1601 S. Rogers St., same hours.", items: [] },
+  { store: "Trader Joe's", items: [] },
+  { store: "Fresh Thyme", items: [] },
+  { store: "Tractor Supply", items: [
+    { name: "Hydraulic fluid for tractor", qty: "", done: false }
+  ]},
+  { store: "Lowe's", items: [
+    { name: "Plastic putty knife", qty: "", done: false },
+    { name: "Carriage bolts", qty: "check first — may already have some", done: false },
+    { name: "Lag screws, 1/4 in x 3 in", qty: "4 — LawnMooer shoulder pivots, one per leg", done: false },
+    { name: "Drill bit, 17/64 in", qty: "", done: false },
+    { name: "Heat gun", qty: "dual-temp — for PVC forming (LawnMooer knees) + heat-shrink", done: false }
+  ]}
+];
+
+function deepCopy(o) { return JSON.parse(JSON.stringify(o)); }
+
+function cmpName(a, b) {
+  return a.name.localeCompare(b.name, "en", { sensitivity: "base", numeric: true });
+}
+
+/* Checked items sink to the bottom; each group is sorted A-Z. */
+function arrange(items) {
+  var open = items.filter(function (i) { return !i.done; }).sort(cmpName);
+  var done = items.filter(function (i) { return i.done; }).sort(cmpName);
+  return open.concat(done);
+}
+
+function load() {
+  try {
+    var raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      var data = JSON.parse(raw);
+      if (Array.isArray(data) && data.length) return data;
+    }
+  } catch (e) { /* fall through to seed */ }
+  var seed = deepCopy(SEED);
+  seed.forEach(function (s) { s.items = arrange(s.items); });
+  return seed;
+}
+
+var state = load();
+
+function save() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+}
+
+function render() {
+  var host = document.getElementById("stores");
+  host.innerHTML = "";
+  state.forEach(function (section, si) {
+    var h = document.createElement("h2");
+    h.textContent = section.store;
+    host.appendChild(h);
+
+    if (section.note) {
+      var n = document.createElement("div");
+      n.className = "note";
+      n.textContent = section.note;
+      host.appendChild(n);
+    }
+
+    var ul = document.createElement("ul");
+    if (!section.items.length) {
+      var liE = document.createElement("li");
+      liE.className = "empty";
+      liE.textContent = "Nothing yet — add an item below.";
+      ul.appendChild(liE);
+    }
+    section.items.forEach(function (item, ii) {
+      var li = document.createElement("li");
+      li.className = "item" + (item.done ? " done" : "");
+
+      var cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.checked = item.done;
+      cb.setAttribute("aria-label", "Bought: " + item.name);
+      cb.addEventListener("change", function () {
+        item.done = cb.checked;
+        section.items = arrange(section.items);
+        save(); render();
+      });
+      li.appendChild(cb);
+
+      var nm = document.createElement("span");
+      nm.className = "name";
+      nm.textContent = item.name;
+      li.appendChild(nm);
+
+      if (item.qty) {
+        var q = document.createElement("span");
+        q.className = "qty";
+        q.textContent = item.qty;
+        li.appendChild(q);
+      }
+
+      var btns = document.createElement("span");
+      btns.className = "btns";
+
+      var up = document.createElement("button");
+      up.type = "button"; up.textContent = "↑"; up.title = "Move up";
+      up.setAttribute("aria-label", "Move up: " + item.name);
+      up.disabled = (ii === 0);
+      up.addEventListener("click", function () {
+        var t = section.items[ii - 1];
+        section.items[ii - 1] = item; section.items[ii] = t;
+        save(); render();
+      });
+      btns.appendChild(up);
+
+      var dn = document.createElement("button");
+      dn.type = "button"; dn.textContent = "↓"; dn.title = "Move down";
+      dn.setAttribute("aria-label", "Move down: " + item.name);
+      dn.disabled = (ii === section.items.length - 1);
+      dn.addEventListener("click", function () {
+        var t = section.items[ii + 1];
+        section.items[ii + 1] = item; section.items[ii] = t;
+        save(); render();
+      });
+      btns.appendChild(dn);
+
+      var rm = document.createElement("button");
+      rm.type = "button"; rm.textContent = "✕"; rm.title = "Remove item";
+      rm.setAttribute("aria-label", "Remove: " + item.name);
+      rm.addEventListener("click", function () {
+        section.items.splice(ii, 1);
+        save(); render();
+      });
+      btns.appendChild(rm);
+
+      li.appendChild(btns);
+      ul.appendChild(li);
+    });
+    host.appendChild(ul);
+
+    var row = document.createElement("div");
+    row.className = "addrow";
+    var inName = document.createElement("input");
+    inName.type = "text"; inName.className = "new-name";
+    inName.placeholder = "New item…";
+    inName.setAttribute("aria-label", "New item for " + section.store);
+    var inQty = document.createElement("input");
+    inQty.type = "text"; inQty.className = "new-qty";
+    inQty.placeholder = "Qty / note (optional)";
+    inQty.setAttribute("aria-label", "Quantity or note");
+    var add = document.createElement("button");
+    add.type = "button"; add.textContent = "Add";
+    function doAdd() {
+      var nmv = inName.value.trim();
+      if (!nmv) { inName.focus(); return; }
+      var newItem = { name: nmv, qty: inQty.value.trim(), done: false };
+      var firstDone = section.items.findIndex(function (i) { return i.done; });
+      if (firstDone === -1) section.items.push(newItem);
+      else section.items.splice(firstDone, 0, newItem);
+      save(); render();
+    }
+    add.addEventListener("click", doAdd);
+    inName.addEventListener("keydown", function (e) { if (e.key === "Enter") doAdd(); });
+    inQty.addEventListener("keydown", function (e) { if (e.key === "Enter") doAdd(); });
+    row.appendChild(inName); row.appendChild(inQty); row.appendChild(add);
+    host.appendChild(row);
+  });
+}
+
+document.getElementById("resetBtn").addEventListener("click", function () {
+  try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+  state = load();
+  save(); render();
+});
+
+save();
+render();
+</script>
+</body>
+</html>
