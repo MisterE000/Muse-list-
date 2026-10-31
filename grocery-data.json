@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-31T22:44:29.760Z",
+  "updated": "2026-10-31T22:45:02.741Z",
   "stores": [
     {
       "items": [
@@ -145,6 +145,11 @@
     },
     {
       "items": [
+        {
+          "name": "1/2\"pex Tee",
+          "qty": "1",
+          "done": false
+        },
         {
           "done": false,
           "name": "Drill bit, 17/64 in",
