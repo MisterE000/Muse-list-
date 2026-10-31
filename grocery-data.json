@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-31T22:41:24.501Z",
+  "updated": "2026-10-31T22:44:11.131Z",
   "stores": [
     {
       "items": [
@@ -118,13 +118,7 @@
       "store": "Walmart"
     },
     {
-      "items": [
-        {
-          "name": "Ice cream",
-          "qty": "1",
-          "done": false
-        }
-      ],
+      "items": [],
       "store": "Aldi"
     },
     {
