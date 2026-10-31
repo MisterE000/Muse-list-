@@ -1,1 +1,188 @@
-{"stores":[{"items":[{"done":true,"name":"Paper towels","qty":""},{"done":false,"name":"Paper plates","qty":""},{"done":false,"name":"Ground turkey","qty":""},{"done":false,"name":"High-fiber tortillas","qty":""}],"store":"Sam's"},{"items":[{"done":false,"name":"Eggs","qty":""},{"done":false,"name":"Corned beef hash","qty":"1 can"},{"done":false,"name":"Milk 2%","qty":"1 gallon"},{"done":false,"name":"Sweet onions","qty":""},{"done":false,"name":"Pizza sauce","qty":""},{"done":false,"name":"Pizza crusts","qty":""},{"done":false,"name":"Mozzarella","qty":""},{"done":false,"name":"Bread","qty":""},{"done":false,"name":"Soy sauce","qty":""},{"done":false,"name":"Hairspray","qty":"1 can"},{"done":false,"name":"Glue stick","qty":""},{"done":false,"name":"1/2 in PEX tee","qty":"1 — for RV accumulator (tank arrives Nov 1)"},{"done":false,"name":"Salad","qty":"1 bag"},{"done":false,"name":"White American cheese","qty":""},{"done":false,"name":"Jelly","qty":""},{"done":false,"name":"Coffee filters","qty":""},{"done":false,"name":"Vaseline (petroleum jelly)","qty":"1 small tub — LawnMooer gear lube"}],"store":"Walmart"},{"items":[],"store":"Aldi"},{"items":[],"store":"Kroger"},{"items":[],"note":"Hours: Saturdays 9:00 AM–12:30 PM — Showers Common, 401 N. Morton St. (Oct 24 & 31). Nov 7, 14 & 21: moves to Switchyard Park Pavilion, 1601 S. Rogers St., same hours.","store":"Farmers Market — Bloomington"},{"items":[],"store":"Trader Joe's"},{"items":[],"store":"Fresh Thyme"},{"items":[{"done":false,"name":"Hydraulic fluid for tractor","qty":""}],"store":"Tractor Supply"},{"items":[{"done":false,"name":"Plastic putty knife","qty":""},{"done":false,"name":"Carriage bolts","qty":"check first — may already have some"},{"done":false,"name":"Lag screws, 1/4 in x 3 in","qty":"4 — LawnMooer shoulder pivots, one per leg"},{"done":false,"name":"Drill bit, 17/64 in","qty":""},{"done":false,"name":"Heat gun","qty":"dual-temp — for PVC forming (LawnMooer knees) + heat-shrink"}],"store":"Lowe's"}],"updated":"2026-10-31","version":1}
+{
+  "version": 1,
+  "updated": "2026-10-31T22:26:45.106Z",
+  "stores": [
+    {
+      "items": [
+        {
+          "done": false,
+          "name": "Ground turkey",
+          "qty": ""
+        },
+        {
+          "done": false,
+          "name": "High-fiber tortillas",
+          "qty": ""
+        },
+        {
+          "done": false,
+          "name": "Paper plates",
+          "qty": ""
+        },
+        {
+          "done": true,
+          "name": "Paper towels",
+          "qty": ""
+        }
+      ],
+      "store": "Sam's"
+    },
+    {
+      "items": [
+        {
+          "done": false,
+          "name": "1/2 in PEX tee",
+          "qty": "1 — for RV accumulator (tank arrives Nov 1)"
+        },
+        {
+          "done": false,
+          "name": "Bread",
+          "qty": ""
+        },
+        {
+          "done": false,
+          "name": "Coffee filters",
+          "qty": ""
+        },
+        {
+          "done": false,
+          "name": "Corned beef hash",
+          "qty": "1 can"
+        },
+        {
+          "done": false,
+          "name": "Eggs",
+          "qty": ""
+        },
+        {
+          "done": false,
+          "name": "Glue stick",
+          "qty": ""
+        },
+        {
+          "done": false,
+          "name": "Hairspray",
+          "qty": "1 can"
+        },
+        {
+          "done": false,
+          "name": "Jelly",
+          "qty": ""
+        },
+        {
+          "done": false,
+          "name": "Milk 2%",
+          "qty": "1 gallon"
+        },
+        {
+          "done": false,
+          "name": "Mozzarella",
+          "qty": ""
+        },
+        {
+          "done": false,
+          "name": "Pizza crusts",
+          "qty": ""
+        },
+        {
+          "done": false,
+          "name": "Pizza sauce",
+          "qty": ""
+        },
+        {
+          "done": false,
+          "name": "Salad",
+          "qty": "1 bag"
+        },
+        {
+          "done": false,
+          "name": "Soy sauce",
+          "qty": ""
+        },
+        {
+          "done": false,
+          "name": "Sweet onions",
+          "qty": ""
+        },
+        {
+          "done": false,
+          "name": "Vaseline (petroleum jelly)",
+          "qty": "1 small tub — LawnMooer gear lube"
+        },
+        {
+          "done": false,
+          "name": "White American cheese",
+          "qty": ""
+        }
+      ],
+      "store": "Walmart"
+    },
+    {
+      "items": [
+        {
+          "name": "Ice cream",
+          "qty": "",
+          "done": false
+        }
+      ],
+      "store": "Aldi"
+    },
+    {
+      "items": [],
+      "store": "Kroger"
+    },
+    {
+      "items": [],
+      "note": "Hours: Saturdays 9:00 AM–12:30 PM — Showers Common, 401 N. Morton St. (Oct 24 & 31). Nov 7, 14 & 21: moves to Switchyard Park Pavilion, 1601 S. Rogers St., same hours.",
+      "store": "Farmers Market — Bloomington"
+    },
+    {
+      "items": [],
+      "store": "Trader Joe's"
+    },
+    {
+      "items": [],
+      "store": "Fresh Thyme"
+    },
+    {
+      "items": [
+        {
+          "done": false,
+          "name": "Hydraulic fluid for tractor",
+          "qty": ""
+        }
+      ],
+      "store": "Tractor Supply"
+    },
+    {
+      "items": [
+        {
+          "done": false,
+          "name": "Carriage bolts",
+          "qty": "check first — may already have some"
+        },
+        {
+          "done": false,
+          "name": "Drill bit, 17/64 in",
+          "qty": ""
+        },
+        {
+          "done": false,
+          "name": "Heat gun",
+          "qty": "dual-temp — for PVC forming (LawnMooer knees) + heat-shrink"
+        },
+        {
+          "done": false,
+          "name": "Lag screws, 1/4 in x 3 in",
+          "qty": "4 — LawnMooer shoulder pivots, one per leg"
+        },
+        {
+          "done": false,
+          "name": "Plastic putty knife",
+          "qty": ""
+        }
+      ],
+      "store": "Lowe's"
+    }
+  ]
+}
