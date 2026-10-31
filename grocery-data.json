@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "updated": "2026-10-31T22:26:45.106Z",
+  "updated": "2026-10-31T22:41:24.501Z",
   "stores": [
     {
       "items": [
         {
-          "done": false,
+          "done": true,
           "name": "Ground turkey",
           "qty": ""
         },
         {
-          "done": false,
+          "done": true,
           "name": "High-fiber tortillas",
           "qty": ""
         },
         {
-          "done": false,
+          "done": true,
           "name": "Paper plates",
           "qty": ""
         },
@@ -121,7 +121,7 @@
       "items": [
         {
           "name": "Ice cream",
-          "qty": "",
+          "qty": "1",
           "done": false
         }
       ],
@@ -158,11 +158,6 @@
       "items": [
         {
           "done": false,
-          "name": "Carriage bolts",
-          "qty": "check first — may already have some"
-        },
-        {
-          "done": false,
           "name": "Drill bit, 17/64 in",
           "qty": ""
         },
@@ -172,12 +167,17 @@
           "qty": "dual-temp — for PVC forming (LawnMooer knees) + heat-shrink"
         },
         {
-          "done": false,
+          "done": true,
+          "name": "Carriage bolts",
+          "qty": "check first — may already have some"
+        },
+        {
+          "done": true,
           "name": "Lag screws, 1/4 in x 3 in",
           "qty": "4 — LawnMooer shoulder pivots, one per leg"
         },
         {
-          "done": false,
+          "done": true,
           "name": "Plastic putty knife",
           "qty": ""
         }
