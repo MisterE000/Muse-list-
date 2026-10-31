@@ -3,12 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Grocery List — Trial Copy (v2)</title>
+<title>Grocery List — Shared (v2)</title>
 <style>
   body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 16px; color: #222; }
   h1 { font-size: 1.5em; margin-bottom: 0; }
   .sub { color: #666; margin-top: 4px; margin-bottom: 16px; }
   .trial { background: #fff7e6; border-left: 4px solid #e2a63d; padding: 8px 12px; margin: 8px 0; font-size: 0.95em; }
+  .sync { background: #eef7ee; border-left: 4px solid #3a9a4e; padding: 8px 12px; margin: 8px 0; font-size: 0.95em; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .sync span { flex: 1; min-width: 200px; }
+  .sync button { font-size: 0.95em; padding: 6px 12px; border: 1px solid #3a9a4e; background: #3a9a4e; color: #fff; border-radius: 6px; cursor: pointer; }
+  .sync button.plain { background: #f7f7f7; color: #333; border-color: #ccc; }
   h2 { font-size: 1.2em; border-bottom: 2px solid #2a7ae2; padding-bottom: 4px; margin-top: 28px; }
   .note { background: #f0f6ff; border-left: 4px solid #2a7ae2; padding: 8px 12px; margin: 8px 0; font-size: 0.95em; }
   ul { list-style: none; padding-left: 0; }
@@ -30,31 +34,33 @@
   .empty { color: #999; font-style: italic; padding: 6px 0; }
   .updated { color: #999; font-size: 0.85em; margin-top: 32px; }
   a.home { font-size: 0.9em; }
-  .reset { margin-top: 24px; font-size: 0.9em; }
-  .reset button { padding: 6px 12px; border: 1px solid #ccc; background: #f7f7f7; border-radius: 6px; cursor: pointer; }
 </style>
 </head>
 <body>
 <p><a class="home" href="index.html">← All shared lists</a></p>
-<h1>Grocery List — Trial Copy</h1>
-<p class="sub">Mr.E and Mrs.E • A trial copy of the shared grocery list with movable items. The original list is untouched.</p>
-<div class="trial"><strong>Trial version:</strong> check an item and it drops to the bottom of its store list, and the list re-sorts alphabetically. Use ↑ ↓ to nudge an item, ✕ to remove it, and the boxes under each store to add new items. Changes are saved <em>on this device only</em> for the trial — they do not sync to the original shared list.</div>
+<h1>Grocery List — Shared</h1>
+<p class="sub">Mr.E and Mrs.E • The movable list, now shared — changes save to the shared list so both phones see the same thing.</p>
+<div class="sync"><span id="syncStatus">Loading the shared list…</span><button id="connectBtn" type="button" style="display:none">Connect this phone</button><button id="disconnectBtn" type="button" class="plain" style="display:none">Disconnect</button></div>
+<div class="trial"><strong>Shared version:</strong> check an item and it drops to the bottom of its store list, and the list re-sorts alphabetically. Use ↑ ↓ to nudge an item, ✕ to remove it, and the boxes under each store to add new items. Every change saves to the shared list. First time on a phone, tap <em>Connect this phone</em> and paste that phone's list token once — it is stored only on that phone, never in this page.</div>
 
 <div id="stores"></div>
 
-<h2>How this trial works</h2>
+<h2>How this list works</h2>
 <ul>
   <li>→ Check the box when an item is bought — it moves to the bottom and the list re-sorts A–Z.</li>
   <li>→ ↑ and ↓ move an item one step; that order holds until the next check or uncheck re-sorts the list.</li>
   <li>→ ✕ removes an item. The add boxes under each store add new items.</li>
+  <li>→ Changes save to the shared list within a few seconds. Reopen or return to the page to pick up changes from the other phone.</li>
 </ul>
 
-<p class="reset"><button id="resetBtn" type="button">Reset trial to the copied list</button></p>
-<p class="updated">Trial copy made October 31, 2026, from the live grocery list of that date.</p>
+<p class="updated">Shared list data lives with the shared lists site (grocery-data.json). The original static list is still at <a href="grocery-list.html">grocery-list.html</a>. Page updated October 31, 2026.</p>
 
 <script>
 "use strict";
-var STORAGE_KEY = "groceryListV2.v1";
+var CONTENTS_URL = "https://api.github.com/repos/MisterE000/Muse-list-/contents/grocery-data.json";
+var REPO_URL = "https://api.github.com/repos/MisterE000/Muse-list-";
+var TOKEN_KEY = "groceryShared.token.v1";
+var CACHE_KEY = "groceryShared.cache.v1";
 
 var SEED = [
   { store: "Sam's", items: [
@@ -112,29 +118,269 @@ function arrange(items) {
   return open.concat(done);
 }
 
-function load() {
+function b64encode(str) { return btoa(unescape(encodeURIComponent(str))); }
+function b64decode(b64) { return decodeURIComponent(escape(atob(String(b64).replace(/\s/g, "")))); }
+
+function getToken() {
+  try { return localStorage.getItem(TOKEN_KEY) || ""; } catch (e) { return ""; }
+}
+function setToken(t) {
   try {
-    var raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) {
-      var data = JSON.parse(raw);
-      if (Array.isArray(data) && data.length) return data;
+    if (t) localStorage.setItem(TOKEN_KEY, t);
+    else localStorage.removeItem(TOKEN_KEY);
+  } catch (e) {}
+}
+
+function ghHeaders() {
+  var h = { "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" };
+  var t = getToken();
+  if (t) h["Authorization"] = "Bearer " + t;
+  return h;
+}
+
+function httpError(resp) {
+  var err = new Error("HTTP " + resp.status);
+  err.status = resp.status;
+  return err;
+}
+
+function ghGet() {
+  return fetch(CONTENTS_URL + "?ref=main", { headers: ghHeaders(), cache: "no-store" })
+    .then(function (resp) {
+      if (!resp.ok) throw httpError(resp);
+      return resp.json();
+    })
+    .then(function (d) {
+      var data = JSON.parse(b64decode(d.content));
+      if (!data || !Array.isArray(data.stores)) throw new Error("Bad data file");
+      data.stores.forEach(function (s) { s.items = arrange(s.items || []); });
+      return { sha: d.sha, stores: data.stores };
+    });
+}
+
+function ghPut(sha, stores) {
+  var payload = { version: 1, updated: new Date().toISOString(), stores: stores };
+  return fetch(CONTENTS_URL, {
+    method: "PUT",
+    headers: ghHeaders(),
+    body: JSON.stringify({
+      message: "Update shared grocery list (web page)",
+      content: b64encode(JSON.stringify(payload, null, 2)),
+      sha: sha
+    })
+  }).then(function (resp) {
+    if (!resp.ok) throw httpError(resp);
+    return resp.json();
+  }).then(function (d) { return d.content.sha; });
+}
+
+/* ---- state ---- */
+var stores = deepCopy(SEED);
+stores.forEach(function (s) { s.items = arrange(s.items); });
+var lastSha = null;
+var pendingOps = [];
+var syncing = false;
+var saveTimer = null;
+
+function cacheSave() {
+  try {
+    localStorage.setItem(CACHE_KEY, JSON.stringify({ sha: lastSha, stores: stores, ops: pendingOps }));
+  } catch (e) {}
+}
+function cacheLoad() {
+  try {
+    var raw = localStorage.getItem(CACHE_KEY);
+    if (!raw) return;
+    var c = JSON.parse(raw);
+    if (c && Array.isArray(c.stores) && c.stores.length) {
+      stores = c.stores;
+      lastSha = c.sha || null;
+      pendingOps = Array.isArray(c.ops) ? c.ops : [];
     }
-  } catch (e) { /* fall through to seed */ }
-  var seed = deepCopy(SEED);
-  seed.forEach(function (s) { s.items = arrange(s.items); });
-  return seed;
+  } catch (e) {}
 }
 
-var state = load();
-
-function save() {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+function findSection(data, storeName) {
+  for (var i = 0; i < data.length; i++) if (data[i].store === storeName) return data[i];
+  return null;
 }
+function findItem(section, name) {
+  var want = String(name).toLowerCase();
+  for (var i = 0; i < section.items.length; i++) {
+    if (String(section.items[i].name).toLowerCase() === want) return section.items[i];
+  }
+  return null;
+}
+
+/* Apply one change to a stores array. Used for the on-screen list and,
+   during sync, replayed onto the freshest shared copy so two phones
+   editing at once do not overwrite each other. */
+function applyOp(data, op) {
+  var section = findSection(data, op.store);
+  if (!section) return;
+  var item, idx, j, t;
+  if (op.type === "add") {
+    item = findItem(section, op.name);
+    if (item) {
+      item.done = false;
+      if (op.qty) item.qty = op.qty;
+    } else {
+      section.items.push({ name: op.name, qty: op.qty || "", done: false });
+    }
+    section.items = arrange(section.items);
+  } else if (op.type === "remove") {
+    var want = String(op.name).toLowerCase();
+    section.items = section.items.filter(function (i) { return String(i.name).toLowerCase() !== want; });
+  } else if (op.type === "done") {
+    item = findItem(section, op.name);
+    if (item) {
+      item.done = !!op.done;
+      section.items = arrange(section.items);
+    }
+  } else if (op.type === "move") {
+    var want2 = String(op.name).toLowerCase();
+    idx = -1;
+    for (var k = 0; k < section.items.length; k++) {
+      if (String(section.items[k].name).toLowerCase() === want2) { idx = k; break; }
+    }
+    j = idx + (op.dir || 0);
+    if (idx >= 0 && j >= 0 && j < section.items.length) {
+      t = section.items[j];
+      section.items[j] = section.items[idx];
+      section.items[idx] = t;
+    }
+  }
+}
+
+var statusEl = document.getElementById("syncStatus");
+var connectBtn = document.getElementById("connectBtn");
+var disconnectBtn = document.getElementById("disconnectBtn");
+
+function timeNow() {
+  try { return new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }); }
+  catch (e) { return ""; }
+}
+function setStatus(msg) { statusEl.textContent = msg; }
+function updateButtons() {
+  var has = !!getToken();
+  connectBtn.style.display = has ? "none" : "";
+  disconnectBtn.style.display = has ? "" : "none";
+}
+function statusLoaded() {
+  if (getToken()) setStatus("✓ Connected — shared list is up to date.");
+  else setStatus("Shared list loaded. This phone is not connected yet — changes stay on this phone until you connect it.");
+}
+function statusSaved() { setStatus("✓ Saved to the shared list · " + timeNow()); }
+function statusSaving() { setStatus("Saving to the shared list…"); }
+function statusError(err) {
+  var why = err && err.status ? "error " + err.status : "no connection";
+  setStatus("⚠ Couldn't save (" + why + "). Changes are kept on this phone and will retry — reopen the page when you're back online.");
+}
+
+function mutate(op) {
+  applyOp(stores, op);
+  pendingOps.push(op);
+  cacheSave();
+  render();
+  if (getToken()) { statusSaving(); scheduleSync(); }
+  else setStatus("Saved on this phone only — connect this phone to share changes.");
+}
+
+function scheduleSync() {
+  if (saveTimer) clearTimeout(saveTimer);
+  saveTimer = setTimeout(syncNow, 900);
+}
+
+function syncNow() {
+  if (syncing || !getToken() || !pendingOps.length) return;
+  syncing = true;
+  var attempts = 0;
+
+  function done() {
+    syncing = false;
+    if (pendingOps.length) scheduleSync();
+  }
+  function onErr(err) {
+    if (err && (err.status === 409 || err.status === 422) && attempts < 4) { attempt(); return; }
+    syncing = false;
+    statusError(err);
+  }
+  function attempt() {
+    attempts++;
+    var batch = pendingOps.slice();
+    ghGet().then(function (remote) {
+      var before = JSON.stringify(remote.stores);
+      batch.forEach(function (op) { applyOp(remote.stores, op); });
+      var after = JSON.stringify(remote.stores);
+      stores = remote.stores;
+      if (before === after) {
+        lastSha = remote.sha;
+        pendingOps = pendingOps.slice(batch.length);
+        cacheSave(); render(); statusSaved(); done();
+        return;
+      }
+      ghPut(remote.sha, remote.stores).then(function (newSha) {
+        lastSha = newSha;
+        pendingOps = pendingOps.slice(batch.length);
+        cacheSave(); render(); statusSaved(); done();
+      }, onErr);
+    }, onErr);
+  }
+  attempt();
+}
+
+function refreshFromRemote() {
+  ghGet().then(function (remote) {
+    if (syncing) return;
+    if (pendingOps.length) { scheduleSync(); return; }
+    if (remote.sha !== lastSha) {
+      stores = remote.stores;
+      lastSha = remote.sha;
+      cacheSave();
+      render();
+    }
+    statusLoaded();
+  }).catch(function () {
+    if (getToken()) setStatus("Showing the last copy saved on this phone — couldn't reach the shared list just now.");
+    else setStatus("Showing the last copy saved on this phone. Connect this phone to share changes.");
+  });
+}
+
+connectBtn.addEventListener("click", function () {
+  var t = prompt("Paste this phone's list token (one-time). It is stored only on this phone and is used only to save the grocery list.", "");
+  if (!t) return;
+  t = String(t).trim();
+  if (!t) return;
+  setStatus("Checking that token…");
+  fetch(REPO_URL, { headers: { "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", "Authorization": "Bearer " + t }, cache: "no-store" })
+    .then(function (resp) {
+      if (!resp.ok) throw httpError(resp);
+      setToken(t);
+      updateButtons();
+      setStatus("✓ This phone is connected. Syncing…");
+      if (pendingOps.length) syncNow(); else refreshFromRemote();
+    })
+    .catch(function () {
+      alert("That token didn't check out for the lists site — nothing was saved. Double-check the token and try again.");
+      statusLoaded();
+    });
+});
+
+disconnectBtn.addEventListener("click", function () {
+  setToken("");
+  updateButtons();
+  setStatus("This phone is disconnected — changes will stay on this phone until you connect it again.");
+});
+
+document.addEventListener("visibilitychange", function () {
+  if (!document.hidden) refreshFromRemote();
+});
+window.addEventListener("online", function () { scheduleSync(); refreshFromRemote(); });
 
 function render() {
   var host = document.getElementById("stores");
   host.innerHTML = "";
-  state.forEach(function (section, si) {
+  stores.forEach(function (section) {
     var h = document.createElement("h2");
     h.textContent = section.store;
     host.appendChild(h);
@@ -162,9 +408,7 @@ function render() {
       cb.checked = item.done;
       cb.setAttribute("aria-label", "Bought: " + item.name);
       cb.addEventListener("change", function () {
-        item.done = cb.checked;
-        section.items = arrange(section.items);
-        save(); render();
+        mutate({ type: "done", store: section.store, name: item.name, done: cb.checked });
       });
       li.appendChild(cb);
 
@@ -188,9 +432,7 @@ function render() {
       up.setAttribute("aria-label", "Move up: " + item.name);
       up.disabled = (ii === 0);
       up.addEventListener("click", function () {
-        var t = section.items[ii - 1];
-        section.items[ii - 1] = item; section.items[ii] = t;
-        save(); render();
+        mutate({ type: "move", store: section.store, name: item.name, dir: -1 });
       });
       btns.appendChild(up);
 
@@ -199,9 +441,7 @@ function render() {
       dn.setAttribute("aria-label", "Move down: " + item.name);
       dn.disabled = (ii === section.items.length - 1);
       dn.addEventListener("click", function () {
-        var t = section.items[ii + 1];
-        section.items[ii + 1] = item; section.items[ii] = t;
-        save(); render();
+        mutate({ type: "move", store: section.store, name: item.name, dir: 1 });
       });
       btns.appendChild(dn);
 
@@ -209,8 +449,7 @@ function render() {
       rm.type = "button"; rm.textContent = "✕"; rm.title = "Remove item";
       rm.setAttribute("aria-label", "Remove: " + item.name);
       rm.addEventListener("click", function () {
-        section.items.splice(ii, 1);
-        save(); render();
+        mutate({ type: "remove", store: section.store, name: item.name });
       });
       btns.appendChild(rm);
 
@@ -234,11 +473,7 @@ function render() {
     function doAdd() {
       var nmv = inName.value.trim();
       if (!nmv) { inName.focus(); return; }
-      var newItem = { name: nmv, qty: inQty.value.trim(), done: false };
-      var firstDone = section.items.findIndex(function (i) { return i.done; });
-      if (firstDone === -1) section.items.push(newItem);
-      else section.items.splice(firstDone, 0, newItem);
-      save(); render();
+      mutate({ type: "add", store: section.store, name: nmv, qty: inQty.value.trim() });
     }
     add.addEventListener("click", doAdd);
     inName.addEventListener("keydown", function (e) { if (e.key === "Enter") doAdd(); });
@@ -248,14 +483,11 @@ function render() {
   });
 }
 
-document.getElementById("resetBtn").addEventListener("click", function () {
-  try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
-  state = load();
-  save(); render();
-});
-
-save();
+cacheLoad();
+updateButtons();
 render();
+refreshFromRemote();
+if (pendingOps.length && getToken()) scheduleSync();
 </script>
 </body>
 </html>
