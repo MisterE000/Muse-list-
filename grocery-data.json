@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T14:43:13.162Z",
+  "updated": "2026-11-01T14:43:28.643Z",
   "stores": [
     {
       "items": [
@@ -162,11 +162,6 @@
           "done": false
         },
         {
-          "name": "Bolts 1/4-20, slip-ring pivots",
-          "qty": "4",
-          "done": false
-        },
-        {
           "name": "Carriage bolts 1/4-20 x 3 in",
           "qty": "4 — femur holders, 1 per leg; top up what you already have",
           "done": false
@@ -230,6 +225,11 @@
           "name": "Roll pins, 2 mm",
           "qty": "4 + spares — pinion cross-pin drive",
           "done": false
+        },
+        {
+          "name": "Bolts 1/4-20, slip-ring pivots",
+          "qty": "4",
+          "done": true
         },
         {
           "done": true,
