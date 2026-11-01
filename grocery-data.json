@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T15:05:45.998Z",
+  "updated": "2026-11-01T15:07:17.656Z",
   "stores": [
     {
       "items": [
@@ -152,11 +152,6 @@
     {
       "items": [
         {
-          "name": "1/2\"pex Tee",
-          "qty": "1",
-          "done": false
-        },
-        {
           "name": "Bolts 1/4-20 x 3-1/2 in",
           "qty": "4 — shoulder-gear shafts",
           "done": false
@@ -185,6 +180,11 @@
           "name": "Roll pins, 2 mm",
           "qty": "4 + spares — pinion cross-pin drive",
           "done": false
+        },
+        {
+          "name": "1/2\"pex Tee",
+          "qty": "1",
+          "done": true
         },
         {
           "name": "Bolts 1/4-20, slip-ring pivots",
