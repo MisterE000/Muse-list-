@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T15:05:17.490Z",
+  "updated": "2026-11-01T15:05:25.463Z",
   "stores": [
     {
       "items": [
@@ -177,11 +177,6 @@
           "done": false
         },
         {
-          "name": "PVC four-ways, 1-1/4 in",
-          "qty": "2",
-          "done": false
-        },
-        {
           "name": "PVC pipe 1-1/4 in, 10 ft stick",
           "qty": "2 — frame 2.12 m incl belly spine 44 cm + drops, + 4 femurs (1.2 m); shins/out-pipes extra",
           "done": false
@@ -239,6 +234,11 @@
         {
           "name": "PVC elbows 90 deg, 1-1/4 in",
           "qty": "6 — 4 frame corners + 2 tee-drop bottoms (belly spine ends)",
+          "done": true
+        },
+        {
+          "name": "PVC four-ways, 1-1/4 in",
+          "qty": "2",
           "done": true
         },
         {
