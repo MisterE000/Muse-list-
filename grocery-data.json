@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-31T22:45:02.741Z",
+  "updated": "2026-11-01T00:21:26.000Z",
   "stores": [
     {
       "items": [
@@ -98,11 +98,6 @@
           "done": false,
           "name": "Sweet onions",
           "qty": ""
-        },
-        {
-          "done": false,
-          "name": "Vaseline (petroleum jelly)",
-          "qty": "1 small tub — LawnMooer gear lube"
         },
         {
           "done": false,
