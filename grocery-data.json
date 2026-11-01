@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T14:43:10.555Z",
+  "updated": "2026-11-01T14:43:13.162Z",
   "stores": [
     {
       "items": [
@@ -187,11 +187,6 @@
           "qty": "dual-temp — for PVC forming (LawnMooer knees) + heat-shrink"
         },
         {
-          "name": "Nylock nuts 1/4-20",
-          "qty": "4",
-          "done": false
-        },
-        {
           "name": "PVC elbows 90 deg, 1-1/4 in",
           "qty": "6 — 4 frame corners + 2 tee-drop bottoms (belly spine ends)",
           "done": false
@@ -250,6 +245,11 @@
           "done": true,
           "name": "Lag screws, 1/4 in x 3 in",
           "qty": "4 — LawnMooer shoulder pivots, one per leg"
+        },
+        {
+          "name": "Nylock nuts 1/4-20",
+          "qty": "4",
+          "done": true
         },
         {
           "done": true,
