@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T15:17:06.130Z",
+  "updated": "2026-11-01T15:18:41.301Z",
   "stores": [
     {
       "items": [
@@ -157,11 +157,6 @@
           "done": false
         },
         {
-          "name": "Flat washers, 1/4 in",
-          "qty": "12 — 8 slip-ring + 4 gear-face",
-          "done": false
-        },
-        {
           "name": "PVC pipe 1-1/4 in, 10 ft stick",
           "qty": "2 — frame 2.12 m incl belly spine 44 cm + drops, + 4 femurs (1.2 m); shins/out-pipes extra",
           "done": false
@@ -195,6 +190,11 @@
           "done": true,
           "name": "Drill bit, 17/64 in",
           "qty": ""
+        },
+        {
+          "name": "Flat washers, 1/4 in",
+          "qty": "12 — 8 slip-ring + 4 gear-face",
+          "done": true
         },
         {
           "done": true,
