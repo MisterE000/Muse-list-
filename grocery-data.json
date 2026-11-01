@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T15:05:15.206Z",
+  "updated": "2026-11-01T15:05:17.490Z",
   "stores": [
     {
       "items": [
@@ -172,11 +172,6 @@
           "done": false
         },
         {
-          "done": false,
-          "name": "Heat gun",
-          "qty": "dual-temp — for PVC forming (LawnMooer knees) + heat-shrink"
-        },
-        {
           "name": "PVC end caps, 1-1/4 in",
           "qty": "4",
           "done": false
@@ -215,6 +210,11 @@
           "name": "Carriage bolts 1/4-20 x 3 in",
           "qty": "4 — femur holders, 1 per leg; top up what you already have",
           "done": true
+        },
+        {
+          "done": true,
+          "name": "Heat gun",
+          "qty": "dual-temp — for PVC forming (LawnMooer knees) + heat-shrink"
         },
         {
           "name": "Hex nuts 1/4-20",
