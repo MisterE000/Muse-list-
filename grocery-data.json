@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T14:43:56.603Z",
+  "updated": "2026-11-01T14:44:03.452Z",
   "stores": [
     {
       "items": [
@@ -202,11 +202,6 @@
           "done": false
         },
         {
-          "name": "PVC threaded caps, 1-1/4 in",
-          "qty": "4 — 1 per leg (feet)",
-          "done": false
-        },
-        {
           "name": "PVC threaded couplings, 1-1/4 in",
           "qty": "4 — 1 per leg (feet)",
           "done": false
@@ -254,6 +249,11 @@
         {
           "name": "PVC pipe 2 in, short length",
           "qty": "for 4 slip-ring slices",
+          "done": true
+        },
+        {
+          "name": "PVC threaded caps, 1-1/4 in",
+          "qty": "4 — 1 per leg (feet)",
           "done": true
         }
       ],
