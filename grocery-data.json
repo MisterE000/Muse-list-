@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T14:43:36.729Z",
+  "updated": "2026-11-01T14:43:56.603Z",
   "stores": [
     {
       "items": [
@@ -197,11 +197,6 @@
           "done": false
         },
         {
-          "name": "PVC pipe 2 in, short length",
-          "qty": "for 4 slip-ring slices",
-          "done": false
-        },
-        {
           "name": "PVC tees, 1-1/4 in",
           "qty": "2 — bow + stern centers, feed the belly-spine drops",
           "done": false
@@ -255,6 +250,11 @@
           "done": true,
           "name": "Plastic putty knife",
           "qty": ""
+        },
+        {
+          "name": "PVC pipe 2 in, short length",
+          "qty": "for 4 slip-ring slices",
+          "done": true
         }
       ],
       "store": "Lowe's"
