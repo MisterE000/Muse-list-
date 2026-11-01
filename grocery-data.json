@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T15:07:17.656Z",
+  "updated": "2026-11-01T15:08:40.560Z",
   "stores": [
     {
       "items": [
@@ -152,6 +152,11 @@
     {
       "items": [
         {
+          "name": "1/2\"pex Tee",
+          "qty": "1",
+          "done": false
+        },
+        {
           "name": "Bolts 1/4-20 x 3-1/2 in",
           "qty": "4 — shoulder-gear shafts",
           "done": false
@@ -167,11 +172,6 @@
           "done": false
         },
         {
-          "name": "PVC end caps, 1-1/4 in",
-          "qty": "4",
-          "done": false
-        },
-        {
           "name": "PVC pipe 1-1/4 in, 10 ft stick",
           "qty": "2 — frame 2.12 m incl belly spine 44 cm + drops, + 4 femurs (1.2 m); shins/out-pipes extra",
           "done": false
@@ -180,11 +180,6 @@
           "name": "Roll pins, 2 mm",
           "qty": "4 + spares — pinion cross-pin drive",
           "done": false
-        },
-        {
-          "name": "1/2\"pex Tee",
-          "qty": "1",
-          "done": true
         },
         {
           "name": "Bolts 1/4-20, slip-ring pivots",
@@ -229,6 +224,11 @@
         {
           "name": "PVC elbows 90 deg, 1-1/4 in",
           "qty": "6 — 4 frame corners + 2 tee-drop bottoms (belly spine ends)",
+          "done": true
+        },
+        {
+          "name": "PVC end caps, 1-1/4 in",
+          "qty": "4",
           "done": true
         },
         {
