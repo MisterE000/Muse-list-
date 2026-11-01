@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T15:13:32.453Z",
+  "updated": "2026-11-01T15:17:06.130Z",
   "stores": [
     {
       "items": [
@@ -157,11 +157,6 @@
           "done": false
         },
         {
-          "done": false,
-          "name": "Drill bit, 17/64 in",
-          "qty": ""
-        },
-        {
           "name": "Flat washers, 1/4 in",
           "qty": "12 — 8 slip-ring + 4 gear-face",
           "done": false
@@ -195,6 +190,11 @@
           "name": "Carriage bolts 1/4-20 x 3 in",
           "qty": "4 — femur holders, 1 per leg; top up what you already have",
           "done": true
+        },
+        {
+          "done": true,
+          "name": "Drill bit, 17/64 in",
+          "qty": ""
         },
         {
           "done": true,
