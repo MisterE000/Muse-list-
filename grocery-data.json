@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T14:44:03.452Z",
+  "updated": "2026-11-01T14:44:05.908Z",
   "stores": [
     {
       "items": [
@@ -202,11 +202,6 @@
           "done": false
         },
         {
-          "name": "PVC threaded couplings, 1-1/4 in",
-          "qty": "4 — 1 per leg (feet)",
-          "done": false
-        },
-        {
           "name": "Roll pins, 2 mm",
           "qty": "4 + spares — pinion cross-pin drive",
           "done": false
@@ -253,6 +248,11 @@
         },
         {
           "name": "PVC threaded caps, 1-1/4 in",
+          "qty": "4 — 1 per leg (feet)",
+          "done": true
+        },
+        {
+          "name": "PVC threaded couplings, 1-1/4 in",
           "qty": "4 — 1 per leg (feet)",
           "done": true
         }
