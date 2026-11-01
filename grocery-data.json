@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T14:43:28.643Z",
+  "updated": "2026-11-01T14:43:36.729Z",
   "stores": [
     {
       "items": [
@@ -162,11 +162,6 @@
           "done": false
         },
         {
-          "name": "Carriage bolts 1/4-20 x 3 in",
-          "qty": "4 — femur holders, 1 per leg; top up what you already have",
-          "done": false
-        },
-        {
           "done": false,
           "name": "Drill bit, 17/64 in",
           "qty": ""
@@ -235,6 +230,11 @@
           "done": true,
           "name": "Carriage bolts",
           "qty": "check first — may already have some"
+        },
+        {
+          "name": "Carriage bolts 1/4-20 x 3 in",
+          "qty": "4 — femur holders, 1 per leg; top up what you already have",
+          "done": true
         },
         {
           "name": "Hex nuts 1/4-20",
