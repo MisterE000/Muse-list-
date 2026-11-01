@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T14:38:56.545158Z",
+  "updated": "2026-11-01T14:43:10.555Z",
   "stores": [
     {
       "items": [
@@ -128,8 +128,8 @@
     },
     {
       "items": [],
-      "note": "Hours: Saturdays 9:00 AM\u201312:30 PM \u2014 Showers Common, 401 N. Morton St. (Oct 24 & 31). Nov 7, 14 & 21: moves to Switchyard Park Pavilion, 1601 S. Rogers St., same hours.",
-      "store": "Farmers Market \u2014 Bloomington"
+      "note": "Hours: Saturdays 9:00 AM–12:30 PM — Showers Common, 401 N. Morton St. (Oct 24 & 31). Nov 7, 14 & 21: moves to Switchyard Park Pavilion, 1601 S. Rogers St., same hours.",
+      "store": "Farmers Market — Bloomington"
     },
     {
       "items": [],
@@ -158,7 +158,7 @@
         },
         {
           "name": "Bolts 1/4-20 x 3-1/2 in",
-          "qty": "4 \u2014 shoulder-gear shafts",
+          "qty": "4 — shoulder-gear shafts",
           "done": false
         },
         {
@@ -168,7 +168,7 @@
         },
         {
           "name": "Carriage bolts 1/4-20 x 3 in",
-          "qty": "4 \u2014 femur holders, 1 per leg; top up what you already have",
+          "qty": "4 — femur holders, 1 per leg; top up what you already have",
           "done": false
         },
         {
@@ -178,18 +178,13 @@
         },
         {
           "name": "Flat washers, 1/4 in",
-          "qty": "12 \u2014 8 slip-ring + 4 gear-face",
+          "qty": "12 — 8 slip-ring + 4 gear-face",
           "done": false
         },
         {
           "done": false,
           "name": "Heat gun",
-          "qty": "dual-temp \u2014 for PVC forming (LawnMooer knees) + heat-shrink"
-        },
-        {
-          "name": "Hex nuts 1/4-20",
-          "qty": "8 \u2014 jam-nut spacers, 2 per leg",
-          "done": false
+          "qty": "dual-temp — for PVC forming (LawnMooer knees) + heat-shrink"
         },
         {
           "name": "Nylock nuts 1/4-20",
@@ -198,7 +193,7 @@
         },
         {
           "name": "PVC elbows 90 deg, 1-1/4 in",
-          "qty": "6 \u2014 4 frame corners + 2 tee-drop bottoms (belly spine ends)",
+          "qty": "6 — 4 frame corners + 2 tee-drop bottoms (belly spine ends)",
           "done": false
         },
         {
@@ -213,7 +208,7 @@
         },
         {
           "name": "PVC pipe 1-1/4 in, 10 ft stick",
-          "qty": "2 \u2014 frame 2.12 m incl belly spine 44 cm + drops, + 4 femurs (1.2 m); shins/out-pipes extra",
+          "qty": "2 — frame 2.12 m incl belly spine 44 cm + drops, + 4 femurs (1.2 m); shins/out-pipes extra",
           "done": false
         },
         {
@@ -223,33 +218,38 @@
         },
         {
           "name": "PVC tees, 1-1/4 in",
-          "qty": "2 \u2014 bow + stern centers, feed the belly-spine drops",
+          "qty": "2 — bow + stern centers, feed the belly-spine drops",
           "done": false
         },
         {
           "name": "PVC threaded caps, 1-1/4 in",
-          "qty": "4 \u2014 1 per leg (feet)",
+          "qty": "4 — 1 per leg (feet)",
           "done": false
         },
         {
           "name": "PVC threaded couplings, 1-1/4 in",
-          "qty": "4 \u2014 1 per leg (feet)",
+          "qty": "4 — 1 per leg (feet)",
           "done": false
         },
         {
           "name": "Roll pins, 2 mm",
-          "qty": "4 + spares \u2014 pinion cross-pin drive",
+          "qty": "4 + spares — pinion cross-pin drive",
           "done": false
         },
         {
           "done": true,
           "name": "Carriage bolts",
-          "qty": "check first \u2014 may already have some"
+          "qty": "check first — may already have some"
+        },
+        {
+          "name": "Hex nuts 1/4-20",
+          "qty": "8 — jam-nut spacers, 2 per leg",
+          "done": true
         },
         {
           "done": true,
           "name": "Lag screws, 1/4 in x 3 in",
-          "qty": "4 \u2014 LawnMooer shoulder pivots, one per leg"
+          "qty": "4 — LawnMooer shoulder pivots, one per leg"
         },
         {
           "done": true,
