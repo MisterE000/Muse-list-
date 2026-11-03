@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T16:47:04.797Z",
+  "updated": "2026-11-03T18:36:45.897Z",
   "stores": [
     {
       "items": [
@@ -172,9 +172,9 @@
           "done": false
         },
         {
-          "name": "1/2\"pex Tee",
-          "qty": "1",
-          "done": true
+          "name": "PVC plugs, flat, 1-1/4 in",
+          "qty": "4 — slip-ring bolt seats (the 1-1/2 in ones bought Nov 1 were the wrong size — shed stock now, not a return)",
+          "done": false
         },
         {
           "name": "Bolts 1/4-20 x 3-1/2 in",
@@ -235,11 +235,6 @@
           "name": "PVC elbows 90 deg, 1-1/4 in",
           "qty": "6 — 4 frame corners + 2 tee-drop bottoms (belly spine ends)",
           "done": true
-        },
-        {
-          "name": "PVC plugs, flat, 1-1/4 in",
-          "qty": "4 — slip-ring bolt seats (the 1-1/2 in ones bought Nov 1 were the wrong size — shed stock now, not a return)",
-          "done": false
         },
         {
           "name": "PVC four-ways, 1-1/4 in",
