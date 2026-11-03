@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T23:18:21.111Z",
+  "updated": "2026-11-03T23:18:27.373Z",
   "stores": [
     {
       "items": [
@@ -38,11 +38,6 @@
           "name": "Butter",
           "qty": "",
           "done": false
-        },
-        {
-          "done": false,
-          "name": "Eggs",
-          "qty": ""
         },
         {
           "done": false,
@@ -108,6 +103,11 @@
           "done": true,
           "name": "Corned beef hash",
           "qty": "1 can"
+        },
+        {
+          "done": true,
+          "name": "Eggs",
+          "qty": ""
         },
         {
           "done": true,
