@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T23:18:07.559Z",
+  "updated": "2026-11-03T23:18:14.847Z",
   "stores": [
     {
       "items": [
@@ -43,11 +43,6 @@
           "done": false,
           "name": "Coffee filters",
           "qty": ""
-        },
-        {
-          "done": false,
-          "name": "Corned beef hash",
-          "qty": "1 can"
         },
         {
           "done": false,
@@ -113,6 +108,11 @@
           "name": "White vinegar",
           "qty": "",
           "done": false
+        },
+        {
+          "done": true,
+          "name": "Corned beef hash",
+          "qty": "1 can"
         },
         {
           "done": true,
