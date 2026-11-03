@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T18:46:53.951Z",
+  "updated": "2026-11-03T20:06:18.490Z",
   "stores": [
     {
       "items": [
@@ -169,6 +169,11 @@
         {
           "name": "1-1/4 PVC 45°",
           "qty": "2",
+          "done": false
+        },
+        {
+          "name": "2 1/2\" carriage bolt",
+          "qty": "4",
           "done": false
         },
         {
