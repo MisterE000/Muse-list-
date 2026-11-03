@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T23:20:00.030Z",
+  "updated": "2026-11-03T23:25:01.509Z",
   "stores": [
     {
       "items": [
@@ -53,11 +53,6 @@
           "done": false,
           "name": "Salad",
           "qty": "1 bag"
-        },
-        {
-          "name": "Snacks",
-          "qty": "",
-          "done": false
         },
         {
           "done": false,
@@ -118,6 +113,11 @@
           "done": true,
           "name": "Mozzarella",
           "qty": ""
+        },
+        {
+          "name": "Snacks",
+          "qty": "",
+          "done": true
         }
       ],
       "store": "Walmart"
