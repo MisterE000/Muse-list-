@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T23:18:30.121Z",
+  "updated": "2026-11-03T23:19:14.248Z",
   "stores": [
     {
       "items": [
@@ -29,6 +29,11 @@
     },
     {
       "items": [
+        {
+          "name": "Braats",
+          "qty": "",
+          "done": false
+        },
         {
           "done": false,
           "name": "Bread",
