@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T23:36:43.253Z",
+  "updated": "2026-11-03T23:40:35.505Z",
   "stores": [
     {
       "items": [
@@ -29,16 +29,6 @@
     },
     {
       "items": [
-        {
-          "done": false,
-          "name": "Salad",
-          "qty": "1 bag"
-        },
-        {
-          "done": false,
-          "name": "Sweet onions",
-          "qty": ""
-        },
         {
           "name": "Braats",
           "qty": "",
@@ -95,6 +85,11 @@
           "qty": ""
         },
         {
+          "done": true,
+          "name": "Salad",
+          "qty": "1 bag"
+        },
+        {
           "name": "Snacks",
           "qty": "",
           "done": true
@@ -102,6 +97,11 @@
         {
           "done": true,
           "name": "Soy sauce",
+          "qty": ""
+        },
+        {
+          "done": true,
+          "name": "Sweet onions",
           "qty": ""
         },
         {
