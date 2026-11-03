@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T23:25:01.509Z",
+  "updated": "2026-11-03T23:25:06.604Z",
   "stores": [
     {
       "items": [
@@ -53,11 +53,6 @@
           "done": false,
           "name": "Salad",
           "qty": "1 bag"
-        },
-        {
-          "done": false,
-          "name": "Soy sauce",
-          "qty": ""
         },
         {
           "done": false,
@@ -118,6 +113,11 @@
           "name": "Snacks",
           "qty": "",
           "done": true
+        },
+        {
+          "done": true,
+          "name": "Soy sauce",
+          "qty": ""
         }
       ],
       "store": "Walmart"
