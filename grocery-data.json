@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T23:31:44.008Z",
+  "updated": "2026-11-03T23:31:50.719Z",
   "stores": [
     {
       "items": [
@@ -31,11 +31,6 @@
       "items": [
         {
           "done": false,
-          "name": "Bread",
-          "qty": ""
-        },
-        {
-          "done": false,
           "name": "Pizza crusts",
           "qty": ""
         },
@@ -63,6 +58,11 @@
           "name": "Braats",
           "qty": "",
           "done": true
+        },
+        {
+          "done": true,
+          "name": "Bread",
+          "qty": ""
         },
         {
           "name": "Butter",
