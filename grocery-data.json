@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T23:35:27.379Z",
+  "updated": "2026-11-03T23:36:36.027Z",
   "stores": [
     {
       "items": [
@@ -32,11 +32,6 @@
         {
           "done": false,
           "name": "Pizza crusts",
-          "qty": ""
-        },
-        {
-          "done": false,
-          "name": "Pizza sauce",
           "qty": ""
         },
         {
@@ -92,6 +87,11 @@
         {
           "done": true,
           "name": "Mozzarella",
+          "qty": ""
+        },
+        {
+          "done": true,
+          "name": "Pizza sauce",
           "qty": ""
         },
         {
