@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T18:37:39.254Z",
+  "updated": "2026-11-03T18:37:43.032Z",
   "stores": [
     {
       "items": [
@@ -184,11 +184,6 @@
         {
           "name": "PVC tees, 1-1/4 in",
           "qty": "2 — bow + stern centers, feed the belly-spine drops",
-          "done": true
-        },
-        {
-          "name": "PVC threaded caps, 1-1/4 in",
-          "qty": "4 — 1 per leg (feet)",
           "done": true
         },
         {
