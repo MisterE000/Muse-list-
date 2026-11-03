@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T18:37:29.925Z",
+  "updated": "2026-11-03T18:37:36.686Z",
   "stores": [
     {
       "items": [
@@ -179,11 +179,6 @@
         {
           "name": "PVC elbows 90 deg, 1-1/4 in",
           "qty": "6 — 4 frame corners + 2 tee-drop bottoms (belly spine ends)",
-          "done": true
-        },
-        {
-          "name": "PVC four-ways, 1-1/4 in",
-          "qty": "2",
           "done": true
         },
         {
