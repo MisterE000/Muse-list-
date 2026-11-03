@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T23:25:17.863Z",
+  "updated": "2026-11-03T23:31:44.008Z",
   "stores": [
     {
       "items": [
@@ -30,11 +30,6 @@
     {
       "items": [
         {
-          "name": "Braats",
-          "qty": "",
-          "done": false
-        },
-        {
           "done": false,
           "name": "Bread",
           "qty": ""
@@ -63,6 +58,11 @@
           "name": "White vinegar",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Braats",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Butter",
