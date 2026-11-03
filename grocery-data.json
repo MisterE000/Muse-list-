@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T23:18:27.373Z",
+  "updated": "2026-11-03T23:18:30.121Z",
   "stores": [
     {
       "items": [
@@ -38,11 +38,6 @@
           "name": "Butter",
           "qty": "",
           "done": false
-        },
-        {
-          "done": false,
-          "name": "Jelly",
-          "qty": ""
         },
         {
           "done": false,
@@ -107,6 +102,11 @@
         {
           "done": true,
           "name": "Eggs",
+          "qty": ""
+        },
+        {
+          "done": true,
+          "name": "Jelly",
           "qty": ""
         },
         {
