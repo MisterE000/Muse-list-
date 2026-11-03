@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T23:19:24.196Z",
+  "updated": "2026-11-03T23:20:00.030Z",
   "stores": [
     {
       "items": [
@@ -37,11 +37,6 @@
         {
           "done": false,
           "name": "Bread",
-          "qty": ""
-        },
-        {
-          "done": false,
-          "name": "Mozzarella",
           "qty": ""
         },
         {
@@ -118,6 +113,11 @@
           "done": true,
           "name": "Milk 2%",
           "qty": "1 gallon"
+        },
+        {
+          "done": true,
+          "name": "Mozzarella",
+          "qty": ""
         }
       ],
       "store": "Walmart"
