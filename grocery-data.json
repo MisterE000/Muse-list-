@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T23:18:17.319Z",
+  "updated": "2026-11-03T23:18:21.111Z",
   "stores": [
     {
       "items": [
@@ -42,11 +42,6 @@
         {
           "done": false,
           "name": "Eggs",
-          "qty": ""
-        },
-        {
-          "done": false,
-          "name": "Glue stick",
           "qty": ""
         },
         {
