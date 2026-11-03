@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T23:25:15.585Z",
+  "updated": "2026-11-03T23:25:17.863Z",
   "stores": [
     {
       "items": [
@@ -60,11 +60,6 @@
           "qty": ""
         },
         {
-          "name": "Water bottles",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "White vinegar",
           "qty": "",
           "done": false
@@ -113,6 +108,11 @@
           "done": true,
           "name": "Soy sauce",
           "qty": ""
+        },
+        {
+          "name": "Water bottles",
+          "qty": "",
+          "done": true
         },
         {
           "done": true,
