@@ -35,6 +35,11 @@
           "qty": ""
         },
         {
+          "name": "Butter",
+          "qty": "",
+          "done": false
+        },
+        {
           "done": false,
           "name": "Coffee filters",
           "qty": ""
@@ -90,6 +95,11 @@
           "qty": "1 bag"
         },
         {
+          "name": "Snacks",
+          "qty": "",
+          "done": false
+        },
+        {
           "done": false,
           "name": "Soy sauce",
           "qty": ""
@@ -98,6 +108,11 @@
           "done": false,
           "name": "Sweet onions",
           "qty": ""
+        },
+        {
+          "name": "Water bottles",
+          "qty": "",
+          "done": false
         },
         {
           "done": false,
