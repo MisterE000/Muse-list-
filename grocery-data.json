@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-03T18:37:03.875Z",
+  "updated": "2026-11-03T18:37:06.416Z",
   "stores": [
     {
       "items": [
@@ -175,11 +175,6 @@
           "name": "PVC plugs, flat, 1-1/4 in",
           "qty": "4 — slip-ring bolt seats (the 1-1/2 in ones bought Nov 1 were the wrong size — shed stock now, not a return)",
           "done": false
-        },
-        {
-          "name": "Flat washers, 1/4 in",
-          "qty": "12 — 8 slip-ring + 4 gear-face",
-          "done": true
         },
         {
           "done": true,
