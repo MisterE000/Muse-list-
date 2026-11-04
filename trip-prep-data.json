@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:16:30.007Z",
+  "updated": "2026-11-04T14:16:42.896Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -122,11 +122,6 @@
         },
         {
           "name": "Fill the fresh tank; check the additional fresh-tank space / tank if fitted",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
           "qty": "",
           "done": false
         },
