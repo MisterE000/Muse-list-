@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:31:43.121Z",
+  "updated": "2026-11-04T13:31:48.445Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -296,11 +296,6 @@
         },
         {
           "name": "Computer: mouse",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: Passport",
           "qty": "",
           "done": false
         },
