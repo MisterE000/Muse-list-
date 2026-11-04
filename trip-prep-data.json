@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:06:34.140Z",
+  "updated": "2026-11-04T14:06:47.852Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -404,11 +404,6 @@
         },
         {
           "name": "Packing: tongs",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Refrigerator latched, loose items stowed, cupboards latched",
           "qty": "",
           "done": false
         }
