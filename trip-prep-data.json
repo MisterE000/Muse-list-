@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:15:03.482Z",
+  "updated": "2026-11-04T14:15:06.757Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -11,15 +11,15 @@
           "done": false
         },
         {
-          "name": "Charge / check the lithium house bank — 920 Ah; note voltage (13.3V is about 70%, 13.1V is about 20%)",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Battery jumpstart kit",
           "qty": "",
           "done": false,
           "fresh": true
+        },
+        {
+          "name": "Charge / check the lithium house bank — 920 Ah; note voltage (13.3V is about 70%, 13.1V is about 20%)",
+          "qty": "",
+          "done": false
         },
         {
           "name": "Check all fluids, belts, hoses, and tire pressures (including spare); look for leaks underneath",
