@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:16:21.183Z",
+  "updated": "2026-11-04T14:16:30.007Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -117,11 +117,6 @@
         },
         {
           "name": "Dump black and gray tanks, rinse, and add tank treatment before you leave",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Empty home fridge of anything that will spoil while you are away",
           "qty": "",
           "done": false
         },
