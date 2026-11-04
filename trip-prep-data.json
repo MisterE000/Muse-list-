@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:28:24.463Z",
+  "updated": "2026-11-04T13:28:31.459Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -163,12 +163,12 @@
           "done": false
         },
         {
-          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
+          "name": "Starlink (permanently mounted) — power it up and confirm it connects before you leave",
           "qty": "",
           "done": false
         },
         {
-          "name": "Starlink (permanently mounted) — power it up and confirm it connects before you leave",
+          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
         },
