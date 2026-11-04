@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:10:16.344Z",
+  "updated": "2026-11-04T14:10:32.736Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -626,6 +626,12 @@
       "items": [
         {
           "name": "Drain water",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Blow out lines",
           "qty": "",
           "done": false,
           "fresh": true
