@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:32:26.636Z",
+  "updated": "2026-11-04T13:32:32.139Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -335,12 +335,12 @@
           "done": false
         },
         {
-          "name": "Final check inside the house, then lock up",
+          "name": "Inside: Bathroom door shut",
           "qty": "",
           "done": false
         },
         {
-          "name": "Inside: Bathroom door shut",
+          "name": "Final check inside the house, then lock up",
           "qty": "",
           "done": false
         },
