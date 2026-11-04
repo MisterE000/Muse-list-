@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:09:29.751Z",
+  "updated": "2026-11-04T14:09:32.518Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -543,12 +543,12 @@
           "done": false
         },
         {
-          "name": "Outside: Propane secure ? Straps",
+          "name": "Outside: Shore water cap in place",
           "qty": "",
           "done": false
         },
         {
-          "name": "Outside: Shore water cap in place",
+          "name": "Outside: Propane secure ? Straps",
           "qty": "",
           "done": false
         },
