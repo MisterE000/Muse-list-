@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:07:37.419Z",
+  "updated": "2026-11-04T14:07:40.703Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -533,17 +533,17 @@
           "done": false
         },
         {
+          "name": "Outside: Sewer valve cap on",
+          "qty": "",
+          "done": false
+        },
+        {
           "name": "Outside: Electric wire disconnected & cover closed",
           "qty": "",
           "done": false
         },
         {
           "name": "Outside: Headlights working",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Outside: Sewer valve cap on",
           "qty": "",
           "done": false
         },
