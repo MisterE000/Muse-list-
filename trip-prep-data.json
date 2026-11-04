@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:08:39.156Z",
+  "updated": "2026-11-04T13:08:54.892Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -27,11 +27,6 @@
         },
         {
           "name": "Fuel up, and check propane level",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "If overnight lows will be over 80°F, plan a campground for those nights; if a heavy storm is forecast, plan a Walmart stop for Wi-Fi",
           "qty": "",
           "done": false
         },
