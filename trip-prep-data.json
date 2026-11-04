@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:07:53.296Z",
+  "updated": "2026-11-04T14:07:56.576Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -538,17 +538,17 @@
           "done": false
         },
         {
+          "name": "Outside: Sewer line holder closed",
+          "qty": "",
+          "done": false
+        },
+        {
           "name": "Outside: Electric wire disconnected & cover closed",
           "qty": "",
           "done": false
         },
         {
           "name": "Outside: Headlights working",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Outside: Sewer line holder closed",
           "qty": "",
           "done": false
         },
