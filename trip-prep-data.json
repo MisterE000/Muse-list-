@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:34:43.419Z",
+  "updated": "2026-11-04T13:35:02.496Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -346,11 +346,6 @@
         },
         {
           "name": "Inside: Bathroom fan off/closed",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Inside: Fridge shut",
           "qty": "",
           "done": false
         },
