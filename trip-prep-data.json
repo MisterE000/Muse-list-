@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:28:35.027Z",
+  "updated": "2026-11-04T13:28:38.272Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -153,6 +153,11 @@
           "done": false
         },
         {
+          "name": "Stock coffee and morning supplies — coffee first thing is part of the routine",
+          "qty": "",
+          "done": false
+        },
+        {
           "name": "Shoes for walking, camp, and wet ground",
           "qty": "",
           "done": false
@@ -164,11 +169,6 @@
         },
         {
           "name": "Starlink (permanently mounted) — power it up and confirm it connects before you leave",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Stock coffee and morning supplies — coffee first thing is part of the routine",
           "qty": "",
           "done": false
         },
