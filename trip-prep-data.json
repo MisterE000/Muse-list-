@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:33:16.290Z",
+  "updated": "2026-11-04T13:33:55.288Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -535,6 +535,12 @@
         },
         {
           "name": "First stop and tonight's stop entered in navigation — before you roll",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Final check inside the house, then lock up",
           "qty": "",
           "done": false,
           "fresh": true
