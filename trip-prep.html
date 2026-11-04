@@ -34,6 +34,7 @@
   .secbtns button { font-size: 0.95em; line-height: 1; padding: 6px 9px; border: 1px solid #ccc; background: #f7f7f7; border-radius: 6px; cursor: pointer; }
   .secbtns button:active { background: #e8e8e8; }
   .secbtns button:disabled { opacity: 0.3; cursor: default; }
+  .jlink { margin-left: 10px; font-size: 0.85em; white-space: nowrap; }
   li.item.fresh { background: #e9f9ec; }
   li.item.fresh .name { color: #137a2e; font-weight: 600; }
   li.item.fresh.done .name { color: #7fae87; }
@@ -80,6 +81,12 @@ var SEED = [
   {
     "store": "Pre-trip",
     "items": [
+      {
+        "name": "Battery jumpstart kit",
+        "qty": "",
+        "done": false,
+        "fresh": true
+      },
       {
         "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
         "qty": "",
@@ -144,6 +151,18 @@ var SEED = [
         "fresh": true
       },
       {
+        "name": "Washer fluid filled",
+        "qty": "",
+        "done": false,
+        "fresh": true
+      },
+      {
+        "name": "Tools: grill scraper",
+        "qty": "",
+        "done": false,
+        "fresh": true
+      },
+      {
         "name": "Campground / park confirmations, launch viewing info, and addresses saved on the phone and on paper",
         "qty": "",
         "done": false
@@ -184,17 +203,7 @@ var SEED = [
         "done": false
       },
       {
-        "name": "Empty home fridge of anything that will spoil while you are away",
-        "qty": "",
-        "done": false
-      },
-      {
         "name": "Fill the fresh tank; check the additional fresh-tank space / tank if fitted",
-        "qty": "",
-        "done": false
-      },
-      {
-        "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
         "qty": "",
         "done": false
       },
@@ -291,7 +300,8 @@ var SEED = [
       {
         "name": "Trip journal — and a pen — packed where you will actually use it",
         "qty": "",
-        "done": false
+        "done": false,
+        "link": "travel-journal.html"
       },
       {
         "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
@@ -311,6 +321,30 @@ var SEED = [
       },
       {
         "name": "Passports",
+        "qty": "",
+        "done": false,
+        "fresh": true
+      },
+      {
+        "name": "Gallon water",
+        "qty": "",
+        "done": false,
+        "fresh": true
+      },
+      {
+        "name": "Ice packs",
+        "qty": "",
+        "done": false,
+        "fresh": true
+      },
+      {
+        "name": "Empty home fridge of anything that will spoil while you are away",
+        "qty": "",
+        "done": false,
+        "fresh": true
+      },
+      {
+        "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
         "qty": "",
         "done": false,
         "fresh": true
@@ -469,11 +503,6 @@ var SEED = [
         "name": "Packing: tongs",
         "qty": "",
         "done": false
-      },
-      {
-        "name": "Refrigerator latched, loose items stowed, cupboards latched",
-        "qty": "",
-        "done": false
       }
     ]
   },
@@ -481,19 +510,13 @@ var SEED = [
     "store": "Walk-out",
     "items": [
       {
-        "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
-        "qty": "",
-        "done": false,
-        "fresh": true
-      },
-      {
         "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
         "qty": "",
         "done": false,
         "fresh": true
       },
       {
-        "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
+        "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
         "qty": "",
         "done": false,
         "fresh": true
@@ -511,10 +534,22 @@ var SEED = [
         "fresh": true
       },
       {
+        "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
+        "qty": "",
+        "done": false,
+        "fresh": true,
+        "link": "travel-journal.html"
+      },
+      {
         "name": "Final check inside the house, then lock up",
         "qty": "",
         "done": false,
         "fresh": true
+      },
+      {
+        "name": "turn off house water spigot",
+        "qty": "",
+        "done": false
       },
       {
         "name": "glasses",
@@ -537,11 +572,6 @@ var SEED = [
         "done": false
       },
       {
-        "name": "turn off house water spigot",
-        "qty": "",
-        "done": false
-      },
-      {
         "name": "wallet",
         "qty": "",
         "done": false
@@ -552,32 +582,37 @@ var SEED = [
     "store": "Before driving",
     "items": [
       {
-        "name": "Inside: Gallon water",
+        "name": "Inside: Bathroom fan off/closed",
         "qty": "",
-        "done": false
+        "done": false,
+        "fresh": true
       },
       {
-        "name": "Inside: Ice trays",
+        "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
         "qty": "",
-        "done": false
+        "done": false,
+        "fresh": true
       },
       {
-        "name": "Inside: ice packs",
+        "name": "Refrigerator latched, loose items stowed, cupboards latched",
         "qty": "",
-        "done": false
+        "done": false,
+        "fresh": true
+      },
+      {
+        "name": "Fuel level",
+        "qty": "",
+        "done": false,
+        "fresh": true
+      },
+      {
+        "name": "Tools: grill scraper",
+        "qty": "",
+        "done": false,
+        "fresh": true
       },
       {
         "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
-        "qty": "",
-        "done": false
-      },
-      {
-        "name": "Inside: Bathroom door shut",
-        "qty": "",
-        "done": false
-      },
-      {
-        "name": "Inside: House fan off/closed",
         "qty": "",
         "done": false
       },
@@ -592,22 +627,7 @@ var SEED = [
         "done": false
       },
       {
-        "name": "Outside: Both sewer valves closed",
-        "qty": "",
-        "done": false
-      },
-      {
-        "name": "Outside: Electric wire disconnected & cover closed",
-        "qty": "",
-        "done": false
-      },
-      {
-        "name": "Outside: Headlights working",
-        "qty": "",
-        "done": false
-      },
-      {
-        "name": "Outside: Propane secure ? Straps",
+        "name": "Outside: Sewer valve cap on",
         "qty": "",
         "done": false
       },
@@ -617,7 +637,7 @@ var SEED = [
         "done": false
       },
       {
-        "name": "Outside: Sewer valve cap on",
+        "name": "Outside: Both sewer valves closed",
         "qty": "",
         "done": false
       },
@@ -627,32 +647,24 @@ var SEED = [
         "done": false
       },
       {
+        "name": "Outside: Electric wire disconnected & cover closed",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Outside: Propane secure ? Straps",
+        "qty": "",
+        "done": false
+      },
+      {
         "name": "Outside: Taillights working",
         "qty": "",
         "done": false
       },
       {
-        "name": "Outside: Washer fluid",
+        "name": "Outside: Headlights working",
         "qty": "",
         "done": false
-      },
-      {
-        "name": "Inside: Bathroom door shut",
-        "qty": "",
-        "done": false,
-        "fresh": true
-      },
-      {
-        "name": "Inside: Bathroom fan off/closed",
-        "qty": "",
-        "done": false,
-        "fresh": true
-      },
-      {
-        "name": "Inside: House fan off/closed",
-        "qty": "",
-        "done": false,
-        "fresh": true
       }
     ]
   },
@@ -683,7 +695,8 @@ var SEED = [
       {
         "name": "Write two lines in the journal that evening: where are we, and what was the highlight?",
         "qty": "",
-        "done": false
+        "done": false,
+        "link": "travel-journal.html"
       }
     ]
   },
@@ -708,14 +721,40 @@ var SEED = [
       {
         "name": "Finish the journal entry: highlights, best moment, and tips for next time",
         "qty": "",
-        "done": false
+        "done": false,
+        "link": "travel-journal.html"
       }
     ]
   },
   {
     "store": "Winterizing",
     "note": "Nothing in the travel journal for this section yet — add the items you use and they will be here next time.",
-    "items": []
+    "items": [
+      {
+        "name": "Drain water",
+        "qty": "",
+        "done": false,
+        "fresh": true
+      },
+      {
+        "name": "Blow out lines",
+        "qty": "",
+        "done": false,
+        "fresh": true
+      },
+      {
+        "name": "Drain hot and cold lines",
+        "qty": "",
+        "done": false,
+        "fresh": true
+      },
+      {
+        "name": "Turn off refrigerator",
+        "qty": "",
+        "done": false,
+        "fresh": true
+      }
+    ]
   }
 ];
 
@@ -1114,6 +1153,15 @@ function render() {
       nm.className = "name";
       nm.textContent = item.name;
       li.appendChild(nm);
+
+      if (item.link) {
+        var jl = document.createElement("a");
+        jl.className = "jlink";
+        jl.href = item.link;
+        jl.textContent = "📖 Journal";
+        jl.title = "Open the shared travel journal";
+        li.appendChild(jl);
+      }
 
       if (item.qty) {
         var q = document.createElement("span");

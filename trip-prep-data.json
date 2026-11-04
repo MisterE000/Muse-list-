@@ -224,7 +224,8 @@
         {
           "name": "Trip journal — and a pen — packed where you will actually use it",
           "qty": "",
-          "done": false
+          "done": false,
+          "link": "travel-journal.html"
         },
         {
           "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
@@ -460,7 +461,8 @@
           "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
           "qty": "",
           "done": false,
-          "fresh": true
+          "fresh": true,
+          "link": "travel-journal.html"
         },
         {
           "name": "Final check inside the house, then lock up",
@@ -617,7 +619,8 @@
         {
           "name": "Write two lines in the journal that evening: where are we, and what was the highlight?",
           "qty": "",
-          "done": false
+          "done": false,
+          "link": "travel-journal.html"
         }
       ]
     },
@@ -642,7 +645,8 @@
         {
           "name": "Finish the journal entry: highlights, best moment, and tips for next time",
           "qty": "",
-          "done": false
+          "done": false,
+          "link": "travel-journal.html"
         }
       ]
     },
