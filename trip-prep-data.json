@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:06:44.717Z",
+  "updated": "2026-11-04T13:07:04.868Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -22,11 +22,6 @@
         },
         {
           "name": "Check lights, brakes, wipers, mirrors, and dash cam (USB-C lead packed)",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Check overnight plan: boondocking / rest areas / Walmart are fine; do not arrive in a forest after dark unless you scoped it in daylight",
           "qty": "",
           "done": false
         },
