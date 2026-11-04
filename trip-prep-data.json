@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:15:21.921Z",
+  "updated": "2026-11-04T14:16:21.183Z",
   "stores": [
     {
       "store": "Pre-trip",
       "items": [
         {
-          "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Battery jumpstart kit",
           "qty": "",
           "done": false,
           "fresh": true
+        },
+        {
+          "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
+          "qty": "",
+          "done": false
         },
         {
           "name": "Charge / check the lithium house bank — 920 Ah; note voltage (13.3V is about 70%, 13.1V is about 20%)",
@@ -260,6 +260,12 @@
         },
         {
           "name": "Ice packs",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Empty home fridge of anything that will spoil while you are away",
           "qty": "",
           "done": false,
           "fresh": true
