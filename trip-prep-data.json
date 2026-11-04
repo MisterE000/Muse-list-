@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:17:32.274Z",
+  "updated": "2026-11-04T15:13:43.103Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -76,6 +76,12 @@
         },
         {
           "name": "Washer fluid filled",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Tools: grill scraper",
           "qty": "",
           "done": false,
           "fresh": true
