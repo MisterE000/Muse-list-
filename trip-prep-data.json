@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:20:16.610Z",
+  "updated": "2026-11-04T13:27:41.859Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -118,12 +118,12 @@
           "done": false
         },
         {
-          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
+          "name": "Kitchen basics checked: propane / stove, pans, utensils, paper towels, trash bags, dish soap",
           "qty": "",
           "done": false
         },
         {
-          "name": "Kitchen basics checked: propane / stove, pans, utensils, paper towels, trash bags, dish soap",
+          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
         },
