@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:08:38.762Z",
+  "updated": "2026-11-04T14:09:04.787Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -496,12 +496,6 @@
           "fresh": true
         },
         {
-          "name": "Inside: House fan off/closed",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
           "qty": "",
           "done": false,
@@ -515,11 +509,6 @@
         },
         {
           "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Inside: House fan off/closed",
           "qty": "",
           "done": false
         },
