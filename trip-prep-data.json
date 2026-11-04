@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:16:50.348Z",
+  "updated": "2026-11-04T14:17:29.077Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -262,6 +262,12 @@
         },
         {
           "name": "fitted ↑ ↓ ✕  Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
           "qty": "",
           "done": false,
           "fresh": true
