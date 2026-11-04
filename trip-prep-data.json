@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:07:04.868Z",
+  "updated": "2026-11-04T13:07:11.156Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -22,11 +22,6 @@
         },
         {
           "name": "Check lights, brakes, wipers, mirrors, and dash cam (USB-C lead packed)",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Confirm dates, destination, and any launch / event dates — and note that SpaceX dates often slip",
           "qty": "",
           "done": false
         },
