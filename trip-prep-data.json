@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:32:23.563Z",
+  "updated": "2026-11-04T13:32:26.636Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -315,6 +315,11 @@
           "done": false
         },
         {
+          "name": "Food: Taco shells",
+          "qty": "",
+          "done": false
+        },
+        {
           "name": "Food: rice/quinoa",
           "qty": "",
           "done": false
@@ -326,11 +331,6 @@
         },
         {
           "name": "First stop and tonight's stop entered in navigation — before you roll",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: Taco shells",
           "qty": "",
           "done": false
         },
