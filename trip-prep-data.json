@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:10:50.664Z",
+  "updated": "2026-11-04T14:11:06.588Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -638,6 +638,12 @@
         },
         {
           "name": "Drain hot and cold lines",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Turn off refrigerator",
           "qty": "",
           "done": false,
           "fresh": true
