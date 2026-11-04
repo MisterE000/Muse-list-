@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:13:08.322Z",
+  "updated": "2026-11-04T14:13:10.933Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -437,12 +437,6 @@
           "fresh": true
         },
         {
-          "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "First stop and tonight's stop entered in navigation — before you roll",
           "qty": "",
           "done": false,
@@ -450,6 +444,12 @@
         },
         {
           "name": "Final check inside the house, then lock up",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
           "qty": "",
           "done": false,
           "fresh": true
