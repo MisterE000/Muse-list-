@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:10:32.736Z",
+  "updated": "2026-11-04T14:10:50.664Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -632,6 +632,12 @@
         },
         {
           "name": "Blow out lines",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Drain hot and cold lines",
           "qty": "",
           "done": false,
           "fresh": true
