@@ -83,77 +83,7 @@
           "done": false
         },
         {
-          "name": "Clothes: backpack",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: Coffee / cup / filter",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: long sleeve/ jacket",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: night clothes. good shoes",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: pants. shorts. swim suit",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: Slippers",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: socks underwear",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: spacex shirt",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Clothing for heat, cool nights, and rain; hats, sunscreen, and bug spray",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: 6tb drive",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: flash drive",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: Headphones - 1/8\" jack",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: laptops",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: mouse",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: Passport",
           "qty": "",
           "done": false
         },
@@ -183,31 +113,6 @@
           "done": false
         },
         {
-          "name": "Food: Corned beef hash",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: Mashed potatoes",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: Popcorn",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: rice/quinoa",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: Taco shells",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
           "qty": "",
           "done": false
@@ -229,66 +134,6 @@
         },
         {
           "name": "Mrs.E work setup checked if traveling on a workday (Mon–Fri) — laptop, charger, and Starlink signal",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: battery charger",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: Clean vents",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: coffee cup",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: frying pan",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: ice cube trays",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: mace",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: Pot to boil",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: Sharpie",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: silverwear",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: spatula",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: Sunglasses",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: tongs",
           "qty": "",
           "done": false
         },
@@ -510,6 +355,161 @@
         },
         {
           "name": "Turn off outside water spigot",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: backpack",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: Coffee / cup / filter",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: long sleeve/ jacket",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: night clothes. good shoes",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: pants. shorts. swim suit",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: Slippers",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: socks underwear",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: spacex shirt",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: 6tb drive",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: flash drive",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: Headphones - 1/8\" jack",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: laptops",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: mouse",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: Passport",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: Corned beef hash",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: Mashed potatoes",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: Popcorn",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: rice/quinoa",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: Taco shells",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: battery charger",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: Clean vents",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: coffee cup",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: frying pan",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: ice cube trays",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: mace",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: Pot to boil",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: Sharpie",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: silverwear",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: spatula",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: Sunglasses",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: tongs",
           "qty": "",
           "done": false
         }
