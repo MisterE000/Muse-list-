@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:08:54.892Z",
+  "updated": "2026-11-04T13:09:20.024Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -27,16 +27,6 @@
         },
         {
           "name": "Fuel up, and check propane level",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Mark dump + fresh-water stops every 3rd or 4th day along the route",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Mark Twice The Ice locations spaced 3–4 days apart for drinking water and ice",
           "qty": "",
           "done": false
         },
