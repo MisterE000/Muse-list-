@@ -52,7 +52,7 @@
 <h1>RV Trip Preparation — Shared</h1>
 <p class="sub">Mr.E and Mrs.E • Witherwings trip checklists, shared — check things off as you get ready, and both phones see the same thing.</p>
 <div class="sync"><span id="syncStatus">Loading the trip list…</span><button id="connectBtn" type="button" style="display:none">Connect this phone</button><button id="disconnectBtn" type="button" class="plain" style="display:none">Disconnect</button></div>
-<div class="trial"><strong>Shared checklists:</strong> work through each section and check items off as they are done — checked items drop to the bottom of their section and the list re-sorts alphabetically. Use ↑ ↓ to nudge an item, ✕ to remove it, and the boxes under each section to add new items. <strong>New items show in green at the top of their section</strong> until you press that section’s <em>Reset list</em> button — after a trip, reset un-checks everything for next time and folds the green items into the list in normal color. Every change saves to the shared list. This page uses the same phone connection as the grocery list, so a phone already connected there is connected here too.</div>
+<div class="trial"><strong>Shared checklists:</strong> work through each section and check items off as they are done — checked items drop to the bottom of their section. Items stay in the order you put them (no alphabetical sorting). Use ↑ ↓ to nudge an item, ✕ to remove it, and the boxes under each section to add new items. <strong>New items show in green at the top of their section</strong> until you press that section’s <em>Reset list</em> button — after a trip, reset un-checks everything for next time and folds the green items into the list in normal color. Every change saves to the shared list. This page uses the same phone connection as the grocery list, so a phone already connected there is connected here too.</div>
 
 <div id="stores"></div>
 
@@ -60,7 +60,7 @@
 <ul>
   <li>→ Sections start in trip order: Pre-trip → Preparing → Day-of-departure → Walk-out → In-transit → After returning, plus Winterizing for the off-season.</li>
   <li>→ Rearrange sections as the trip unfolds: <strong>⤒</strong> beside a section title sends that section straight to the top (Preparing while you pack, In-transit once you are rolling), and ↑ ↓ nudge it one step. The order is shared, so both phones show the same arrangement.</li>
-  <li>→ Check the box when an item is done — it moves to the bottom of its section and the list re-sorts A–Z.</li>
+  <li>→ Check the box when an item is done — it moves to the bottom of its section. Nothing sorts alphabetically: items stay in the order you arrange them.</li>
   <li>→ ↑ and ↓ move an item one step; ✕ removes an item. The add boxes under each section add new items.</li>
   <li>→ Newly added items are <strong>green and at the top</strong> of their section, so fresh additions stand out.</li>
   <li>→ When a section is finished with (or the trip is over), press its <strong>Reset list</strong> button: everything un-checks ready for next time, and the green items turn normal color and take their normal place in the list.</li>
@@ -726,11 +726,13 @@ function cmpName(a, b) {
 }
 
 /* New items (added since the last reset) sit green at the top; other open
-   items follow; checked items sink to the bottom. Each group sorted A-Z. */
+   items follow; checked items sink to the bottom. Within each group the
+   items keep their stored order — NO alphabetical sorting, so the up/down
+   arrows set a manual order that stays put (Gary's call, Nov 4, 2026). */
 function arrange(items) {
-  var fresh = items.filter(function (i) { return i.fresh && !i.done; }).sort(cmpName);
-  var open = items.filter(function (i) { return !i.fresh && !i.done; }).sort(cmpName);
-  var done = items.filter(function (i) { return i.done; }).sort(cmpName);
+  var fresh = items.filter(function (i) { return i.fresh && !i.done; });
+  var open = items.filter(function (i) { return !i.fresh && !i.done; });
+  var done = items.filter(function (i) { return i.done; });
   return fresh.concat(open).concat(done);
 }
 
