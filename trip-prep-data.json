@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:07:17.561Z",
+  "updated": "2026-11-04T14:07:34.563Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -548,12 +548,12 @@
           "done": false
         },
         {
-          "name": "Outside: Sewer line holder closed",
+          "name": "Outside: Sewer valve cap on",
           "qty": "",
           "done": false
         },
         {
-          "name": "Outside: Sewer valve cap on",
+          "name": "Outside: Sewer line holder closed",
           "qty": "",
           "done": false
         },
