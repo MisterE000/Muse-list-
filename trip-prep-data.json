@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:55:54.846Z",
+  "updated": "2026-11-04T13:55:57.831Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -335,22 +335,22 @@
           "done": false
         },
         {
-          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Inside: House fan off/closed",
           "qty": "",
           "done": false
         },
         {
-          "name": "First stop and tonight's stop entered in navigation — before you roll",
+          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
           "qty": "",
           "done": false
         },
         {
           "name": "Inside: ice packs",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "First stop and tonight's stop entered in navigation — before you roll",
           "qty": "",
           "done": false
         },
