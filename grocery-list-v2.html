@@ -26,6 +26,13 @@
   .btns button { font-size: 1em; line-height: 1; padding: 6px 10px; border: 1px solid #ccc; background: #f7f7f7; border-radius: 6px; cursor: pointer; }
   .btns button:active { background: #e8e8e8; }
   .btns button:disabled { opacity: 0.3; cursor: default; }
+  .storehead { display: flex; align-items: baseline; gap: 12px; border-bottom: 2px solid #2a7ae2; margin-top: 28px; }
+  .storehead h2 { border-bottom: none; margin: 0; padding-bottom: 4px; flex: 1; }
+  .resetbtn { font-size: 0.9em; padding: 6px 12px; border: 1px solid #b3541e; background: #fdf3ec; color: #8a3c10; border-radius: 6px; cursor: pointer; flex: none; }
+  .resetbtn:active { background: #f7e2d2; }
+  li.item.fresh { background: #e9f9ec; }
+  li.item.fresh .name { color: #137a2e; font-weight: 600; }
+  li.item.fresh.done .name { color: #7fae87; }
   .addrow { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
   .addrow input { font-size: 1em; padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
   .addrow input.new-name { flex: 2; min-width: 140px; }
@@ -41,7 +48,7 @@
 <h1>Grocery List — Shared</h1>
 <p class="sub">Mr.E and Mrs.E • The movable list, now shared — changes save to the shared list so both phones see the same thing.</p>
 <div class="sync"><span id="syncStatus">Loading the shared list…</span><button id="connectBtn" type="button" style="display:none">Connect this phone</button><button id="disconnectBtn" type="button" class="plain" style="display:none">Disconnect</button></div>
-<div class="trial"><strong>Shared version:</strong> check an item and it drops to the bottom of its store list, and the list re-sorts alphabetically. Use ↑ ↓ to nudge an item, ✕ to remove it, and the boxes under each store to add new items. Every change saves to the shared list. First time on a phone, tap <em>Connect this phone</em> and paste that phone's list token once — it is stored only on that phone, never in this page.</div>
+<div class="trial"><strong>Shared version:</strong> check an item and it drops to the bottom of its store list, and the list re-sorts alphabetically. Use ↑ ↓ to nudge an item, ✕ to remove it, and the boxes under each store to add new items. <strong>New items show in green at the top of their store</strong> until you press that store's <em>Reset list</em> button after shopping — reset un-checks everything for next time and folds the green items into the list in normal color. Every change saves to the shared list. First time on a phone, tap <em>Connect this phone</em> and paste that phone's list token once — it is stored only on that phone, never in this page.</div>
 
 <div id="stores"></div>
 
@@ -50,10 +57,12 @@
   <li>→ Check the box when an item is bought — it moves to the bottom and the list re-sorts A–Z.</li>
   <li>→ ↑ and ↓ move an item one step; that order holds until the next check or uncheck re-sorts the list.</li>
   <li>→ ✕ removes an item. The add boxes under each store add new items.</li>
+  <li>→ Newly added items are <strong>green and at the top</strong> of their store, so fresh additions stand out.</li>
+  <li>→ After a shopping trip, press the store's <strong>Reset list</strong> button: everything un-checks ready for next time, and the green items turn normal color and take their normal place in the list.</li>
   <li>→ Changes save to the shared list within a few seconds. Reopen or return to the page to pick up changes from the other phone.</li>
 </ul>
 
-<p class="updated">Shared list data lives with the shared lists site (grocery-data.json). The original static list is still at <a href="grocery-list.html">grocery-list.html</a>. Page updated October 31, 2026.</p>
+<p class="updated">Shared list data lives with the shared lists site (grocery-data.json). The original static list is still at <a href="grocery-list.html">grocery-list.html</a>. Page updated November 4, 2026 (per-store Reset buttons + green new items).</p>
 
 <script>
 "use strict";
@@ -111,11 +120,13 @@ function cmpName(a, b) {
   return a.name.localeCompare(b.name, "en", { sensitivity: "base", numeric: true });
 }
 
-/* Checked items sink to the bottom; each group is sorted A-Z. */
+/* New items (added since the last reset) sit green at the top; other open
+   items follow; checked items sink to the bottom. Each group sorted A-Z. */
 function arrange(items) {
-  var open = items.filter(function (i) { return !i.done; }).sort(cmpName);
+  var fresh = items.filter(function (i) { return i.fresh && !i.done; }).sort(cmpName);
+  var open = items.filter(function (i) { return !i.fresh && !i.done; }).sort(cmpName);
   var done = items.filter(function (i) { return i.done; }).sort(cmpName);
-  return open.concat(done);
+  return fresh.concat(open).concat(done);
 }
 
 function b64encode(str) { return btoa(unescape(encodeURIComponent(str))); }
@@ -223,10 +234,17 @@ function applyOp(data, op) {
     item = findItem(section, op.name);
     if (item) {
       item.done = false;
+      item.fresh = true;
       if (op.qty) item.qty = op.qty;
     } else {
-      section.items.push({ name: op.name, qty: op.qty || "", done: false });
+      section.items.push({ name: op.name, qty: op.qty || "", done: false, fresh: true });
     }
+    section.items = arrange(section.items);
+  } else if (op.type === "reset") {
+    /* After a shopping trip: un-check everything so the list is ready for
+       next time, and fold the green new items into the list in normal
+       color and normal (alphabetical) position. */
+    section.items.forEach(function (i) { i.done = false; i.fresh = false; });
     section.items = arrange(section.items);
   } else if (op.type === "remove") {
     var want = String(op.name).toLowerCase();
@@ -381,9 +399,24 @@ function render() {
   var host = document.getElementById("stores");
   host.innerHTML = "";
   stores.forEach(function (section) {
+    var head = document.createElement("div");
+    head.className = "storehead";
     var h = document.createElement("h2");
     h.textContent = section.store;
-    host.appendChild(h);
+    head.appendChild(h);
+    var resetBtn = document.createElement("button");
+    resetBtn.type = "button";
+    resetBtn.className = "resetbtn";
+    resetBtn.textContent = "Reset list";
+    resetBtn.title = "After shopping: un-check everything and fold the green new items into the list";
+    resetBtn.setAttribute("aria-label", "Reset list for " + section.store);
+    resetBtn.addEventListener("click", function () {
+      if (confirm("Reset " + section.store + " for next time?\n\nThis un-checks everything in this store and folds the green new items into the list in normal color.")) {
+        mutate({ type: "reset", store: section.store });
+      }
+    });
+    head.appendChild(resetBtn);
+    host.appendChild(head);
 
     if (section.note) {
       var n = document.createElement("div");
@@ -401,7 +434,7 @@ function render() {
     }
     section.items.forEach(function (item, ii) {
       var li = document.createElement("li");
-      li.className = "item" + (item.done ? " done" : "");
+      li.className = "item" + (item.done ? " done" : "") + (item.fresh ? " fresh" : "");
 
       var cb = document.createElement("input");
       cb.type = "checkbox";
