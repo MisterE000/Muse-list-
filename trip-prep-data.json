@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:13:39.409Z",
+  "updated": "2026-11-04T14:13:41.965Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -449,6 +449,11 @@
           "fresh": true
         },
         {
+          "name": "turn off house water spigot",
+          "qty": "",
+          "done": false
+        },
+        {
           "name": "Final check inside the house, then lock up",
           "qty": "",
           "done": false,
@@ -456,11 +461,6 @@
         },
         {
           "name": "glasses",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "turn off house water spigot",
           "qty": "",
           "done": false
         },
