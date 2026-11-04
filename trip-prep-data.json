@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:17:29.077Z",
+  "updated": "2026-11-04T14:17:32.274Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -256,12 +256,6 @@
         },
         {
           "name": "Empty home fridge of anything that will spoil while you are away",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "fitted ↑ ↓ ✕  Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
           "qty": "",
           "done": false,
           "fresh": true
