@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:35:02.496Z",
+  "updated": "2026-11-04T13:35:20.005Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -583,6 +583,12 @@
       "items": [
         {
           "name": "If overnight lows will be over 80°F, plan a campground for those nights; if a heavy storm is forecast, plan a Walmart stop for Wi-Fi",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Inside: Bathroom fan off/closed",
           "qty": "",
           "done": false,
           "fresh": true
