@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:36:16.624Z",
+  "updated": "2026-11-04T13:36:20.013Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -325,6 +325,11 @@
           "done": false
         },
         {
+          "name": "Inside: Gallon water",
+          "qty": "",
+          "done": false
+        },
+        {
           "name": "Food: rice/quinoa",
           "qty": "",
           "done": false
@@ -336,11 +341,6 @@
         },
         {
           "name": "First stop and tonight's stop entered in navigation — before you roll",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Inside: Gallon water",
           "qty": "",
           "done": false
         },
