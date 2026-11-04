@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:28:49.345Z",
+  "updated": "2026-11-04T13:28:57.837Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -173,12 +173,12 @@
           "done": false
         },
         {
-          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
+          "name": "Toiletries, towels, bedding, and laundry bag",
           "qty": "",
           "done": false
         },
         {
-          "name": "Toiletries, towels, bedding, and laundry bag",
+          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
         },
