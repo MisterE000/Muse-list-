@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:06:02.374Z",
+  "updated": "2026-11-04T14:06:16.192Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -505,11 +505,6 @@
           "qty": "",
           "done": false,
           "fresh": true
-        },
-        {
-          "name": "Inside: Gallon water",
-          "qty": "",
-          "done": false
         },
         {
           "name": "Inside: Ice trays",
