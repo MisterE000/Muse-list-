@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:19:05.849Z",
+  "updated": "2026-11-04T13:19:09.351Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -495,11 +495,6 @@
         },
         {
           "name": "Packing: tongs",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
           "qty": "",
           "done": false
         },
