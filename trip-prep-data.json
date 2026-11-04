@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:31:27.041Z",
+  "updated": "2026-11-04T13:31:31.281Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -285,12 +285,12 @@
           "done": false
         },
         {
-          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
+          "name": "Computer: Headphones - 1/8\" jack",
           "qty": "",
           "done": false
         },
         {
-          "name": "Computer: Headphones - 1/8\" jack",
+          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
           "qty": "",
           "done": false
         },
