@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:19:40.777Z",
+  "updated": "2026-11-04T13:19:55.525Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -522,6 +522,12 @@
         },
         {
           "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Refrigerator latched, loose items stowed, cupboards latched",
           "qty": "",
           "done": false,
           "fresh": true
