@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:19:55.525Z",
+  "updated": "2026-11-04T13:20:16.610Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -224,6 +224,12 @@
       "items": [
         {
           "name": "Hold / pause mail and deliveries, and tell anyone who needs to know you will be away",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Passports",
           "qty": "",
           "done": false,
           "fresh": true
