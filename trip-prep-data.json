@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:56:02.846Z",
+  "updated": "2026-11-04T13:56:05.711Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -335,12 +335,12 @@
           "done": false
         },
         {
-          "name": "Inside: House fan off/closed",
+          "name": "Inside: ice packs",
           "qty": "",
           "done": false
         },
         {
-          "name": "Inside: ice packs",
+          "name": "Inside: House fan off/closed",
           "qty": "",
           "done": false
         },
