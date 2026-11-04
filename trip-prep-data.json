@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:03:55.959Z",
+  "updated": "2026-11-04T13:04:21.421Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -85,6 +85,12 @@
     {
       "store": "Preparing",
       "items": [
+        {
+          "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
           "qty": "",
