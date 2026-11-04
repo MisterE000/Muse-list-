@@ -30,6 +30,10 @@
   .storehead h2 { border-bottom: none; margin: 0; padding-bottom: 4px; flex: 1; }
   .resetbtn { font-size: 0.9em; padding: 6px 12px; border: 1px solid #b3541e; background: #fdf3ec; color: #8a3c10; border-radius: 6px; cursor: pointer; flex: none; }
   .resetbtn:active { background: #f7e2d2; }
+  .secbtns { display: flex; gap: 4px; flex: none; }
+  .secbtns button { font-size: 0.95em; line-height: 1; padding: 6px 9px; border: 1px solid #ccc; background: #f7f7f7; border-radius: 6px; cursor: pointer; }
+  .secbtns button:active { background: #e8e8e8; }
+  .secbtns button:disabled { opacity: 0.3; cursor: default; }
   li.item.fresh { background: #e9f9ec; }
   li.item.fresh .name { color: #137a2e; font-weight: 600; }
   li.item.fresh.done .name { color: #7fae87; }
@@ -54,7 +58,8 @@
 
 <h2>How this list works</h2>
 <ul>
-  <li>→ Sections run in trip order: Pre-trip → Preparing → Day-of-departure → Walk-out → In-transit → After returning, plus Winterizing for the off-season.</li>
+  <li>→ Sections start in trip order: Pre-trip → Preparing → Day-of-departure → Walk-out → In-transit → After returning, plus Winterizing for the off-season.</li>
+  <li>→ Rearrange sections as the trip unfolds: <strong>⤒</strong> beside a section title sends that section straight to the top (Preparing while you pack, In-transit once you are rolling), and ↑ ↓ nudge it one step. The order is shared, so both phones show the same arrangement.</li>
   <li>→ Check the box when an item is done — it moves to the bottom of its section and the list re-sorts A–Z.</li>
   <li>→ ↑ and ↓ move an item one step; ✕ removes an item. The add boxes under each section add new items.</li>
   <li>→ Newly added items are <strong>green and at the top</strong> of their section, so fresh additions stand out.</li>
@@ -895,8 +900,34 @@ function statusError(err) {
   setStatus("⚠ Couldn't save (" + why + "). Changes are kept on this phone and will retry — reopen the page when you're back online.");
 }
 
+/* Move a whole section: to the top, or one step up/down. Section order is
+   part of the shared data, so both phones keep the same arrangement. */
+function applySectionMove(data, op) {
+  var idx = -1;
+  for (var i = 0; i < data.length; i++) {
+    if (data[i].store === op.store) { idx = i; break; }
+  }
+  if (idx < 0) return;
+  var sec = data[idx];
+  if (op.dir === "top") {
+    if (idx === 0) return;
+    data.splice(idx, 1);
+    data.unshift(sec);
+  } else {
+    var j = idx + (op.dir || 0);
+    if (j < 0 || j >= data.length) return;
+    data[idx] = data[j];
+    data[j] = sec;
+  }
+}
+
+function applyAny(data, op) {
+  if (op.type === "sectionmove") applySectionMove(data, op);
+  else applyOp(data, op);
+}
+
 function mutate(op) {
-  applyOp(stores, op);
+  applyAny(stores, op);
   pendingOps.push(op);
   cacheSave();
   render();
@@ -928,7 +959,7 @@ function syncNow() {
     var batch = pendingOps.slice();
     ghGet().then(function (remote) {
       var before = JSON.stringify(remote.stores);
-      batch.forEach(function (op) { applyOp(remote.stores, op); });
+      batch.forEach(function (op) { applyAny(remote.stores, op); });
       var after = JSON.stringify(remote.stores);
       stores = remote.stores;
       if (before === after) {
@@ -998,12 +1029,44 @@ window.addEventListener("online", function () { scheduleSync(); refreshFromRemot
 function render() {
   var host = document.getElementById("stores");
   host.innerHTML = "";
-  stores.forEach(function (section) {
+  stores.forEach(function (section, si) {
     var head = document.createElement("div");
     head.className = "storehead";
     var h = document.createElement("h2");
     h.textContent = section.store;
     head.appendChild(h);
+
+    var secBtns = document.createElement("span");
+    secBtns.className = "secbtns";
+
+    var toTop = document.createElement("button");
+    toTop.type = "button"; toTop.textContent = "⤒"; toTop.title = "Move section to the top";
+    toTop.setAttribute("aria-label", "Move section to top: " + section.store);
+    toTop.disabled = (si === 0);
+    toTop.addEventListener("click", function () {
+      mutate({ type: "sectionmove", store: section.store, dir: "top" });
+    });
+    secBtns.appendChild(toTop);
+
+    var sUp = document.createElement("button");
+    sUp.type = "button"; sUp.textContent = "↑"; sUp.title = "Move section up";
+    sUp.setAttribute("aria-label", "Move section up: " + section.store);
+    sUp.disabled = (si === 0);
+    sUp.addEventListener("click", function () {
+      mutate({ type: "sectionmove", store: section.store, dir: -1 });
+    });
+    secBtns.appendChild(sUp);
+
+    var sDn = document.createElement("button");
+    sDn.type = "button"; sDn.textContent = "↓"; sDn.title = "Move section down";
+    sDn.setAttribute("aria-label", "Move section down: " + section.store);
+    sDn.disabled = (si === stores.length - 1);
+    sDn.addEventListener("click", function () {
+      mutate({ type: "sectionmove", store: section.store, dir: 1 });
+    });
+    secBtns.appendChild(sDn);
+
+    head.appendChild(secBtns);
     var resetBtn = document.createElement("button");
     resetBtn.type = "button";
     resetBtn.className = "resetbtn";
