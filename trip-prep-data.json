@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:56:21.158Z",
+  "updated": "2026-11-04T13:56:23.836Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -345,12 +345,12 @@
           "done": false
         },
         {
-          "name": "Inside: House fan off/closed",
+          "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
           "qty": "",
           "done": false
         },
         {
-          "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
+          "name": "Inside: House fan off/closed",
           "qty": "",
           "done": false
         },
