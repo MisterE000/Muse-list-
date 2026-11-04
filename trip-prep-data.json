@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:28:43.284Z",
+  "updated": "2026-11-04T13:28:46.659Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -133,17 +133,17 @@
           "done": false
         },
         {
+          "name": "Stock coffee and morning supplies — coffee first thing is part of the routine",
+          "qty": "",
+          "done": false
+        },
+        {
           "name": "Phone list updated: family, campground, and emergency contacts",
           "qty": "",
           "done": false
         },
         {
           "name": "Plants / pets / deck / anything a neighbor or family member is watching — handed off with a note",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Stock coffee and morning supplies — coffee first thing is part of the routine",
           "qty": "",
           "done": false
         },
