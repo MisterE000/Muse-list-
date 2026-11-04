@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:31:05.028Z",
+  "updated": "2026-11-04T13:31:07.508Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -245,12 +245,12 @@
           "done": false
         },
         {
-          "name": "Clothes: long sleeve/ jacket",
+          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
           "qty": "",
           "done": false
         },
         {
-          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
+          "name": "Clothes: long sleeve/ jacket",
           "qty": "",
           "done": false
         },
