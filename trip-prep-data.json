@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:29:18.733Z",
+  "updated": "2026-11-04T13:29:21.212Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -203,12 +203,12 @@
           "done": false
         },
         {
-          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
+          "name": "Trip journal — and a pen — packed where you will actually use it",
           "qty": "",
           "done": false
         },
         {
-          "name": "Trip journal — and a pen — packed where you will actually use it",
+          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
         },
