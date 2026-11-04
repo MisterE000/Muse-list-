@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:30:31.440Z",
+  "updated": "2026-11-04T13:30:34.292Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -143,12 +143,12 @@
           "done": false
         },
         {
-          "name": "Phone list updated: family, campground, and emergency contacts",
+          "name": "Remember: we do not drink the RV water — stock bottled water and plan Twice The Ice stops",
           "qty": "",
           "done": false
         },
         {
-          "name": "Remember: we do not drink the RV water — stock bottled water and plan Twice The Ice stops",
+          "name": "Phone list updated: family, campground, and emergency contacts",
           "qty": "",
           "done": false
         },
