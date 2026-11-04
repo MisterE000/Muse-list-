@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:03:17.321Z",
+  "updated": "2026-11-04T13:03:55.959Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -61,11 +61,6 @@
           "done": false
         },
         {
-          "name": "Oil change if due — Witherwings (E350, 7.3L V8): 5W-30, 9 qt, filter Mobil M1-210. For a launch trip, finish it at least 3 days before the actual launch date",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Sketch the route: highways if a launch is imminent, non-highways preferred when it is not",
           "qty": "",
           "done": false
@@ -79,6 +74,11 @@
           "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Oil change if due — Witherwings (E350, 7.3L V8): 5W-30, 9 qt, filter Mobil M1-210. For a launch trip, finish it at least 3 days before the actual launch date",
+          "qty": "",
+          "done": true
         }
       ]
     },
