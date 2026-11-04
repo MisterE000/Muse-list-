@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:13:33.595Z",
+  "updated": "2026-11-04T14:13:36.448Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -465,12 +465,12 @@
           "done": false
         },
         {
-          "name": "Lead acid battery connect",
+          "name": "turn off house water spigot",
           "qty": "",
           "done": false
         },
         {
-          "name": "turn off house water spigot",
+          "name": "Lead acid battery connect",
           "qty": "",
           "done": false
         },
