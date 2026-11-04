@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:56:23.836Z",
+  "updated": "2026-11-04T13:56:26.592Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -340,12 +340,12 @@
           "done": false
         },
         {
-          "name": "Inside: Bathroom door shut",
+          "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
           "qty": "",
           "done": false
         },
         {
-          "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
+          "name": "Inside: Bathroom door shut",
           "qty": "",
           "done": false
         },
