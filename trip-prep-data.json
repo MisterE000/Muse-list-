@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:06:19.184Z",
+  "updated": "2026-11-04T13:06:44.717Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -85,6 +85,12 @@
     {
       "store": "Preparing",
       "items": [
+        {
+          "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
           "qty": "",
