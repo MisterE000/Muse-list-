@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:29:07.665Z",
+  "updated": "2026-11-04T13:29:10.542Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -193,12 +193,12 @@
           "done": false
         },
         {
-          "name": "Tools: hotdog sticks",
+          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
         },
         {
-          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
+          "name": "Tools: hotdog sticks",
           "qty": "",
           "done": false
         },
