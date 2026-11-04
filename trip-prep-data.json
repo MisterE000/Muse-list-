@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:12:51.601Z",
+  "updated": "2026-11-04T14:12:58.527Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -437,13 +437,13 @@
           "fresh": true
         },
         {
-          "name": "First stop and tonight's stop entered in navigation — before you roll",
+          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
           "qty": "",
           "done": false,
           "fresh": true
         },
         {
-          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
+          "name": "First stop and tonight's stop entered in navigation — before you roll",
           "qty": "",
           "done": false,
           "fresh": true
