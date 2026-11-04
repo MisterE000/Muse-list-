@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:57:52.928Z",
+  "updated": "2026-11-04T13:58:38.268Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -382,11 +382,6 @@
         },
         {
           "name": "Outside: Both sewer valves closed",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Outside: Dump & fill",
           "qty": "",
           "done": false
         },
