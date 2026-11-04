@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:56:05.711Z",
+  "updated": "2026-11-04T13:56:08.594Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -330,12 +330,12 @@
           "done": false
         },
         {
-          "name": "Inside: Bathroom door shut",
+          "name": "Inside: ice packs",
           "qty": "",
           "done": false
         },
         {
-          "name": "Inside: ice packs",
+          "name": "Inside: Bathroom door shut",
           "qty": "",
           "done": false
         },
