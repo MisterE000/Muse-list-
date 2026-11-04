@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:58:38.268Z",
+  "updated": "2026-11-04T14:05:10.159Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -477,6 +477,30 @@
       "store": "Before driving",
       "items": [
         {
+          "name": "Inside: Bathroom door shut",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Inside: Bathroom fan off/closed",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Inside: House fan off/closed",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
           "name": "Inside: Gallon water",
           "qty": "",
           "done": false
@@ -560,24 +584,6 @@
           "name": "Outside: Washer fluid",
           "qty": "",
           "done": false
-        },
-        {
-          "name": "Inside: Bathroom door shut",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Inside: Bathroom fan off/closed",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Inside: House fan off/closed",
-          "qty": "",
-          "done": false,
-          "fresh": true
         }
       ]
     },
