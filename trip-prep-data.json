@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:28:09.709Z",
+  "updated": "2026-11-04T13:28:20.369Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -153,12 +153,12 @@
           "done": false
         },
         {
-          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
+          "name": "Shoes for walking, camp, and wet ground",
           "qty": "",
           "done": false
         },
         {
-          "name": "Shoes for walking, camp, and wet ground",
+          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
         },
