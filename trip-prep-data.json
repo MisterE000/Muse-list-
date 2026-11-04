@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:32:01.037Z",
+  "updated": "2026-11-04T13:32:06.352Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -320,12 +320,12 @@
           "done": false
         },
         {
-          "name": "First stop and tonight's stop entered in navigation — before you roll",
+          "name": "Food: Popcorn",
           "qty": "",
           "done": false
         },
         {
-          "name": "Food: Popcorn",
+          "name": "First stop and tonight's stop entered in navigation — before you roll",
           "qty": "",
           "done": false
         },
