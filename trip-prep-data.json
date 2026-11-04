@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:12:58.527Z",
+  "updated": "2026-11-04T14:13:01.731Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -419,6 +419,12 @@
       "store": "Walk-out",
       "items": [
         {
+          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
           "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
           "qty": "",
           "done": false,
@@ -432,12 +438,6 @@
         },
         {
           "name": "Refrigerator latched, loose items stowed, cupboards latched",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
           "qty": "",
           "done": false,
           "fresh": true
