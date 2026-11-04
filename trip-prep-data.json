@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:02:56.045Z",
+  "updated": "2026-11-04T13:03:17.321Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -27,11 +27,6 @@
         },
         {
           "name": "Check overnight plan: boondocking / rest areas / Walmart are fine; do not arrive in a forest after dark unless you scoped it in daylight",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
           "qty": "",
           "done": false
         },
