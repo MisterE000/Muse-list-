@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:27:41.859Z",
+  "updated": "2026-11-04T13:27:44.421Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -123,12 +123,12 @@
           "done": false
         },
         {
-          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
+          "name": "Medications, glasses, and first-aid kit packed",
           "qty": "",
           "done": false
         },
         {
-          "name": "Medications, glasses, and first-aid kit packed",
+          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
         },
