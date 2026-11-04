@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T12:40:26.448Z",
+  "updated": "2026-11-04T12:40:35.075Z",
   "stores": [
     {
       "items": [
@@ -36,92 +36,110 @@
         {
           "name": "Braats",
           "qty": "",
-          "done": true
+          "done": false,
+          "fresh": false
         },
         {
-          "done": true,
+          "done": false,
           "name": "Bread",
-          "qty": ""
+          "qty": "",
+          "fresh": false
         },
         {
           "name": "Butter",
           "qty": "",
-          "done": true
+          "done": false,
+          "fresh": false
         },
         {
-          "done": true,
+          "done": false,
           "name": "Coffee filters",
-          "qty": ""
+          "qty": "",
+          "fresh": false
         },
         {
-          "done": true,
+          "done": false,
           "name": "Corned beef hash",
-          "qty": "1 can"
+          "qty": "1 can",
+          "fresh": false
         },
         {
-          "done": true,
+          "done": false,
           "name": "Eggs",
-          "qty": ""
+          "qty": "",
+          "fresh": false
         },
         {
-          "done": true,
+          "done": false,
           "name": "Jelly",
-          "qty": ""
+          "qty": "",
+          "fresh": false
         },
         {
-          "done": true,
+          "done": false,
           "name": "Milk 2%",
-          "qty": "1 gallon"
+          "qty": "1 gallon",
+          "fresh": false
         },
         {
-          "done": true,
+          "done": false,
           "name": "Mozzarella",
-          "qty": ""
+          "qty": "",
+          "fresh": false
         },
         {
-          "done": true,
+          "done": false,
           "name": "Pizza crusts",
-          "qty": ""
+          "qty": "",
+          "fresh": false
         },
         {
-          "done": true,
+          "done": false,
           "name": "Pizza sauce",
-          "qty": ""
+          "qty": "",
+          "fresh": false
         },
         {
-          "done": true,
+          "done": false,
           "name": "Salad",
-          "qty": "1 bag"
+          "qty": "1 bag",
+          "fresh": false
         },
         {
           "name": "Snacks",
           "qty": "",
-          "done": true
+          "done": false,
+          "fresh": false
         },
         {
-          "done": true,
+          "done": false,
           "name": "Soy sauce",
-          "qty": ""
+          "qty": "",
+          "fresh": false
         },
         {
-          "done": true,
+          "done": false,
           "name": "Sweet onions",
-          "qty": ""
+          "qty": "",
+          "fresh": false
         },
         {
           "name": "Water bottles",
           "qty": "",
-          "done": true
+          "done": false,
+          "fresh": false
         },
         {
-          "done": true,
+          "done": false,
           "name": "White American cheese",
-          "qty": ""
+          "qty": "",
+          "fresh": false
         },
         {
           "name": "White vinegar",
           "qty": "",
-          "done": true
+          "done": false,
+          "fresh": false
         }
       ],
       "store": "Walmart"
