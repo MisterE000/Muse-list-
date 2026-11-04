@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:29:13.102Z",
+  "updated": "2026-11-04T13:29:15.956Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -193,12 +193,12 @@
           "done": false
         },
         {
-          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
+          "name": "Tools: Ratchet strap",
           "qty": "",
           "done": false
         },
         {
-          "name": "Tools: Ratchet strap",
+          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
         },
