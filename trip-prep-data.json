@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:09:22.682Z",
+  "updated": "2026-11-04T13:09:32.208Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -31,12 +31,12 @@
           "done": false
         },
         {
-          "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
+          "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
           "qty": "",
           "done": false
         },
         {
-          "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
+          "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
           "qty": "",
           "done": false
         },
