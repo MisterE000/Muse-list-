@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:06:16.192Z",
+  "updated": "2026-11-04T14:06:19.082Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -505,16 +505,6 @@
           "qty": "",
           "done": false,
           "fresh": true
-        },
-        {
-          "name": "Inside: Ice trays",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Inside: ice packs",
-          "qty": "",
-          "done": false
         },
         {
           "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
