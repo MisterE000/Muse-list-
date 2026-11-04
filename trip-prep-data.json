@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:08:11.536Z",
+  "updated": "2026-11-04T13:08:39.156Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -585,6 +585,12 @@
     {
       "store": "In-transit",
       "items": [
+        {
+          "name": "If overnight lows will be over 80°F, plan a campground for those nights; if a heavy storm is forecast, plan a Walmart stop for Wi-Fi",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "Check tires, lights, battery voltage, and anything rattling or leaking",
           "qty": "",
