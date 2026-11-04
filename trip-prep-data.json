@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:32:09.437Z",
+  "updated": "2026-11-04T13:32:12.191Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -310,12 +310,12 @@
           "done": false
         },
         {
-          "name": "Final check inside the house, then lock up",
+          "name": "Food: Popcorn",
           "qty": "",
           "done": false
         },
         {
-          "name": "Food: Popcorn",
+          "name": "Final check inside the house, then lock up",
           "qty": "",
           "done": false
         },
