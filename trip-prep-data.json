@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:19:09.351Z",
+  "updated": "2026-11-04T13:19:40.777Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -500,11 +500,6 @@
         },
         {
           "name": "Refrigerator latched, loose items stowed, cupboards latched",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Turn off outside water spigot",
           "qty": "",
           "done": false
         }
