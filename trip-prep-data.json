@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:13:13.713Z",
+  "updated": "2026-11-04T14:13:18.529Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -443,6 +443,12 @@
           "fresh": true
         },
         {
+          "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
           "name": "Final check inside the house, then lock up",
           "qty": "",
           "done": false,
@@ -452,12 +458,6 @@
           "name": "glasses",
           "qty": "",
           "done": false
-        },
-        {
-          "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
-          "qty": "",
-          "done": false,
-          "fresh": true
         },
         {
           "name": "house themostat set away",
