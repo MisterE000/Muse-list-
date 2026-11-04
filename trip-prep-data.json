@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:29:10.542Z",
+  "updated": "2026-11-04T13:29:13.102Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -198,12 +198,12 @@
           "done": false
         },
         {
-          "name": "Tools: hotdog sticks",
+          "name": "Tools: Ratchet strap",
           "qty": "",
           "done": false
         },
         {
-          "name": "Tools: Ratchet strap",
+          "name": "Tools: hotdog sticks",
           "qty": "",
           "done": false
         },
