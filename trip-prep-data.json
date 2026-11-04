@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:08:15.001Z",
+  "updated": "2026-11-04T14:08:38.762Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -64,6 +64,12 @@
         },
         {
           "name": "Clean vents",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Washer fluid filled",
           "qty": "",
           "done": false,
           "fresh": true
