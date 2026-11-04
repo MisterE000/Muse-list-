@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:06:55.790Z",
+  "updated": "2026-11-04T14:07:17.561Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -484,12 +484,6 @@
       "store": "Before driving",
       "items": [
         {
-          "name": "Inside: Bathroom door shut",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Inside: Bathroom fan off/closed",
           "qty": "",
           "done": false,
@@ -515,11 +509,6 @@
         },
         {
           "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Inside: Bathroom door shut",
           "qty": "",
           "done": false
         },
