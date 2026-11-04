@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:09:26.380Z",
+  "updated": "2026-11-04T14:09:29.751Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -548,17 +548,17 @@
           "done": false
         },
         {
+          "name": "Outside: Shore water cap in place",
+          "qty": "",
+          "done": false
+        },
+        {
           "name": "Outside: Taillights working",
           "qty": "",
           "done": false
         },
         {
           "name": "Outside: Headlights working",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Outside: Shore water cap in place",
           "qty": "",
           "done": false
         }
