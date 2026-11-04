@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T12:40:53.516Z",
+  "updated": "2026-11-04T12:40:56.676Z",
   "stores": [
     {
       "items": [
@@ -182,13 +182,7 @@
       "store": "Tractor Supply"
     },
     {
-      "items": [
-        {
-          "name": "PVC plugs, flat, 1-1/4 in",
-          "qty": "4 — slip-ring bolt seats (the 1-1/2 in ones bought Nov 1 were the wrong size — shed stock now, not a return)",
-          "done": true
-        }
-      ],
+      "items": [],
       "store": "Lowe's"
     }
   ]
