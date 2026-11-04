@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:28:31.459Z",
+  "updated": "2026-11-04T13:28:35.027Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -168,12 +168,12 @@
           "done": false
         },
         {
-          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
+          "name": "Stock coffee and morning supplies — coffee first thing is part of the routine",
           "qty": "",
           "done": false
         },
         {
-          "name": "Stock coffee and morning supplies — coffee first thing is part of the routine",
+          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
         },
