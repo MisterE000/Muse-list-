@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:56:26.592Z",
+  "updated": "2026-11-04T13:57:42.147Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -58,6 +58,12 @@
         },
         {
           "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Clean vents",
           "qty": "",
           "done": false,
           "fresh": true
