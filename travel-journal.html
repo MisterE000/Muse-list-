@@ -11,9 +11,6 @@
   h2 { font-size: 1.25em; border-bottom: 2px solid #2a7ae2; padding-bottom: 4px; margin-top: 32px; }
   h3 { font-size: 1.05em; margin-top: 20px; color: #333; }
   .note { background: #f0f6ff; border-left: 4px solid #2a7ae2; padding: 8px 12px; margin: 8px 0; font-size: 0.95em; }
-  ul.check { list-style: none; padding-left: 0; }
-  ul.check li { padding: 5px 0 5px 30px; border-bottom: 1px solid #f0f0f0; position: relative; }
-  ul.check li::before { content: "☐"; position: absolute; left: 4px; }
   ul.disc { padding-left: 20px; }
   ul.disc li { margin: 6px 0; }
   table { width: 100%; border-collapse: collapse; margin-top: 8px; }
@@ -26,6 +23,22 @@
   .field b { display: inline-block; min-width: 140px; }
   .updated { color: #999; font-size: 0.85em; margin-top: 32px; }
   a.home { font-size: 0.9em; }
+  .syncbox { border-radius: 8px; padding: 10px 12px; margin: 12px 0; font-size: 0.95em; }
+  .syncbox.ok { background: #eef7ee; border-left: 4px solid #3a9e4d; }
+  .syncbox.warn { background: #fdf6e0; border-left: 4px solid #d9a514; }
+  .syncbox.bad { background: #fdeeee; border-left: 4px solid #c0392b; }
+  .connectrow { margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .connectrow input { flex: 1 1 220px; font-size: 1em; padding: 8px; border: 1px solid #bbb; border-radius: 6px; }
+  .connectrow button, .entrybtns button, .addbtn { font-size: 0.95em; padding: 8px 12px; border: 1px solid #bbb; background: #f7f7f7; border-radius: 6px; cursor: pointer; }
+  .connectrow button:active, .entrybtns button:active, .addbtn:active { background: #e8e8e8; }
+  .entrybtns { margin-top: 12px; display: flex; gap: 6px; }
+  .entrybtns .del { color: #a33; }
+  .efield { margin: 8px 0; }
+  .efield label { display: block; font-size: 0.85em; color: #555; margin-bottom: 3px; }
+  .efield input, .efield textarea { width: 100%; box-sizing: border-box; font-size: 1em; font-family: inherit; padding: 8px; border: 1px solid #bbb; border-radius: 6px; }
+  .efield textarea { min-height: 90px; }
+  .addbtn { margin: 4px 0 8px; }
+  .entry p { margin: 6px 0; }
 </style>
 </head>
 <body>
@@ -36,8 +49,9 @@
 
 <h2>How to use this journal</h2>
 <ul class="disc">
-  <li>Add a line to the <b>Trip Index</b> for every new trip, so you can find it fast.</li>
-  <li>Copy the <b>Entry Template</b> for each new trip — same fields every time: dates, location, notes, highlights, photos.</li>
+  <li>The <b>Trip Index</b> below builds itself from your entries, so you can find a trip fast.</li>
+  <li>Start a trip with the <b>➕ Add a trip entry</b> button — same fields every time: dates, location, where you stayed, notes, highlights. Tap <b>Edit</b> on an entry any time to add to it.</li>
+  <li>Or ask <b>Muse</b> to add an entry for you — it lands in this same journal, on both phones.</li>
   <li>Use the shared <b>RV Trip Preparation</b> page for every trip: check items off as you get ready, then reset the sections for next time.</li>
   <li>Write a little each evening if you can. Two honest lines that night beat two polished pages a month later.</li>
   <li>Either of you can add to an entry. It is shared on purpose.</li>
@@ -48,10 +62,10 @@
 
 <h2>Trip index</h2>
 <table>
-  <tr><th>Dates</th><th>Trip</th><th>Location</th></tr>
-  <tr><td>TBD — NET Nov 8, 2026*</td><td>Boca Chica / Starship Flight 15</td><td>Boca Chica, TX / South Padre Island</td></tr>
+  <thead><tr><th>Dates</th><th>Trip</th><th>Location</th></tr></thead>
+  <tbody id="tripIndexBody"></tbody>
 </table>
-<div class="note">* Launch dates often slip — update the date here when SpaceX confirms it.</div>
+<div class="note">Launch dates often slip — edit the entry when SpaceX confirms a date and the index follows.</div>
 
 <h2>Snowturtles sticker log</h2>
 <p>Everywhere a Snowturtles sticker has been left behind. <em>"Slow Miles. Good Stories."</em></p>
@@ -62,45 +76,390 @@
   <tr><td>3</td><td>Templar Falls (Twin Falls)</td><td>Templar Road, near Watkins Glen, NY</td><td>Small sticker on a sign. Roadside double-drop falls at the edge of Sugar Hill State Forest, where they camped.</td></tr>
 </table>
 
-<h2>Upcoming trip — Boca Chica / Starship Flight 15</h2>
-<div class="entry">
-  <div class="field"><b>Dates:</b> To be confirmed — NET November 8, 2026 (SpaceX dates often slip)</div>
-  <div class="field"><b>Location:</b> Boca Chica, Texas — Starship Flight 15 launch</div>
-  <div class="field"><b>Where we stayed:</b> Isla Blanca Park, South Padre Island — for the launch itself, as few days as possible due to cost</div>
-  <div class="field"><b>Who went:</b> Mr.E and Mrs.E</div>
-  <div class="field"><b>Vehicle:</b> Witherwings — the RV (E350, 7.3L V8)</div>
-  <h3>Notes</h3>
-  <ul class="disc">
-    <li>Plan: Take Witherwings to Boca Chica for Starship Flight 15. Stay at Isla Blanca Park on South Padre Island for the launch.</li>
-    <li>Before the trip: RV oil change to be done at least 3 days before the actual launch date. <b>DONE Oct 17, 2026</b> at 23,704 miles.</li>
-    <li>On the road: Dump black and gray tanks and fill water every 3rd or 4th day. Look for Twice The Ice locations spaced 3–4 days apart — we do not drink the RV water.</li>
-  </ul>
-  <h3>Highlights</h3>
-  <p>Best moment: <span class="blank">(to be filled in after the trip)</span></p>
-  <p>Would we go back? <span class="blank"></span></p>
-  <p>Tips for next time: <span class="blank"></span></p>
-  <h3>Photos</h3>
-  <p class="blank">Paste or insert photos below. Add a caption under each one — date, place, and who is in it.</p>
-</div>
+<h2>Trip entries</h2>
+<div id="syncbox" class="syncbox warn">Loading the journal…</div>
+<button type="button" class="addbtn" id="addEntryBtn">➕ Add a trip entry</button>
+<div id="entries"></div>
 
 <p><em>Mr.E’s travel list (Walk-out, Food, computer, clothes, tools, Outside, Inside) also lives on the <a href="trip-prep.html">RV Trip Preparation</a> page now.</em></p>
 
-<h2>Entry template — copy this for each new trip</h2>
-<div class="entry">
-  <h3>[Trip name]</h3>
-  <div class="field"><b>Dates:</b> <span class="blank">________</span></div>
-  <div class="field"><b>Location:</b> <span class="blank">________</span></div>
-  <div class="field"><b>Where we stayed:</b> <span class="blank">________</span></div>
-  <div class="field"><b>Who went:</b> Mr.E and Mrs.E</div>
-  <div class="field"><b>Vehicle:</b> <span class="blank">________</span></div>
-  <h3>Notes</h3><p class="blank">________________________________________</p>
-  <h3>Highlights</h3>
-  <p>Best moment: <span class="blank"></span></p>
-  <p>Would we go back? <span class="blank"></span></p>
-  <p>Tips for next time: <span class="blank"></span></p>
-  <h3>Photos</h3><p class="blank">[ Photo ] Caption: date, place, who is in it.</p>
-</div>
+<p class="updated">Journal entries are shared: type them here on either phone, or ask Muse to add one. Page updated November 4, 2026.</p>
 
-<p class="updated">Last updated: October 18, 2026 — journal starter. Add new entries at the end and keep the Trip Index up to date.</p>
+<script>
+"use strict";
+/* Shared travel journal: entries live in journal-data.json in the same repo
+   as the shared lists and sync through the GitHub Contents API, exactly like
+   the grocery and trip-prep lists. Changes are queued as entry-level ops and
+   replayed onto the freshest copy, so two phones editing at once do not
+   clobber each other. The connection token is the SAME one the grocery list
+   uses (same site), so a phone connected there is connected here. */
+
+var CONTENTS_URL = "https://api.github.com/repos/MisterE000/Muse-list-/contents/journal-data.json";
+var TOKEN_KEY = "groceryShared.token.v1";
+var CACHE_KEY = "journalShared.cache.v1";
+
+var SEED = [
+  {
+    "id": "boca-flight-15",
+    "title": "Boca Chica / Starship Flight 15",
+    "dates": "To be confirmed — NET November 12, 2026 (SpaceX dates often slip)",
+    "location": "Boca Chica, Texas — Starship Flight 15 launch",
+    "stayed": "Isla Blanca Park, South Padre Island — for the launch itself, as few days as possible due to cost",
+    "who": "Mr.E and Mrs.E",
+    "vehicle": "Witherwings — the RV (E350, 7.3L V8)",
+    "notes": "Plan: Take Witherwings to Boca Chica for Starship Flight 15. Stay at Isla Blanca Park on South Padre Island for the launch.\nBefore the trip: RV oil change to be done at least 3 days before the actual launch date. DONE Oct 17, 2026 at 23,704 miles.\nOn the road: Dump black and gray tanks and fill water every 3rd or 4th day. Look for Twice The Ice locations spaced 3–4 days apart — we do not drink the RV water.",
+    "highlights": ""
+  }
+];
+
+var entries = deepCopy(SEED);
+var pendingOps = [];
+var syncTimer = null;
+var syncing = false;
+var editingId = null;
+
+function deepCopy(o) { return JSON.parse(JSON.stringify(o)); }
+
+function b64encode(str) { return btoa(unescape(encodeURIComponent(str))); }
+function b64decode(b64) { return decodeURIComponent(escape(atob(String(b64).replace(/\s/g, "")))); }
+
+function getToken() {
+  try { return localStorage.getItem(TOKEN_KEY) || ""; } catch (e) { return ""; }
+}
+function setToken(t) {
+  try {
+    if (t) localStorage.setItem(TOKEN_KEY, t);
+    else localStorage.removeItem(TOKEN_KEY);
+  } catch (e) {}
+}
+
+function loadCache() {
+  try {
+    var raw = localStorage.getItem(CACHE_KEY);
+    if (raw) {
+      var data = JSON.parse(raw);
+      if (data && data.entries) entries = data.entries;
+    }
+  } catch (e) {}
+}
+function saveCache() {
+  try { localStorage.setItem(CACHE_KEY, JSON.stringify({ entries: entries })); } catch (e) {}
+}
+
+function setStatus(kind, text, showConnect) {
+  var box = document.getElementById("syncbox");
+  box.className = "syncbox " + kind;
+  box.textContent = "";
+  var msg = document.createElement("div");
+  msg.textContent = text;
+  box.appendChild(msg);
+
+  var token = getToken();
+  var row = document.createElement("div");
+  row.className = "connectrow";
+  if (!token || showConnect) {
+    var input = document.createElement("input");
+    input.type = "password";
+    input.placeholder = "Paste this phone's list token";
+    input.id = "tokenInput";
+    input.autocomplete = "off";
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.textContent = "Connect this phone";
+    btn.addEventListener("click", function () {
+      var t = document.getElementById("tokenInput").value.replace(/\s+/g, "");
+      if (!t) { setStatus("bad", "That box was empty — paste the token text, then tap Connect."); return; }
+      setToken(t);
+      setStatus("warn", "Connecting…");
+      syncNow();
+    });
+    row.appendChild(input);
+    row.appendChild(btn);
+  } else {
+    var dis = document.createElement("button");
+    dis.type = "button";
+    dis.textContent = "Disconnect";
+    dis.addEventListener("click", function () {
+      setToken("");
+      setStatus("warn", "Disconnected. This phone will keep its own copy until you connect it again.", true);
+    });
+    row.appendChild(dis);
+  }
+  box.appendChild(row);
+}
+
+function ghGet() {
+  return fetch(CONTENTS_URL, {
+    headers: { "Authorization": "Bearer " + getToken(), "Accept": "application/vnd.github+json" },
+    cache: "no-store"
+  }).then(function (r) {
+    if (!r.ok) throw new Error("GET " + r.status);
+    return r.json();
+  }).then(function (j) {
+    var data = JSON.parse(b64decode(j.content));
+    return { data: data, sha: j.sha };
+  });
+}
+
+function ghPut(data, sha) {
+  data.updated = new Date().toISOString();
+  return fetch(CONTENTS_URL, {
+    method: "PUT",
+    headers: {
+      "Authorization": "Bearer " + getToken(),
+      "Accept": "application/vnd.github+json",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      message: "Update shared travel journal (web page)",
+      content: b64encode(JSON.stringify(data, null, 2)),
+      sha: sha
+    })
+  }).then(function (r) {
+    if (!r.ok) throw new Error("PUT " + r.status);
+    return r.json();
+  });
+}
+
+function findEntry(data, id) {
+  for (var i = 0; i < data.entries.length; i++) {
+    if (data.entries[i].id === id) return data.entries[i];
+  }
+  return null;
+}
+
+function applyEntryOp(data, op) {
+  if (!data.entries) data.entries = [];
+  if (op.type === "entryadd") {
+    if (!findEntry(data, op.entry.id)) data.entries.push(deepCopy(op.entry));
+  } else if (op.type === "entryupdate") {
+    var cur = findEntry(data, op.entry.id);
+    if (cur) {
+      var fresh = deepCopy(op.entry);
+      for (var k in cur) delete cur[k];
+      for (var k2 in fresh) cur[k2] = fresh[k2];
+    } else {
+      data.entries.push(deepCopy(op.entry));
+    }
+  } else if (op.type === "entryremove") {
+    data.entries = data.entries.filter(function (e) { return e.id !== op.id; });
+  }
+}
+
+function applyData(data) {
+  entries = (data && data.entries) ? data.entries : [];
+}
+
+function mutate(op) {
+  var wrap = { entries: entries };
+  applyEntryOp(wrap, op);
+  entries = wrap.entries;
+  saveCache();
+  render();
+  queueSync(op);
+}
+
+function queueSync(op) {
+  pendingOps.push(op);
+  if (syncTimer) clearTimeout(syncTimer);
+  syncTimer = setTimeout(syncNow, 600);
+}
+
+function syncNow() {
+  if (syncTimer) { clearTimeout(syncTimer); syncTimer = null; }
+  if (!getToken()) {
+    setStatus("warn", "Journal loaded. This phone is not connected yet — changes stay on this phone until you connect it.");
+    render();
+    return;
+  }
+  if (syncing) return;
+  var batch = pendingOps.slice();
+  syncing = true;
+  ghGet().then(function (res) {
+    var remote = res.data;
+    if (!remote.entries) remote.entries = [];
+    if (batch.length) {
+      batch.forEach(function (op) { applyEntryOp(remote, op); });
+      return ghPut(remote, res.sha).then(function () {
+        pendingOps.splice(0, batch.length);
+        applyData(remote);
+        saveCache();
+        syncing = false;
+        setStatus("ok", "✓ Connected — shared journal is up to date.");
+        render();
+      });
+    }
+    applyData(remote);
+    saveCache();
+    syncing = false;
+    setStatus("ok", "✓ Connected — shared journal is up to date.");
+    render();
+  }).catch(function (err) {
+    syncing = false;
+    if (String(err).indexOf("401") >= 0 || String(err).indexOf("403") >= 0) {
+      setStatus("bad", "That token was not accepted. Paste the token again, or make a fresh one — it needs access to the Muse-list- repository.", true);
+    } else {
+      setStatus("bad", "Showing the last copy saved on this phone — couldn't reach the shared journal just now.");
+      render();
+    }
+  });
+}
+
+var FIELDS = [
+  ["title", "Trip name", "input"],
+  ["dates", "Dates", "input"],
+  ["location", "Location", "input"],
+  ["stayed", "Where we stayed", "input"],
+  ["who", "Who went", "input"],
+  ["vehicle", "Vehicle", "input"],
+  ["notes", "Notes", "textarea"],
+  ["highlights", "Highlights — best moment, would we go back, tips for next time", "textarea"]
+];
+
+function textBlock(parent, text) {
+  if (!text) {
+    var p0 = document.createElement("p");
+    p0.className = "blank";
+    p0.textContent = "(nothing yet)";
+    parent.appendChild(p0);
+    return;
+  }
+  String(text).split("\n").forEach(function (line) {
+    if (!line.trim()) return;
+    var p = document.createElement("p");
+    p.textContent = line;
+    parent.appendChild(p);
+  });
+}
+
+function render() {
+  /* Trip index from entries */
+  var tbody = document.getElementById("tripIndexBody");
+  tbody.textContent = "";
+  entries.forEach(function (e) {
+    var tr = document.createElement("tr");
+    [e.dates, e.title, e.location].forEach(function (v) {
+      var td = document.createElement("td");
+      td.textContent = v || "";
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+
+  var host = document.getElementById("entries");
+  host.textContent = "";
+  if (!entries.length) {
+    var none = document.createElement("p");
+    none.className = "blank";
+    none.textContent = "No entries yet — tap “Add a trip entry” to start one.";
+    host.appendChild(none);
+  }
+  entries.forEach(function (e) { host.appendChild(renderEntry(e)); });
+}
+
+function renderEntry(e) {
+  var card = document.createElement("div");
+  card.className = "entry";
+  card.setAttribute("data-id", e.id);
+
+  if (editingId === e.id) {
+    FIELDS.forEach(function (f) {
+      var wrap = document.createElement("div");
+      wrap.className = "efield";
+      var lab = document.createElement("label");
+      lab.textContent = f[1];
+      wrap.appendChild(lab);
+      var inp;
+      if (f[2] === "textarea") { inp = document.createElement("textarea"); }
+      else { inp = document.createElement("input"); inp.type = "text"; }
+      inp.className = "f_" + f[0];
+      inp.value = e[f[0]] || "";
+      wrap.appendChild(inp);
+      card.appendChild(wrap);
+    });
+    var btns = document.createElement("div");
+    btns.className = "entrybtns";
+    var save = document.createElement("button");
+    save.type = "button"; save.textContent = "Save";
+    save.addEventListener("click", function () {
+      var updated = { id: e.id };
+      FIELDS.forEach(function (f) {
+        var el = card.querySelector(".f_" + f[0]);
+        updated[f[0]] = el ? el.value : "";
+      });
+      editingId = null;
+      mutate({ type: "entryupdate", entry: updated });
+    });
+    var cancel = document.createElement("button");
+    cancel.type = "button"; cancel.textContent = "Cancel";
+    cancel.addEventListener("click", function () { editingId = null; render(); });
+    btns.appendChild(save);
+    btns.appendChild(cancel);
+    card.appendChild(btns);
+    return card;
+  }
+
+  var h = document.createElement("h3");
+  h.textContent = e.title || "(untitled trip)";
+  card.appendChild(h);
+
+  [["dates", "Dates:"], ["location", "Location:"], ["stayed", "Where we stayed:"], ["who", "Who went:"], ["vehicle", "Vehicle:"]].forEach(function (f) {
+    if (!e[f[0]]) return;
+    var d = document.createElement("div");
+    d.className = "field";
+    var b = document.createElement("b");
+    b.textContent = f[1];
+    d.appendChild(b);
+    d.appendChild(document.createTextNode(" " + e[f[0]]));
+    card.appendChild(d);
+  });
+
+  var nh = document.createElement("h3");
+  nh.textContent = "Notes";
+  card.appendChild(nh);
+  textBlock(card, e.notes);
+
+  var hh = document.createElement("h3");
+  hh.textContent = "Highlights";
+  card.appendChild(hh);
+  textBlock(card, e.highlights);
+
+  var btns2 = document.createElement("div");
+  btns2.className = "entrybtns";
+  var edit = document.createElement("button");
+  edit.type = "button"; edit.textContent = "Edit";
+  edit.addEventListener("click", function () { editingId = e.id; render(); });
+  var del = document.createElement("button");
+  del.type = "button"; del.textContent = "Delete"; del.className = "del";
+  del.addEventListener("click", function () {
+    if (confirm("Delete this journal entry? This cannot be undone.")) {
+      if (editingId === e.id) editingId = null;
+      mutate({ type: "entryremove", id: e.id });
+    }
+  });
+  btns2.appendChild(edit);
+  btns2.appendChild(del);
+  card.appendChild(btns2);
+  return card;
+}
+
+document.getElementById("addEntryBtn").addEventListener("click", function () {
+  var id = "e" + Date.now().toString(36) + Math.floor(Math.random() * 1e6).toString(36);
+  var fresh = { id: id, title: "", dates: "", location: "", stayed: "", who: "Mr.E and Mrs.E", vehicle: "", notes: "", highlights: "" };
+  editingId = id;
+  mutate({ type: "entryadd", entry: fresh });
+});
+
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible" && getToken() && !pendingOps.length && !editingId) syncNow();
+});
+window.addEventListener("focus", function () {
+  if (getToken() && !pendingOps.length && !editingId) syncNow();
+});
+
+loadCache();
+render();
+syncNow();
+</script>
 </body>
 </html>
