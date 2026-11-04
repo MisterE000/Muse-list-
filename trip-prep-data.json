@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:07:57.140Z",
+  "updated": "2026-11-04T13:08:11.536Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -27,11 +27,6 @@
         },
         {
           "name": "Fuel up, and check propane level",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Hold / pause mail and deliveries, and tell anyone who needs to know you will be away",
           "qty": "",
           "done": false
         },
