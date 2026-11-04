@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:07:59.445Z",
+  "updated": "2026-11-04T14:08:15.001Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -564,11 +564,6 @@
         },
         {
           "name": "Outside: Taillights working",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Outside: Washer fluid",
           "qty": "",
           "done": false
         }
