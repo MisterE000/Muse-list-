@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:11:06.588Z",
+  "updated": "2026-11-04T14:11:50.419Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -503,6 +503,12 @@
         },
         {
           "name": "Refrigerator latched, loose items stowed, cupboards latched",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Fuel level",
           "qty": "",
           "done": false,
           "fresh": true
