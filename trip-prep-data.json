@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:31:34.507Z",
+  "updated": "2026-11-04T13:31:37.797Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -300,12 +300,12 @@
           "done": false
         },
         {
-          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
+          "name": "Computer: Passport",
           "qty": "",
           "done": false
         },
         {
-          "name": "Computer: Passport",
+          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
           "qty": "",
           "done": false
         },
