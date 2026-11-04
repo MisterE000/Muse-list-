@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T12:40:35.075Z",
+  "updated": "2026-11-04T12:40:53.516Z",
   "stores": [
     {
       "items": [
@@ -183,16 +183,6 @@
     },
     {
       "items": [
-        {
-          "name": "1-1/4 PVC 45°",
-          "qty": "2",
-          "done": true
-        },
-        {
-          "name": "2 1/2\" carriage bolt",
-          "qty": "4",
-          "done": true
-        },
         {
           "name": "PVC plugs, flat, 1-1/4 in",
           "qty": "4 — slip-ring bolt seats (the 1-1/2 in ones bought Nov 1 were the wrong size — shed stock now, not a return)",
