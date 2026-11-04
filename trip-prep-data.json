@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:13:18.529Z",
+  "updated": "2026-11-04T14:13:33.595Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -470,12 +470,12 @@
           "done": false
         },
         {
-          "name": "RV door key",
+          "name": "turn off house water spigot",
           "qty": "",
           "done": false
         },
         {
-          "name": "turn off house water spigot",
+          "name": "RV door key",
           "qty": "",
           "done": false
         },
