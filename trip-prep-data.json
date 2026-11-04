@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:57:42.147Z",
+  "updated": "2026-11-04T13:57:52.928Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -432,11 +432,6 @@
         },
         {
           "name": "Packing: battery charger",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: Clean vents",
           "qty": "",
           "done": false
         },
