@@ -1,10 +1,16 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:13:44.493Z",
+  "updated": "2026-11-04T14:14:48.012Z",
   "stores": [
     {
       "store": "Pre-trip",
       "items": [
+        {
+          "name": "Battery jumpstart kit",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
           "qty": "",
@@ -449,15 +455,15 @@
           "fresh": true
         },
         {
-          "name": "turn off house water spigot",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Final check inside the house, then lock up",
           "qty": "",
           "done": false,
           "fresh": true
+        },
+        {
+          "name": "turn off house water spigot",
+          "qty": "",
+          "done": false
         },
         {
           "name": "glasses",
