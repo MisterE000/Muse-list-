@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T14:05:26.968Z",
+  "updated": "2026-11-04T14:06:02.374Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -236,6 +236,12 @@
         },
         {
           "name": "Passports",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Gallon water",
           "qty": "",
           "done": false,
           "fresh": true
@@ -495,15 +501,15 @@
           "fresh": true
         },
         {
-          "name": "Inside: Gallon water",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
           "qty": "",
           "done": false,
           "fresh": true
+        },
+        {
+          "name": "Inside: Gallon water",
+          "qty": "",
+          "done": false
         },
         {
           "name": "Inside: Ice trays",
