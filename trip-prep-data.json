@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:09:20.024Z",
+  "updated": "2026-11-04T13:09:22.682Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -27,11 +27,6 @@
         },
         {
           "name": "Fuel up, and check propane level",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Sketch the route: highways if a launch is imminent, non-highways preferred when it is not",
           "qty": "",
           "done": false
         },
