@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:56:14.601Z",
+  "updated": "2026-11-04T13:56:17.368Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -330,12 +330,12 @@
           "done": false
         },
         {
-          "name": "Inside: ice packs",
+          "name": "Inside: Ice trays",
           "qty": "",
           "done": false
         },
         {
-          "name": "Inside: Ice trays",
+          "name": "Inside: ice packs",
           "qty": "",
           "done": false
         },
