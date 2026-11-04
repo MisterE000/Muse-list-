@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RV Trip Prep — Shared</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 16px; color: #222; }
+  h1 { font-size: 1.5em; margin-bottom: 0; }
+  .sub { color: #666; margin-top: 4px; margin-bottom: 16px; }
+  .trial { background: #fff7e6; border-left: 4px solid #e2a63d; padding: 8px 12px; margin: 8px 0; font-size: 0.95em; }
+  .sync { background: #eef7ee; border-left: 4px solid #3a9a4e; padding: 8px 12px; margin: 8px 0; font-size: 0.95em; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .sync span { flex: 1; min-width: 200px; }
+  .sync button { font-size: 0.95em; padding: 6px 12px; border: 1px solid #3a9a4e; background: #3a9a4e; color: #fff; border-radius: 6px; cursor: pointer; }
+  .sync button.plain { background: #f7f7f7; color: #333; border-color: #ccc; }
+  h2 { font-size: 1.2em; border-bottom: 2px solid #2a7ae2; padding-bottom: 4px; margin-top: 28px; }
+  .note { background: #f0f6ff; border-left: 4px solid #2a7ae2; padding: 8px 12px; margin: 8px 0; font-size: 0.95em; }
+  ul { list-style: none; padding-left: 0; }
+  li.item { padding: 6px 0; border-bottom: 1px solid #eee; display: flex; gap: 8px; align-items: center; }
+  li.item input[type=checkbox] { transform: scale(1.3); flex: none; }
+  li.item .name { flex: 1; }
+  li.item.done .name { text-decoration: line-through; color: #999; }
+  .qty { color: #666; font-size: 0.9em; white-space: nowrap; }
+  li.item.done .qty { color: #bbb; }
+  .btns { display: flex; gap: 4px; flex: none; }
+  .btns button { font-size: 1em; line-height: 1; padding: 6px 10px; border: 1px solid #ccc; background: #f7f7f7; border-radius: 6px; cursor: pointer; }
+  .btns button:active { background: #e8e8e8; }
+  .btns button:disabled { opacity: 0.3; cursor: default; }
+  .storehead { display: flex; align-items: baseline; gap: 12px; border-bottom: 2px solid #2a7ae2; margin-top: 28px; }
+  .storehead h2 { border-bottom: none; margin: 0; padding-bottom: 4px; flex: 1; }
+  .resetbtn { font-size: 0.9em; padding: 6px 12px; border: 1px solid #b3541e; background: #fdf3ec; color: #8a3c10; border-radius: 6px; cursor: pointer; flex: none; }
+  .resetbtn:active { background: #f7e2d2; }
+  li.item.fresh { background: #e9f9ec; }
+  li.item.fresh .name { color: #137a2e; font-weight: 600; }
+  li.item.fresh.done .name { color: #7fae87; }
+  .addrow { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+  .addrow input { font-size: 1em; padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
+  .addrow input.new-name { flex: 2; min-width: 140px; }
+  .addrow input.new-qty { flex: 1; min-width: 100px; }
+  .addrow button { font-size: 1em; padding: 8px 14px; border: 1px solid #2a7ae2; background: #2a7ae2; color: #fff; border-radius: 6px; cursor: pointer; }
+  .empty { color: #999; font-style: italic; padding: 6px 0; }
+  .updated { color: #999; font-size: 0.85em; margin-top: 32px; }
+  a.home { font-size: 0.9em; }
+</style>
+</head>
+<body>
+<p><a class="home" href="index.html">← All shared lists</a></p>
+<h1>RV Trip Preparation — Shared</h1>
+<p class="sub">Mr.E and Mrs.E • Witherwings trip checklists, shared — check things off as you get ready, and both phones see the same thing.</p>
+<div class="sync"><span id="syncStatus">Loading the trip list…</span><button id="connectBtn" type="button" style="display:none">Connect this phone</button><button id="disconnectBtn" type="button" class="plain" style="display:none">Disconnect</button></div>
+<div class="trial"><strong>Shared checklists:</strong> work through each section and check items off as they are done — checked items drop to the bottom of their section and the list re-sorts alphabetically. Use ↑ ↓ to nudge an item, ✕ to remove it, and the boxes under each section to add new items. <strong>New items show in green at the top of their section</strong> until you press that section’s <em>Reset list</em> button — after a trip, reset un-checks everything for next time and folds the green items into the list in normal color. Every change saves to the shared list. This page uses the same phone connection as the grocery list, so a phone already connected there is connected here too.</div>
+
+<div id="stores"></div>
+
+<h2>How this list works</h2>
+<ul>
+  <li>→ Sections run in trip order: Pre-trip → Preparing → Day-of-departure → Walk-out → In-transit → After returning, plus Winterizing for the off-season.</li>
+  <li>→ Check the box when an item is done — it moves to the bottom of its section and the list re-sorts A–Z.</li>
+  <li>→ ↑ and ↓ move an item one step; ✕ removes an item. The add boxes under each section add new items.</li>
+  <li>→ Newly added items are <strong>green and at the top</strong> of their section, so fresh additions stand out.</li>
+  <li>→ When a section is finished with (or the trip is over), press its <strong>Reset list</strong> button: everything un-checks ready for next time, and the green items turn normal color and take their normal place in the list.</li>
+  <li>→ Changes save to the shared list within a few seconds. Reopen or return to the page to pick up changes from the other phone.</li>
+</ul>
+
+<p class="updated">Trip prep data lives with the shared lists site (trip-prep-data.json), pre-loaded from the <a href="travel-journal.html">travel journal</a>’s checklists. Page created November 4, 2026.</p>
+
+<script>
+"use strict";
+var CONTENTS_URL = "https://api.github.com/repos/MisterE000/Muse-list-/contents/trip-prep-data.json";
+var REPO_URL = "https://api.github.com/repos/MisterE000/Muse-list-";
+var TOKEN_KEY = "groceryShared.token.v1";
+var CACHE_KEY = "tripPrep.cache.v1";
+
+var SEED = [
+  {
+    "store": "Pre-trip",
+    "items": [
+      {
+        "name": "Confirm dates, destination, and any launch / event dates — and note that SpaceX dates often slip",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Sketch the route: highways if a launch is imminent, non-highways preferred when it is not",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Mark dump + fresh-water stops every 3rd or 4th day along the route",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Mark Twice The Ice locations spaced 3–4 days apart for drinking water and ice",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Check overnight plan: boondocking / rest areas / Walmart are fine; do not arrive in a forest after dark unless you scoped it in daylight",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "If overnight lows will be over 80°F, plan a campground for those nights; if a heavy storm is forecast, plan a Walmart stop for Wi-Fi",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Hold / pause mail and deliveries, and tell anyone who needs to know you will be away",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Oil change if due — Witherwings (E350, 7.3L V8): 5W-30, 9 qt, filter Mobil M1-210. For a launch trip, finish it at least 3 days before the actual launch date",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Check all fluids, belts, hoses, and tire pressures (including spare); look for leaks underneath",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Check lights, brakes, wipers, mirrors, and dash cam (USB-C lead packed)",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Fuel up, and check propane level",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Charge / check the lithium house bank — 920 Ah; note voltage (13.3V is about 70%, 13.1V is about 20%)",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
+        "qty": "",
+        "done": false
+      }
+    ]
+  },
+  {
+    "store": "Preparing",
+    "items": [
+      {
+        "name": "Dump black and gray tanks, rinse, and add tank treatment before you leave",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Fill the fresh tank; check the additional fresh-tank space / tank if fitted",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Remember: we do not drink the RV water — stock bottled water and plan Twice The Ice stops",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Sewer hose, gloves, fresh-water hose, and water filter / pressure regulator packed and stowed",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Check water pump switch, hot-water system, and shower / taps for leaks",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Starlink (permanently mounted) — power it up and confirm it connects before you leave",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Shore-power cord, adapters, and surge protection packed",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Charge phones, laptops, and battery packs; pack all charging cables, including USB-C",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Download offline maps, launch / weather apps, and iOverlander spots for the route while you have good signal",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Mrs.E work setup checked if traveling on a workday (Mon–Fri) — laptop, charger, and Starlink signal",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Build the shared grocery list by store and shop it",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Stock coffee and morning supplies — coffee first thing is part of the routine",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Twice The Ice plan for the first leg: where is the first stop, 3–4 days out?",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Kitchen basics checked: propane / stove, pans, utensils, paper towels, trash bags, dish soap",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Empty home fridge of anything that will spoil while you are away",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Driver's licenses, registration, insurance, and roadside-assistance cards in the RV",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Campground / park confirmations, launch viewing info, and addresses saved on the phone and on paper",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Cards and cash; notify bank / cards of travel if needed",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Medications, glasses, and first-aid kit packed",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Phone list updated: family, campground, and emergency contacts",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Trip journal — and a pen — packed where you will actually use it",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Clothing for heat, cool nights, and rain; hats, sunscreen, and bug spray",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Toiletries, towels, bedding, and laundry bag",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Shoes for walking, camp, and wet ground",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Plants / pets / deck / anything a neighbor or family member is watching — handed off with a note",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Packing: Clean vents",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Packing: Sharpie",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Packing: silverwear",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Packing: spatula",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Packing: tongs",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Packing: ice cube trays",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Packing: coffee cup",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Packing: frying pan",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Packing: Pot to boil",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Packing: battery charger",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Packing: mace",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Packing: Sunglasses",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Food: Mashed potatoes",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Food: Corned beef hash",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Food: rice/quinoa",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Food: Popcorn",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Food: Taco shells",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Computer: 6tb drive",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Computer: laptops",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Computer: mouse",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Computer: Headphones - 1/8\" jack",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Computer: flash drive",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Computer: Passport",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Clothes: night clothes. good shoes",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Clothes: Coffee / cup / filter",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Clothes: Slippers",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Clothes: socks underwear",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Clothes: spacex shirt",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Clothes: pants. shorts. swim suit",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Clothes: long sleeve/ jacket",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Clothes: backpack",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Tools: Channel lock",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Tools: campfire tongs",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Tools: hotdog sticks",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Tools: Firewood.",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Tools: Ratchet strap",
+        "qty": "",
+        "done": false
+      }
+    ]
+  },
+  {
+    "store": "Day-of-departure",
+    "items": [
+      {
+        "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Refrigerator latched, loose items stowed, cupboards latched",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Turn off outside water spigot",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Final check inside the house, then lock up",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "First stop and tonight's stop entered in navigation — before you roll",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Outside: Washer fluid",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Outside: Dump & fill",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Outside: Headlights working",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Outside: Taillights working",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Outside: Propane secure ? Straps",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Outside: Sewer line holder closed",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Outside: Both sewer valves closed",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Outside: Sewer valve cap on",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Outside: Shore water cap in place",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Outside: Electric wire disconnected & cover closed",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Inside: ice packs",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Inside: Ice trays",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Inside: Gallon water",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Inside: Fridge shut",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Inside: Thermostat off",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Inside: House fan off/closed",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Inside: Bathroom fan off/closed",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Inside: Bathroom door shut",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Inside: Water heater off",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
+        "qty": "",
+        "done": false
+      }
+    ]
+  },
+  {
+    "store": "Walk-out",
+    "items": [
+      {
+        "name": "wallet",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "glasses",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "RV door key",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "turn off house water spigot",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "house themostat set away",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Lead acid battery connect",
+        "qty": "",
+        "done": false
+      }
+    ]
+  },
+  {
+    "store": "In-transit",
+    "items": [
+      {
+        "name": "Dump black and gray tanks; fill fresh water",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Stop at Twice The Ice for drinking water and ice",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Top up groceries, fuel, and propane as needed",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Check tires, lights, battery voltage, and anything rattling or leaking",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Write two lines in the journal that evening: where are we, and what was the highlight?",
+        "qty": "",
+        "done": false
+      }
+    ]
+  },
+  {
+    "store": "After returning",
+    "items": [
+      {
+        "name": "Dump and rinse tanks, drain / store hoses, and turn off the water pump",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Empty the fridge, prop the fridge door if Witherwings will sit, and remove trash and laundry",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Finish the journal entry: highlights, best moment, and tips for next time",
+        "qty": "",
+        "done": false
+      },
+      {
+        "name": "Add anything you wished you had packed to this master list",
+        "qty": "",
+        "done": false
+      }
+    ]
+  },
+  {
+    "store": "Winterizing",
+    "note": "Nothing in the travel journal for this section yet — add the items you use and they will be here next time.",
+    "items": []
+  }
+];
+
+function deepCopy(o) { return JSON.parse(JSON.stringify(o)); }
+
+function cmpName(a, b) {
+  return a.name.localeCompare(b.name, "en", { sensitivity: "base", numeric: true });
+}
+
+/* New items (added since the last reset) sit green at the top; other open
+   items follow; checked items sink to the bottom. Each group sorted A-Z. */
+function arrange(items) {
+  var fresh = items.filter(function (i) { return i.fresh && !i.done; }).sort(cmpName);
+  var open = items.filter(function (i) { return !i.fresh && !i.done; }).sort(cmpName);
+  var done = items.filter(function (i) { return i.done; }).sort(cmpName);
+  return fresh.concat(open).concat(done);
+}
+
+function b64encode(str) { return btoa(unescape(encodeURIComponent(str))); }
+function b64decode(b64) { return decodeURIComponent(escape(atob(String(b64).replace(/\s/g, "")))); }
+
+function getToken() {
+  try { return localStorage.getItem(TOKEN_KEY) || ""; } catch (e) { return ""; }
+}
+function setToken(t) {
+  try {
+    if (t) localStorage.setItem(TOKEN_KEY, t);
+    else localStorage.removeItem(TOKEN_KEY);
+  } catch (e) {}
+}
+
+function ghHeaders() {
+  var h = { "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" };
+  var t = getToken();
+  if (t) h["Authorization"] = "Bearer " + t;
+  return h;
+}
+
+function httpError(resp) {
+  var err = new Error("HTTP " + resp.status);
+  err.status = resp.status;
+  return err;
+}
+
+function ghGet() {
+  return fetch(CONTENTS_URL + "?ref=main", { headers: ghHeaders(), cache: "no-store" })
+    .then(function (resp) {
+      if (!resp.ok) throw httpError(resp);
+      return resp.json();
+    })
+    .then(function (d) {
+      var data = JSON.parse(b64decode(d.content));
+      if (!data || !Array.isArray(data.stores)) throw new Error("Bad data file");
+      data.stores.forEach(function (s) { s.items = arrange(s.items || []); });
+      return { sha: d.sha, stores: data.stores };
+    });
+}
+
+function ghPut(sha, stores) {
+  var payload = { version: 1, updated: new Date().toISOString(), stores: stores };
+  return fetch(CONTENTS_URL, {
+    method: "PUT",
+    headers: ghHeaders(),
+    body: JSON.stringify({
+      message: "Update shared RV trip prep list (web page)",
+      content: b64encode(JSON.stringify(payload, null, 2)),
+      sha: sha
+    })
+  }).then(function (resp) {
+    if (!resp.ok) throw httpError(resp);
+    return resp.json();
+  }).then(function (d) { return d.content.sha; });
+}
+
+/* ---- state ---- */
+var stores = deepCopy(SEED);
+stores.forEach(function (s) { s.items = arrange(s.items); });
+var lastSha = null;
+var pendingOps = [];
+var syncing = false;
+var saveTimer = null;
+
+function cacheSave() {
+  try {
+    localStorage.setItem(CACHE_KEY, JSON.stringify({ sha: lastSha, stores: stores, ops: pendingOps }));
+  } catch (e) {}
+}
+function cacheLoad() {
+  try {
+    var raw = localStorage.getItem(CACHE_KEY);
+    if (!raw) return;
+    var c = JSON.parse(raw);
+    if (c && Array.isArray(c.stores) && c.stores.length) {
+      stores = c.stores;
+      lastSha = c.sha || null;
+      pendingOps = Array.isArray(c.ops) ? c.ops : [];
+    }
+  } catch (e) {}
+}
+
+function findSection(data, storeName) {
+  for (var i = 0; i < data.length; i++) if (data[i].store === storeName) return data[i];
+  return null;
+}
+function findItem(section, name) {
+  var want = String(name).toLowerCase();
+  for (var i = 0; i < section.items.length; i++) {
+    if (String(section.items[i].name).toLowerCase() === want) return section.items[i];
+  }
+  return null;
+}
+
+/* Apply one change to a stores array. Used for the on-screen list and,
+   during sync, replayed onto the freshest shared copy so two phones
+   editing at once do not overwrite each other. */
+function applyOp(data, op) {
+  var section = findSection(data, op.store);
+  if (!section) return;
+  var item, idx, j, t;
+  if (op.type === "add") {
+    item = findItem(section, op.name);
+    if (item) {
+      item.done = false;
+      item.fresh = true;
+      if (op.qty) item.qty = op.qty;
+    } else {
+      section.items.push({ name: op.name, qty: op.qty || "", done: false, fresh: true });
+    }
+    section.items = arrange(section.items);
+  } else if (op.type === "reset") {
+    /* After a shopping trip: un-check everything so the list is ready for
+       next time, and fold the green new items into the list in normal
+       color and normal (alphabetical) position. */
+    section.items.forEach(function (i) { i.done = false; i.fresh = false; });
+    section.items = arrange(section.items);
+  } else if (op.type === "remove") {
+    var want = String(op.name).toLowerCase();
+    section.items = section.items.filter(function (i) { return String(i.name).toLowerCase() !== want; });
+  } else if (op.type === "done") {
+    item = findItem(section, op.name);
+    if (item) {
+      item.done = !!op.done;
+      section.items = arrange(section.items);
+    }
+  } else if (op.type === "move") {
+    var want2 = String(op.name).toLowerCase();
+    idx = -1;
+    for (var k = 0; k < section.items.length; k++) {
+      if (String(section.items[k].name).toLowerCase() === want2) { idx = k; break; }
+    }
+    j = idx + (op.dir || 0);
+    if (idx >= 0 && j >= 0 && j < section.items.length) {
+      t = section.items[j];
+      section.items[j] = section.items[idx];
+      section.items[idx] = t;
+    }
+  }
+}
+
+var statusEl = document.getElementById("syncStatus");
+var connectBtn = document.getElementById("connectBtn");
+var disconnectBtn = document.getElementById("disconnectBtn");
+
+function timeNow() {
+  try { return new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }); }
+  catch (e) { return ""; }
+}
+function setStatus(msg) { statusEl.textContent = msg; }
+function updateButtons() {
+  var has = !!getToken();
+  connectBtn.style.display = has ? "none" : "";
+  disconnectBtn.style.display = has ? "" : "none";
+}
+function statusLoaded() {
+  if (getToken()) setStatus("✓ Connected — shared trip list is up to date.");
+  else setStatus("Trip list loaded. This phone is not connected yet — changes stay on this phone until you connect it.");
+}
+function statusSaved() { setStatus("✓ Saved to the shared list · " + timeNow()); }
+function statusSaving() { setStatus("Saving to the shared list…"); }
+function statusError(err) {
+  var why = err && err.status ? "error " + err.status : "no connection";
+  setStatus("⚠ Couldn't save (" + why + "). Changes are kept on this phone and will retry — reopen the page when you're back online.");
+}
+
+function mutate(op) {
+  applyOp(stores, op);
+  pendingOps.push(op);
+  cacheSave();
+  render();
+  if (getToken()) { statusSaving(); scheduleSync(); }
+  else setStatus("Saved on this phone only — connect this phone to share changes.");
+}
+
+function scheduleSync() {
+  if (saveTimer) clearTimeout(saveTimer);
+  saveTimer = setTimeout(syncNow, 900);
+}
+
+function syncNow() {
+  if (syncing || !getToken() || !pendingOps.length) return;
+  syncing = true;
+  var attempts = 0;
+
+  function done() {
+    syncing = false;
+    if (pendingOps.length) scheduleSync();
+  }
+  function onErr(err) {
+    if (err && (err.status === 409 || err.status === 422) && attempts < 4) { attempt(); return; }
+    syncing = false;
+    statusError(err);
+  }
+  function attempt() {
+    attempts++;
+    var batch = pendingOps.slice();
+    ghGet().then(function (remote) {
+      var before = JSON.stringify(remote.stores);
+      batch.forEach(function (op) { applyOp(remote.stores, op); });
+      var after = JSON.stringify(remote.stores);
+      stores = remote.stores;
+      if (before === after) {
+        lastSha = remote.sha;
+        pendingOps = pendingOps.slice(batch.length);
+        cacheSave(); render(); statusSaved(); done();
+        return;
+      }
+      ghPut(remote.sha, remote.stores).then(function (newSha) {
+        lastSha = newSha;
+        pendingOps = pendingOps.slice(batch.length);
+        cacheSave(); render(); statusSaved(); done();
+      }, onErr);
+    }, onErr);
+  }
+  attempt();
+}
+
+function refreshFromRemote() {
+  ghGet().then(function (remote) {
+    if (syncing) return;
+    if (pendingOps.length) { scheduleSync(); return; }
+    if (remote.sha !== lastSha) {
+      stores = remote.stores;
+      lastSha = remote.sha;
+      cacheSave();
+      render();
+    }
+    statusLoaded();
+  }).catch(function () {
+    if (getToken()) setStatus("Showing the last copy saved on this phone — couldn't reach the shared trip list just now.");
+    else setStatus("Showing the last copy saved on this phone. Connect this phone to share changes.");
+  });
+}
+
+connectBtn.addEventListener("click", function () {
+  var t = prompt("Paste this phone's list token (one-time). It is stored only on this phone and is used only to save the grocery list.", "");
+  if (!t) return;
+  t = String(t).trim();
+  if (!t) return;
+  setStatus("Checking that token…");
+  fetch(REPO_URL, { headers: { "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", "Authorization": "Bearer " + t }, cache: "no-store" })
+    .then(function (resp) {
+      if (!resp.ok) throw httpError(resp);
+      setToken(t);
+      updateButtons();
+      setStatus("✓ This phone is connected. Syncing…");
+      if (pendingOps.length) syncNow(); else refreshFromRemote();
+    })
+    .catch(function () {
+      alert("That token didn't check out for the lists site — nothing was saved. Double-check the token and try again.");
+      statusLoaded();
+    });
+});
+
+disconnectBtn.addEventListener("click", function () {
+  setToken("");
+  updateButtons();
+  setStatus("This phone is disconnected — changes will stay on this phone until you connect it again.");
+});
+
+document.addEventListener("visibilitychange", function () {
+  if (!document.hidden) refreshFromRemote();
+});
+window.addEventListener("online", function () { scheduleSync(); refreshFromRemote(); });
+
+function render() {
+  var host = document.getElementById("stores");
+  host.innerHTML = "";
+  stores.forEach(function (section) {
+    var head = document.createElement("div");
+    head.className = "storehead";
+    var h = document.createElement("h2");
+    h.textContent = section.store;
+    head.appendChild(h);
+    var resetBtn = document.createElement("button");
+    resetBtn.type = "button";
+    resetBtn.className = "resetbtn";
+    resetBtn.textContent = "Reset list";
+    resetBtn.title = "Un-check everything in this section and fold the green new items into the list";
+    resetBtn.setAttribute("aria-label", "Reset list for " + section.store);
+    resetBtn.addEventListener("click", function () {
+      if (confirm("Reset " + section.store + " for next time?\n\nThis un-checks everything in this section and folds the green new items into the list in normal color.")) {
+        mutate({ type: "reset", store: section.store });
+      }
+    });
+    head.appendChild(resetBtn);
+    host.appendChild(head);
+
+    if (section.note) {
+      var n = document.createElement("div");
+      n.className = "note";
+      n.textContent = section.note;
+      host.appendChild(n);
+    }
+
+    var ul = document.createElement("ul");
+    if (!section.items.length) {
+      var liE = document.createElement("li");
+      liE.className = "empty";
+      liE.textContent = "Nothing yet — add an item below.";
+      ul.appendChild(liE);
+    }
+    section.items.forEach(function (item, ii) {
+      var li = document.createElement("li");
+      li.className = "item" + (item.done ? " done" : "") + (item.fresh ? " fresh" : "");
+
+      var cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.checked = item.done;
+      cb.setAttribute("aria-label", "Done: " + item.name);
+      cb.addEventListener("change", function () {
+        mutate({ type: "done", store: section.store, name: item.name, done: cb.checked });
+      });
+      li.appendChild(cb);
+
+      var nm = document.createElement("span");
+      nm.className = "name";
+      nm.textContent = item.name;
+      li.appendChild(nm);
+
+      if (item.qty) {
+        var q = document.createElement("span");
+        q.className = "qty";
+        q.textContent = item.qty;
+        li.appendChild(q);
+      }
+
+      var btns = document.createElement("span");
+      btns.className = "btns";
+
+      var up = document.createElement("button");
+      up.type = "button"; up.textContent = "↑"; up.title = "Move up";
+      up.setAttribute("aria-label", "Move up: " + item.name);
+      up.disabled = (ii === 0);
+      up.addEventListener("click", function () {
+        mutate({ type: "move", store: section.store, name: item.name, dir: -1 });
+      });
+      btns.appendChild(up);
+
+      var dn = document.createElement("button");
+      dn.type = "button"; dn.textContent = "↓"; dn.title = "Move down";
+      dn.setAttribute("aria-label", "Move down: " + item.name);
+      dn.disabled = (ii === section.items.length - 1);
+      dn.addEventListener("click", function () {
+        mutate({ type: "move", store: section.store, name: item.name, dir: 1 });
+      });
+      btns.appendChild(dn);
+
+      var rm = document.createElement("button");
+      rm.type = "button"; rm.textContent = "✕"; rm.title = "Remove item";
+      rm.setAttribute("aria-label", "Remove: " + item.name);
+      rm.addEventListener("click", function () {
+        mutate({ type: "remove", store: section.store, name: item.name });
+      });
+      btns.appendChild(rm);
+
+      li.appendChild(btns);
+      ul.appendChild(li);
+    });
+    host.appendChild(ul);
+
+    var row = document.createElement("div");
+    row.className = "addrow";
+    var inName = document.createElement("input");
+    inName.type = "text"; inName.className = "new-name";
+    inName.placeholder = "New item…";
+    inName.setAttribute("aria-label", "New item for " + section.store);
+    var inQty = document.createElement("input");
+    inQty.type = "text"; inQty.className = "new-qty";
+    inQty.placeholder = "Qty / note (optional)";
+    inQty.setAttribute("aria-label", "Quantity or note");
+    var add = document.createElement("button");
+    add.type = "button"; add.textContent = "Add";
+    function doAdd() {
+      var nmv = inName.value.trim();
+      if (!nmv) { inName.focus(); return; }
+      mutate({ type: "add", store: section.store, name: nmv, qty: inQty.value.trim() });
+    }
+    add.addEventListener("click", doAdd);
+    inName.addEventListener("keydown", function (e) { if (e.key === "Enter") doAdd(); });
+    inQty.addEventListener("keydown", function (e) { if (e.key === "Enter") doAdd(); });
+    row.appendChild(inName); row.appendChild(inQty); row.appendChild(add);
+    host.appendChild(row);
+  });
+}
+
+cacheLoad();
+updateButtons();
+render();
+refreshFromRemote();
+if (pendingOps.length && getToken()) scheduleSync();
+</script>
+</body>
+</html>
