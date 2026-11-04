@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:06:05.061Z",
+  "updated": "2026-11-04T13:06:19.184Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -90,11 +90,6 @@
           "qty": "",
           "done": false,
           "fresh": true
-        },
-        {
-          "name": "Build the shared grocery list by store and shop it",
-          "qty": "",
-          "done": false
         },
         {
           "name": "Campground / park confirmations, launch viewing info, and addresses saved on the phone and on paper",
