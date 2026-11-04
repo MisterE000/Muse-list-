@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:56:08.594Z",
+  "updated": "2026-11-04T13:56:11.380Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -350,12 +350,12 @@
           "done": false
         },
         {
-          "name": "First stop and tonight's stop entered in navigation — before you roll",
+          "name": "Inside: Ice trays",
           "qty": "",
           "done": false
         },
         {
-          "name": "Inside: Ice trays",
+          "name": "First stop and tonight's stop entered in navigation — before you roll",
           "qty": "",
           "done": false
         },
