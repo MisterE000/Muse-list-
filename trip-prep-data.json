@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:09:32.208Z",
+  "updated": "2026-11-04T13:19:05.849Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -31,12 +31,12 @@
           "done": false
         },
         {
-          "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
+          "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
           "qty": "",
           "done": false
         },
         {
-          "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
+          "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
           "qty": "",
           "done": false
         },
@@ -234,12 +234,107 @@
           "done": false
         },
         {
+          "name": "Clothes: backpack",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: Coffee / cup / filter",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: long sleeve/ jacket",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: night clothes. good shoes",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: pants. shorts. swim suit",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: Slippers",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: socks underwear",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: spacex shirt",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: 6tb drive",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: flash drive",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: Headphones - 1/8\" jack",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: laptops",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: mouse",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: Passport",
+          "qty": "",
+          "done": false
+        },
+        {
           "name": "Final check inside the house, then lock up",
           "qty": "",
           "done": false
         },
         {
           "name": "First stop and tonight's stop entered in navigation — before you roll",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: Corned beef hash",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: Mashed potatoes",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: Popcorn",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: rice/quinoa",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: Taco shells",
           "qty": "",
           "done": false
         },
@@ -344,116 +439,6 @@
           "done": false
         },
         {
-          "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Refrigerator latched, loose items stowed, cupboards latched",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Turn off outside water spigot",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: backpack",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: Coffee / cup / filter",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: long sleeve/ jacket",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: night clothes. good shoes",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: pants. shorts. swim suit",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: Slippers",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: socks underwear",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: spacex shirt",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: 6tb drive",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: flash drive",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: Headphones - 1/8\" jack",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: laptops",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: mouse",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: Passport",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: Corned beef hash",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: Mashed potatoes",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: Popcorn",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: rice/quinoa",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: Taco shells",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Packing: battery charger",
           "qty": "",
           "done": false
@@ -512,6 +497,21 @@
           "name": "Packing: tongs",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Refrigerator latched, loose items stowed, cupboards latched",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Turn off outside water spigot",
+          "qty": "",
+          "done": false
         }
       ]
     },
@@ -526,6 +526,12 @@
         },
         {
           "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
           "qty": "",
           "done": false,
           "fresh": true
