@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T13:07:11.156Z",
+  "updated": "2026-11-04T13:07:57.140Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -402,6 +402,12 @@
     {
       "store": "Day-of-departure",
       "items": [
+        {
+          "name": "Hold / pause mail and deliveries, and tell anyone who needs to know you will be away",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
           "qty": "",
