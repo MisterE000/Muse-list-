@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-05T00:22:02.645Z",
+  "updated": "2026-11-05T00:22:08.748Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -12,11 +12,6 @@
           "fresh": true
         },
         {
-          "name": "Fuel up, and check propane level",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
           "qty": "",
           "done": false
@@ -25,6 +20,11 @@
           "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Fuel up, and check propane level",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Check lights, brakes, wipers, mirrors, and dash cam (USB-C lead packed)",
