@@ -1,10 +1,16 @@
 {
   "version": 1,
-  "updated": "2026-11-05T00:22:11.189Z",
+  "updated": "2026-11-05T00:22:33.441Z",
   "stores": [
     {
       "store": "Pre-trip",
       "items": [
+        {
+          "name": "Rubbers",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
           "qty": "",
