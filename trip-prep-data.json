@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T15:13:55.006Z",
+  "updated": "2026-11-05T00:21:59.762Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -10,11 +10,6 @@
           "qty": "",
           "done": false,
           "fresh": true
-        },
-        {
-          "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
-          "qty": "",
-          "done": false
         },
         {
           "name": "Charge / check the lithium house bank — 920 Ah; note voltage (13.3V is about 70%, 13.1V is about 20%)",
@@ -45,6 +40,11 @@
           "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Oil change if due — Witherwings (E350, 7.3L V8): 5W-30, 9 qt, filter Mobil M1-210. For a launch trip, finish it at least 3 days before the actual launch date",
