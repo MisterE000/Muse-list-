@@ -1,16 +1,10 @@
 {
   "version": 1,
-  "updated": "2026-11-05T00:22:08.748Z",
+  "updated": "2026-11-05T00:22:11.189Z",
   "stores": [
     {
       "store": "Pre-trip",
       "items": [
-        {
-          "name": "Battery jumpstart kit",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
         {
           "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
           "qty": "",
@@ -20,6 +14,12 @@
           "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Battery jumpstart kit",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Fuel up, and check propane level",
