@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:46:16.855Z",
+  "updated": "2026-11-06T18:47:17.367Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -37,12 +37,6 @@
         },
         {
           "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
-          "qty": "",
-          "done": false,
-          "fresh": false
-        },
-        {
-          "name": "Fuel up, and check propane level",
           "qty": "",
           "done": false,
           "fresh": false
