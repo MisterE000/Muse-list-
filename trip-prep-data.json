@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:39:31.762Z",
+  "updated": "2026-11-06T19:39:36.291Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -209,24 +209,6 @@
           "fresh": true
         },
         {
-          "name": "Cooking spoon",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Bottle opener",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Can opener",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Charge phones, laptops, and battery packs; pack all charging cables, including USB-C",
           "qty": "",
           "done": false
@@ -296,6 +278,24 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Cooking spoon",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Bottle opener",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Can opener",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Fire pit spatula",
