@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:43:47.863Z",
+  "updated": "2026-11-06T19:43:56.976Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -197,18 +197,6 @@
           "fresh": true
         },
         {
-          "name": "Heavy jacket",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Rain jacket",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Charge phones, laptops, and battery packs; pack all charging cables, including USB-C",
           "qty": "",
           "done": false
@@ -278,6 +266,18 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Heavy jacket",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Rain jacket",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Mandel's",
