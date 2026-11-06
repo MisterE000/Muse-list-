@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:31:27.276Z",
+  "updated": "2026-11-06T19:34:40.102Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -202,11 +202,6 @@
           "done": false
         },
         {
-          "name": "Driver's licenses, registration, insurance, and roadside-assistance cards in the RV",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Dump black and gray tanks, rinse, and add tank treatment before you leave",
           "qty": "",
           "done": false
@@ -271,6 +266,11 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Driver's licenses, registration, insurance, and roadside-assistance cards in the RV",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Portable fans",
