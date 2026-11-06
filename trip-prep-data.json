@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:43:05.119Z",
+  "updated": "2026-11-06T19:43:10.014Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -745,11 +745,6 @@
           "name": "Packing: Sharpie",
           "qty": "",
           "done": false
-        },
-        {
-          "name": "Packing: tongs",
-          "qty": "",
-          "done": true
         },
         {
           "name": "Packing: spatula",
