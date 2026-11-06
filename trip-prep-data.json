@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:25:21.395Z",
+  "updated": "2026-11-06T19:25:30.787Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -180,6 +180,12 @@
         },
         {
           "name": "Ibuprofen.",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Daily medication",
           "qty": "",
           "done": false,
           "fresh": true
