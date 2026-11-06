@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:16:13.854Z",
+  "updated": "2026-11-06T19:16:24.862Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -168,6 +168,12 @@
         },
         {
           "name": "Mandel's",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Swim trunks",
           "qty": "",
           "done": false,
           "fresh": true
