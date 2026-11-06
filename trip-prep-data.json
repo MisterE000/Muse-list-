@@ -1,12 +1,18 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:17:34.747Z",
+  "updated": "2026-11-06T19:18:52.207Z",
   "stores": [
     {
       "store": "Pre-trip",
       "items": [
         {
           "name": "Test the stove.",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Test the toaster",
           "qty": "",
           "done": false,
           "fresh": true
