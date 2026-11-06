@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:25:41.634Z",
+  "updated": "2026-11-06T19:25:52.323Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -192,6 +192,12 @@
         },
         {
           "name": "Grocery sacks",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Toilet paper",
           "qty": "",
           "done": false,
           "fresh": true
