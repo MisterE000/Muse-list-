@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:26:23.914Z",
+  "updated": "2026-11-06T19:26:33.927Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -216,6 +216,12 @@
         },
         {
           "name": "Federal",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Foot cushion",
           "qty": "",
           "done": false,
           "fresh": true
