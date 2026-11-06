@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:42:11.750Z",
+  "updated": "2026-11-06T19:42:53.547Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -747,11 +747,6 @@
           "done": false
         },
         {
-          "name": "Packing: silverwear",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Packing: spatula",
           "qty": "",
           "done": false
@@ -765,6 +760,11 @@
           "name": "Packing: tongs",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Packing: silverwear",
+          "qty": "",
+          "done": true
         }
       ]
     },
