@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:36:38.105Z",
+  "updated": "2026-11-06T19:37:16.158Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -192,6 +192,12 @@
         },
         {
           "name": "Portable desks",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Fire pit pan",
           "qty": "",
           "done": false,
           "fresh": true
