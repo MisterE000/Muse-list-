@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:38:20.031Z",
+  "updated": "2026-11-06T19:38:32.909Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -216,6 +216,12 @@
         },
         {
           "name": "Cooking spoon",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Bottle opener",
           "qty": "",
           "done": false,
           "fresh": true
