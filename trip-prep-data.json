@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:15:14.944Z",
+  "updated": "2026-11-06T19:15:32.490Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -150,6 +150,12 @@
         },
         {
           "name": "Bug spray",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Close: cold weather",
           "qty": "",
           "done": false,
           "fresh": true
