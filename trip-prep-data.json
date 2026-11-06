@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:31:20.104Z",
+  "updated": "2026-11-06T19:31:27.276Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -198,11 +198,6 @@
         },
         {
           "name": "Charge phones, laptops, and battery packs; pack all charging cables, including USB-C",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Download offline maps, launch / weather apps, and iOverlander spots for the route while you have good signal",
           "qty": "",
           "done": false
         },
