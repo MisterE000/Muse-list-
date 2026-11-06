@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:35:27.039Z",
+  "updated": "2026-11-06T19:36:33.959Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -197,12 +197,6 @@
           "fresh": true
         },
         {
-          "name": "Glasses",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Sunglasses",
           "qty": "",
           "done": false,
@@ -278,6 +272,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Glasses",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Driver's licenses, registration, insurance, and roadside-assistance cards in the RV",
