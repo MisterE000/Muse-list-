@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:16:04.692Z",
+  "updated": "2026-11-06T18:18:15.791Z",
   "stores": [
     {
       "store": "Pre-trip",
       "items": [
         {
-          "name": "Fill washer fluid",
+          "name": "test hot water heater",
           "qty": "",
           "done": false,
           "fresh": true
@@ -58,6 +58,12 @@
           "qty": "",
           "done": false,
           "fresh": false
+        },
+        {
+          "name": "Fill washer fluid",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Start the generator",
