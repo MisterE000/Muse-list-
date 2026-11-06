@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:16:24.862Z",
+  "updated": "2026-11-06T19:16:30.558Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -279,11 +279,6 @@
           "done": false
         },
         {
-          "name": "Tools: Ratchet strap",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Tools: hotdog sticks",
           "qty": "",
           "done": false
@@ -298,6 +293,11 @@
           "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Tools: Ratchet strap",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Cards and cash; notify bank / cards of travel if needed",
