@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:55:07.526Z",
+  "updated": "2026-11-06T18:55:29.020Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -141,11 +141,6 @@
           "qty": "",
           "done": false,
           "fresh": true
-        },
-        {
-          "name": "Campground / park confirmations, launch viewing info, and addresses saved on the phone and on paper",
-          "qty": "",
-          "done": false
         },
         {
           "name": "Cards and cash; notify bank / cards of travel if needed",
