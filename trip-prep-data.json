@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:43:30.607Z",
+  "updated": "2026-11-06T18:44:41.530Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -19,6 +19,12 @@
         },
         {
           "name": "Test interior and exterior lights",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Check propane level",
           "qty": "",
           "done": false,
           "fresh": true
