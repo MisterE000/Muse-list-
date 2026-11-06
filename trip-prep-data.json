@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:43:00.880Z",
+  "updated": "2026-11-06T19:43:05.119Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -749,7 +749,7 @@
         {
           "name": "Packing: tongs",
           "qty": "",
-          "done": false
+          "done": true
         },
         {
           "name": "Packing: spatula",
