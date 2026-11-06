@@ -1,16 +1,10 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:36:20.993Z",
+  "updated": "2026-11-06T18:42:29.416Z",
   "stores": [
     {
       "store": "Pre-trip",
       "items": [
-        {
-          "name": "Test refrigerator",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
         {
           "name": "Test freezer",
           "qty": "",
@@ -52,6 +46,12 @@
           "qty": "",
           "done": false,
           "fresh": false
+        },
+        {
+          "name": "Test refrigerator",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Battery jumpstart kit",
