@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:35:16.511Z",
+  "updated": "2026-11-06T19:35:27.039Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -198,6 +198,12 @@
         },
         {
           "name": "Glasses",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Sunglasses",
           "qty": "",
           "done": false,
           "fresh": true
