@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:16:33.931Z",
+  "updated": "2026-11-06T19:16:44.499Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -278,11 +278,6 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
-        },
-        {
-          "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
-          "qty": "",
-          "done": false
         },
         {
           "name": "Tools: Firewood.",
