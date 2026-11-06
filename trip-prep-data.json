@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:30:20.957Z",
+  "updated": "2026-11-06T19:30:25.660Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -180,12 +180,6 @@
         },
         {
           "name": "Daily medication",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Federal",
           "qty": "",
           "done": false,
           "fresh": true
