@@ -1,10 +1,16 @@
 {
   "version": 1,
-  "updated": "2026-11-06T02:09:51.167Z",
+  "updated": "2026-11-06T13:34:48.086Z",
   "stores": [
     {
       "store": "Pre-trip",
       "items": [
+        {
+          "name": "Fill washer fluid",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
           "qty": "",
