@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:03:10.820Z",
+  "updated": "2026-11-06T19:14:55.995Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -149,11 +149,6 @@
           "fresh": true
         },
         {
-          "name": "Cards and cash; notify bank / cards of travel if needed",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Charge phones, laptops, and battery packs; pack all charging cables, including USB-C",
           "qty": "",
           "done": false
@@ -273,6 +268,11 @@
           "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Cards and cash; notify bank / cards of travel if needed",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Tools: ice scraper",
