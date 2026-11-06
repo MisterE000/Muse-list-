@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:38:10.083Z",
+  "updated": "2026-11-06T19:38:20.031Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -210,6 +210,12 @@
         },
         {
           "name": "Spatula",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Cooking spoon",
           "qty": "",
           "done": false,
           "fresh": true
