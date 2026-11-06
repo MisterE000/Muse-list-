@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:56:17.208Z",
+  "updated": "2026-11-06T18:56:28.258Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -150,6 +150,12 @@
         },
         {
           "name": "Portable charcoal grill",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Firewood",
           "qty": "",
           "done": false,
           "fresh": true
