@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:27:27.665Z",
+  "updated": "2026-11-06T19:28:17.220Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -246,6 +246,12 @@
         },
         {
           "name": "Portable desks",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Portable fans",
           "qty": "",
           "done": false,
           "fresh": true
