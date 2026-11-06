@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:44:56.630Z",
+  "updated": "2026-11-06T19:45:55.091Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -203,12 +203,6 @@
           "fresh": true
         },
         {
-          "name": "Dish sponge",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Coffee pot cleaned",
           "qty": "",
           "done": false,
@@ -284,6 +278,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Dish sponge",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Heavy jacket",
