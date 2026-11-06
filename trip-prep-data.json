@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:39:23.888Z",
+  "updated": "2026-11-06T19:39:31.762Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -227,12 +227,6 @@
           "fresh": true
         },
         {
-          "name": "Fire pit spatula",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Charge phones, laptops, and battery packs; pack all charging cables, including USB-C",
           "qty": "",
           "done": false
@@ -302,6 +296,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Fire pit spatula",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Fire pit tongs",
