@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:23:41.038Z",
+  "updated": "2026-11-06T19:23:53.631Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -185,6 +185,12 @@
           "fresh": true
         },
         {
+          "name": "Clothes: long sleeve shirts",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
           "name": "Charge phones, laptops, and battery packs; pack all charging cables, including USB-C",
           "qty": "",
           "done": false
@@ -278,12 +284,6 @@
         },
         {
           "name": "Clothes: underwear",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Clothes: long sleeve shirts",
           "qty": "",
           "done": true,
           "fresh": true
