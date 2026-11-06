@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:02:57.099Z",
+  "updated": "2026-11-06T19:03:04.756Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -144,12 +144,6 @@
       "items": [
         {
           "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Tools: grabber",
           "qty": "",
           "done": false,
           "fresh": true
@@ -303,6 +297,12 @@
           "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Tools: grabber",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Tools: hammer",
