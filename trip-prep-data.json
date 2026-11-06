@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:55:29.020Z",
+  "updated": "2026-11-06T18:55:38.201Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -153,11 +153,6 @@
           "done": false
         },
         {
-          "name": "Check water pump switch, hot-water system, and shower / taps for leaks",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Clothing for heat, cool nights, and rain; hats, sunscreen, and bug spray",
           "qty": "",
           "done": false
@@ -282,6 +277,11 @@
           "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Check water pump switch, hot-water system, and shower / taps for leaks",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Tools: grill scraper",
