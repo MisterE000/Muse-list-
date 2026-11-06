@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:37:42.302Z",
+  "updated": "2026-11-06T19:38:10.083Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -204,6 +204,12 @@
         },
         {
           "name": "Fire pit tongs",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Spatula",
           "qty": "",
           "done": false,
           "fresh": true
