@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:26:15.409Z",
+  "updated": "2026-11-06T19:26:23.914Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -210,6 +210,12 @@
         },
         {
           "name": "Pillow",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Federal",
           "qty": "",
           "done": false,
           "fresh": true
