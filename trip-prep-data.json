@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:30:13.407Z",
+  "updated": "2026-11-06T19:30:17.063Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -185,12 +185,6 @@
           "fresh": true
         },
         {
-          "name": "Grocery sacks",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Toilet paper",
           "qty": "",
           "done": false,
@@ -347,6 +341,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Grocery sacks",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Blood pressure checker",
