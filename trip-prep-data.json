@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:20:21.800Z",
+  "updated": "2026-11-06T18:26:43.852Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -13,6 +13,12 @@
         },
         {
           "name": "Test freezer",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Check roof vent fan",
           "qty": "",
           "done": false,
           "fresh": true
