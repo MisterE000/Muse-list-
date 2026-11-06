@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:28:17.220Z",
+  "updated": "2026-11-06T19:28:32.643Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -252,6 +252,12 @@
         },
         {
           "name": "Portable fans",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Flashlight: rear",
           "qty": "",
           "done": false,
           "fresh": true
