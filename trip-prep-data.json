@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:20:28.721Z",
+  "updated": "2026-11-06T19:21:01.913Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -168,6 +168,12 @@
         },
         {
           "name": "Clothes: pants",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: SpaceX shirts",
           "qty": "",
           "done": false,
           "fresh": true
