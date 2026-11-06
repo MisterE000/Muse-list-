@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:38:32.909Z",
+  "updated": "2026-11-06T19:38:44.265Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -222,6 +222,12 @@
         },
         {
           "name": "Bottle opener",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Can opener",
           "qty": "",
           "done": false,
           "fresh": true
