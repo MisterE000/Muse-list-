@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:26:43.852Z",
+  "updated": "2026-11-06T18:36:20.993Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -36,12 +36,6 @@
           "fresh": false
         },
         {
-          "name": "Battery jumpstart kit",
-          "qty": "",
-          "done": false,
-          "fresh": false
-        },
-        {
           "name": "Fuel up, and check propane level",
           "qty": "",
           "done": false,
@@ -57,6 +51,12 @@
           "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
           "qty": "",
           "done": false,
+          "fresh": false
+        },
+        {
+          "name": "Battery jumpstart kit",
+          "qty": "",
+          "done": true,
           "fresh": false
         },
         {
