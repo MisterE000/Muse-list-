@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:16:51.230Z",
+  "updated": "2026-11-06T19:17:24.924Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -235,11 +235,6 @@
         },
         {
           "name": "Mrs.E work setup checked if traveling on a workday (Mon–Fri) — laptop, charger, and Starlink signal",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Phone list updated: family, campground, and emergency contacts",
           "qty": "",
           "done": false
         },
