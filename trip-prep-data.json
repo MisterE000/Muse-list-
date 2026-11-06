@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:21:45.952Z",
+  "updated": "2026-11-06T19:22:05.095Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -186,6 +186,12 @@
         },
         {
           "name": "Clothes: long sleeve shirts",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: underwear",
           "qty": "",
           "done": false,
           "fresh": true
