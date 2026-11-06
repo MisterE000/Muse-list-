@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:24:52.048Z",
+  "updated": "2026-11-06T19:24:55.695Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -173,12 +173,6 @@
           "fresh": true
         },
         {
-          "name": "Mailing envelopes",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Charge phones, laptops, and battery packs; pack all charging cables, including USB-C",
           "qty": "",
           "done": false
@@ -263,6 +257,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Mailing envelopes",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Clothes: jammies",
