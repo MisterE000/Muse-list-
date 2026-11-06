@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:50:46.328Z",
+  "updated": "2026-11-06T18:51:59.240Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -28,6 +28,18 @@
           "qty": "",
           "done": false,
           "fresh": false
+        },
+        {
+          "name": "Check that engine charges batteries",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check the generator charges batteries",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
