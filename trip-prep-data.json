@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:43:15.307Z",
+  "updated": "2026-11-06T19:43:39.253Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -192,6 +192,12 @@
         },
         {
           "name": "Fire pit pan",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Heavy jacket",
           "qty": "",
           "done": false,
           "fresh": true
