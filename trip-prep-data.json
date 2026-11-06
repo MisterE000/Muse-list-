@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:36:33.959Z",
+  "updated": "2026-11-06T19:36:38.105Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -197,12 +197,6 @@
           "fresh": true
         },
         {
-          "name": "Sunglasses",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Charge phones, laptops, and battery packs; pack all charging cables, including USB-C",
           "qty": "",
           "done": false
@@ -272,6 +266,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Sunglasses",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Glasses",
