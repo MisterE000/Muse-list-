@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:30:25.660Z",
+  "updated": "2026-11-06T19:30:33.956Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -185,12 +185,6 @@
           "fresh": true
         },
         {
-          "name": "Foot cushion",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Tina foot cushion",
           "qty": "",
           "done": false,
@@ -317,6 +311,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Foot cushion",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Pillow",
