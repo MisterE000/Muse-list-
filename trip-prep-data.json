@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:28:56.589Z",
+  "updated": "2026-11-06T19:30:13.407Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -168,12 +168,6 @@
         },
         {
           "name": "Clothes: long sleeve shirts",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Blood pressure checker",
           "qty": "",
           "done": false,
           "fresh": true
@@ -353,6 +347,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Blood pressure checker",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Mailing envelopes",
