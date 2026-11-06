@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:17:24.924Z",
+  "updated": "2026-11-06T19:17:34.747Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -225,11 +225,6 @@
         },
         {
           "name": "Remember: we do not drink the RV water — stock bottled water and plan Twice The Ice stops",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Twice The Ice plan for the first leg: where is the first stop, 3–4 days out?",
           "qty": "",
           "done": false
         },
