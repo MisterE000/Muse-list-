@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:57:11.231Z",
+  "updated": "2026-11-06T18:57:22.732Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -150,6 +150,12 @@
         },
         {
           "name": "Tools: hammer",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Tools: grabber",
           "qty": "",
           "done": false,
           "fresh": true
