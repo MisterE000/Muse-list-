@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:43:39.253Z",
+  "updated": "2026-11-06T19:43:47.863Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -198,6 +198,12 @@
         },
         {
           "name": "Heavy jacket",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Rain jacket",
           "qty": "",
           "done": false,
           "fresh": true
