@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:44:41.759Z",
+  "updated": "2026-11-06T19:44:56.630Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -204,6 +204,12 @@
         },
         {
           "name": "Dish sponge",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Coffee pot cleaned",
           "qty": "",
           "done": false,
           "fresh": true
