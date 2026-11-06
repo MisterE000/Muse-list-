@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:22:47.391Z",
+  "updated": "2026-11-06T19:23:00.392Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -204,6 +204,12 @@
         },
         {
           "name": "Clothes: shorts",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: jammies",
           "qty": "",
           "done": false,
           "fresh": true
