@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:26:45.809Z",
+  "updated": "2026-11-06T19:27:01.180Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -228,6 +228,12 @@
         },
         {
           "name": "Tina foot cushion",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Windshield sun reflector",
           "qty": "",
           "done": false,
           "fresh": true
