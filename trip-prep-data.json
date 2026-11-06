@@ -1,16 +1,10 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:19:21.384Z",
+  "updated": "2026-11-06T18:20:21.800Z",
   "stores": [
     {
       "store": "Pre-trip",
       "items": [
-        {
-          "name": "test hot water heater",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
         {
           "name": "Test refrigerator",
           "qty": "",
@@ -54,22 +48,28 @@
           "fresh": false
         },
         {
-          "name": "Check all fluids, belts, hoses, and tire pressures (including spare); look for leaks underneath",
+          "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
           "qty": "",
           "done": false,
+          "fresh": false
+        },
+        {
+          "name": "Check all fluids, belts, hoses, and tire pressures (including spare); look for leaks underneath",
+          "qty": "",
+          "done": true,
           "fresh": false
         },
         {
           "name": "Charge / check the lithium house bank — 920 Ah; note voltage (13.3V is about 70%, 13.1V is about 20%)",
           "qty": "",
-          "done": false,
+          "done": true,
           "fresh": false
         },
         {
-          "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
+          "name": "test hot water heater",
           "qty": "",
-          "done": false,
-          "fresh": false
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Fill washer fluid",
