@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:16:00.961Z",
+  "updated": "2026-11-06T19:16:13.854Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -162,6 +162,12 @@
         },
         {
           "name": "Clothes: hot weather",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Mandel's",
           "qty": "",
           "done": false,
           "fresh": true
