@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:39:39.930Z",
+  "updated": "2026-11-06T19:41:57.697Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -198,6 +198,12 @@
         },
         {
           "name": "Fire pit pan",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Backup power inverter",
           "qty": "",
           "done": false,
           "fresh": true
