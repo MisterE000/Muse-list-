@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:24:55.695Z",
+  "updated": "2026-11-06T19:25:11.943Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -168,6 +168,12 @@
         },
         {
           "name": "Clothes: long sleeve shirts",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Blood pressure checker",
           "qty": "",
           "done": false,
           "fresh": true
