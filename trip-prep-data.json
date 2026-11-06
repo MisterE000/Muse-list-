@@ -1,12 +1,24 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:18:15.791Z",
+  "updated": "2026-11-06T18:19:21.384Z",
   "stores": [
     {
       "store": "Pre-trip",
       "items": [
         {
           "name": "test hot water heater",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Test refrigerator",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Test freezer",
           "qty": "",
           "done": false,
           "fresh": true
