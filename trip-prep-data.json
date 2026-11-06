@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:37:16.158Z",
+  "updated": "2026-11-06T19:37:42.302Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -198,6 +198,12 @@
         },
         {
           "name": "Fire pit pan",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Fire pit tongs",
           "qty": "",
           "done": false,
           "fresh": true
