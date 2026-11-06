@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:58:45.155Z",
+  "updated": "2026-11-06T18:59:15.585Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -168,6 +168,12 @@
         },
         {
           "name": "Tools: socket set",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Tools: quart of oil",
           "qty": "",
           "done": false,
           "fresh": true
