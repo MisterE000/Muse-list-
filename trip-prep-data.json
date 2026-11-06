@@ -1,18 +1,12 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:10:58.616Z",
+  "updated": "2026-11-06T18:16:04.692Z",
   "stores": [
     {
       "store": "Pre-trip",
       "items": [
         {
           "name": "Fill washer fluid",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Check the oil in the generator",
           "qty": "",
           "done": false,
           "fresh": true
@@ -64,6 +58,18 @@
           "qty": "",
           "done": false,
           "fresh": false
+        },
+        {
+          "name": "Start the generator",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check the oil in the generator",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Oil change if due — Witherwings (E350, 7.3L V8): 5W-30, 9 qt, filter Mobil M1-210. For a launch trip, finish it at least 3 days before the actual launch date",
