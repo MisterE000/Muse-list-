@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:44:41.530Z",
+  "updated": "2026-11-06T18:46:16.855Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -25,6 +25,12 @@
         },
         {
           "name": "Check propane level",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Test furnace",
           "qty": "",
           "done": false,
           "fresh": true
