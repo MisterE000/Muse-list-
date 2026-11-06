@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:25:30.787Z",
+  "updated": "2026-11-06T19:25:41.634Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -186,6 +186,12 @@
         },
         {
           "name": "Daily medication",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Grocery sacks",
           "qty": "",
           "done": false,
           "fresh": true
