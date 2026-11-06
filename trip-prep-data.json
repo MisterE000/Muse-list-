@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:27:09.669Z",
+  "updated": "2026-11-06T19:27:27.665Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -240,6 +240,12 @@
         },
         {
           "name": "Umbrellas",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Portable desks",
           "qty": "",
           "done": false,
           "fresh": true
