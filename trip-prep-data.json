@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:28:32.643Z",
+  "updated": "2026-11-06T19:28:56.589Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -258,6 +258,12 @@
         },
         {
           "name": "Flashlight: rear",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Flashlight: front ( charged)",
           "qty": "",
           "done": false,
           "fresh": true
