@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:56:41.678Z",
+  "updated": "2026-11-06T18:57:00.827Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -249,11 +249,6 @@
           "done": false
         },
         {
-          "name": "Tools: Channel lock",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Tools: Firewood.",
           "qty": "",
           "done": false
@@ -278,6 +273,11 @@
           "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Tools: Channel lock",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Tools: campfire tongs",
