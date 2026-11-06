@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:56:28.258Z",
+  "updated": "2026-11-06T18:56:34.411Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -149,18 +149,6 @@
           "fresh": true
         },
         {
-          "name": "Portable charcoal grill",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Firewood",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Cards and cash; notify bank / cards of travel if needed",
           "qty": "",
           "done": false
@@ -295,6 +283,18 @@
           "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Portable charcoal grill",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Firewood",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Check water pump switch, hot-water system, and shower / taps for leaks",
