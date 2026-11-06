@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:24:11.170Z",
+  "updated": "2026-11-06T19:24:13.640Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -167,12 +167,6 @@
           "fresh": true
         },
         {
-          "name": "Clothes: jammies",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Clothes: long sleeve shirts",
           "qty": "",
           "done": false,
@@ -263,6 +257,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Clothes: jammies",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Clothes: shorts",
