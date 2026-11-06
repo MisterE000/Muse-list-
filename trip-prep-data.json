@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:57:58.370Z",
+  "updated": "2026-11-06T18:58:45.155Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -162,6 +162,12 @@
         },
         {
           "name": "Tools: electrical tool box",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Tools: socket set",
           "qty": "",
           "done": false,
           "fresh": true
