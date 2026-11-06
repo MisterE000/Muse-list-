@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:57:00.827Z",
+  "updated": "2026-11-06T18:57:11.231Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -144,6 +144,12 @@
       "items": [
         {
           "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Tools: hammer",
           "qty": "",
           "done": false,
           "fresh": true
