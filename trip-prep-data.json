@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:42:29.416Z",
+  "updated": "2026-11-06T18:43:30.607Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -12,16 +12,16 @@
           "fresh": true
         },
         {
-          "name": "Check roof vent fan",
+          "name": "Test water pump",
           "qty": "",
           "done": false,
           "fresh": true
         },
         {
-          "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
+          "name": "Test interior and exterior lights",
           "qty": "",
           "done": false,
-          "fresh": false
+          "fresh": true
         },
         {
           "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
@@ -46,6 +46,12 @@
           "qty": "",
           "done": false,
           "fresh": false
+        },
+        {
+          "name": "Check roof vent fan",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Test refrigerator",
