@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:16:44.499Z",
+  "updated": "2026-11-06T19:16:51.230Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -264,11 +264,6 @@
           "done": false
         },
         {
-          "name": "Starlink (permanently mounted) — power it up and confirm it connects before you leave",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Toiletries, towels, bedding, and laundry bag",
           "qty": "",
           "done": false
@@ -278,6 +273,11 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Starlink (permanently mounted) — power it up and confirm it connects before you leave",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Tools: Firewood.",
