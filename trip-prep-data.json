@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:14:55.995Z",
+  "updated": "2026-11-06T19:15:14.944Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -144,6 +144,12 @@
       "items": [
         {
           "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Bug spray",
           "qty": "",
           "done": false,
           "fresh": true
