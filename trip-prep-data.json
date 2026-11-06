@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:54:19.140Z",
+  "updated": "2026-11-06T18:55:07.526Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -138,12 +138,6 @@
       "items": [
         {
           "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Tools: grill scraper",
           "qty": "",
           "done": false,
           "fresh": true
@@ -293,6 +287,12 @@
           "name": "If catching rainwater: separate rain tank clean and ready, filter ready — never straight to drinking use",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Tools: grill scraper",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Washer fluid filled",
