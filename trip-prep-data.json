@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:30:41.829Z",
+  "updated": "2026-11-06T19:31:01.615Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -203,12 +203,6 @@
           "fresh": true
         },
         {
-          "name": "Flashlight: rear",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Flashlight: front ( charged)",
           "qty": "",
           "done": false,
@@ -299,6 +293,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Flashlight: rear",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Umbrellas",
