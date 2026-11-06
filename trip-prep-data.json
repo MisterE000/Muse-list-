@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "updated": "2026-11-06T18:53:48.929Z",
+  "updated": "2026-11-06T18:53:53.130Z",
   "stores": [
     {
       "store": "Pre-trip",
       "items": [
         {
-          "name": "Test water pump",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
           "qty": "",
           "done": false,
           "fresh": false
+        },
+        {
+          "name": "Test water pump",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Check lights, brakes, wipers, mirrors, and dash cam (USB-C lead packed)",
