@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:44:22.761Z",
+  "updated": "2026-11-06T19:44:41.759Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -198,6 +198,12 @@
         },
         {
           "name": "Dish soap",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Dish sponge",
           "qty": "",
           "done": false,
           "fresh": true
