@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:26:07.115Z",
+  "updated": "2026-11-06T19:26:15.409Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -204,6 +204,12 @@
         },
         {
           "name": "Lawn chairs",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Pillow",
           "qty": "",
           "done": false,
           "fresh": true
