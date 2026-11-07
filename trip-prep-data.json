@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:57:24.366Z",
+  "updated": "2026-11-07T20:58:43.955Z",
   "stores": [
     {
       "store": "Preparing",
@@ -25,12 +25,6 @@
         },
         {
           "name": "Qtips",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Deodorant",
           "qty": "",
           "done": false,
           "fresh": true
@@ -86,6 +80,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Deodorant",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Towel",
