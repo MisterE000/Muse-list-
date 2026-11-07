@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T17:50:32.275Z",
+  "updated": "2026-11-07T17:50:43.411Z",
   "stores": [
     {
       "store": "Preparing",
@@ -55,11 +55,6 @@
           "done": false
         },
         {
-          "name": "Plants / pets / deck / anything a neighbor or family member is watching — handed off with a note",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Sewer hose, gloves, fresh-water hose, and water filter / pressure regulator packed and stowed",
           "qty": "",
           "done": false
@@ -84,6 +79,11 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Plants / pets / deck / anything a neighbor or family member is watching — handed off with a note",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Stock coffee and morning supplies — coffee first thing is part of the routine",
