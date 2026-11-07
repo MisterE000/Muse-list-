@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:43:54.772Z",
+  "updated": "2026-11-07T21:46:35.855Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -161,12 +161,6 @@
           "fresh": true
         },
         {
-          "name": "Tow strap",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Dump black and gray tanks, rinse, and add tank treatment before you leave",
           "qty": "",
           "done": false
@@ -196,6 +190,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Tow strap",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Fire pit pan",
