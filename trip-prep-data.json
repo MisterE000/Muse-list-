@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:28:31.892Z",
+  "updated": "2026-11-07T20:28:39.226Z",
   "stores": [
     {
       "store": "Preparing",
@@ -43,6 +43,12 @@
         },
         {
           "name": "Razor",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Qtips",
           "qty": "",
           "done": false,
           "fresh": true
