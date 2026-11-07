@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:05:47.451Z",
+  "updated": "2026-11-07T21:05:55.434Z",
   "stores": [
     {
       "store": "Preparing",
@@ -34,11 +34,6 @@
           "done": false
         },
         {
-          "name": "Remember: we do not drink the RV water — stock bottled water and plan Twice The Ice stops",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Mrs.E work setup checked if traveling on a workday (Mon–Fri) — laptop, charger, and Starlink signal",
           "qty": "",
           "done": false
@@ -63,6 +58,11 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Remember: we do not drink the RV water — stock bottled water and plan Twice The Ice stops",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Qtips",
