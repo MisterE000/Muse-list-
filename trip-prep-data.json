@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:21:41.421Z",
+  "updated": "2026-11-07T21:21:44.385Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -986,7 +986,7 @@
         {
           "name": "Outside: Headlights working",
           "qty": "",
-          "done": false
+          "done": true
         },
         {
           "name": "Outside: Taillights working",
