@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:30:21.479Z",
+  "updated": "2026-11-07T20:30:30.090Z",
   "stores": [
     {
       "store": "Preparing",
@@ -671,12 +671,6 @@
         },
         {
           "name": "Final check inside the house, then lock up",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Towel",
           "qty": "",
           "done": false,
           "fresh": true
