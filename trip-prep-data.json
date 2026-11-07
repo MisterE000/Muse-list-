@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:05:35.109Z",
+  "updated": "2026-11-07T21:05:47.451Z",
   "stores": [
     {
       "store": "Preparing",
@@ -22,11 +22,6 @@
           "qty": "",
           "done": false,
           "fresh": true
-        },
-        {
-          "name": "Charge phones, laptops, and battery packs; pack all charging cables, including USB-C",
-          "qty": "",
-          "done": false
         },
         {
           "name": "Dump black and gray tanks, rinse, and add tank treatment before you leave",
