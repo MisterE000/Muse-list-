@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:56:04.285Z",
+  "updated": "2026-11-07T20:57:21.584Z",
   "stores": [
     {
       "store": "Preparing",
@@ -37,12 +37,6 @@
         },
         {
           "name": "Soap",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Shampoo",
           "qty": "",
           "done": false,
           "fresh": true
@@ -98,6 +92,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Shampoo",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Toothpaste",
