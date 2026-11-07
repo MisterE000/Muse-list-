@@ -1,24 +1,12 @@
 {
   "version": 1,
-  "updated": "2026-11-07T17:48:58.365Z",
+  "updated": "2026-11-07T17:49:43.291Z",
   "stores": [
     {
       "store": "Preparing",
       "items": [
         {
           "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Ibuprofen.",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Daily medication",
           "qty": "",
           "done": false,
           "fresh": true
@@ -117,6 +105,18 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Daily medication",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Ibuprofen.",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Bug spray",
