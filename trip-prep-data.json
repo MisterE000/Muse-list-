@@ -1,249 +1,7 @@
 {
   "version": 1,
-  "updated": "2026-11-07T17:25:31.409Z",
+  "updated": "2026-11-07T17:25:45.954Z",
   "stores": [
-    {
-      "store": "Pre-trip",
-      "items": [
-        {
-          "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
-          "qty": "",
-          "done": false,
-          "fresh": false
-        },
-        {
-          "name": "Kindle in RV",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Test the toaster",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Test the stove.",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Test water pump",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Check lights, brakes, wipers, mirrors, and dash cam (USB-C lead packed)",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        },
-        {
-          "name": "Test freezer",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Check that engine charges batteries",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Check the generator charges batteries",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        },
-        {
-          "name": "Check the lithium battery smoke detector",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Test interior and exterior lights",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Test furnace",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Check propane level",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Check roof vent fan",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Test refrigerator",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Battery jumpstart kit",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        },
-        {
-          "name": "Check all fluids, belts, hoses, and tire pressures (including spare); look for leaks underneath",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        },
-        {
-          "name": "Charge / check the lithium house bank — 920 Ah; note voltage (13.3V is about 70%, 13.1V is about 20%)",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        },
-        {
-          "name": "test hot water heater",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Fill washer fluid",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Start the generator",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Check the oil in the generator",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Oil change if due — Witherwings (E350, 7.3L V8): 5W-30, 9 qt, filter Mobil M1-210. For a launch trip, finish it at least 3 days before the actual launch date",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        }
-      ]
-    },
-    {
-      "store": "Walk-out",
-      "items": [
-        {
-          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Refrigerator latched, loose items stowed, cupboards latched",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "First stop and tonight's stop entered in navigation — before you roll",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
-          "qty": "",
-          "done": false,
-          "fresh": true,
-          "link": "travel-journal.html"
-        },
-        {
-          "name": "Final check inside the house, then lock up",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "turn off house water spigot",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "glasses",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "house themostat set away",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Lead acid battery connect",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "RV door key",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "wallet",
-          "qty": "",
-          "done": false
-        }
-      ]
-    },
-    {
-      "store": "Tina - day of departure",
-      "items": []
-    },
-    {
-      "store": "Tina - packing",
-      "items": [
-        {
-          "name": "jacket",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "scale",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        }
-      ]
-    },
     {
       "store": "Preparing",
       "items": [
@@ -697,6 +455,248 @@
           "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
           "qty": "",
           "done": true,
+          "fresh": true
+        }
+      ]
+    },
+    {
+      "store": "Pre-trip",
+      "items": [
+        {
+          "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
+          "qty": "",
+          "done": false,
+          "fresh": false
+        },
+        {
+          "name": "Kindle in RV",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test the toaster",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test the stove.",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test water pump",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check lights, brakes, wipers, mirrors, and dash cam (USB-C lead packed)",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "Test freezer",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check that engine charges batteries",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check the generator charges batteries",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "Check the lithium battery smoke detector",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test interior and exterior lights",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test furnace",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check propane level",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check roof vent fan",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test refrigerator",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Battery jumpstart kit",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "Check all fluids, belts, hoses, and tire pressures (including spare); look for leaks underneath",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "Charge / check the lithium house bank — 920 Ah; note voltage (13.3V is about 70%, 13.1V is about 20%)",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "test hot water heater",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Fill washer fluid",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Start the generator",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check the oil in the generator",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Oil change if due — Witherwings (E350, 7.3L V8): 5W-30, 9 qt, filter Mobil M1-210. For a launch trip, finish it at least 3 days before the actual launch date",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        }
+      ]
+    },
+    {
+      "store": "Walk-out",
+      "items": [
+        {
+          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Refrigerator latched, loose items stowed, cupboards latched",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "First stop and tonight's stop entered in navigation — before you roll",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
+          "qty": "",
+          "done": false,
+          "fresh": true,
+          "link": "travel-journal.html"
+        },
+        {
+          "name": "Final check inside the house, then lock up",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "turn off house water spigot",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "glasses",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "house themostat set away",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Lead acid battery connect",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "RV door key",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "wallet",
+          "qty": "",
+          "done": false
+        }
+      ]
+    },
+    {
+      "store": "Tina - day of departure",
+      "items": []
+    },
+    {
+      "store": "Tina - packing",
+      "items": [
+        {
+          "name": "jacket",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "scale",
+          "qty": "",
+          "done": false,
           "fresh": true
         }
       ]
