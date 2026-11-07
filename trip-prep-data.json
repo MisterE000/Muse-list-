@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:30:42.260Z",
+  "updated": "2026-11-07T20:30:49.010Z",
   "stores": [
     {
       "store": "Preparing",
@@ -508,16 +508,16 @@
           "fresh": true
         },
         {
-          "name": "Test water pump",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
           "name": "Check lights, brakes, wipers, mirrors, and dash cam (USB-C lead packed)",
           "qty": "",
           "done": true,
           "fresh": false
+        },
+        {
+          "name": "Test water pump",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Test freezer",
