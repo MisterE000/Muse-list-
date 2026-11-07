@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:31:03.711Z",
+  "updated": "2026-11-07T20:55:28.943Z",
   "stores": [
     {
       "store": "Preparing",
@@ -25,12 +25,6 @@
         },
         {
           "name": "Toothpaste",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Comb",
           "qty": "",
           "done": false,
           "fresh": true
@@ -116,6 +110,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Comb",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Plants / pets / deck / anything a neighbor or family member is watching — handed off with a note",
