@@ -1,1035 +1,1035 @@
 {
- "version": 1,
- "updated": "2026-11-07T14:11:59.000Z",
- "stores": [
-  {
-   "store": "Pre-trip",
-   "items": [
+  "version": 1,
+  "updated": "2026-11-07T14:12:58.355Z",
+  "stores": [
     {
-     "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
-     "qty": "",
-     "done": false,
-     "fresh": false
+      "store": "Tina - packing",
+      "items": []
     },
     {
-     "name": "Test the toaster",
-     "qty": "",
-     "done": true,
-     "fresh": true
+      "store": "Pre-trip",
+      "items": [
+        {
+          "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
+          "qty": "",
+          "done": false,
+          "fresh": false
+        },
+        {
+          "name": "Test the toaster",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test the stove.",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test water pump",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check lights, brakes, wipers, mirrors, and dash cam (USB-C lead packed)",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "Test freezer",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check that engine charges batteries",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check the generator charges batteries",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "Check the lithium battery smoke detector",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test interior and exterior lights",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test furnace",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check propane level",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check roof vent fan",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test refrigerator",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Battery jumpstart kit",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "Check all fluids, belts, hoses, and tire pressures (including spare); look for leaks underneath",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "Charge / check the lithium house bank — 920 Ah; note voltage (13.3V is about 70%, 13.1V is about 20%)",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "test hot water heater",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Fill washer fluid",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Start the generator",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check the oil in the generator",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Oil change if due — Witherwings (E350, 7.3L V8): 5W-30, 9 qt, filter Mobil M1-210. For a launch trip, finish it at least 3 days before the actual launch date",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        }
+      ]
     },
     {
-     "name": "Test the stove.",
-     "qty": "",
-     "done": true,
-     "fresh": true
+      "store": "Preparing",
+      "items": [
+        {
+          "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Bug spray",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: long sleeve shirts",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Ibuprofen.",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Daily medication",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Tina foot cushion",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Portable desks",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Fire pit pan",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Dish soap",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Charge phones, laptops, and battery packs; pack all charging cables, including USB-C",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Dump black and gray tanks, rinse, and add tank treatment before you leave",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Fill the fresh tank; check the additional fresh-tank space / tank if fitted",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Kitchen basics checked: propane / stove, pans, utensils, paper towels, trash bags, dish soap",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Medications, glasses, and first-aid kit packed",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Stock coffee and morning supplies — coffee first thing is part of the routine",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Remember: we do not drink the RV water — stock bottled water and plan Twice The Ice stops",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Mrs.E work setup checked if traveling on a workday (Mon–Fri) — laptop, charger, and Starlink signal",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Plants / pets / deck / anything a neighbor or family member is watching — handed off with a note",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Sewer hose, gloves, fresh-water hose, and water filter / pressure regulator packed and stowed",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Shoes for walking, camp, and wet ground",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Shore-power cord, adapters, and surge protection packed",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Toiletries, towels, bedding, and laundry bag",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Trip journal — and a pen — packed where you will actually use it",
+          "qty": "",
+          "done": false,
+          "link": "travel-journal.html"
+        },
+        {
+          "name": "Coffee pot cleaned",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Dish sponge",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Heavy jacket",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Rain jacket",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Mandel's",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Backup power inverter",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Spatula",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Cooking spoon",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Bottle opener",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Can opener",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Fire pit spatula",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Fire pit tongs",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Sunglasses",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Glasses",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Driver's licenses, registration, insurance, and roadside-assistance cards in the RV",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Portable fans",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Flashlight: front ( charged)",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Flashlight: rear",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Umbrellas",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Windshield sun reflector",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Foot cushion",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Pillow",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Lawn chairs",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Toilet paper",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Grocery sacks",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Blood pressure checker",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Mailing envelopes",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: jammies",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: shorts",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: boxers",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: socks",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: underwear",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: t-shirts",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: SpaceX shirts",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: pants",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Swim trunks",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Starlink (permanently mounted) — power it up and confirm it connects before you leave",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Tools: Firewood.",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Tools: hotdog sticks",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Tools: Ratchet strap",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Cards and cash; notify bank / cards of travel if needed",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Tools: ice scraper",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Tools: quart of oil",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Tools: socket set",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Tools: electrical tool box",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Tools: grabber",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Tools: hammer",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Tools: Channel lock",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Tools: campfire tongs",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Portable charcoal grill",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Firewood",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check water pump switch, hot-water system, and shower / taps for leaks",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Tools: grill scraper",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Washer fluid filled",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Clean vents",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        }
+      ]
     },
     {
-     "name": "Test water pump",
-     "qty": "",
-     "done": true,
-     "fresh": true
+      "store": "Day-of-departure",
+      "items": [
+        {
+          "name": "Hold / pause mail and deliveries, and tell anyone who needs to know you will be away",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Passports",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Gallon water",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Ice packs",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Empty home fridge of anything that will spoil while you are away",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: backpack",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: Coffee / cup / filter",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: long sleeve/ jacket",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: night clothes. good shoes",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: pants. shorts. swim suit",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: Slippers",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: socks underwear",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Clothes: spacex shirt",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: 6tb drive",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: flash drive",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: Headphones - 1/8\" jack",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: laptops",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Computer: mouse",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: Corned beef hash",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: Mashed potatoes",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: Popcorn",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: Taco shells",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: rice/quinoa",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "First stop and tonight's stop entered in navigation — before you roll",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: battery charger",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: frying pan",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: ice cube trays",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: mace",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: Pot to boil",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: Sharpie",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Packing: silverwear",
+          "qty": "",
+          "done": true
+        }
+      ]
     },
     {
-     "name": "Check lights, brakes, wipers, mirrors, and dash cam (USB-C lead packed)",
-     "qty": "",
-     "done": true,
-     "fresh": false
+      "store": "Tina - day of departure",
+      "items": []
     },
     {
-     "name": "Test freezer",
-     "qty": "",
-     "done": true,
-     "fresh": true
+      "store": "Walk-out",
+      "items": [
+        {
+          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Refrigerator latched, loose items stowed, cupboards latched",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "First stop and tonight's stop entered in navigation — before you roll",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
+          "qty": "",
+          "done": false,
+          "fresh": true,
+          "link": "travel-journal.html"
+        },
+        {
+          "name": "Final check inside the house, then lock up",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "turn off house water spigot",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "glasses",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "house themostat set away",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Lead acid battery connect",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "RV door key",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "wallet",
+          "qty": "",
+          "done": false
+        }
+      ]
     },
     {
-     "name": "Check that engine charges batteries",
-     "qty": "",
-     "done": true,
-     "fresh": true
+      "store": "Before driving",
+      "items": [
+        {
+          "name": "Inside: Bathroom fan off/closed",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Refrigerator latched, loose items stowed, cupboards latched",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Fuel level",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Tools: grill scraper",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Inside: Thermostat off",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Inside: Water heater off",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Outside: Sewer valve cap on",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Outside: Sewer line holder closed",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Outside: Both sewer valves closed",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Outside: Shore water cap in place",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Outside: Electric wire disconnected & cover closed",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Outside: Propane secure ? Straps",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Outside: Taillights working",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Outside: Headlights working",
+          "qty": "",
+          "done": false
+        }
+      ]
     },
     {
-     "name": "Check the generator charges batteries",
-     "qty": "",
-     "done": true,
-     "fresh": true
+      "store": "In-transit",
+      "items": [
+        {
+          "name": "If overnight lows will be over 80°F, plan a campground for those nights; if a heavy storm is forecast, plan a Walmart stop for Wi-Fi",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Check tires, lights, battery voltage, and anything rattling or leaking",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Stop at Twice The Ice for drinking water and ice",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Write two lines in the journal that evening: where are we, and what was the highlight?",
+          "qty": "",
+          "done": false,
+          "link": "travel-journal.html"
+        }
+      ]
     },
     {
-     "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
-     "qty": "",
-     "done": true,
-     "fresh": false
+      "store": "After returning",
+      "items": [
+        {
+          "name": "Add anything you wished you had packed to this master list",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Dump and rinse tanks, drain / store hoses, and turn off the water pump",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Empty the fridge, prop the fridge door if Witherwings will sit, and remove trash and laundry",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Finish the journal entry: highlights, best moment, and tips for next time",
+          "qty": "",
+          "done": false,
+          "link": "travel-journal.html"
+        }
+      ]
     },
     {
-     "name": "Check the lithium battery smoke detector",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Test interior and exterior lights",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Test furnace",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Check propane level",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Check roof vent fan",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Test refrigerator",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Battery jumpstart kit",
-     "qty": "",
-     "done": true,
-     "fresh": false
-    },
-    {
-     "name": "Check all fluids, belts, hoses, and tire pressures (including spare); look for leaks underneath",
-     "qty": "",
-     "done": true,
-     "fresh": false
-    },
-    {
-     "name": "Charge / check the lithium house bank — 920 Ah; note voltage (13.3V is about 70%, 13.1V is about 20%)",
-     "qty": "",
-     "done": true,
-     "fresh": false
-    },
-    {
-     "name": "test hot water heater",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Fill washer fluid",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Start the generator",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Check the oil in the generator",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Oil change if due — Witherwings (E350, 7.3L V8): 5W-30, 9 qt, filter Mobil M1-210. For a launch trip, finish it at least 3 days before the actual launch date",
-     "qty": "",
-     "done": true,
-     "fresh": false
+      "store": "Winterizing",
+      "note": "Nothing in the travel journal for this section yet — add the items you use and they will be here next time.",
+      "items": [
+        {
+          "name": "Drain water",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Blow out lines",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Drain hot and cold lines",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Turn off refrigerator",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        }
+      ]
     }
-   ]
-  },
-  {
-   "store": "Preparing",
-   "items": [
-    {
-     "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Bug spray",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Clothes: long sleeve shirts",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Ibuprofen.",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Daily medication",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Tina foot cushion",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Portable desks",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Fire pit pan",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Dish soap",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Charge phones, laptops, and battery packs; pack all charging cables, including USB-C",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Dump black and gray tanks, rinse, and add tank treatment before you leave",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Fill the fresh tank; check the additional fresh-tank space / tank if fitted",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Kitchen basics checked: propane / stove, pans, utensils, paper towels, trash bags, dish soap",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Medications, glasses, and first-aid kit packed",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Stock coffee and morning supplies — coffee first thing is part of the routine",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Remember: we do not drink the RV water — stock bottled water and plan Twice The Ice stops",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Mrs.E work setup checked if traveling on a workday (Mon–Fri) — laptop, charger, and Starlink signal",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Plants / pets / deck / anything a neighbor or family member is watching — handed off with a note",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Sewer hose, gloves, fresh-water hose, and water filter / pressure regulator packed and stowed",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Shoes for walking, camp, and wet ground",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Shore-power cord, adapters, and surge protection packed",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Toiletries, towels, bedding, and laundry bag",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Trip journal — and a pen — packed where you will actually use it",
-     "qty": "",
-     "done": false,
-     "link": "travel-journal.html"
-    },
-    {
-     "name": "Coffee pot cleaned",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Dish sponge",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Heavy jacket",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Rain jacket",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Mandel's",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Backup power inverter",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Spatula",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Cooking spoon",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Bottle opener",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Can opener",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Fire pit spatula",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Fire pit tongs",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Sunglasses",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Glasses",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Driver's licenses, registration, insurance, and roadside-assistance cards in the RV",
-     "qty": "",
-     "done": true
-    },
-    {
-     "name": "Portable fans",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Flashlight: front ( charged)",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Flashlight: rear",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Umbrellas",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Windshield sun reflector",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Foot cushion",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Pillow",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Lawn chairs",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Toilet paper",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Grocery sacks",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Blood pressure checker",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Mailing envelopes",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Clothes: jammies",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Clothes: shorts",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Clothes: boxers",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Clothes: socks",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Clothes: underwear",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Clothes: t-shirts",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Clothes: SpaceX shirts",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Clothes: pants",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Swim trunks",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Starlink (permanently mounted) — power it up and confirm it connects before you leave",
-     "qty": "",
-     "done": true
-    },
-    {
-     "name": "Tools: Firewood.",
-     "qty": "",
-     "done": true
-    },
-    {
-     "name": "Tools: hotdog sticks",
-     "qty": "",
-     "done": true
-    },
-    {
-     "name": "Tools: Ratchet strap",
-     "qty": "",
-     "done": true
-    },
-    {
-     "name": "Cards and cash; notify bank / cards of travel if needed",
-     "qty": "",
-     "done": true
-    },
-    {
-     "name": "Tools: ice scraper",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Tools: quart of oil",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Tools: socket set",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Tools: electrical tool box",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Tools: grabber",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Tools: hammer",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Tools: Channel lock",
-     "qty": "",
-     "done": true
-    },
-    {
-     "name": "Tools: campfire tongs",
-     "qty": "",
-     "done": true
-    },
-    {
-     "name": "Portable charcoal grill",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Firewood",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Check water pump switch, hot-water system, and shower / taps for leaks",
-     "qty": "",
-     "done": true
-    },
-    {
-     "name": "Tools: grill scraper",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Washer fluid filled",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Clean vents",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    }
-   ]
-  },
-  {
-   "store": "Tina - packing",
-   "items": []
-  },
-  {
-   "store": "Day-of-departure",
-   "items": [
-    {
-     "name": "Hold / pause mail and deliveries, and tell anyone who needs to know you will be away",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Passports",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Gallon water",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Ice packs",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Empty home fridge of anything that will spoil while you are away",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Clothes: backpack",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Clothes: Coffee / cup / filter",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Clothes: long sleeve/ jacket",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Clothes: night clothes. good shoes",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Clothes: pants. shorts. swim suit",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Clothes: Slippers",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Clothes: socks underwear",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Clothes: spacex shirt",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Computer: 6tb drive",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Computer: flash drive",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Computer: Headphones - 1/8\" jack",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Computer: laptops",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Computer: mouse",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Food: Corned beef hash",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Food: Mashed potatoes",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Food: Popcorn",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Food: Taco shells",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Food: rice/quinoa",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "First stop and tonight's stop entered in navigation — before you roll",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Packing: battery charger",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Packing: frying pan",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Packing: ice cube trays",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Packing: mace",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Packing: Pot to boil",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Packing: Sharpie",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Packing: silverwear",
-     "qty": "",
-     "done": true
-    }
-   ]
-  },
-  {
-   "store": "Tina - day of departure",
-   "items": []
-  },
-  {
-   "store": "Walk-out",
-   "items": [
-    {
-     "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Refrigerator latched, loose items stowed, cupboards latched",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "First stop and tonight's stop entered in navigation — before you roll",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
-     "qty": "",
-     "done": false,
-     "fresh": true,
-     "link": "travel-journal.html"
-    },
-    {
-     "name": "Final check inside the house, then lock up",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "turn off house water spigot",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "glasses",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "house themostat set away",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Lead acid battery connect",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "RV door key",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "wallet",
-     "qty": "",
-     "done": false
-    }
-   ]
-  },
-  {
-   "store": "Before driving",
-   "items": [
-    {
-     "name": "Inside: Bathroom fan off/closed",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Refrigerator latched, loose items stowed, cupboards latched",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Fuel level",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Tools: grill scraper",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Inside: Thermostat off",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Inside: Water heater off",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Outside: Sewer valve cap on",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Outside: Sewer line holder closed",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Outside: Both sewer valves closed",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Outside: Shore water cap in place",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Outside: Electric wire disconnected & cover closed",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Outside: Propane secure ? Straps",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Outside: Taillights working",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Outside: Headlights working",
-     "qty": "",
-     "done": false
-    }
-   ]
-  },
-  {
-   "store": "In-transit",
-   "items": [
-    {
-     "name": "If overnight lows will be over 80°F, plan a campground for those nights; if a heavy storm is forecast, plan a Walmart stop for Wi-Fi",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Check tires, lights, battery voltage, and anything rattling or leaking",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Stop at Twice The Ice for drinking water and ice",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Write two lines in the journal that evening: where are we, and what was the highlight?",
-     "qty": "",
-     "done": false,
-     "link": "travel-journal.html"
-    }
-   ]
-  },
-  {
-   "store": "After returning",
-   "items": [
-    {
-     "name": "Add anything you wished you had packed to this master list",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Dump and rinse tanks, drain / store hoses, and turn off the water pump",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Empty the fridge, prop the fridge door if Witherwings will sit, and remove trash and laundry",
-     "qty": "",
-     "done": false
-    },
-    {
-     "name": "Finish the journal entry: highlights, best moment, and tips for next time",
-     "qty": "",
-     "done": false,
-     "link": "travel-journal.html"
-    }
-   ]
-  },
-  {
-   "store": "Winterizing",
-   "note": "Nothing in the travel journal for this section yet — add the items you use and they will be here next time.",
-   "items": [
-    {
-     "name": "Drain water",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Blow out lines",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Drain hot and cold lines",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Turn off refrigerator",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    }
-   ]
-  }
- ]
+  ]
 }
