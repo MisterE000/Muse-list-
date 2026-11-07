@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:28:39.226Z",
+  "updated": "2026-11-07T20:28:46.464Z",
   "stores": [
     {
       "store": "Preparing",
@@ -49,6 +49,12 @@
         },
         {
           "name": "Qtips",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Deodorant",
           "qty": "",
           "done": false,
           "fresh": true
