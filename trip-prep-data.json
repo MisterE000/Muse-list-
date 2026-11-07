@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:28:23.114Z",
+  "updated": "2026-11-07T20:28:31.892Z",
   "stores": [
     {
       "store": "Preparing",
@@ -37,6 +37,12 @@
         },
         {
           "name": "Comb",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Razor",
           "qty": "",
           "done": false,
           "fresh": true
