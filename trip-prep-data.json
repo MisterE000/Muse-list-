@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:57:21.584Z",
+  "updated": "2026-11-07T20:57:24.366Z",
   "stores": [
     {
       "store": "Preparing",
@@ -37,12 +37,6 @@
         },
         {
           "name": "Soap",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Towel",
           "qty": "",
           "done": false,
           "fresh": true
@@ -92,6 +86,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Towel",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Shampoo",
