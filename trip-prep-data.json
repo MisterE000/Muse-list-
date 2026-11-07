@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:58:43.955Z",
+  "updated": "2026-11-07T21:05:35.109Z",
   "stores": [
     {
       "store": "Preparing",
@@ -19,18 +19,6 @@
         },
         {
           "name": "Dish soap",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Qtips",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Soap",
           "qty": "",
           "done": false,
           "fresh": true
@@ -80,6 +68,18 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Qtips",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Soap",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Deodorant",
