@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:28:46.464Z",
+  "updated": "2026-11-07T20:28:53.380Z",
   "stores": [
     {
       "store": "Preparing",
@@ -55,6 +55,12 @@
         },
         {
           "name": "Deodorant",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Soap",
           "qty": "",
           "done": false,
           "fresh": true
