@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:14:41.471Z",
+  "updated": "2026-11-07T21:14:49.828Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -838,11 +838,6 @@
           "done": false
         },
         {
-          "name": "Packing: mace",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Packing: Pot to boil",
           "qty": "",
           "done": false
@@ -851,6 +846,11 @@
           "name": "Packing: Sharpie",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Packing: mace",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Computer: Headphones - 1/8\" jack",
