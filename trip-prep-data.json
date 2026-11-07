@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T14:16:42.089Z",
+  "updated": "2026-11-07T14:41:53.805Z",
   "stores": [
     {
       "store": "Walk-out",
@@ -729,6 +729,12 @@
         },
         {
           "name": "Kindle",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Move any temperature resilient items into the basement",
           "qty": "",
           "done": false,
           "fresh": true
