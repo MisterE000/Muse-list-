@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:19:56.851Z",
+  "updated": "2026-11-07T21:21:06.033Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -939,12 +939,6 @@
           "fresh": true
         },
         {
-          "name": "Tools: grill scraper",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
           "qty": "",
           "done": false
@@ -998,6 +992,12 @@
           "name": "Outside: Headlights working",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Tools: grill scraper",
+          "qty": "",
+          "done": true,
+          "fresh": true
         }
       ]
     },
