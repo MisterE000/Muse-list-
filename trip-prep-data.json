@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:29:43.703Z",
+  "updated": "2026-11-07T20:29:59.810Z",
   "stores": [
     {
       "store": "Preparing",
@@ -102,11 +102,6 @@
         },
         {
           "name": "Shore-power cord, adapters, and surge protection packed",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Toiletries, towels, bedding, and laundry bag",
           "qty": "",
           "done": false
         },
