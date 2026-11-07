@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T13:27:09.363Z",
+  "updated": "2026-11-07T13:28:48.014Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -956,11 +956,6 @@
         },
         {
           "name": "Stop at Twice The Ice for drinking water and ice",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Top up groceries, fuel, and propane as needed",
           "qty": "",
           "done": false
         },
