@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:13:25.729Z",
+  "updated": "2026-11-07T21:13:54.228Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -768,11 +768,6 @@
           "done": false
         },
         {
-          "name": "Clothes: Slippers",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Clothes: spacex shirt",
           "qty": "",
           "done": false
@@ -866,6 +861,11 @@
           "name": "Packing: Sharpie",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Clothes: Slippers",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Clothes: socks underwear",
