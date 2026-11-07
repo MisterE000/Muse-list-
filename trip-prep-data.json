@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T14:41:53.805Z",
+  "updated": "2026-11-07T15:02:01.000Z",
   "stores": [
     {
       "store": "Walk-out",
@@ -229,7 +229,20 @@
     },
     {
       "store": "Tina - packing",
-      "items": []
+      "items": [
+        {
+          "name": "jacket",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "scale",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        }
+      ]
     },
     {
       "store": "Preparing",
