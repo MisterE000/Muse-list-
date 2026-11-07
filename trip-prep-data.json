@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "updated": "2026-11-07T17:25:27.675Z",
+  "updated": "2026-11-07T17:25:31.409Z",
   "stores": [
     {
       "store": "Pre-trip",
       "items": [
         {
-          "name": "Kindle in RV",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
           "qty": "",
           "done": false,
           "fresh": false
+        },
+        {
+          "name": "Kindle in RV",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Test the toaster",
