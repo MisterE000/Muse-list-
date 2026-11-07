@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:21:06.033Z",
+  "updated": "2026-11-07T21:21:41.421Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -984,14 +984,14 @@
           "done": false
         },
         {
-          "name": "Outside: Taillights working",
+          "name": "Outside: Headlights working",
           "qty": "",
           "done": false
         },
         {
-          "name": "Outside: Headlights working",
+          "name": "Outside: Taillights working",
           "qty": "",
-          "done": false
+          "done": true
         },
         {
           "name": "Tools: grill scraper",
