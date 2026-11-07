@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:14:49.828Z",
+  "updated": "2026-11-07T21:14:52.522Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -838,14 +838,14 @@
           "done": false
         },
         {
-          "name": "Packing: Pot to boil",
+          "name": "Packing: Sharpie",
           "qty": "",
           "done": false
         },
         {
-          "name": "Packing: Sharpie",
+          "name": "Packing: Pot to boil",
           "qty": "",
-          "done": false
+          "done": true
         },
         {
           "name": "Packing: mace",
