@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T17:49:43.291Z",
+  "updated": "2026-11-07T17:49:46.540Z",
   "stores": [
     {
       "store": "Preparing",
@@ -13,12 +13,6 @@
         },
         {
           "name": "Tina foot cushion",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Portable desks",
           "qty": "",
           "done": false,
           "fresh": true
@@ -105,6 +99,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Portable desks",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Daily medication",
