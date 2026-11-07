@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:55:28.943Z",
+  "updated": "2026-11-07T20:55:56.439Z",
   "stores": [
     {
       "store": "Preparing",
@@ -25,12 +25,6 @@
         },
         {
           "name": "Toothpaste",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Razor",
           "qty": "",
           "done": false,
           "fresh": true
@@ -110,6 +104,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Razor",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Comb",
