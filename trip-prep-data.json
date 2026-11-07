@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T19:46:00.259Z",
+  "updated": "2026-11-07T13:27:09.363Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -743,11 +743,6 @@
         },
         {
           "name": "Packing: battery charger",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: coffee cup",
           "qty": "",
           "done": false
         },
