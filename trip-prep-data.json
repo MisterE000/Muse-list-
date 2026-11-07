@@ -1,7 +1,11 @@
 {
   "version": 1,
-  "updated": "2026-11-07T14:13:08.936Z",
+  "updated": "2026-11-07T14:13:21.443Z",
   "stores": [
+    {
+      "store": "Tina - day of departure",
+      "items": []
+    },
     {
       "store": "Pre-trip",
       "items": [
@@ -781,10 +785,6 @@
           "done": true
         }
       ]
-    },
-    {
-      "store": "Tina - day of departure",
-      "items": []
     },
     {
       "store": "Walk-out",
