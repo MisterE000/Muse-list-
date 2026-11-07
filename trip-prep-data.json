@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:28:15.553Z",
+  "updated": "2026-11-07T20:28:23.114Z",
   "stores": [
     {
       "store": "Preparing",
@@ -31,6 +31,12 @@
         },
         {
           "name": "Toothpaste",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Comb",
           "qty": "",
           "done": false,
           "fresh": true
