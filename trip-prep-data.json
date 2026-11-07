@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:25:50.302Z",
+  "updated": "2026-11-07T21:39:53.150Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -808,11 +808,6 @@
         },
         {
           "name": "Packing: frying pan",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
           "qty": "",
           "done": false
         },
