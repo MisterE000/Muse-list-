@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:19:20.364Z",
+  "updated": "2026-11-07T21:19:56.851Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -739,12 +739,6 @@
           "fresh": true
         },
         {
-          "name": "Gallon water",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Ice packs",
           "qty": "",
           "done": false,
@@ -831,6 +825,12 @@
           "name": "First stop and tonight's stop entered in navigation — before you roll",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Gallon water",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Packing: ice cube trays",
