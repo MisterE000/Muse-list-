@@ -1,150 +1,7 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:46:56.250Z",
+  "updated": "2026-11-07T21:47:02.938Z",
   "stores": [
-    {
-      "store": "Pre-trip",
-      "items": [
-        {
-          "name": "Kindle in RV",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Test the toaster",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Test the stove.",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Check lights, brakes, wipers, mirrors, and dash cam (USB-C lead packed)",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        },
-        {
-          "name": "Test water pump",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Test freezer",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Check that engine charges batteries",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Check the generator charges batteries",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        },
-        {
-          "name": "Check the lithium battery smoke detector",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Test interior and exterior lights",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Test furnace",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Check propane level",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Check roof vent fan",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Test refrigerator",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Battery jumpstart kit",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        },
-        {
-          "name": "Check all fluids, belts, hoses, and tire pressures (including spare); look for leaks underneath",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        },
-        {
-          "name": "Charge / check the lithium house bank — 920 Ah; note voltage (13.3V is about 70%, 13.1V is about 20%)",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        },
-        {
-          "name": "test hot water heater",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Fill washer fluid",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Start the generator",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Check the oil in the generator",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Oil change if due — Witherwings (E350, 7.3L V8): 5W-30, 9 qt, filter Mobil M1-210. For a launch trip, finish it at least 3 days before the actual launch date",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        }
-      ]
-    },
     {
       "store": "Preparing",
       "items": [
@@ -627,6 +484,149 @@
           "qty": "",
           "done": true,
           "fresh": true
+        }
+      ]
+    },
+    {
+      "store": "Pre-trip",
+      "items": [
+        {
+          "name": "Kindle in RV",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test the toaster",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test the stove.",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check lights, brakes, wipers, mirrors, and dash cam (USB-C lead packed)",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "Test water pump",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test freezer",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check that engine charges batteries",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check the generator charges batteries",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Tools, spare fuses, flashlight / work light, and roadside kit on board",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "Check the lithium battery smoke detector",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test interior and exterior lights",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test furnace",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check propane level",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check roof vent fan",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Test refrigerator",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Battery jumpstart kit",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "Check all fluids, belts, hoses, and tire pressures (including spare); look for leaks underneath",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "Charge / check the lithium house bank — 920 Ah; note voltage (13.3V is about 70%, 13.1V is about 20%)",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "test hot water heater",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Fill washer fluid",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Start the generator",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Check the oil in the generator",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Oil change if due — Witherwings (E350, 7.3L V8): 5W-30, 9 qt, filter Mobil M1-210. For a launch trip, finish it at least 3 days before the actual launch date",
+          "qty": "",
+          "done": true,
+          "fresh": false
         }
       ]
     },
