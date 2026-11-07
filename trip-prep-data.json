@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:14:37.816Z",
+  "updated": "2026-11-07T21:14:41.471Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -813,22 +813,22 @@
           "done": false
         },
         {
-          "name": "Packing: battery charger",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Packing: frying pan",
           "qty": "",
           "done": false
         },
         {
-          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
+          "name": "Packing: battery charger",
           "qty": "",
           "done": false
         },
         {
           "name": "Packing: ice cube trays",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
           "qty": "",
           "done": false
         },
