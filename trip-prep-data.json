@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T17:50:17.908Z",
+  "updated": "2026-11-07T17:50:32.275Z",
   "stores": [
     {
       "store": "Preparing",
@@ -45,11 +45,6 @@
           "done": false
         },
         {
-          "name": "Stock coffee and morning supplies — coffee first thing is part of the routine",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Remember: we do not drink the RV water — stock bottled water and plan Twice The Ice stops",
           "qty": "",
           "done": false
@@ -89,6 +84,11 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Stock coffee and morning supplies — coffee first thing is part of the routine",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Portable desks",
