@@ -1,16 +1,10 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:29:02.264Z",
+  "updated": "2026-11-07T20:29:43.703Z",
   "stores": [
     {
       "store": "Preparing",
       "items": [
-        {
-          "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
         {
           "name": "Tina foot cushion",
           "qty": "",
