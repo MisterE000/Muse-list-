@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:05:55.434Z",
+  "updated": "2026-11-07T21:08:57.362Z",
   "stores": [
     {
       "store": "Preparing",
@@ -44,11 +44,6 @@
           "done": false
         },
         {
-          "name": "Shoes for walking, camp, and wet ground",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Shore-power cord, adapters, and surge protection packed",
           "qty": "",
           "done": false
@@ -58,6 +53,11 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Shoes for walking, camp, and wet ground",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Remember: we do not drink the RV water — stock bottled water and plan Twice The Ice stops",
