@@ -1,18 +1,12 @@
 {
   "version": 1,
-  "updated": "2026-11-07T17:36:33.168Z",
+  "updated": "2026-11-07T17:48:58.365Z",
   "stores": [
     {
       "store": "Preparing",
       "items": [
         {
           "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Bug spray",
           "qty": "",
           "done": false,
           "fresh": true
@@ -123,6 +117,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Bug spray",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Clothes: long sleeve shirts",
