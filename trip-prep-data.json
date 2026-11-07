@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:47:23.902Z",
+  "updated": "2026-11-07T21:47:57.685Z",
   "stores": [
     {
       "store": "Preparing",
@@ -704,7 +704,14 @@
     },
     {
       "store": "Tina - day of departure",
-      "items": []
+      "items": [
+        {
+          "name": "Ice packs",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        }
+      ]
     },
     {
       "store": "Tina - packing",
