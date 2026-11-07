@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:13:57.015Z",
+  "updated": "2026-11-07T21:14:16.100Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -778,11 +778,6 @@
           "done": false
         },
         {
-          "name": "Computer: Headphones - 1/8\" jack",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Computer: laptops",
           "qty": "",
           "done": false
@@ -856,6 +851,11 @@
           "name": "Packing: Sharpie",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Computer: Headphones - 1/8\" jack",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Clothes: spacex shirt",
