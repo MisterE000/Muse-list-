@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T14:15:53.140Z",
+  "updated": "2026-11-07T14:16:42.089Z",
   "stores": [
     {
       "store": "Walk-out",
@@ -723,6 +723,12 @@
         },
         {
           "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Kindle",
           "qty": "",
           "done": false,
           "fresh": true
