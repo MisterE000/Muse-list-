@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:13:54.228Z",
+  "updated": "2026-11-07T21:13:57.015Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -768,11 +768,6 @@
           "done": false
         },
         {
-          "name": "Clothes: spacex shirt",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Computer: 6tb drive",
           "qty": "",
           "done": false
@@ -861,6 +856,11 @@
           "name": "Packing: Sharpie",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Clothes: spacex shirt",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Clothes: Slippers",
