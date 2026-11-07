@@ -1,11 +1,7 @@
 {
   "version": 1,
-  "updated": "2026-11-07T14:12:58.355Z",
+  "updated": "2026-11-07T14:13:08.936Z",
   "stores": [
-    {
-      "store": "Tina - packing",
-      "items": []
-    },
     {
       "store": "Pre-trip",
       "items": [
@@ -148,6 +144,10 @@
           "fresh": false
         }
       ]
+    },
+    {
+      "store": "Tina - packing",
+      "items": []
     },
     {
       "store": "Preparing",
