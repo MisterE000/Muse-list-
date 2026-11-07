@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T17:25:45.954Z",
+  "updated": "2026-11-07T17:36:33.168Z",
   "stores": [
     {
       "store": "Preparing",
@@ -13,12 +13,6 @@
         },
         {
           "name": "Bug spray",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Clothes: long sleeve shirts",
           "qty": "",
           "done": false,
           "fresh": true
@@ -129,6 +123,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Clothes: long sleeve shirts",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Coffee pot cleaned",
