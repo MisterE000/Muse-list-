@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:13:17.370Z",
+  "updated": "2026-11-07T21:13:19.859Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -768,26 +768,6 @@
           "done": false
         },
         {
-          "name": "Clothes: Coffee / cup / filter",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: long sleeve/ jacket",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: night clothes. good shoes",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Clothes: pants. shorts. swim suit",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Clothes: Slippers",
           "qty": "",
           "done": false
@@ -891,6 +871,26 @@
           "name": "Packing: Sharpie",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Clothes: pants. shorts. swim suit",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Clothes: night clothes. good shoes",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Clothes: long sleeve/ jacket",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Clothes: Coffee / cup / filter",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Move any temperature resilient items into the basement",
