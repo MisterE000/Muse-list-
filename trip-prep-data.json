@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T21:39:53.150Z",
+  "updated": "2026-11-07T21:42:32.423Z",
   "stores": [
     {
       "store": "Pre-trip",
@@ -161,18 +161,6 @@
           "fresh": true
         },
         {
-          "name": "Fire pit pan",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Dish soap",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Dump black and gray tanks, rinse, and add tank treatment before you leave",
           "qty": "",
           "done": false
@@ -202,6 +190,18 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Fire pit pan",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Dish soap",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Shoes for walking, camp, and wet ground",
