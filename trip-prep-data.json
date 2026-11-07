@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:30:12.094Z",
+  "updated": "2026-11-07T20:30:21.479Z",
   "stores": [
     {
       "store": "Preparing",
@@ -483,6 +483,12 @@
     {
       "store": "Pre-trip",
       "items": [
+        {
+          "name": "Towel",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "Book campgrounds / parks you need (for a launch: Isla Blanca Park for launch day, as few days as cost allows)",
           "qty": "",
