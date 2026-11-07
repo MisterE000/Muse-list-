@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T17:50:00.255Z",
+  "updated": "2026-11-07T17:50:17.908Z",
   "stores": [
     {
       "store": "Preparing",
@@ -41,11 +41,6 @@
         },
         {
           "name": "Fill the fresh tank; check the additional fresh-tank space / tank if fitted",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Medications, glasses, and first-aid kit packed",
           "qty": "",
           "done": false
         },
