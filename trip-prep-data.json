@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T01:19:19.999Z",
+  "updated": "2026-11-08T01:19:41.921Z",
   "stores": [
     {
       "store": "Preparing",
@@ -13,6 +13,12 @@
         },
         {
           "name": "Disconnect crv battery",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Disconnect truck battery",
           "qty": "",
           "done": false,
           "fresh": true
