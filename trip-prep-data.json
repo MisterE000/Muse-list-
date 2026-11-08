@@ -1,10 +1,16 @@
 {
   "version": 1,
-  "updated": "2026-11-08T19:03:32.706Z",
+  "updated": "2026-11-08T19:21:10.132Z",
   "stores": [
     {
       "store": "Before driving",
       "items": [
+        {
+          "name": "Water cup refills",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
           "qty": "",
