@@ -1,7 +1,34 @@
 {
   "version": 1,
-  "updated": "2026-11-08T01:55:40.359Z",
+  "updated": "2026-11-08T01:55:47.601Z",
   "stores": [
+    {
+      "store": "In-transit",
+      "items": [
+        {
+          "name": "If overnight lows will be over 80°F, plan a campground for those nights; if a heavy storm is forecast, plan a Walmart stop for Wi-Fi",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Check tires, lights, battery voltage, and anything rattling or leaking",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Stop at Twice The Ice for drinking water and ice",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Write two lines in the journal that evening: where are we, and what was the highlight?",
+          "qty": "",
+          "done": false,
+          "link": "travel-journal.html"
+        }
+      ]
+    },
     {
       "store": "Preparing",
       "items": [
@@ -1013,33 +1040,6 @@
           "qty": "",
           "done": true,
           "fresh": false
-        }
-      ]
-    },
-    {
-      "store": "In-transit",
-      "items": [
-        {
-          "name": "If overnight lows will be over 80°F, plan a campground for those nights; if a heavy storm is forecast, plan a Walmart stop for Wi-Fi",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Check tires, lights, battery voltage, and anything rattling or leaking",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Stop at Twice The Ice for drinking water and ice",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Write two lines in the journal that evening: where are we, and what was the highlight?",
-          "qty": "",
-          "done": false,
-          "link": "travel-journal.html"
         }
       ]
     },
