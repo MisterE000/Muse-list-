@@ -1,18 +1,12 @@
 {
   "version": 1,
-  "updated": "2026-11-08T15:08:47.028Z",
+  "updated": "2026-11-08T15:10:17.304Z",
   "stores": [
     {
       "store": "Walk-out",
       "items": [
         {
           "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Refrigerator latched, loose items stowed, cupboards latched",
           "qty": "",
           "done": false,
           "fresh": true
