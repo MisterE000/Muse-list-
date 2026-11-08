@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T14:27:47.002Z",
+  "updated": "2026-11-08T14:28:46.522Z",
   "stores": [
     {
       "store": "In-transit",
@@ -33,24 +33,6 @@
       "store": "Preparing",
       "items": [
         {
-          "name": "Disconnect crv battery",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Disconnect truck battery",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Plug in Tesla",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Dump black and gray tanks, rinse, and add tank treatment before you leave",
           "qty": "",
           "done": false
@@ -80,6 +62,24 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Plug in Tesla",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Disconnect truck battery",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Disconnect crv battery",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Tina foot cushion",
