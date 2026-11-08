@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T01:53:03.402Z",
+  "updated": "2026-11-08T01:53:39.949Z",
   "stores": [
     {
       "store": "Preparing",
@@ -509,13 +509,13 @@
       "store": "Walk-out",
       "items": [
         {
-          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
+          "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
           "qty": "",
           "done": false,
           "fresh": true
         },
         {
-          "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
+          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
           "qty": "",
           "done": false,
           "fresh": true
