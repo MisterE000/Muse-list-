@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "updated": "2026-11-08T15:45:36.719Z",
+  "updated": "2026-11-08T19:01:45.905Z",
   "stores": [
     {
       "store": "Before driving",
       "items": [
         {
+          "name": "Refrigerator latched, loose items stowed, cupboards latched",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
           "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
           "qty": "",
           "done": false
-        },
-        {
-          "name": "Refrigerator latched, loose items stowed, cupboards latched",
-          "qty": "",
-          "done": true,
-          "fresh": true
         },
         {
           "name": "Inside: Bathroom fan off/closed",
