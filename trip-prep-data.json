@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T14:43:25.629Z",
+  "updated": "2026-11-08T14:49:26.584Z",
   "stores": [
     {
       "store": "Preparing",
@@ -537,18 +537,6 @@
       "store": "Day-of-departure",
       "items": [
         {
-          "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Food: bourbon",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Food: Corned beef hash",
           "qty": "",
           "done": false
@@ -574,14 +562,26 @@
           "done": false
         },
         {
-          "name": "Packing: frying pan",
+          "name": "First stop and tonight's stop entered in navigation — before you roll",
           "qty": "",
           "done": false
         },
         {
-          "name": "First stop and tonight's stop entered in navigation — before you roll",
+          "name": "Packing: frying pan",
           "qty": "",
-          "done": false
+          "done": true
+        },
+        {
+          "name": "Food: bourbon",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Empty home fridge of anything that will spoil while you are away",
