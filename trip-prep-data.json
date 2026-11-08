@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T15:05:49.707Z",
+  "updated": "2026-11-08T15:08:47.028Z",
   "stores": [
     {
       "store": "Walk-out",
@@ -30,29 +30,29 @@
           "fresh": true
         },
         {
-          "name": "turn off house water spigot",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "house themostat set away",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Lead acid battery connect",
           "qty": "",
-          "done": false
-        },
-        {
-          "name": "RV door key",
-          "qty": "",
-          "done": false
+          "done": true
         },
         {
           "name": "wallet",
           "qty": "",
-          "done": false
+          "done": true
+        },
+        {
+          "name": "RV door key",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "house themostat set away",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "turn off house water spigot",
+          "qty": "",
+          "done": true
         },
         {
           "name": "glasses",
