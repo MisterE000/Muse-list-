@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T14:28:46.522Z",
+  "updated": "2026-11-08T14:34:06.363Z",
   "stores": [
     {
       "store": "In-transit",
@@ -38,11 +38,6 @@
           "done": false
         },
         {
-          "name": "Fill the fresh tank; check the additional fresh-tank space / tank if fitted",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Mrs.E work setup checked if traveling on a workday (Mon–Fri) — laptop, charger, and Starlink signal",
           "qty": "",
           "done": false
@@ -62,6 +57,11 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Fill the fresh tank; check the additional fresh-tank space / tank if fitted",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Plug in Tesla",
