@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T01:19:41.921Z",
+  "updated": "2026-11-08T01:19:56.648Z",
   "stores": [
     {
       "store": "Preparing",
@@ -19,6 +19,12 @@
         },
         {
           "name": "Disconnect truck battery",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Plug in Tesla",
           "qty": "",
           "done": false,
           "fresh": true
