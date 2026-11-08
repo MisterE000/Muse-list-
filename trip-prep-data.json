@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T14:41:01.789Z",
+  "updated": "2026-11-08T14:43:25.629Z",
   "stores": [
     {
       "store": "Preparing",
@@ -18,12 +18,12 @@
         {
           "name": "Sewer hose, gloves, fresh-water hose, and water filter / pressure regulator packed and stowed",
           "qty": "",
-          "done": false
+          "done": true
         },
         {
           "name": "Trip journal — and a pen — packed where you will actually use it",
           "qty": "",
-          "done": false,
+          "done": true,
           "link": "travel-journal.html"
         },
         {
@@ -506,33 +506,6 @@
       ]
     },
     {
-      "store": "In-transit",
-      "items": [
-        {
-          "name": "If overnight lows will be over 80°F, plan a campground for those nights; if a heavy storm is forecast, plan a Walmart stop for Wi-Fi",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Check tires, lights, battery voltage, and anything rattling or leaking",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Stop at Twice The Ice for drinking water and ice",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Write two lines in the journal that evening: where are we, and what was the highlight?",
-          "qty": "",
-          "done": false,
-          "link": "travel-journal.html"
-        }
-      ]
-    },
-    {
       "store": "Tina - day of departure",
       "items": [
         {
@@ -563,24 +536,6 @@
     {
       "store": "Day-of-departure",
       "items": [
-        {
-          "name": "Hold / pause mail and deliveries, and tell anyone who needs to know you will be away",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Passports",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Empty home fridge of anything that will spoil while you are away",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
         {
           "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
           "qty": "",
@@ -627,6 +582,24 @@
           "name": "First stop and tonight's stop entered in navigation — before you roll",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Empty home fridge of anything that will spoil while you are away",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Hold / pause mail and deliveries, and tell anyone who needs to know you will be away",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Passports",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Ice packs",
@@ -814,6 +787,33 @@
           "name": "wallet",
           "qty": "",
           "done": false
+        }
+      ]
+    },
+    {
+      "store": "In-transit",
+      "items": [
+        {
+          "name": "If overnight lows will be over 80°F, plan a campground for those nights; if a heavy storm is forecast, plan a Walmart stop for Wi-Fi",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Check tires, lights, battery voltage, and anything rattling or leaking",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Stop at Twice The Ice for drinking water and ice",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Write two lines in the journal that evening: where are we, and what was the highlight?",
+          "qty": "",
+          "done": false,
+          "link": "travel-journal.html"
         }
       ]
     },
