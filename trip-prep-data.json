@@ -1,22 +1,10 @@
 {
   "version": 1,
-  "updated": "2026-11-08T19:22:10.210Z",
+  "updated": "2026-11-08T19:35:28.858Z",
   "stores": [
     {
       "store": "Before driving",
       "items": [
-        {
-          "name": "Water cup refills",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Propane level",
-          "qty": "",
-          "done": false,
-          "fresh": false
-        },
         {
           "name": "Outside: Electric wire disconnected & cover closed",
           "qty": "",
@@ -66,6 +54,18 @@
           "fresh": false
         },
         {
+          "name": "Water cup refills",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Propane level",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
           "name": "Inside: Thermostat off",
           "qty": "",
           "done": true,
@@ -97,12 +97,6 @@
         },
         {
           "name": "Refrigerator latched, loose items stowed, cupboards latched",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        },
-        {
-          "name": "Inside: Pots/pans/stove lid/sink lid, kitchen secured",
           "qty": "",
           "done": true,
           "fresh": false
