@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T01:54:50.199Z",
+  "updated": "2026-11-08T01:55:01.451Z",
   "stores": [
     {
       "store": "Preparing",
@@ -506,6 +506,17 @@
       ]
     },
     {
+      "store": "Tina - day of departure",
+      "items": [
+        {
+          "name": "Ice packs",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        }
+      ]
+    },
+    {
       "store": "Walk-out",
       "items": [
         {
@@ -580,17 +591,6 @@
           "name": "wallet",
           "qty": "",
           "done": false
-        }
-      ]
-    },
-    {
-      "store": "Tina - day of departure",
-      "items": [
-        {
-          "name": "Ice packs",
-          "qty": "",
-          "done": false,
-          "fresh": true
         }
       ]
     },
