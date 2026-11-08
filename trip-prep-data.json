@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T14:21:14.311Z",
+  "updated": "2026-11-08T14:27:47.002Z",
   "stores": [
     {
       "store": "In-transit",
@@ -538,7 +538,7 @@
         {
           "name": "Ice packs",
           "qty": "",
-          "done": false,
+          "done": true,
           "fresh": true
         }
       ]
@@ -571,12 +571,6 @@
         },
         {
           "name": "Passports",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Ice packs",
           "qty": "",
           "done": false,
           "fresh": true
@@ -633,6 +627,12 @@
           "name": "First stop and tonight's stop entered in navigation — before you roll",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Ice packs",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Clothes: backpack",
