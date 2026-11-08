@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T15:25:03.551Z",
+  "updated": "2026-11-08T15:25:43.494Z",
   "stores": [
     {
       "store": "Walk-out",
@@ -821,25 +821,7 @@
           "fresh": true
         },
         {
-          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Refrigerator latched, loose items stowed, cupboards latched",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Fuel level",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Propane level",
           "qty": "",
           "done": false,
           "fresh": true
@@ -850,29 +832,47 @@
           "done": false
         },
         {
-          "name": "Inside: Thermostat off",
+          "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
           "qty": "",
-          "done": false
+          "done": true,
+          "fresh": true
         },
         {
-          "name": "Inside: Water heater off",
+          "name": "Fuel level",
           "qty": "",
-          "done": false
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Outside: Shore water cap in place",
           "qty": "",
-          "done": false
+          "done": true
+        },
+        {
+          "name": "Inside: Thermostat off",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Propane level",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Outside: Electric wire disconnected & cover closed",
           "qty": "",
-          "done": false
+          "done": true
         },
         {
           "name": "Outside: Propane secure ? Straps",
           "qty": "",
-          "done": false
+          "done": true
+        },
+        {
+          "name": "Inside: Water heater off",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Outside: Sewer valve cap on",
