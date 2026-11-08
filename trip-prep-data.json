@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T01:55:01.451Z",
+  "updated": "2026-11-08T01:55:05.426Z",
   "stores": [
     {
       "store": "Preparing",
@@ -517,6 +517,23 @@
       ]
     },
     {
+      "store": "Tina - packing",
+      "items": [
+        {
+          "name": "jacket",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "scale",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        }
+      ]
+    },
+    {
       "store": "Walk-out",
       "items": [
         {
@@ -591,23 +608,6 @@
           "name": "wallet",
           "qty": "",
           "done": false
-        }
-      ]
-    },
-    {
-      "store": "Tina - packing",
-      "items": [
-        {
-          "name": "jacket",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "scale",
-          "qty": "",
-          "done": false,
-          "fresh": true
         }
       ]
     },
