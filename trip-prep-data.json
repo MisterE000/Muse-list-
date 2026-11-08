@@ -1,16 +1,10 @@
 {
   "version": 1,
-  "updated": "2026-11-08T01:19:56.648Z",
+  "updated": "2026-11-08T01:53:03.402Z",
   "stores": [
     {
       "store": "Preparing",
       "items": [
-        {
-          "name": "Tina foot cushion",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
         {
           "name": "Disconnect crv battery",
           "qty": "",
@@ -59,6 +53,12 @@
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Tina foot cushion",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Tow strap",
