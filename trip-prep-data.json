@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T14:34:06.363Z",
+  "updated": "2026-11-08T14:39:51.464Z",
   "stores": [
     {
       "store": "In-transit",
@@ -48,15 +48,15 @@
           "done": false
         },
         {
-          "name": "Shore-power cord, adapters, and surge protection packed",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Trip journal — and a pen — packed where you will actually use it",
           "qty": "",
           "done": false,
           "link": "travel-journal.html"
+        },
+        {
+          "name": "Shore-power cord, adapters, and surge protection packed",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Fill the fresh tank; check the additional fresh-tank space / tank if fitted",
