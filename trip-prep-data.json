@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T01:53:39.949Z",
+  "updated": "2026-11-08T01:53:42.481Z",
   "stores": [
     {
       "store": "Preparing",
@@ -515,13 +515,13 @@
           "fresh": true
         },
         {
-          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
+          "name": "Refrigerator latched, loose items stowed, cupboards latched",
           "qty": "",
           "done": false,
           "fresh": true
         },
         {
-          "name": "Refrigerator latched, loose items stowed, cupboards latched",
+          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
           "qty": "",
           "done": false,
           "fresh": true
