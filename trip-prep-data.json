@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T15:10:17.304Z",
+  "updated": "2026-11-08T15:11:55.090Z",
   "stores": [
     {
       "store": "Walk-out",
@@ -834,6 +834,12 @@
         },
         {
           "name": "Fuel level",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Propane level",
           "qty": "",
           "done": false,
           "fresh": true
