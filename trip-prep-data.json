@@ -1,19 +1,198 @@
 {
   "version": 1,
-  "updated": "2026-11-08T14:49:26.584Z",
+  "updated": "2026-11-08T14:50:25.428Z",
   "stores": [
     {
-      "store": "Preparing",
+      "store": "Day-of-departure",
       "items": [
         {
-          "name": "Dump black and gray tanks, rinse, and add tank treatment before you leave",
+          "name": "Food: Mashed potatoes",
           "qty": "",
           "done": false
         },
         {
-          "name": "Mrs.E work setup checked if traveling on a workday (Mon–Fri) — laptop, charger, and Starlink signal",
+          "name": "Food: Popcorn",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Food: Taco shells",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: rice/quinoa",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "First stop and tonight's stop entered in navigation — before you roll",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Food: Corned beef hash",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Packing: frying pan",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Food: bourbon",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Empty home fridge of anything that will spoil while you are away",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Hold / pause mail and deliveries, and tell anyone who needs to know you will be away",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Passports",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Ice packs",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Clothes: backpack",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Computer: mouse",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Computer: laptops",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Computer: 6tb drive",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Gallon water",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Packing: ice cube trays",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Packing: Sharpie",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Packing: Pot to boil",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Packing: mace",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Computer: Headphones - 1/8\" jack",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Clothes: spacex shirt",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Clothes: Slippers",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Clothes: socks underwear",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Clothes: pants. shorts. swim suit",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Clothes: night clothes. good shoes",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Clothes: long sleeve/ jacket",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Clothes: Coffee / cup / filter",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Move any temperature resilient items into the basement",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Kindle",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Packing: silverwear",
+          "qty": "",
+          "done": true
+        }
+      ]
+    },
+    {
+      "store": "Preparing",
+      "items": [
+        {
+          "name": "Mrs.E work setup checked if traveling on a workday (Mon–Fri) — laptop, charger, and Starlink signal",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Dump black and gray tanks, rinse, and add tank treatment before you leave",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Sewer hose, gloves, fresh-water hose, and water filter / pressure regulator packed and stowed",
@@ -520,195 +699,16 @@
       "store": "Tina - packing",
       "items": [
         {
-          "name": "jacket",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "scale",
           "qty": "",
-          "done": false,
-          "fresh": true
-        }
-      ]
-    },
-    {
-      "store": "Day-of-departure",
-      "items": [
-        {
-          "name": "Food: Corned beef hash",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: Mashed potatoes",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: Popcorn",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: Taco shells",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: rice/quinoa",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "First stop and tonight's stop entered in navigation — before you roll",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Packing: frying pan",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Food: bourbon",
-          "qty": "",
           "done": true,
           "fresh": true
         },
         {
-          "name": "Fridge staples, easy first-night meal, snacks, and bottled drinking water loaded",
+          "name": "jacket",
           "qty": "",
           "done": true,
           "fresh": true
-        },
-        {
-          "name": "Empty home fridge of anything that will spoil while you are away",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Hold / pause mail and deliveries, and tell anyone who needs to know you will be away",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Passports",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Ice packs",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Clothes: backpack",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Computer: mouse",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Computer: laptops",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Computer: 6tb drive",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Gallon water",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Packing: ice cube trays",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Packing: Sharpie",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Packing: Pot to boil",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Packing: mace",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Computer: Headphones - 1/8\" jack",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Clothes: spacex shirt",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Clothes: Slippers",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Clothes: socks underwear",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Clothes: pants. shorts. swim suit",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Clothes: night clothes. good shoes",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Clothes: long sleeve/ jacket",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Clothes: Coffee / cup / filter",
-          "qty": "",
-          "done": true
-        },
-        {
-          "name": "Move any temperature resilient items into the basement",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Kindle",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        },
-        {
-          "name": "Packing: silverwear",
-          "qty": "",
-          "done": true
         }
       ]
     },
