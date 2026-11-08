@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T14:15:42.268Z",
+  "updated": "2026-11-08T14:21:14.311Z",
   "stores": [
     {
       "store": "In-transit",
@@ -600,26 +600,6 @@
           "fresh": true
         },
         {
-          "name": "Clothes: backpack",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: flash drive",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: laptops",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Computer: mouse",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Food: Corned beef hash",
           "qty": "",
           "done": false
@@ -653,6 +633,21 @@
           "name": "First stop and tonight's stop entered in navigation — before you roll",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Clothes: backpack",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Computer: mouse",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Computer: laptops",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Computer: 6tb drive",
