@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T01:54:44.448Z",
+  "updated": "2026-11-08T01:54:47.573Z",
   "stores": [
     {
       "store": "Preparing",
@@ -595,6 +595,23 @@
       ]
     },
     {
+      "store": "Tina - packing",
+      "items": [
+        {
+          "name": "jacket",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "scale",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        }
+      ]
+    },
+    {
       "store": "Pre-trip",
       "items": [
         {
@@ -734,23 +751,6 @@
           "qty": "",
           "done": true,
           "fresh": false
-        }
-      ]
-    },
-    {
-      "store": "Tina - packing",
-      "items": [
-        {
-          "name": "jacket",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "scale",
-          "qty": "",
-          "done": false,
-          "fresh": true
         }
       ]
     },
