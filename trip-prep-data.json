@@ -1,34 +1,34 @@
 {
   "version": 1,
-  "updated": "2026-11-08T14:50:25.428Z",
+  "updated": "2026-11-08T14:51:28.796Z",
   "stores": [
     {
       "store": "Day-of-departure",
       "items": [
         {
-          "name": "Food: Mashed potatoes",
+          "name": "First stop and tonight's stop entered in navigation — before you roll",
           "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: Popcorn",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Food: Taco shells",
-          "qty": "",
-          "done": false
+          "done": true
         },
         {
           "name": "Food: rice/quinoa",
           "qty": "",
-          "done": false
+          "done": true
         },
         {
-          "name": "First stop and tonight's stop entered in navigation — before you roll",
+          "name": "Food: Taco shells",
           "qty": "",
-          "done": false
+          "done": true
+        },
+        {
+          "name": "Food: Popcorn",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Food: Mashed potatoes",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Food: Corned beef hash",
@@ -178,6 +178,17 @@
           "name": "Packing: silverwear",
           "qty": "",
           "done": true
+        }
+      ]
+    },
+    {
+      "store": "Tina - day of departure",
+      "items": [
+        {
+          "name": "Ice packs",
+          "qty": "",
+          "done": true,
+          "fresh": true
         }
       ]
     },
@@ -678,17 +689,6 @@
         },
         {
           "name": "Test generator / house systems, lights inside, water pump, and refrigerator on both power sources",
-          "qty": "",
-          "done": true,
-          "fresh": true
-        }
-      ]
-    },
-    {
-      "store": "Tina - day of departure",
-      "items": [
-        {
-          "name": "Ice packs",
           "qty": "",
           "done": true,
           "fresh": true
