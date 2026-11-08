@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T01:54:04.098Z",
+  "updated": "2026-11-08T01:54:44.448Z",
   "stores": [
     {
       "store": "Preparing",
@@ -584,6 +584,17 @@
       ]
     },
     {
+      "store": "Tina - day of departure",
+      "items": [
+        {
+          "name": "Ice packs",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        }
+      ]
+    },
+    {
       "store": "Pre-trip",
       "items": [
         {
@@ -723,17 +734,6 @@
           "qty": "",
           "done": true,
           "fresh": false
-        }
-      ]
-    },
-    {
-      "store": "Tina - day of departure",
-      "items": [
-        {
-          "name": "Ice packs",
-          "qty": "",
-          "done": false,
-          "fresh": true
         }
       ]
     },
