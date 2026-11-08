@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T15:44:38.766Z",
+  "updated": "2026-11-08T15:45:33.701Z",
   "stores": [
     {
       "store": "Before driving",
@@ -96,15 +96,15 @@
       "store": "Walk-out",
       "items": [
         {
-          "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
+          "name": "Final check inside the house, then lock up",
           "qty": "",
           "done": false,
           "fresh": true
         },
         {
-          "name": "Final check inside the house, then lock up",
+          "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
           "qty": "",
-          "done": false,
+          "done": true,
           "fresh": true
         },
         {
