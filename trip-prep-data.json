@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T15:04:32.348Z",
+  "updated": "2026-11-08T15:05:49.707Z",
   "stores": [
     {
       "store": "Walk-out",
@@ -30,18 +30,7 @@
           "fresh": true
         },
         {
-          "name": "Tesla plugged in?",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "turn off house water spigot",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "glasses",
           "qty": "",
           "done": false
         },
@@ -64,6 +53,17 @@
           "name": "wallet",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "glasses",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Tesla plugged in?",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
