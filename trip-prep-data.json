@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T01:53:57.043Z",
+  "updated": "2026-11-08T01:54:04.098Z",
   "stores": [
     {
       "store": "Preparing",
@@ -527,17 +527,17 @@
           "fresh": true
         },
         {
+          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
           "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
           "qty": "",
           "done": false,
           "fresh": true,
           "link": "travel-journal.html"
-        },
-        {
-          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
-          "qty": "",
-          "done": false,
-          "fresh": true
         },
         {
           "name": "Final check inside the house, then lock up",
