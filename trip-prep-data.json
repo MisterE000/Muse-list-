@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T15:11:55.090Z",
+  "updated": "2026-11-08T15:25:03.551Z",
   "stores": [
     {
       "store": "Walk-out",
@@ -860,21 +860,6 @@
           "done": false
         },
         {
-          "name": "Outside: Sewer valve cap on",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Outside: Sewer line holder closed",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Outside: Both sewer valves closed",
-          "qty": "",
-          "done": false
-        },
-        {
           "name": "Outside: Shore water cap in place",
           "qty": "",
           "done": false
@@ -888,6 +873,21 @@
           "name": "Outside: Propane secure ? Straps",
           "qty": "",
           "done": false
+        },
+        {
+          "name": "Outside: Sewer valve cap on",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Outside: Sewer line holder closed",
+          "qty": "",
+          "done": true
+        },
+        {
+          "name": "Outside: Both sewer valves closed",
+          "qty": "",
+          "done": true
         },
         {
           "name": "Outside: Headlights working",
