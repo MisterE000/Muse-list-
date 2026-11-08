@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T01:55:05.426Z",
+  "updated": "2026-11-08T01:55:08.598Z",
   "stores": [
     {
       "store": "Preparing",
@@ -534,84 +534,6 @@
       ]
     },
     {
-      "store": "Walk-out",
-      "items": [
-        {
-          "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Refrigerator latched, loose items stowed, cupboards latched",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "First stop and tonight's stop entered in navigation — before you roll",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
-          "qty": "",
-          "done": false,
-          "fresh": true,
-          "link": "travel-journal.html"
-        },
-        {
-          "name": "Final check inside the house, then lock up",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Tesla plugged in?",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "turn off house water spigot",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "glasses",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "house themostat set away",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "Lead acid battery connect",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "RV door key",
-          "qty": "",
-          "done": false
-        },
-        {
-          "name": "wallet",
-          "qty": "",
-          "done": false
-        }
-      ]
-    },
-    {
       "store": "Day-of-departure",
       "items": [
         {
@@ -786,6 +708,84 @@
           "name": "Packing: silverwear",
           "qty": "",
           "done": true
+        }
+      ]
+    },
+    {
+      "store": "Walk-out",
+      "items": [
+        {
+          "name": "At home: windows and doors locked, thermostat set, lights / timers set, trash out (Thursday night — check if it is a recycle B week)",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Refrigerator latched, loose items stowed, cupboards latched",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "First stop and tonight's stop entered in navigation — before you roll",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Close and latch every cargo bay door; check door, window, and toilet seals if resealing is due",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Record starting mileage, fuel, fresh / black / gray levels, and house-battery voltage in this trip's journal entry",
+          "qty": "",
+          "done": false,
+          "fresh": true,
+          "link": "travel-journal.html"
+        },
+        {
+          "name": "Final check inside the house, then lock up",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Tesla plugged in?",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "turn off house water spigot",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "glasses",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "house themostat set away",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "Lead acid battery connect",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "RV door key",
+          "qty": "",
+          "done": false
+        },
+        {
+          "name": "wallet",
+          "qty": "",
+          "done": false
         }
       ]
     },
