@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-09T22:13:51.074Z",
+  "updated": "2026-11-09T22:15:04.877Z",
   "stores": [
     {
       "store": "In-transit",
@@ -33,9 +33,15 @@
       "store": "Before driving",
       "items": [
         {
-          "name": "Fuel level",
+          "name": "Tv tucked",
           "qty": "",
           "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Fuel level",
+          "qty": "",
+          "done": true,
           "fresh": false
         },
         {
@@ -70,18 +76,6 @@
         },
         {
           "name": "Outside: Both sewer valves closed",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        },
-        {
-          "name": "Outside: Headlights working",
-          "qty": "",
-          "done": true,
-          "fresh": false
-        },
-        {
-          "name": "Outside: Taillights working",
           "qty": "",
           "done": true,
           "fresh": false
