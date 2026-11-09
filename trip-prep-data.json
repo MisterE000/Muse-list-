@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-08T23:21:19.022Z",
+  "updated": "2026-11-09T10:59:31.847Z",
   "stores": [
     {
       "store": "In-transit",
@@ -32,12 +32,6 @@
     {
       "store": "Before driving",
       "items": [
-        {
-          "name": "Outside: Electric wire disconnected & cover closed",
-          "qty": "",
-          "done": false,
-          "fresh": false
-        },
         {
           "name": "Outside: Propane secure ? Straps",
           "qty": "",
@@ -126,6 +120,12 @@
           "name": "Refrigerator latched, loose items stowed, cupboards latched",
           "qty": "",
           "done": false,
+          "fresh": false
+        },
+        {
+          "name": "Outside: Electric wire disconnected & cover closed",
+          "qty": "",
+          "done": true,
           "fresh": false
         }
       ]
