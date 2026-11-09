@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-09T11:00:31.971Z",
+  "updated": "2026-11-09T12:46:56.136Z",
   "stores": [
     {
       "store": "In-transit",
@@ -32,6 +32,12 @@
     {
       "store": "Before driving",
       "items": [
+        {
+          "name": "Vent fan closed/off",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "Refrigerator latched, loose items stowed, cupboards latched",
           "qty": "",
