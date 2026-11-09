@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-09T12:46:56.136Z",
+  "updated": "2026-11-09T22:12:50.940Z",
   "stores": [
     {
       "store": "In-transit",
@@ -36,102 +36,102 @@
           "name": "Vent fan closed/off",
           "qty": "",
           "done": false,
-          "fresh": true
+          "fresh": false
         },
         {
           "name": "Refrigerator latched, loose items stowed, cupboards latched",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Inside: Bathroom fan off/closed",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "All cargo bay doors closed and latched; steps up, antenna / Starlink clear, cords and hoses stowed",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Fuel level",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Outside: Shore water cap in place",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Inside: Thermostat off",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Propane level",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Water cup refills",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Outside: Taillights working",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Outside: Headlights working",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Outside: Both sewer valves closed",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Outside: Sewer line holder closed",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Outside: Sewer valve cap on",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Inside: Water heater off",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Outside: Propane secure ? Straps",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         },
         {
           "name": "Outside: Electric wire disconnected & cover closed",
           "qty": "",
-          "done": true,
+          "done": false,
           "fresh": false
         }
       ]
