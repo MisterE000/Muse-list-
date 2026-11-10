@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-10T16:53:58.327Z",
+  "updated": "2026-11-10T16:54:06.445Z",
   "stores": [
     {
       "items": [
@@ -38,12 +38,6 @@
           "qty": "",
           "done": false,
           "fresh": true
-        },
-        {
-          "name": "Braats",
-          "qty": "",
-          "done": false,
-          "fresh": false
         },
         {
           "done": false,
@@ -145,6 +139,12 @@
           "name": "White vinegar",
           "qty": "",
           "done": false,
+          "fresh": false
+        },
+        {
+          "name": "Braats",
+          "qty": "",
+          "done": true,
           "fresh": false
         }
       ],
