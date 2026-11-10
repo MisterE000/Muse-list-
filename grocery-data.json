@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-05T00:24:37.742Z",
+  "updated": "2026-11-10T16:53:58.327Z",
   "stores": [
     {
       "items": [
@@ -33,6 +33,12 @@
     },
     {
       "items": [
+        {
+          "name": "Taco lettuce",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "Braats",
           "qty": "",
