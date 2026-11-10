@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-10T16:54:51.595Z",
+  "updated": "2026-11-10T19:45:09.015Z",
   "stores": [
     {
       "items": [
@@ -40,12 +40,6 @@
           "fresh": true
         },
         {
-          "name": "Butter",
-          "qty": "",
-          "done": false,
-          "fresh": false
-        },
-        {
           "done": false,
           "name": "Milk 2%",
           "qty": "1 gallon",
@@ -73,6 +67,12 @@
           "done": true,
           "name": "Bread",
           "qty": "",
+          "fresh": false
+        },
+        {
+          "name": "Butter",
+          "qty": "",
+          "done": true,
           "fresh": false
         },
         {
