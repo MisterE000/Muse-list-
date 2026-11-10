@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-10T16:54:22.621Z",
+  "updated": "2026-11-10T16:54:25.544Z",
   "stores": [
     {
       "items": [
@@ -49,18 +49,6 @@
           "done": false,
           "name": "Milk 2%",
           "qty": "1 gallon",
-          "fresh": false
-        },
-        {
-          "done": false,
-          "name": "Mozzarella",
-          "qty": "",
-          "fresh": false
-        },
-        {
-          "done": false,
-          "name": "Pizza crusts",
-          "qty": "",
           "fresh": false
         },
         {
@@ -144,6 +132,18 @@
         {
           "done": true,
           "name": "Jelly",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Mozzarella",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Pizza crusts",
           "qty": "",
           "fresh": false
         }
