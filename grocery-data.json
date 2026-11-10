@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-10T19:45:24.399Z",
+  "updated": "2026-11-10T19:45:50.220Z",
   "stores": [
     {
       "items": [
@@ -33,6 +33,12 @@
     },
     {
       "items": [
+        {
+          "name": "Ham/turkey",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "Taco lettuce",
           "qty": "",
