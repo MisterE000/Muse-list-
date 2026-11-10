@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-10T16:54:31.543Z",
+  "updated": "2026-11-10T16:54:39.311Z",
   "stores": [
     {
       "items": [
@@ -49,12 +49,6 @@
           "done": false,
           "name": "Milk 2%",
           "qty": "1 gallon",
-          "fresh": false
-        },
-        {
-          "name": "Snacks",
-          "qty": "",
-          "done": false,
           "fresh": false
         },
         {
