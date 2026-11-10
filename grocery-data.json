@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-10T16:54:42.897Z",
+  "updated": "2026-11-10T16:54:48.459Z",
   "stores": [
     {
       "items": [
@@ -61,12 +61,6 @@
           "name": "Water bottles",
           "qty": "",
           "done": false,
-          "fresh": false
-        },
-        {
-          "done": false,
-          "name": "White American cheese",
-          "qty": "",
           "fresh": false
         },
         {
@@ -138,6 +132,12 @@
         {
           "done": true,
           "name": "Soy sauce",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "White American cheese",
           "qty": "",
           "fresh": false
         }
