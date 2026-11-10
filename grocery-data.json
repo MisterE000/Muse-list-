@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-10T19:45:12.849Z",
+  "updated": "2026-11-10T19:45:24.399Z",
   "stores": [
     {
       "items": [
@@ -38,12 +38,6 @@
           "qty": "",
           "done": false,
           "fresh": true
-        },
-        {
-          "done": false,
-          "name": "Sweet onions",
-          "qty": "",
-          "fresh": false
         },
         {
           "name": "Water bottles",
@@ -126,6 +120,12 @@
         {
           "done": true,
           "name": "Soy sauce",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Sweet onions",
           "qty": "",
           "fresh": false
         },
