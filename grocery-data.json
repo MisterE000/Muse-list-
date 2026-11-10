@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-10T20:04:38.372Z",
+  "updated": "2026-11-10T20:04:41.253Z",
   "stores": [
     {
       "items": [
@@ -33,12 +33,6 @@
     },
     {
       "items": [
-        {
-          "name": "Water bottles",
-          "qty": "",
-          "done": false,
-          "fresh": false
-        },
         {
           "name": "Braats",
           "qty": "",
@@ -134,6 +128,12 @@
           "qty": "",
           "done": true,
           "fresh": true
+        },
+        {
+          "name": "Water bottles",
+          "qty": "",
+          "done": true,
+          "fresh": false
         },
         {
           "done": true,
