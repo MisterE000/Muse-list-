@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-10T16:54:39.311Z",
+  "updated": "2026-11-10T16:54:42.897Z",
   "stores": [
     {
       "items": [
@@ -49,12 +49,6 @@
           "done": false,
           "name": "Milk 2%",
           "qty": "1 gallon",
-          "fresh": false
-        },
-        {
-          "done": false,
-          "name": "Soy sauce",
-          "qty": "",
           "fresh": false
         },
         {
@@ -139,6 +133,12 @@
           "done": true,
           "name": "Salad",
           "qty": "1 bag",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Soy sauce",
+          "qty": "",
           "fresh": false
         }
       ],
