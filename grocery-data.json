@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-10T16:54:10.651Z",
+  "updated": "2026-11-10T16:54:13.611Z",
   "stores": [
     {
       "items": [
@@ -43,12 +43,6 @@
           "name": "Butter",
           "qty": "",
           "done": false,
-          "fresh": false
-        },
-        {
-          "done": false,
-          "name": "Coffee filters",
-          "qty": "",
           "fresh": false
         },
         {
@@ -144,6 +138,12 @@
         {
           "done": true,
           "name": "Bread",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Coffee filters",
           "qty": "",
           "fresh": false
         }
