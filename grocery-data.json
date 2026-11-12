@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-10T20:04:41.253Z",
+  "updated": "2026-11-12T00:24:12.677Z",
   "stores": [
     {
       "items": [
@@ -33,6 +33,12 @@
     },
     {
       "items": [
+        {
+          "name": "Bug zapper refils",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "Braats",
           "qty": "",
