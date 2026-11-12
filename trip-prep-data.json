@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-12T23:52:06.435Z",
+  "updated": "2026-11-12T23:52:20.156Z",
   "stores": [
     {
       "store": "In-transit",
@@ -13,6 +13,12 @@
         },
         {
           "name": "Vent closed",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Fridge",
           "qty": "",
           "done": false,
           "fresh": true
