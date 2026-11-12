@@ -1,10 +1,16 @@
 {
   "version": 1,
-  "updated": "2026-11-12T22:17:41.000Z",
+  "updated": "2026-11-12T23:51:55.830Z",
   "stores": [
     {
       "store": "In-transit",
       "items": [
+        {
+          "name": "Tv stowed",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "Stop at Twice The Ice for drinking water and ice",
           "qty": "",
