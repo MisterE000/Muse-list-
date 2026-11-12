@@ -1,12 +1,18 @@
 {
   "version": 1,
-  "updated": "2026-11-12T23:51:55.830Z",
+  "updated": "2026-11-12T23:52:06.435Z",
   "stores": [
     {
       "store": "In-transit",
       "items": [
         {
           "name": "Tv stowed",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Vent closed",
           "qty": "",
           "done": false,
           "fresh": true
