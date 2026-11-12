@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-12T23:52:20.156Z",
+  "updated": "2026-11-12T23:52:50.452Z",
   "stores": [
     {
       "store": "In-transit",
@@ -19,6 +19,12 @@
         },
         {
           "name": "Fridge",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Water cup refills",
           "qty": "",
           "done": false,
           "fresh": true
