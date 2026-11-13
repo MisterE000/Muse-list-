@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-13T14:18:34.491Z",
+  "updated": "2026-11-13T14:19:10.342Z",
   "stores": [
     {
       "store": "In-transit",
@@ -43,6 +43,12 @@
         },
         {
           "name": "Countertop",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Coffee pot seat belt",
           "qty": "",
           "done": false,
           "fresh": true
