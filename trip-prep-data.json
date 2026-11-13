@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-13T14:17:13.595Z",
+  "updated": "2026-11-13T14:17:56.929Z",
   "stores": [
     {
       "store": "In-transit",
@@ -25,6 +25,12 @@
         },
         {
           "name": "Water cup refills",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Pans",
           "qty": "",
           "done": false,
           "fresh": true
