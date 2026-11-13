@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-13T14:18:12.489Z",
+  "updated": "2026-11-13T14:18:34.491Z",
   "stores": [
     {
       "store": "In-transit",
@@ -37,6 +37,12 @@
         },
         {
           "name": "Sink cabinet",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Countertop",
           "qty": "",
           "done": false,
           "fresh": true
