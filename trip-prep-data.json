@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-13T14:17:01.522Z",
+  "updated": "2026-11-13T14:17:07.564Z",
   "stores": [
     {
       "store": "In-transit",
@@ -28,11 +28,6 @@
           "qty": "",
           "done": false,
           "fresh": true
-        },
-        {
-          "name": "Check tires, lights, battery voltage, and anything rattling or leaking",
-          "qty": "",
-          "done": true
         },
         {
           "name": "If overnight lows will be over 80°F, plan a campground for those nights; if a heavy storm is forecast, plan a Walmart stop for Wi-Fi",
