@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects & Tasks — Master List</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 16px; color: #222; }
+  h1 { font-size: 1.5em; margin-bottom: 0; }
+  .sub { color: #666; margin-top: 4px; margin-bottom: 16px; }
+  .trial { background: #fff7e6; border-left: 4px solid #e2a63d; padding: 8px 12px; margin: 8px 0; font-size: 0.95em; }
+  .sync { background: #eef7ee; border-left: 4px solid #3a9a4e; padding: 8px 12px; margin: 8px 0; font-size: 0.95em; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .sync span { flex: 1; min-width: 200px; }
+  .sync button { font-size: 0.95em; padding: 6px 12px; border: 1px solid #3a9a4e; background: #3a9a4e; color: #fff; border-radius: 6px; cursor: pointer; }
+  .sync button.plain { background: #f7f7f7; color: #333; border-color: #ccc; }
+  h2 { font-size: 1.2em; border-bottom: 2px solid #2a7ae2; padding-bottom: 4px; margin-top: 28px; }
+  .note { background: #f0f6ff; border-left: 4px solid #2a7ae2; padding: 8px 12px; margin: 8px 0; font-size: 0.95em; }
+  ul { list-style: none; padding-left: 0; }
+  li.item { padding: 6px 0; border-bottom: 1px solid #eee; display: flex; gap: 8px; align-items: center; }
+  li.item input[type=checkbox] { transform: scale(1.3); flex: none; }
+  li.item .name { flex: 1; }
+  li.item.done .name { text-decoration: line-through; color: #999; }
+  .qty { color: #666; font-size: 0.85em; white-space: normal; text-align: right; max-width: 42%; }
+  li.item.done .qty { color: #bbb; }
+  .btns { display: flex; gap: 4px; flex: none; }
+  .btns button { font-size: 1em; line-height: 1; padding: 6px 10px; border: 1px solid #ccc; background: #f7f7f7; border-radius: 6px; cursor: pointer; }
+  .btns button:active { background: #e8e8e8; }
+  .btns button:disabled { opacity: 0.3; cursor: default; }
+  .storehead { display: flex; align-items: baseline; gap: 12px; border-bottom: 2px solid #2a7ae2; margin-top: 28px; }
+  .storehead h2 { border-bottom: none; margin: 0; padding-bottom: 4px; flex: 1; }
+  .resetbtn { font-size: 0.9em; padding: 6px 12px; border: 1px solid #b3541e; background: #fdf3ec; color: #8a3c10; border-radius: 6px; cursor: pointer; flex: none; }
+  .resetbtn:active { background: #f7e2d2; }
+  .secbtns { display: flex; gap: 4px; flex: none; }
+  .secbtns button { font-size: 0.95em; line-height: 1; padding: 6px 9px; border: 1px solid #ccc; background: #f7f7f7; border-radius: 6px; cursor: pointer; }
+  .secbtns button:active { background: #e8e8e8; }
+  .secbtns button:disabled { opacity: 0.3; cursor: default; }
+  .jlink { margin-left: 10px; font-size: 0.85em; white-space: nowrap; }
+  li.item.fresh { background: #e9f9ec; }
+  li.item.fresh .name { color: #137a2e; font-weight: 600; }
+  li.item.fresh.done .name { color: #7fae87; }
+  .addrow { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+  .addrow input { font-size: 1em; padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
+  .addrow input.new-name { flex: 2; min-width: 140px; }
+  .addrow input.new-qty { flex: 1; min-width: 100px; }
+  .addrow button { font-size: 1em; padding: 8px 14px; border: 1px solid #2a7ae2; background: #2a7ae2; color: #fff; border-radius: 6px; cursor: pointer; }
+  .empty { color: #999; font-style: italic; padding: 6px 0; }
+  .updated { color: #999; font-size: 0.85em; margin-top: 32px; }
+  a.home { font-size: 0.9em; }
+</style>
+</head>
+<body>
+<p><a class="home" href="index.html">← All shared lists</a></p>
+<h1>Projects &amp; Tasks — Master List</h1>
+<p class="sub">Mr.E's master projects list — this page is the master. Muse keeps the app's built-in tracking list updated from here.</p>
+<div class="sync"><span id="syncStatus">Loading the projects list…</span><button id="connectBtn" type="button" style="display:none">Connect this phone</button><button id="disconnectBtn" type="button" class="plain" style="display:none">Disconnect</button></div>
+<div class="trial"><strong>This is the master list.</strong> Work it the way that suits you: check a project off when it is done (it drops to the bottom of its section), use ↑ ↓ to nudge an item, ⤒ ↑ ↓ beside a section title to rearrange sections, ✕ to remove an entry, and the boxes under each section to add new ones. <strong>New items show in green at the top of their section</strong> until you press that section’s <em>Clear green</em> button — that only clears the green, it does <strong>not</strong> un-check finished projects. Muse reads this list as the source of truth for order and status, and mirrors it into the app’s built-in tracking list.</div>
+
+<div id="stores"></div>
+
+<h2>How this list works</h2>
+<ul>
+<li>→ <strong>Top 3 — While Traveling</strong> sits at the top: Mars write-up, water fill vent indicator (design), and W.H.A.T. auto-addressing — picked Sun Nov 15, 2026.</li>
+<li>→ Rearrange sections with <strong>⤒</strong> (straight to top), ↑ and ↓ beside the section title. Rearrange items with ↑ ↓ inside a section. Nothing sorts alphabetically — your order sticks.</li>
+<li>→ Check the box when a project is done — it moves to the bottom of its section. Add and remove entries with the boxes under each section and the ✕ button.</li>
+<li>→ New entries are <strong>green at the top</strong> of their section until you press <em>Clear green</em> for that section.</li>
+<li>→ The note beside each project is its current status, as Muse last recorded it. Edit it like a quantity/note field, or just tell Muse and he will update it.</li>
+</ul>
+<p class="updated">Projects data lives with the shared lists site (projects-data.json), seeded Nov 15, 2026 from the app’s built-in tracking list (80 items, in Mr.E’s order, grouped into sections). From here on, this page is the master.</p>
+
+<script>
+"use strict";
+var CONTENTS_URL = "https://api.github.com/repos/MisterE000/Muse-list-/contents/projects-data.json";
+var REPO_URL = "https://api.github.com/repos/MisterE000/Muse-list-";
+var TOKEN_KEY = "groceryShared.token.v1";
+var CACHE_KEY = "projects.cache.v1";
+
+var SEED = [
+  {
+    "store": "Top 3 — While Traveling",
+    "items": [
+      {
+        "name": "Rehearse at Home: Mars trial write-up",
+        "qty": "Draft merged and sharpened; awaiting Mr.E's markup before any publishing.",
+        "done": false,
+        "fresh": true
+      },
+      {
+        "name": "Gravity-fill vent air indicator",
+        "qty": "Float-in-tube design settled; 3D-print help to be requested when home.",
+        "done": false,
+        "fresh": true
+      },
+      {
+        "name": "WHAT Home automation auto-addressing",
+        "qty": "Manual addressing is the stopgap while auto-addressing is still unsolved.",
+        "done": false,
+        "fresh": true
+      }
+    ]
+  },
+  {
+    "store": "RV — Witherwings",
+    "items": [
+      {
+        "name": "Additional water tank",
+        "qty": "Nov 2 measurements confirm T-1800 fits the bay; order still held until after Boca.",
+        "done": false
+      },
+      {
+        "name": "Reseal around all RV windows",
+        "qty": "RV wax done Oct 26; reseal still parked until frame margins and seam lines are wiped before stripping the old silicone.",
+        "done": false
+      },
+      {
+        "name": "Cord make cargo door shelf",
+        "qty": "Waiting for you to make the cargo door shelf.",
+        "done": false
+      },
+      {
+        "name": "Replace RV bathroom faucet",
+        "qty": "Listed, not started",
+        "done": false
+      },
+      {
+        "name": "Other side gravity fill",
+        "qty": "Waiting to add the other side gravity fill.",
+        "done": false
+      },
+      {
+        "name": "RV USB-C for dash cam",
+        "qty": "Waiting for you to wire USB-C power for the dash cam in the RV.",
+        "done": false
+      },
+      {
+        "name": "DIY thermal deer detector for Witherwings",
+        "qty": "Proof-of-concept path picked: PureThermal Mini Pro JST-SR ($369.95) into Teensy 4.1 USB host; enclosure plan set — thin polyethylene film window for prototype, germanium window for the permanent waterproof mount.",
+        "done": false
+      },
+      {
+        "name": "Soft run water pump switch",
+        "qty": "Waiting on you to specify what the soft-run water pump switch needs.",
+        "done": false
+      },
+      {
+        "name": "RV backup water system",
+        "qty": "Backup water system verified dry November 2 and ready for the Boca trip.",
+        "done": false
+      },
+      {
+        "name": "Variable-speed RV water pump (PWM FET)",
+        "qty": "Butterfly parked — bench idea only, no schedule",
+        "done": false
+      },
+      {
+        "name": "RV engine compartment light",
+        "qty": "Listed, not started",
+        "done": false
+      },
+      {
+        "name": "RV projects",
+        "qty": "Riv-nuts won the roof-rail decision; 100 1/4-20 inserts ordered, bench test before they go in.",
+        "done": false
+      },
+      {
+        "name": "RV roof solar rail mounts",
+        "qty": "4 runs of 8-ft half-height 80/20 planned for RV roof solar; rib positions still need a Day-2 check before drilling.",
+        "done": false
+      },
+      {
+        "name": "Shoe holder under fridge",
+        "qty": "Waiting on you to buy and fit the shoe holder under the RV fridge.",
+        "done": false
+      },
+      {
+        "name": "RV dash and floor illumination",
+        "qty": "Listed, not started",
+        "done": false
+      },
+      {
+        "name": "Witherwings cab seat upgrade",
+        "qty": "Searching for a solid mid-range air-ride seat pair; the driver's seat needs an aisle-side armrest and pickup anywhere in the contiguous US works.",
+        "done": false
+      },
+      {
+        "name": "RV black tank level sensor replacement",
+        "qty": "Sensor always reads full; Garnet SeeLeveL II external system identified, with replacement to be done when home.",
+        "done": false
+      },
+      {
+        "name": "Locate RV shower leak",
+        "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
+        "done": false
+      }
+    ]
+  },
+  {
+    "store": "Home, Yard & Tractor",
+    "items": [
+      {
+        "name": "Outdoor shelter for restored tractor",
+        "qty": "Flight 15 is done and the shelter is still unbuilt, with the 4 window ACs still staged for recycling.",
+        "done": false
+      },
+      {
+        "name": "Replace boards on mom's deck",
+        "qty": "Deck boards wait until after the Boca trip, now under way.",
+        "done": false
+      },
+      {
+        "name": "Small bath motion light",
+        "qty": "Still to be bought and installed.",
+        "done": false
+      },
+      {
+        "name": "Motion switch on cameras",
+        "qty": "Listed, not started",
+        "done": false
+      },
+      {
+        "name": "Hot water recirculator",
+        "qty": "Listed, not started",
+        "done": false
+      },
+      {
+        "name": "John Deere E100 mower spindle repair",
+        "qty": "Waiting for inspection of the spindle shaft threads to decide between the $3.46 blade lock nut alone or the $59.14 AUC15811 spindle assembly; no order placed yet.",
+        "done": false
+      }
+    ]
+  },
+  {
+    "store": "Electronics, W.H.A.T. & Builds",
+    "items": [
+      {
+        "name": "Lawnmooer animal mower",
+        "qty": "v7 pinions fit the shaft and hold well without the pin, so the slight looseness needs no reprint.",
+        "done": false
+      },
+      {
+        "name": "LawnMooer > 4-channel PWM motor controller",
+        "qty": "Mode 5 gait pipeline passed its bench test end to end, while the normal-versus-step-cycle fork stays undecided.",
+        "done": false
+      },
+      {
+        "name": "LawnMooer > Knee joint for PVC legs",
+        "qty": "Revised notched knee diagram delivered, with gravity re-extending the shin instead of a return spring.",
+        "done": false
+      },
+      {
+        "name": "Make Arduino setup for Ben",
+        "qty": "Arduino presentation still pending 26 days past the October 20 target, after Ben's printer arrived October 22.",
+        "done": false
+      },
+      {
+        "name": "PEI flex plate for Ben's Ender 3 V2",
+        "qty": "PEI flex plate upgrade selected; a textured or double-sided 235×235 mm plate still needs finding.",
+        "done": false
+      },
+      {
+        "name": "Motor flyback energy capture",
+        "qty": "Back-of-mind idea, parked — bridge rectifier to capacitor, next winding reuses flyback energy.",
+        "done": false
+      },
+      {
+        "name": "W.H.A.T. RemoteControl sketch fix",
+        "qty": "Compile-verified fix delivered; bench test still pending without a potentiometer on the road.",
+        "done": false
+      }
+    ]
+  },
+  {
+    "store": "SAFE, Money & Admin",
+    "items": [
+      {
+        "name": "Roth IRA + 401k transfer + Indiana estimated tax",
+        "qty": "Get Schwab's exact FBO payee wording and address, then execute the $7,500 Roth transfer by December 31.",
+        "done": false
+      },
+      {
+        "name": "Google account sign-in cleanup",
+        "qty": "Waiting for a headache-free day to start the Google sign-in cleanup.",
+        "done": false
+      },
+      {
+        "name": "Used Tesla batteries and connectors research",
+        "qty": "Waiting for Mr.E to ask for the cost and availability findings.",
+        "done": false
+      }
+    ]
+  },
+  {
+    "store": "Standing Routines & Watches",
+    "items": [
+      {
+        "name": "Take trash out Thursday nights - recycling week B",
+        "qty": "Trash out Nov 12; next reminder is Thursday Nov 19 at 8:30 PM for recycling + trash (B week).",
+        "done": false
+      },
+      {
+        "name": "Daily morning briefing",
+        "qty": "Nov 15 briefing is ready, covering the first-ever ship catch; the next one compiles tomorrow, Nov 16.",
+        "done": false
+      },
+      {
+        "name": "Shared reminders with Mrs.E",
+        "qty": "Shared reminders list stays live for new entries.",
+        "done": false
+      },
+      {
+        "name": "Shared grocery list with Mrs.E",
+        "qty": "Per-store Reset buttons are live, with new items showing green at the top of each store until reset.",
+        "done": false
+      },
+      {
+        "name": "Shared travel journal with Mrs.E",
+        "qty": "Flight 15 journal entry complete, covering launch and catch, with the corrected Starlink sighting.",
+        "done": false
+      },
+      {
+        "name": "Weekly list review",
+        "qty": "Nov 15 review ready: Flight 15 wins celebrated and Top 3 picks open waiting on your choice.",
+        "done": false
+      },
+      {
+        "name": "Thunderbird live calendar sync watch",
+        "qty": "No native Graph calendar sync yet as of November 1; next monthly check is November 15.",
+        "done": false
+      },
+      {
+        "name": "Morning walk distance report",
+        "qty": "November 7 home loop ran about 25 minutes, roughly 2,800 steps estimated.",
+        "done": false
+      },
+      {
+        "name": "Watch Griffin Mission 1 Falcon Heavy center core recovery",
+        "qty": "Trackers now show Jan 6, 2027 for Griffin Mission 1, but the date remains an unconfirmed placeholder and center core recovery is still unconfirmed.",
+        "done": false
+      },
+      {
+        "name": "Muse weekly usage readings",
+        "qty": "Last pre-reset reading was October 28 at 50% of the free weekly limit; no newer cycle reading is recorded.",
+        "done": false
+      },
+      {
+        "name": "Zoom link for William Schmaus meeting",
+        "qty": "The 9:15 AM CT Zoom link reminder was delivered and no further action is owed.",
+        "done": true
+      },
+      {
+        "name": "Create Zoom link for Jenny McCloud meeting",
+        "qty": "Scheduled for Sunday, November 15 at 10:30 AM Central, ahead of the 11:00 AM meeting.",
+        "done": false
+      }
+    ]
+  },
+  {
+    "store": "Reading & Writing",
+    "items": [
+      {
+        "name": "Brandon Sanderson - The Way of Kings",
+        "qty": "On the reading list since October 15; not started yet.",
+        "done": false
+      }
+    ]
+  },
+  {
+    "store": "Completed",
+    "items": [
+      {
+        "name": "Oil change before Boca Chica trip",
+        "qty": "Flight 15 launched yesterday; morning peek ended with both pads empty.",
+        "done": true
+      },
+      {
+        "name": "Reseal around RV toilet",
+        "qty": "Reseal around RV toilet is complete.",
+        "done": true
+      },
+      {
+        "name": "Driverside worklight",
+        "qty": "Job done Oct 24: worklight and closet light installed, closet closed and restored.",
+        "done": true
+      },
+      {
+        "name": "Calculate taxes based on last year",
+        "qty": "2026 tax estimate v3 was delivered on Oct 19 and the calculation is complete.",
+        "done": true
+      },
+      {
+        "name": "Seal door handle",
+        "qty": "Seal door handle is complete.",
+        "done": true
+      },
+      {
+        "name": "Bitcoin wallet seed backup",
+        "qty": "Bitcoin seed backup is complete: two paper copies stored separately and the old seed file and wallet deleted.",
+        "done": true
+      },
+      {
+        "name": "Put a light in the garage door opener",
+        "qty": "Garage door opener light installed on Nov 2, 2026 with an incandescent bulb.",
+        "done": true
+      },
+      {
+        "name": "Outlook filing rules fix",
+        "qty": "Additional sent-mail filing rules were added on Oct 25, 2026, but were not tested before the responsibility ended.",
+        "done": true
+      },
+      {
+        "name": "Narrowize shelf under RV sink",
+        "qty": "The shelf under the RV sink is completed.",
+        "done": true
+      },
+      {
+        "name": "Boca Chica RV trip for Starship Flight 15",
+        "qty": "Ship 42 was caught at 3:19 PM CT on November 14 from the front row at Isla Blanca.",
+        "done": true
+      },
+      {
+        "name": "Change out table in RV before Starship trip",
+        "qty": "The RV table swap is complete as of Oct 25, 2026.",
+        "done": true
+      },
+      {
+        "name": "Refrigerator door retainer",
+        "qty": "The Refrigerator door retainer task is complete.",
+        "done": true
+      },
+      {
+        "name": "SAFE database Import borrowing-balance fix",
+        "qty": "Import fix is verified with the refresh lines commented out and auto-refresh parked pending the Excel-open lead.",
+        "done": true
+      },
+      {
+        "name": "Street gas-line work and driveway easement",
+        "qty": "Resolved Nov 3: it was a fiber-optic box in the neighbor's yard, so the driveway will not be cut.",
+        "done": true
+      },
+      {
+        "name": "LabPadre Plex daily Starbase check",
+        "qty": "Flight 15 ended November 14 with Ship 42 caught and the final 5:00 PM Plex check completed.",
+        "done": true
+      },
+      {
+        "name": "Mrs.E communication channel",
+        "qty": "The test email to Tina was sent on Oct 20 and the communication channel responsibility is now complete.",
+        "done": true
+      },
+      {
+        "name": "Install driverside worklight",
+        "qty": "Worklight mounted and lit — Tina approved the beam.",
+        "done": true
+      },
+      {
+        "name": "Measure tractor dimensions after morning walk",
+        "qty": "Tractor measured at 77\" high, 8' wide, 10' long on Oct 15 and is ready for shelter fit evaluation.",
+        "done": true
+      },
+      {
+        "name": "Check RV switch size",
+        "qty": "Switches are 1/2 x 1/2 in with ~1/4 in of lettering space above them.",
+        "done": true
+      },
+      {
+        "name": "Buy oil and filter for Witherwings at Walmart",
+        "qty": "Oil (5W-30, 9 qt) and a Mobil M1-210 filter for Witherwings were purchased.",
+        "done": true
+      },
+      {
+        "name": "Indiana business site check for SAFEConcepts",
+        "qty": "The one-time Indiana business site check for SAFEConcepts is complete and quarterly checks are scheduled for Jan 16, Apr 16, Jul 16, and Oct 16.",
+        "done": true
+      },
+      {
+        "name": "Mrs.E retirement planning",
+        "qty": "Standing plan captured with her 401(k) ramp-up and the Medicare-at-65 timing question still open.",
+        "done": true
+      },
+      {
+        "name": "Pick up Tina — Thu Oct 22, 5:00 PM",
+        "qty": "The 5:00 PM pickup-Tina reminder was delivered.",
+        "done": true
+      },
+      {
+        "name": "Visits: Chloe Tue Oct 27 ~3 PM, Thomas Thu Oct 29 ~4 PM",
+        "qty": "Chloe's visit occurred Oct 27; Thomas missed the planned Oct 29 visit and no new date is set.",
+        "done": true
+      },
+      {
+        "name": "Intelligence/consciousness conversation email to Tina",
+        "qty": "The verbatim email to Tina was sent from Yahoo at 7:41 AM.",
+        "done": true
+      },
+      {
+        "name": "Joseph Anderson meeting — Fri Oct 23, 5:00 PM",
+        "qty": "The Joseph Anderson meeting is on the SAFEConcepts calendar for today at 5:00 PM with a one-hour reminder set.",
+        "done": true
+      },
+      {
+        "name": "Lighting for Tina's storage side (RV)",
+        "qty": "Lighting for Tina's storage side in the RV is complete as of Sun Oct 25, 2026.",
+        "done": true
+      },
+      {
+        "name": "Vacuum the living room",
+        "qty": "Vacuum task completed and the 9:45 reminder was cancelled.",
+        "done": true
+      },
+      {
+        "name": "Send Gordy the Diary of a CEO link",
+        "qty": "The reminder was delivered at ~7 PM on Wed, Nov 4, 2026.",
+        "done": true
+      },
+      {
+        "name": "Call with William Schmaus about borrowing more money",
+        "qty": "The scheduled Zoom call with William Schmaus on Saturday, November 7 at 12:00 PM has ended.",
+        "done": true
+      }
+    ]
+  }
+];
+
+function deepCopy(o) { return JSON.parse(JSON.stringify(o)); }
+
+function cmpName(a, b) {
+  return a.name.localeCompare(b.name, "en", { sensitivity: "base", numeric: true });
+}
+
+/* New items (added since the last reset) sit green at the top; other open
+   items follow; checked items sink to the bottom. Within each group the
+   items keep their stored order — NO alphabetical sorting, so the up/down
+   arrows set a manual order that stays put (Gary's call, Nov 4, 2026). */
+function arrange(items) {
+  var fresh = items.filter(function (i) { return i.fresh && !i.done; });
+  var open = items.filter(function (i) { return !i.fresh && !i.done; });
+  var done = items.filter(function (i) { return i.done; });
+  return fresh.concat(open).concat(done);
+}
+
+function b64encode(str) { return btoa(unescape(encodeURIComponent(str))); }
+function b64decode(b64) { return decodeURIComponent(escape(atob(String(b64).replace(/\s/g, "")))); }
+
+function getToken() {
+  try { return localStorage.getItem(TOKEN_KEY) || ""; } catch (e) { return ""; }
+}
+function setToken(t) {
+  try {
+    if (t) localStorage.setItem(TOKEN_KEY, t);
+    else localStorage.removeItem(TOKEN_KEY);
+  } catch (e) {}
+}
+
+function ghHeaders() {
+  var h = { "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" };
+  var t = getToken();
+  if (t) h["Authorization"] = "Bearer " + t;
+  return h;
+}
+
+function httpError(resp) {
+  var err = new Error("HTTP " + resp.status);
+  err.status = resp.status;
+  return err;
+}
+
+function ghGet() {
+  return fetch(CONTENTS_URL + "?ref=main", { headers: ghHeaders(), cache: "no-store" })
+    .then(function (resp) {
+      if (!resp.ok) throw httpError(resp);
+      return resp.json();
+    })
+    .then(function (d) {
+      var data = JSON.parse(b64decode(d.content));
+      if (!data || !Array.isArray(data.stores)) throw new Error("Bad data file");
+      data.stores.forEach(function (s) { s.items = arrange(s.items || []); });
+      return { sha: d.sha, stores: data.stores };
+    });
+}
+
+function ghPut(sha, stores) {
+  var payload = { version: 1, updated: new Date().toISOString(), stores: stores };
+  return fetch(CONTENTS_URL, {
+    method: "PUT",
+    headers: ghHeaders(),
+    body: JSON.stringify({
+      message: "Update shared RV trip prep list (web page)",
+      content: b64encode(JSON.stringify(payload, null, 2)),
+      sha: sha
+    })
+  }).then(function (resp) {
+    if (!resp.ok) throw httpError(resp);
+    return resp.json();
+  }).then(function (d) { return d.content.sha; });
+}
+
+/* ---- state ---- */
+var stores = deepCopy(SEED);
+stores.forEach(function (s) { s.items = arrange(s.items); });
+var lastSha = null;
+var pendingOps = [];
+var syncing = false;
+var saveTimer = null;
+
+function cacheSave() {
+  try {
+    localStorage.setItem(CACHE_KEY, JSON.stringify({ sha: lastSha, stores: stores, ops: pendingOps }));
+  } catch (e) {}
+}
+function cacheLoad() {
+  try {
+    var raw = localStorage.getItem(CACHE_KEY);
+    if (!raw) return;
+    var c = JSON.parse(raw);
+    if (c && Array.isArray(c.stores) && c.stores.length) {
+      stores = c.stores;
+      lastSha = c.sha || null;
+      pendingOps = Array.isArray(c.ops) ? c.ops : [];
+    }
+  } catch (e) {}
+}
+
+function findSection(data, storeName) {
+  for (var i = 0; i < data.length; i++) if (data[i].store === storeName) return data[i];
+  return null;
+}
+function findItem(section, name) {
+  var want = String(name).toLowerCase();
+  for (var i = 0; i < section.items.length; i++) {
+    if (String(section.items[i].name).toLowerCase() === want) return section.items[i];
+  }
+  return null;
+}
+
+/* Apply one change to a stores array. Used for the on-screen list and,
+   during sync, replayed onto the freshest shared copy so two phones
+   editing at once do not overwrite each other. */
+function applyOp(data, op) {
+  var section = findSection(data, op.store);
+  if (!section) return;
+  var item, idx, j, t;
+  if (op.type === "add") {
+    item = findItem(section, op.name);
+    if (item) {
+      item.done = false;
+      item.fresh = true;
+      if (op.qty) item.qty = op.qty;
+    } else {
+      section.items.push({ name: op.name, qty: op.qty || "", done: false, fresh: true });
+    }
+    section.items = arrange(section.items);
+  } else if (op.type === "reset") {
+    /* After a shopping trip: un-check everything so the list is ready for
+       next time, and fold the green new items into the list in normal
+       color and normal (alphabetical) position. */
+    section.items.forEach(function (i) { i.fresh = false; });
+    section.items = arrange(section.items);
+  } else if (op.type === "remove") {
+    var want = String(op.name).toLowerCase();
+    section.items = section.items.filter(function (i) { return String(i.name).toLowerCase() !== want; });
+  } else if (op.type === "done") {
+    item = findItem(section, op.name);
+    if (item) {
+      item.done = !!op.done;
+      section.items = arrange(section.items);
+    }
+  } else if (op.type === "move") {
+    var want2 = String(op.name).toLowerCase();
+    idx = -1;
+    for (var k = 0; k < section.items.length; k++) {
+      if (String(section.items[k].name).toLowerCase() === want2) { idx = k; break; }
+    }
+    j = idx + (op.dir || 0);
+    if (idx >= 0 && j >= 0 && j < section.items.length) {
+      t = section.items[j];
+      section.items[j] = section.items[idx];
+      section.items[idx] = t;
+    }
+  }
+}
+
+var statusEl = document.getElementById("syncStatus");
+var connectBtn = document.getElementById("connectBtn");
+var disconnectBtn = document.getElementById("disconnectBtn");
+
+function timeNow() {
+  try { return new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }); }
+  catch (e) { return ""; }
+}
+function setStatus(msg) { statusEl.textContent = msg; }
+function updateButtons() {
+  var has = !!getToken();
+  connectBtn.style.display = has ? "none" : "";
+  disconnectBtn.style.display = has ? "" : "none";
+}
+function statusLoaded() {
+  if (getToken()) setStatus("✓ Connected — shared trip list is up to date.");
+  else setStatus("Trip list loaded. This phone is not connected yet — changes stay on this phone until you connect it.");
+}
+function statusSaved() { setStatus("✓ Saved to the shared list · " + timeNow()); }
+function statusSaving() { setStatus("Saving to the shared list…"); }
+function statusError(err) {
+  var why = err && err.status ? "error " + err.status : "no connection";
+  setStatus("⚠ Couldn't save (" + why + "). Changes are kept on this phone and will retry — reopen the page when you're back online.");
+}
+
+/* Move a whole section: to the top, or one step up/down. Section order is
+   part of the shared data, so both phones keep the same arrangement. */
+function applySectionMove(data, op) {
+  var idx = -1;
+  for (var i = 0; i < data.length; i++) {
+    if (data[i].store === op.store) { idx = i; break; }
+  }
+  if (idx < 0) return;
+  var sec = data[idx];
+  if (op.dir === "top") {
+    if (idx === 0) return;
+    data.splice(idx, 1);
+    data.unshift(sec);
+  } else {
+    var j = idx + (op.dir || 0);
+    if (j < 0 || j >= data.length) return;
+    data[idx] = data[j];
+    data[j] = sec;
+  }
+}
+
+function applyAny(data, op) {
+  if (op.type === "sectionmove") applySectionMove(data, op);
+  else applyOp(data, op);
+}
+
+function mutate(op) {
+  applyAny(stores, op);
+  pendingOps.push(op);
+  cacheSave();
+  render();
+  if (getToken()) { statusSaving(); scheduleSync(); }
+  else setStatus("Saved on this phone only — connect this phone to share changes.");
+}
+
+function scheduleSync() {
+  if (saveTimer) clearTimeout(saveTimer);
+  saveTimer = setTimeout(syncNow, 900);
+}
+
+function syncNow() {
+  if (syncing || !getToken() || !pendingOps.length) return;
+  syncing = true;
+  var attempts = 0;
+
+  function done() {
+    syncing = false;
+    if (pendingOps.length) scheduleSync();
+  }
+  function onErr(err) {
+    if (err && (err.status === 409 || err.status === 422) && attempts < 4) { attempt(); return; }
+    syncing = false;
+    statusError(err);
+  }
+  function attempt() {
+    attempts++;
+    var batch = pendingOps.slice();
+    ghGet().then(function (remote) {
+      var before = JSON.stringify(remote.stores);
+      batch.forEach(function (op) { applyAny(remote.stores, op); });
+      var after = JSON.stringify(remote.stores);
+      stores = remote.stores;
+      if (before === after) {
+        lastSha = remote.sha;
+        pendingOps = pendingOps.slice(batch.length);
+        cacheSave(); render(); statusSaved(); done();
+        return;
+      }
+      ghPut(remote.sha, remote.stores).then(function (newSha) {
+        lastSha = newSha;
+        pendingOps = pendingOps.slice(batch.length);
+        cacheSave(); render(); statusSaved(); done();
+      }, onErr);
+    }, onErr);
+  }
+  attempt();
+}
+
+function refreshFromRemote() {
+  ghGet().then(function (remote) {
+    if (syncing) return;
+    if (pendingOps.length) { scheduleSync(); return; }
+    if (remote.sha !== lastSha) {
+      stores = remote.stores;
+      lastSha = remote.sha;
+      cacheSave();
+      render();
+    }
+    statusLoaded();
+  }).catch(function () {
+    if (getToken()) setStatus("Showing the last copy saved on this phone — couldn't reach the shared projects list just now.");
+    else setStatus("Showing the last copy saved on this phone. Connect this phone to share changes.");
+  });
+}
+
+connectBtn.addEventListener("click", function () {
+  var t = prompt("Paste this phone's list token (one-time). It is stored only on this phone and is used only to save the grocery list.", "");
+  if (!t) return;
+  t = String(t).trim();
+  if (!t) return;
+  setStatus("Checking that token…");
+  fetch(REPO_URL, { headers: { "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", "Authorization": "Bearer " + t }, cache: "no-store" })
+    .then(function (resp) {
+      if (!resp.ok) throw httpError(resp);
+      setToken(t);
+      updateButtons();
+      setStatus("✓ This phone is connected. Syncing…");
+      if (pendingOps.length) syncNow(); else refreshFromRemote();
+    })
+    .catch(function () {
+      alert("That token didn't check out for the lists site — nothing was saved. Double-check the token and try again.");
+      statusLoaded();
+    });
+});
+
+disconnectBtn.addEventListener("click", function () {
+  setToken("");
+  updateButtons();
+  setStatus("This phone is disconnected — changes will stay on this phone until you connect it again.");
+});
+
+document.addEventListener("visibilitychange", function () {
+  if (!document.hidden) refreshFromRemote();
+});
+window.addEventListener("online", function () { scheduleSync(); refreshFromRemote(); });
+
+function render() {
+  var host = document.getElementById("stores");
+  host.innerHTML = "";
+  stores.forEach(function (section, si) {
+    var head = document.createElement("div");
+    head.className = "storehead";
+    var h = document.createElement("h2");
+    h.textContent = section.store;
+    head.appendChild(h);
+
+    var secBtns = document.createElement("span");
+    secBtns.className = "secbtns";
+
+    var toTop = document.createElement("button");
+    toTop.type = "button"; toTop.textContent = "⤒"; toTop.title = "Move section to the top";
+    toTop.setAttribute("aria-label", "Move section to top: " + section.store);
+    toTop.disabled = (si === 0);
+    toTop.addEventListener("click", function () {
+      mutate({ type: "sectionmove", store: section.store, dir: "top" });
+    });
+    secBtns.appendChild(toTop);
+
+    var sUp = document.createElement("button");
+    sUp.type = "button"; sUp.textContent = "↑"; sUp.title = "Move section up";
+    sUp.setAttribute("aria-label", "Move section up: " + section.store);
+    sUp.disabled = (si === 0);
+    sUp.addEventListener("click", function () {
+      mutate({ type: "sectionmove", store: section.store, dir: -1 });
+    });
+    secBtns.appendChild(sUp);
+
+    var sDn = document.createElement("button");
+    sDn.type = "button"; sDn.textContent = "↓"; sDn.title = "Move section down";
+    sDn.setAttribute("aria-label", "Move section down: " + section.store);
+    sDn.disabled = (si === stores.length - 1);
+    sDn.addEventListener("click", function () {
+      mutate({ type: "sectionmove", store: section.store, dir: 1 });
+    });
+    secBtns.appendChild(sDn);
+
+    head.appendChild(secBtns);
+    var resetBtn = document.createElement("button");
+    resetBtn.type = "button";
+    resetBtn.className = "resetbtn";
+    resetBtn.textContent = "Clear green";
+    resetBtn.title = "Clear the green highlighting on new items in this section (finished projects stay checked)";
+    resetBtn.setAttribute("aria-label", "Clear green highlighting for " + section.store);
+    resetBtn.addEventListener("click", function () {
+      if (confirm("Clear green in " + section.store + "?\n\nThis only removes the green highlighting from new items. Finished projects stay checked.")) {
+        mutate({ type: "reset", store: section.store });
+      }
+    });
+    head.appendChild(resetBtn);
+    host.appendChild(head);
+
+    if (section.note) {
+      var n = document.createElement("div");
+      n.className = "note";
+      n.textContent = section.note;
+      host.appendChild(n);
+    }
+
+    var ul = document.createElement("ul");
+    if (!section.items.length) {
+      var liE = document.createElement("li");
+      liE.className = "empty";
+      liE.textContent = "Nothing yet — add an item below.";
+      ul.appendChild(liE);
+    }
+    section.items.forEach(function (item, ii) {
+      var li = document.createElement("li");
+      li.className = "item" + (item.done ? " done" : "") + (item.fresh ? " fresh" : "");
+
+      var cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.checked = item.done;
+      cb.setAttribute("aria-label", "Done: " + item.name);
+      cb.addEventListener("change", function () {
+        mutate({ type: "done", store: section.store, name: item.name, done: cb.checked });
+      });
+      li.appendChild(cb);
+
+      var nm = document.createElement("span");
+      nm.className = "name";
+      nm.textContent = item.name;
+      li.appendChild(nm);
+
+      if (item.link) {
+        var jl = document.createElement("a");
+        jl.className = "jlink";
+        jl.href = item.link;
+        jl.textContent = "📖 Journal";
+        jl.title = "Open the shared travel journal";
+        li.appendChild(jl);
+      }
+
+      if (item.qty) {
+        var q = document.createElement("span");
+        q.className = "qty";
+        q.textContent = item.qty;
+        li.appendChild(q);
+      }
+
+      var btns = document.createElement("span");
+      btns.className = "btns";
+
+      var up = document.createElement("button");
+      up.type = "button"; up.textContent = "↑"; up.title = "Move up";
+      up.setAttribute("aria-label", "Move up: " + item.name);
+      up.disabled = (ii === 0);
+      up.addEventListener("click", function () {
+        mutate({ type: "move", store: section.store, name: item.name, dir: -1 });
+      });
+      btns.appendChild(up);
+
+      var dn = document.createElement("button");
+      dn.type = "button"; dn.textContent = "↓"; dn.title = "Move down";
+      dn.setAttribute("aria-label", "Move down: " + item.name);
+      dn.disabled = (ii === section.items.length - 1);
+      dn.addEventListener("click", function () {
+        mutate({ type: "move", store: section.store, name: item.name, dir: 1 });
+      });
+      btns.appendChild(dn);
+
+      var rm = document.createElement("button");
+      rm.type = "button"; rm.textContent = "✕"; rm.title = "Remove item";
+      rm.setAttribute("aria-label", "Remove: " + item.name);
+      rm.addEventListener("click", function () {
+        mutate({ type: "remove", store: section.store, name: item.name });
+      });
+      btns.appendChild(rm);
+
+      li.appendChild(btns);
+      ul.appendChild(li);
+    });
+    host.appendChild(ul);
+
+    var row = document.createElement("div");
+    row.className = "addrow";
+    var inName = document.createElement("input");
+    inName.type = "text"; inName.className = "new-name";
+    inName.placeholder = "New item…";
+    inName.setAttribute("aria-label", "New item for " + section.store);
+    var inQty = document.createElement("input");
+    inQty.type = "text"; inQty.className = "new-qty";
+    inQty.placeholder = "Status / note (optional)";
+    inQty.setAttribute("aria-label", "Quantity or note");
+    var add = document.createElement("button");
+    add.type = "button"; add.textContent = "Add";
+    function doAdd() {
+      var nmv = inName.value.trim();
+      if (!nmv) { inName.focus(); return; }
+      mutate({ type: "add", store: section.store, name: nmv, qty: inQty.value.trim() });
+    }
+    add.addEventListener("click", doAdd);
+    inName.addEventListener("keydown", function (e) { if (e.key === "Enter") doAdd(); });
+    inQty.addEventListener("keydown", function (e) { if (e.key === "Enter") doAdd(); });
+    row.appendChild(inName); row.appendChild(inQty); row.appendChild(add);
+    host.appendChild(row);
+  });
+}
+
+cacheLoad();
+updateButtons();
+render();
+refreshFromRemote();
+if (pendingOps.length && getToken()) scheduleSync();
+</script>
+</body>
+</html>
