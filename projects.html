@@ -20,7 +20,8 @@
   li.item input[type=checkbox] { transform: scale(1.3); flex: none; }
   li.item .name { flex: 1; }
   li.item.done .name { text-decoration: line-through; color: #999; }
-  .qty { color: #666; font-size: 0.85em; white-space: normal; text-align: right; max-width: 42%; }
+  .qty { color: #666; font-size: 0.85em; white-space: normal; text-align: right; max-width: 42%; cursor: pointer; }
+  .qty.empty { color: #b0b0b0; font-style: italic; white-space: nowrap; }
   li.item.done .qty { color: #bbb; }
   .btns { display: flex; gap: 4px; flex: none; }
   .btns button { font-size: 1em; line-height: 1; padding: 6px 10px; border: 1px solid #ccc; background: #f7f7f7; border-radius: 6px; cursor: pointer; }
@@ -64,7 +65,7 @@
 <li>→ Check the box when a project is done — it moves to the bottom of its section. Add and remove entries with the boxes under each section and the ✕ button.</li>
 <li>→ New entries are <strong>green at the top</strong> of their section until you press <em>Clear green</em> for that section.</li>
 <li>→ <strong>RV Repair — from Trip Prep</strong> mirrors the Repair section of the RV trip prep list. The same jobs can appear in both places on purpose — whenever Muse checks either list, he cross-checks the other so nothing gets lost.</li>
-<li>→ The note beside each project is its current status, as Muse last recorded it. Edit it like a quantity/note field, or just tell Muse and he will update it.</li>
+<li>→ The note beside each project is its current status. <strong>Tap the note</strong> (or “✎ add note” where there is none) to add or change it yourself — jealousy cured. Muse keeps his copy in step.</li>
 </ul>
 <p class="updated">Projects data lives with the shared lists site (projects-data.json), seeded Nov 15, 2026 from the app’s built-in tracking list (80 items, in Mr.E’s order, grouped into sections). From here on, this page is the master.</p>
 
@@ -706,6 +707,9 @@ function applyOp(data, op) {
   } else if (op.type === "remove") {
     var want = String(op.name).toLowerCase();
     section.items = section.items.filter(function (i) { return String(i.name).toLowerCase() !== want; });
+  } else if (op.type === "note") {
+    item = findItem(section, op.name);
+    if (item) item.qty = op.qty || "";
   } else if (op.type === "done") {
     item = findItem(section, op.name);
     if (item) {
@@ -1007,12 +1011,16 @@ function render() {
         li.appendChild(jl);
       }
 
-      if (item.qty) {
-        var q = document.createElement("span");
-        q.className = "qty";
-        q.textContent = item.qty;
-        li.appendChild(q);
-      }
+      var q = document.createElement("span");
+      q.className = "qty" + (item.qty ? "" : " empty");
+      q.textContent = item.qty || "✎ add note";
+      q.title = "Tap to add or change the note for this project";
+      q.addEventListener("click", function () {
+        var v = prompt("Note for: " + item.name, item.qty || "");
+        if (v === null) return;
+        mutate({ type: "note", store: section.store, name: item.name, qty: String(v).trim() });
+      });
+      li.appendChild(q);
 
       var btns = document.createElement("span");
       btns.className = "btns";
