@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-15T16:07:00.000Z",
+  "updated": "2026-11-15T16:37:00.000Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -84,13 +84,8 @@
           "done": false
         },
         {
-          "name": "RV projects",
-          "qty": "Riv-nuts won the roof-rail decision; 100 1/4-20 inserts ordered, bench test before they go in.",
-          "done": false
-        },
-        {
           "name": "RV roof solar rail mounts",
-          "qty": "4 runs of 8-ft half-height 80/20 planned for RV roof solar; rib positions still need a Day-2 check before drilling.",
+          "qty": "Combined item (merged with 'RV projects' Nov 15): riv-nuts chosen, 100 1/4-20 inserts ordered, bench test before install; truss grid verified from Thor drawing, Day-2 spot-check still owed before drilling.",
           "done": false
         },
         {
