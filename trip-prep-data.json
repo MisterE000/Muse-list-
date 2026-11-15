@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-15T14:35:27.779Z",
+  "updated": "2026-11-15T14:35:52.522Z",
   "stores": [
     {
       "store": "In-transit",
@@ -1166,6 +1166,12 @@
         },
         {
           "name": "Outdoor shower compartment near entrance",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Water hose compartment sometimes fills with water",
           "qty": "",
           "done": false,
           "fresh": true
