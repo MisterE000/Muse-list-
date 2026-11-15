@@ -73,7 +73,7 @@
 var CONTENTS_URL = "https://api.github.com/repos/MisterE000/Muse-list-/contents/projects-data.json";
 var REPO_URL = "https://api.github.com/repos/MisterE000/Muse-list-";
 var TOKEN_KEY = "groceryShared.token.v1";
-var CACHE_KEY = "projects.cache.v1";
+var CACHE_KEY = "projects.cache.v2";
 
 var SEED = [
   {
@@ -830,7 +830,40 @@ function syncNow() {
   attempt();
 }
 
+function pagesGet() {
+  /* Read-only fresh copy served with this page (same site, no token needed).
+     Used on devices that have no list token, so they never get stuck
+     showing an old cached copy. */
+  return fetch("projects-data.json", { cache: "no-store" })
+    .then(function (resp) {
+      if (!resp.ok) throw httpError(resp);
+      return resp.json();
+    })
+    .then(function (data) {
+      if (!data || !Array.isArray(data.stores)) throw new Error("Bad data file");
+      data.stores.forEach(function (s) { s.items = arrange(s.items || []); });
+      return { sha: "pages:" + (data.updated || ""), stores: data.stores };
+    });
+}
+
 function refreshFromRemote() {
+  if (!getToken()) {
+    pagesGet().then(function (remote) {
+      if (syncing) return;
+      if (pendingOps.length) { scheduleSync(); return; }
+      if (remote.sha !== lastSha) {
+        stores = remote.stores;
+        lastSha = remote.sha;
+        cacheSave();
+        render();
+      }
+      setStatus("✓ Showing the current shared list · " + timeNow() + " (connect this device to make changes)");
+      updateButtons();
+    }).catch(function () {
+      setStatus("Showing the last copy saved on this device. Connect this device to share changes.");
+    });
+    return;
+  }
   ghGet().then(function (remote) {
     if (syncing) return;
     if (pendingOps.length) { scheduleSync(); return; }
