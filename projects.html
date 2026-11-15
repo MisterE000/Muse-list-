@@ -746,7 +746,7 @@ function updateButtons() {
   disconnectBtn.style.display = has ? "" : "none";
 }
 function statusLoaded() {
-  if (getToken()) setStatus("✓ Connected — shared trip list is up to date.");
+  if (getToken()) setStatus("✓ Connected — shared projects list is up to date.");
   else setStatus("Trip list loaded. This phone is not connected yet — changes stay on this phone until you connect it.");
 }
 function statusSaved() { setStatus("✓ Saved to the shared list · " + timeNow()); }
