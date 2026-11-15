@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-15T15:20:00.000Z",
+  "updated": "2026-11-15T15:45:00.000Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -117,6 +117,47 @@
           "name": "Locate RV shower leak",
           "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
           "done": false
+        }
+      ]
+    },
+    {
+      "store": "RV Repair — from Trip Prep",
+      "items": [
+        {
+          "name": "Locate shower leak",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Replace black tank level sensor (always reads full) — Garnet SeeLeveL II external sensor system",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "3D print a gravity-fill vent air indicator (float in a clear vertical tube on the vent: air coming out = still filling)",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Sink faucet will not retract by itself.",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Outdoor shower compartment near entrance",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Water hose compartment sometimes fills with water",
+          "qty": "",
+          "done": false,
+          "fresh": true
         }
       ]
     },
