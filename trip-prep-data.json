@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-15T14:35:52.522Z",
+  "updated": "2026-11-15T17:52:43.645Z",
   "stores": [
     {
       "store": "In-transit",
@@ -49,6 +49,12 @@
         },
         {
           "name": "Coffee pot seat belt",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Destination in phone",
           "qty": "",
           "done": false,
           "fresh": true
