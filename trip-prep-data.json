@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-15T17:52:43.645Z",
+  "updated": "2026-11-15T20:44:28.096Z",
   "stores": [
     {
       "store": "In-transit",
@@ -55,6 +55,12 @@
         },
         {
           "name": "Destination in phone",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Windows closed",
           "qty": "",
           "done": false,
           "fresh": true
