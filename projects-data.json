@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-15T16:38:00.000Z",
+  "updated": "2026-11-15T17:07:10.360Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -20,6 +20,12 @@
         {
           "name": "WHAT Home automation auto-addressing",
           "qty": "Manual addressing is the stopgap while auto-addressing is still unsolved.",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "This is a test item.",
+          "qty": "No note.",
           "done": false,
           "fresh": true
         }
@@ -317,14 +323,14 @@
           "done": false
         },
         {
-          "name": "Zoom link for William Schmaus meeting",
-          "qty": "The 9:15 AM CT Zoom link reminder was delivered and no further action is owed.",
-          "done": true
-        },
-        {
           "name": "Create Zoom link for Jenny McCloud meeting",
           "qty": "Scheduled for Sunday, November 15 at 10:30 AM Central, ahead of the 11:00 AM meeting.",
           "done": false
+        },
+        {
+          "name": "Zoom link for William Schmaus meeting",
+          "qty": "The 9:15 AM CT Zoom link reminder was delivered and no further action is owed.",
+          "done": true
         }
       ]
     },
