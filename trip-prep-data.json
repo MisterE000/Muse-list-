@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-15T14:35:08.867Z",
+  "updated": "2026-11-15T14:35:27.779Z",
   "stores": [
     {
       "store": "In-transit",
@@ -1160,6 +1160,12 @@
         },
         {
           "name": "Sink faucet will not retract by itself.",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Outdoor shower compartment near entrance",
           "qty": "",
           "done": false,
           "fresh": true
