@@ -1,509 +1,515 @@
 {
- "version": 1,
- "updated": "2026-11-16T15:58:09.000Z",
- "stores": [
-  {
-   "store": "Top 3 — While Traveling",
-   "items": [
+  "version": 1,
+  "updated": "2026-11-16T17:22:52.295Z",
+  "stores": [
     {
-     "name": "Rehearse at Home: Mars trial write-up",
-     "qty": "Draft merged and sharpened; awaiting Mr.E's markup before any publishing.",
-     "done": false,
-     "fresh": true
+      "store": "Top 3 — While Traveling",
+      "items": [
+        {
+          "name": "Rehearse at Home: Mars trial write-up",
+          "qty": "Draft merged and sharpened; awaiting Mr.E's markup before any publishing.",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Gravity-fill vent air indicator",
+          "qty": "Float-in-tube design settled; 3D-print help to be requested when home.",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "WHAT Home automation auto-addressing",
+          "qty": "Manual addressing is the stopgap while auto-addressing is still unsolved.",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "This is a test item.",
+          "qty": "No note.",
+          "done": false,
+          "fresh": true
+        }
+      ]
     },
     {
-     "name": "Gravity-fill vent air indicator",
-     "qty": "Float-in-tube design settled; 3D-print help to be requested when home.",
-     "done": false,
-     "fresh": true
+      "store": "RV — Witherwings",
+      "items": [
+        {
+          "name": "RV Teensy touchscreen dashboard",
+          "qty": "Ideas stage — board built (Teensy + touchscreen, MRF24J, onboard LM61); not yet installed in the RV.",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Additional water tank",
+          "qty": "Nov 2 measurements confirm T-1800 fits the bay; order still held until after Boca.",
+          "done": false
+        },
+        {
+          "name": "Reseal around all RV windows",
+          "qty": "RV wax done Oct 26; reseal still parked until frame margins and seam lines are wiped before stripping the old silicone.",
+          "done": false
+        },
+        {
+          "name": "Cord make cargo door shelf",
+          "qty": "Waiting for you to make the cargo door shelf.",
+          "done": false
+        },
+        {
+          "name": "Replace RV bathroom faucet",
+          "qty": "Listed, not started",
+          "done": false
+        },
+        {
+          "name": "Other side gravity fill",
+          "qty": "Waiting to add the other side gravity fill.",
+          "done": false
+        },
+        {
+          "name": "RV USB-C for dash cam",
+          "qty": "Waiting for you to wire USB-C power for the dash cam in the RV.",
+          "done": false
+        },
+        {
+          "name": "DIY thermal deer detector for Witherwings",
+          "qty": "Proof-of-concept path picked: PureThermal Mini Pro JST-SR ($369.95) into Teensy 4.1 USB host; enclosure plan set — thin polyethylene film window for prototype, germanium window for the permanent waterproof mount.",
+          "done": false
+        },
+        {
+          "name": "Soft run water pump switch",
+          "qty": "Waiting on you to specify what the soft-run water pump switch needs.",
+          "done": false
+        },
+        {
+          "name": "RV backup water system",
+          "qty": "Backup water system verified dry November 2 and ready for the Boca trip.",
+          "done": false
+        },
+        {
+          "name": "Variable-speed RV water pump (PWM FET)",
+          "qty": "Butterfly parked — bench idea only, no schedule",
+          "done": false
+        },
+        {
+          "name": "RV engine compartment light",
+          "qty": "Listed, not started",
+          "done": false
+        },
+        {
+          "name": "RV roof solar rail mounts",
+          "qty": "Combined item (merged with 'RV projects' Nov 15): riv-nuts chosen, 100 1/4-20 inserts ordered, bench test before install; truss grid verified from Thor drawing, Day-2 spot-check still owed before drilling.",
+          "done": false
+        },
+        {
+          "name": "Shoe holder under fridge",
+          "qty": "Waiting on you to buy and fit the shoe holder under the RV fridge.",
+          "done": false
+        },
+        {
+          "name": "RV dash and floor illumination",
+          "qty": "Listed, not started",
+          "done": false
+        },
+        {
+          "name": "Witherwings cab seat upgrade",
+          "qty": "Searching for a solid mid-range air-ride seat pair; the driver's seat needs an aisle-side armrest and pickup anywhere in the contiguous US works.",
+          "done": false
+        },
+        {
+          "name": "RV black tank level sensor replacement",
+          "qty": "Sensor always reads full; Garnet SeeLeveL II external system identified, with replacement to be done when home.",
+          "done": false
+        },
+        {
+          "name": "Locate RV shower leak",
+          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
+          "done": false
+        }
+      ]
     },
     {
-     "name": "WHAT Home automation auto-addressing",
-     "qty": "Manual addressing is the stopgap while auto-addressing is still unsolved.",
-     "done": false,
-     "fresh": true
+      "store": "RV Repair — from Trip Prep",
+      "items": [
+        {
+          "name": "Locate shower leak",
+          "qty": "Nov 16: toilet base cleared by spray test. Prime suspect: shower wall-to-pan lip overflowing when tilted front-right low. Wall-only spray test still owed.",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Replace black tank level sensor (always reads full) — Garnet SeeLeveL II external sensor system",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "3D print a gravity-fill vent air indicator (float in a clear vertical tube on the vent: air coming out = still filling)",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Sink faucet will not retract by itself.",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Outdoor shower compartment near entrance",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Water hose compartment sometimes fills with water",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Re-caulk toilet base with proper caulk (not self-leveling) — home job",
+          "qty": "Nov 16: self-leveling caulk pulled away under spray; toilet cleared as leak entry, re-caulk is just a fix-up.",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Add spigot for dump hose rinse near dumps",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        }
+      ]
     },
     {
-     "name": "This is a test item.",
-     "qty": "No note.",
-     "done": false,
-     "fresh": true
+      "store": "Home, Yard & Tractor",
+      "items": [
+        {
+          "name": "Outdoor shelter for restored tractor",
+          "qty": "Flight 15 is done and the shelter is still unbuilt, with the 4 window ACs still staged for recycling.",
+          "done": false
+        },
+        {
+          "name": "Replace boards on mom's deck",
+          "qty": "Deck boards wait until after the Boca trip, now under way.",
+          "done": false
+        },
+        {
+          "name": "Small bath motion light",
+          "qty": "Still to be bought and installed.",
+          "done": false
+        },
+        {
+          "name": "Motion switch on cameras",
+          "qty": "Listed, not started",
+          "done": false
+        },
+        {
+          "name": "Hot water recirculator",
+          "qty": "Listed, not started",
+          "done": false
+        },
+        {
+          "name": "John Deere E100 mower spindle repair",
+          "qty": "Waiting for inspection of the spindle shaft threads to decide between the $3.46 blade lock nut alone or the $59.14 AUC15811 spindle assembly; no order placed yet.",
+          "done": false
+        }
+      ]
+    },
+    {
+      "store": "Electronics, W.H.A.T. & Builds",
+      "items": [
+        {
+          "name": "Lawnmooer animal mower",
+          "qty": "v7 pinions fit the shaft and hold well without the pin, so the slight looseness needs no reprint.",
+          "done": false
+        },
+        {
+          "name": "LawnMooer > 4-channel PWM motor controller",
+          "qty": "Mode 5 gait pipeline passed its bench test end to end, while the normal-versus-step-cycle fork stays undecided.",
+          "done": false
+        },
+        {
+          "name": "LawnMooer > Knee joint for PVC legs",
+          "qty": "Revised notched knee diagram delivered, with gravity re-extending the shin instead of a return spring.",
+          "done": false
+        },
+        {
+          "name": "Make Arduino setup for Ben",
+          "qty": "Arduino presentation still pending 26 days past the October 20 target, after Ben's printer arrived October 22.",
+          "done": false
+        },
+        {
+          "name": "PEI flex plate for Ben's Ender 3 V2",
+          "qty": "PEI flex plate upgrade selected; a textured or double-sided 235×235 mm plate still needs finding.",
+          "done": false
+        },
+        {
+          "name": "Motor flyback energy capture",
+          "qty": "Back-of-mind idea, parked — bridge rectifier to capacitor, next winding reuses flyback energy.",
+          "done": false
+        },
+        {
+          "name": "W.H.A.T. RemoteControl sketch fix",
+          "qty": "Compile-verified fix delivered; bench test still pending without a potentiometer on the road.",
+          "done": false
+        }
+      ]
+    },
+    {
+      "store": "SAFE, Money & Admin",
+      "items": [
+        {
+          "name": "SAFE Access database — Borrowing Balance auto-refresh fix",
+          "qty": "Parked Oct 16 with refresh lines commented out; revived Nov 15 — workable while traveling, not today.",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Roth IRA + 401k transfer + Indiana estimated tax",
+          "qty": "Get Schwab's exact FBO payee wording and address, then execute the $7,500 Roth transfer by December 31.",
+          "done": false
+        },
+        {
+          "name": "Google account sign-in cleanup",
+          "qty": "Waiting for a headache-free day to start the Google sign-in cleanup.",
+          "done": false
+        },
+        {
+          "name": "Used Tesla batteries and connectors research",
+          "qty": "Waiting for Mr.E to ask for the cost and availability findings.",
+          "done": false
+        }
+      ]
+    },
+    {
+      "store": "Standing Routines & Watches",
+      "items": [
+        {
+          "name": "Take trash out Thursday nights - recycling week B",
+          "qty": "Trash out Nov 12; next reminder is Thursday Nov 19 at 8:30 PM for recycling + trash (B week).",
+          "done": false
+        },
+        {
+          "name": "Daily morning briefing",
+          "qty": "Nov 15 briefing is ready, covering the first-ever ship catch; the next one compiles tomorrow, Nov 16.",
+          "done": false
+        },
+        {
+          "name": "Shared reminders with Mrs.E",
+          "qty": "Shared reminders list stays live for new entries.",
+          "done": false
+        },
+        {
+          "name": "Shared grocery list with Mrs.E",
+          "qty": "Per-store Reset buttons are live, with new items showing green at the top of each store until reset.",
+          "done": false
+        },
+        {
+          "name": "Shared travel journal with Mrs.E",
+          "qty": "Flight 15 journal entry complete, covering launch and catch, with the corrected Starlink sighting.",
+          "done": false
+        },
+        {
+          "name": "Weekly list review",
+          "qty": "Nov 15 review ready: Flight 15 wins celebrated and Top 3 picks open waiting on your choice.",
+          "done": false
+        },
+        {
+          "name": "Thunderbird live calendar sync watch",
+          "qty": "No native Graph calendar sync yet as of November 1; next monthly check is November 15.",
+          "done": false
+        },
+        {
+          "name": "Morning walk distance report",
+          "qty": "November 7 home loop ran about 25 minutes, roughly 2,800 steps estimated.",
+          "done": false
+        },
+        {
+          "name": "Watch Griffin Mission 1 Falcon Heavy center core recovery",
+          "qty": "Trackers now show Jan 6, 2027 for Griffin Mission 1, but the date remains an unconfirmed placeholder and center core recovery is still unconfirmed.",
+          "done": false
+        },
+        {
+          "name": "Muse weekly usage readings",
+          "qty": "Last pre-reset reading was October 28 at 50% of the free weekly limit; no newer cycle reading is recorded.",
+          "done": false
+        },
+        {
+          "name": "Create Zoom link for Jenny McCloud meeting",
+          "qty": "Scheduled for Sunday, November 15 at 10:30 AM Central, ahead of the 11:00 AM meeting.",
+          "done": false
+        },
+        {
+          "name": "Zoom link for William Schmaus meeting",
+          "qty": "The 9:15 AM CT Zoom link reminder was delivered and no further action is owed.",
+          "done": true
+        }
+      ]
+    },
+    {
+      "store": "Reading & Writing",
+      "items": [
+        {
+          "name": "Brandon Sanderson - The Way of Kings",
+          "qty": "On the reading list since October 15; not started yet.",
+          "done": false
+        }
+      ]
+    },
+    {
+      "store": "Completed",
+      "items": [
+        {
+          "name": "Oil change before Boca Chica trip",
+          "qty": "Flight 15 launched yesterday; morning peek ended with both pads empty.",
+          "done": true
+        },
+        {
+          "name": "Reseal around RV toilet",
+          "qty": "Reseal around RV toilet is complete.",
+          "done": true
+        },
+        {
+          "name": "Driverside worklight",
+          "qty": "Job done Oct 24: worklight and closet light installed, closet closed and restored.",
+          "done": true
+        },
+        {
+          "name": "Calculate taxes based on last year",
+          "qty": "2026 tax estimate v3 was delivered on Oct 19 and the calculation is complete.",
+          "done": true
+        },
+        {
+          "name": "Seal door handle",
+          "qty": "Seal door handle is complete.",
+          "done": true
+        },
+        {
+          "name": "Bitcoin wallet seed backup",
+          "qty": "Bitcoin seed backup is complete: two paper copies stored separately and the old seed file and wallet deleted.",
+          "done": true
+        },
+        {
+          "name": "Put a light in the garage door opener",
+          "qty": "Garage door opener light installed on Nov 2, 2026 with an incandescent bulb.",
+          "done": true
+        },
+        {
+          "name": "Outlook filing rules fix",
+          "qty": "Additional sent-mail filing rules were added on Oct 25, 2026, but were not tested before the responsibility ended.",
+          "done": true
+        },
+        {
+          "name": "Narrowize shelf under RV sink",
+          "qty": "The shelf under the RV sink is completed.",
+          "done": true
+        },
+        {
+          "name": "Boca Chica RV trip for Starship Flight 15",
+          "qty": "Ship 42 was caught at 3:19 PM CT on November 14 from the front row at Isla Blanca.",
+          "done": true
+        },
+        {
+          "name": "Change out table in RV before Starship trip",
+          "qty": "The RV table swap is complete as of Oct 25, 2026.",
+          "done": true
+        },
+        {
+          "name": "Refrigerator door retainer",
+          "qty": "The Refrigerator door retainer task is complete.",
+          "done": true
+        },
+        {
+          "name": "SAFE database Import borrowing-balance fix",
+          "qty": "Import fix is verified with the refresh lines commented out and auto-refresh parked pending the Excel-open lead.",
+          "done": true
+        },
+        {
+          "name": "Street gas-line work and driveway easement",
+          "qty": "Resolved Nov 3: it was a fiber-optic box in the neighbor's yard, so the driveway will not be cut.",
+          "done": true
+        },
+        {
+          "name": "LabPadre Plex daily Starbase check",
+          "qty": "Flight 15 ended November 14 with Ship 42 caught and the final 5:00 PM Plex check completed.",
+          "done": true
+        },
+        {
+          "name": "Mrs.E communication channel",
+          "qty": "The test email to Tina was sent on Oct 20 and the communication channel responsibility is now complete.",
+          "done": true
+        },
+        {
+          "name": "Install driverside worklight",
+          "qty": "Worklight mounted and lit — Tina approved the beam.",
+          "done": true
+        },
+        {
+          "name": "Measure tractor dimensions after morning walk",
+          "qty": "Tractor measured at 77\" high, 8' wide, 10' long on Oct 15 and is ready for shelter fit evaluation.",
+          "done": true
+        },
+        {
+          "name": "Check RV switch size",
+          "qty": "Switches are 1/2 x 1/2 in with ~1/4 in of lettering space above them.",
+          "done": true
+        },
+        {
+          "name": "Buy oil and filter for Witherwings at Walmart",
+          "qty": "Oil (5W-30, 9 qt) and a Mobil M1-210 filter for Witherwings were purchased.",
+          "done": true
+        },
+        {
+          "name": "Indiana business site check for SAFEConcepts",
+          "qty": "The one-time Indiana business site check for SAFEConcepts is complete and quarterly checks are scheduled for Jan 16, Apr 16, Jul 16, and Oct 16.",
+          "done": true
+        },
+        {
+          "name": "Mrs.E retirement planning",
+          "qty": "Standing plan captured with her 401(k) ramp-up and the Medicare-at-65 timing question still open.",
+          "done": true
+        },
+        {
+          "name": "Pick up Tina — Thu Oct 22, 5:00 PM",
+          "qty": "The 5:00 PM pickup-Tina reminder was delivered.",
+          "done": true
+        },
+        {
+          "name": "Visits: Chloe Tue Oct 27 ~3 PM, Thomas Thu Oct 29 ~4 PM",
+          "qty": "Chloe's visit occurred Oct 27; Thomas missed the planned Oct 29 visit and no new date is set.",
+          "done": true
+        },
+        {
+          "name": "Intelligence/consciousness conversation email to Tina",
+          "qty": "The verbatim email to Tina was sent from Yahoo at 7:41 AM.",
+          "done": true
+        },
+        {
+          "name": "Joseph Anderson meeting — Fri Oct 23, 5:00 PM",
+          "qty": "The Joseph Anderson meeting is on the SAFEConcepts calendar for today at 5:00 PM with a one-hour reminder set.",
+          "done": true
+        },
+        {
+          "name": "Lighting for Tina's storage side (RV)",
+          "qty": "Lighting for Tina's storage side in the RV is complete as of Sun Oct 25, 2026.",
+          "done": true
+        },
+        {
+          "name": "Vacuum the living room",
+          "qty": "Vacuum task completed and the 9:45 reminder was cancelled.",
+          "done": true
+        },
+        {
+          "name": "Send Gordy the Diary of a CEO link",
+          "qty": "The reminder was delivered at ~7 PM on Wed, Nov 4, 2026.",
+          "done": true
+        },
+        {
+          "name": "Call with William Schmaus about borrowing more money",
+          "qty": "The scheduled Zoom call with William Schmaus on Saturday, November 7 at 12:00 PM has ended.",
+          "done": true
+        }
+      ]
     }
-   ]
-  },
-  {
-   "store": "RV — Witherwings",
-   "items": [
-    {
-     "name": "RV Teensy touchscreen dashboard",
-     "qty": "Ideas stage — board built (Teensy + touchscreen, MRF24J, onboard LM61); not yet installed in the RV.",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Additional water tank",
-     "qty": "Nov 2 measurements confirm T-1800 fits the bay; order still held until after Boca.",
-     "done": false
-    },
-    {
-     "name": "Reseal around all RV windows",
-     "qty": "RV wax done Oct 26; reseal still parked until frame margins and seam lines are wiped before stripping the old silicone.",
-     "done": false
-    },
-    {
-     "name": "Cord make cargo door shelf",
-     "qty": "Waiting for you to make the cargo door shelf.",
-     "done": false
-    },
-    {
-     "name": "Replace RV bathroom faucet",
-     "qty": "Listed, not started",
-     "done": false
-    },
-    {
-     "name": "Other side gravity fill",
-     "qty": "Waiting to add the other side gravity fill.",
-     "done": false
-    },
-    {
-     "name": "RV USB-C for dash cam",
-     "qty": "Waiting for you to wire USB-C power for the dash cam in the RV.",
-     "done": false
-    },
-    {
-     "name": "DIY thermal deer detector for Witherwings",
-     "qty": "Proof-of-concept path picked: PureThermal Mini Pro JST-SR ($369.95) into Teensy 4.1 USB host; enclosure plan set — thin polyethylene film window for prototype, germanium window for the permanent waterproof mount.",
-     "done": false
-    },
-    {
-     "name": "Soft run water pump switch",
-     "qty": "Waiting on you to specify what the soft-run water pump switch needs.",
-     "done": false
-    },
-    {
-     "name": "RV backup water system",
-     "qty": "Backup water system verified dry November 2 and ready for the Boca trip.",
-     "done": false
-    },
-    {
-     "name": "Variable-speed RV water pump (PWM FET)",
-     "qty": "Butterfly parked — bench idea only, no schedule",
-     "done": false
-    },
-    {
-     "name": "RV engine compartment light",
-     "qty": "Listed, not started",
-     "done": false
-    },
-    {
-     "name": "RV roof solar rail mounts",
-     "qty": "Combined item (merged with 'RV projects' Nov 15): riv-nuts chosen, 100 1/4-20 inserts ordered, bench test before install; truss grid verified from Thor drawing, Day-2 spot-check still owed before drilling.",
-     "done": false
-    },
-    {
-     "name": "Shoe holder under fridge",
-     "qty": "Waiting on you to buy and fit the shoe holder under the RV fridge.",
-     "done": false
-    },
-    {
-     "name": "RV dash and floor illumination",
-     "qty": "Listed, not started",
-     "done": false
-    },
-    {
-     "name": "Witherwings cab seat upgrade",
-     "qty": "Searching for a solid mid-range air-ride seat pair; the driver's seat needs an aisle-side armrest and pickup anywhere in the contiguous US works.",
-     "done": false
-    },
-    {
-     "name": "RV black tank level sensor replacement",
-     "qty": "Sensor always reads full; Garnet SeeLeveL II external system identified, with replacement to be done when home.",
-     "done": false
-    },
-    {
-     "name": "Locate RV shower leak",
-     "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
-     "done": false
-    }
-   ]
-  },
-  {
-   "store": "RV Repair — from Trip Prep",
-   "items": [
-    {
-     "name": "Locate shower leak",
-     "qty": "Nov 16: toilet base cleared by spray test. Prime suspect: shower wall-to-pan lip overflowing when tilted front-right low. Wall-only spray test still owed.",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Replace black tank level sensor (always reads full) — Garnet SeeLeveL II external sensor system",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "3D print a gravity-fill vent air indicator (float in a clear vertical tube on the vent: air coming out = still filling)",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Sink faucet will not retract by itself.",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Outdoor shower compartment near entrance",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Water hose compartment sometimes fills with water",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Re-caulk toilet base with proper caulk (not self-leveling) — home job",
-     "qty": "Nov 16: self-leveling caulk pulled away under spray; toilet cleared as leak entry, re-caulk is just a fix-up.",
-     "done": false,
-     "fresh": true
-    }
-   ]
-  },
-  {
-   "store": "Home, Yard & Tractor",
-   "items": [
-    {
-     "name": "Outdoor shelter for restored tractor",
-     "qty": "Flight 15 is done and the shelter is still unbuilt, with the 4 window ACs still staged for recycling.",
-     "done": false
-    },
-    {
-     "name": "Replace boards on mom's deck",
-     "qty": "Deck boards wait until after the Boca trip, now under way.",
-     "done": false
-    },
-    {
-     "name": "Small bath motion light",
-     "qty": "Still to be bought and installed.",
-     "done": false
-    },
-    {
-     "name": "Motion switch on cameras",
-     "qty": "Listed, not started",
-     "done": false
-    },
-    {
-     "name": "Hot water recirculator",
-     "qty": "Listed, not started",
-     "done": false
-    },
-    {
-     "name": "John Deere E100 mower spindle repair",
-     "qty": "Waiting for inspection of the spindle shaft threads to decide between the $3.46 blade lock nut alone or the $59.14 AUC15811 spindle assembly; no order placed yet.",
-     "done": false
-    }
-   ]
-  },
-  {
-   "store": "Electronics, W.H.A.T. & Builds",
-   "items": [
-    {
-     "name": "Lawnmooer animal mower",
-     "qty": "v7 pinions fit the shaft and hold well without the pin, so the slight looseness needs no reprint.",
-     "done": false
-    },
-    {
-     "name": "LawnMooer > 4-channel PWM motor controller",
-     "qty": "Mode 5 gait pipeline passed its bench test end to end, while the normal-versus-step-cycle fork stays undecided.",
-     "done": false
-    },
-    {
-     "name": "LawnMooer > Knee joint for PVC legs",
-     "qty": "Revised notched knee diagram delivered, with gravity re-extending the shin instead of a return spring.",
-     "done": false
-    },
-    {
-     "name": "Make Arduino setup for Ben",
-     "qty": "Arduino presentation still pending 26 days past the October 20 target, after Ben's printer arrived October 22.",
-     "done": false
-    },
-    {
-     "name": "PEI flex plate for Ben's Ender 3 V2",
-     "qty": "PEI flex plate upgrade selected; a textured or double-sided 235×235 mm plate still needs finding.",
-     "done": false
-    },
-    {
-     "name": "Motor flyback energy capture",
-     "qty": "Back-of-mind idea, parked — bridge rectifier to capacitor, next winding reuses flyback energy.",
-     "done": false
-    },
-    {
-     "name": "W.H.A.T. RemoteControl sketch fix",
-     "qty": "Compile-verified fix delivered; bench test still pending without a potentiometer on the road.",
-     "done": false
-    }
-   ]
-  },
-  {
-   "store": "SAFE, Money & Admin",
-   "items": [
-    {
-     "name": "SAFE Access database — Borrowing Balance auto-refresh fix",
-     "qty": "Parked Oct 16 with refresh lines commented out; revived Nov 15 — workable while traveling, not today.",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Roth IRA + 401k transfer + Indiana estimated tax",
-     "qty": "Get Schwab's exact FBO payee wording and address, then execute the $7,500 Roth transfer by December 31.",
-     "done": false
-    },
-    {
-     "name": "Google account sign-in cleanup",
-     "qty": "Waiting for a headache-free day to start the Google sign-in cleanup.",
-     "done": false
-    },
-    {
-     "name": "Used Tesla batteries and connectors research",
-     "qty": "Waiting for Mr.E to ask for the cost and availability findings.",
-     "done": false
-    }
-   ]
-  },
-  {
-   "store": "Standing Routines & Watches",
-   "items": [
-    {
-     "name": "Take trash out Thursday nights - recycling week B",
-     "qty": "Trash out Nov 12; next reminder is Thursday Nov 19 at 8:30 PM for recycling + trash (B week).",
-     "done": false
-    },
-    {
-     "name": "Daily morning briefing",
-     "qty": "Nov 15 briefing is ready, covering the first-ever ship catch; the next one compiles tomorrow, Nov 16.",
-     "done": false
-    },
-    {
-     "name": "Shared reminders with Mrs.E",
-     "qty": "Shared reminders list stays live for new entries.",
-     "done": false
-    },
-    {
-     "name": "Shared grocery list with Mrs.E",
-     "qty": "Per-store Reset buttons are live, with new items showing green at the top of each store until reset.",
-     "done": false
-    },
-    {
-     "name": "Shared travel journal with Mrs.E",
-     "qty": "Flight 15 journal entry complete, covering launch and catch, with the corrected Starlink sighting.",
-     "done": false
-    },
-    {
-     "name": "Weekly list review",
-     "qty": "Nov 15 review ready: Flight 15 wins celebrated and Top 3 picks open waiting on your choice.",
-     "done": false
-    },
-    {
-     "name": "Thunderbird live calendar sync watch",
-     "qty": "No native Graph calendar sync yet as of November 1; next monthly check is November 15.",
-     "done": false
-    },
-    {
-     "name": "Morning walk distance report",
-     "qty": "November 7 home loop ran about 25 minutes, roughly 2,800 steps estimated.",
-     "done": false
-    },
-    {
-     "name": "Watch Griffin Mission 1 Falcon Heavy center core recovery",
-     "qty": "Trackers now show Jan 6, 2027 for Griffin Mission 1, but the date remains an unconfirmed placeholder and center core recovery is still unconfirmed.",
-     "done": false
-    },
-    {
-     "name": "Muse weekly usage readings",
-     "qty": "Last pre-reset reading was October 28 at 50% of the free weekly limit; no newer cycle reading is recorded.",
-     "done": false
-    },
-    {
-     "name": "Create Zoom link for Jenny McCloud meeting",
-     "qty": "Scheduled for Sunday, November 15 at 10:30 AM Central, ahead of the 11:00 AM meeting.",
-     "done": false
-    },
-    {
-     "name": "Zoom link for William Schmaus meeting",
-     "qty": "The 9:15 AM CT Zoom link reminder was delivered and no further action is owed.",
-     "done": true
-    }
-   ]
-  },
-  {
-   "store": "Reading & Writing",
-   "items": [
-    {
-     "name": "Brandon Sanderson - The Way of Kings",
-     "qty": "On the reading list since October 15; not started yet.",
-     "done": false
-    }
-   ]
-  },
-  {
-   "store": "Completed",
-   "items": [
-    {
-     "name": "Oil change before Boca Chica trip",
-     "qty": "Flight 15 launched yesterday; morning peek ended with both pads empty.",
-     "done": true
-    },
-    {
-     "name": "Reseal around RV toilet",
-     "qty": "Reseal around RV toilet is complete.",
-     "done": true
-    },
-    {
-     "name": "Driverside worklight",
-     "qty": "Job done Oct 24: worklight and closet light installed, closet closed and restored.",
-     "done": true
-    },
-    {
-     "name": "Calculate taxes based on last year",
-     "qty": "2026 tax estimate v3 was delivered on Oct 19 and the calculation is complete.",
-     "done": true
-    },
-    {
-     "name": "Seal door handle",
-     "qty": "Seal door handle is complete.",
-     "done": true
-    },
-    {
-     "name": "Bitcoin wallet seed backup",
-     "qty": "Bitcoin seed backup is complete: two paper copies stored separately and the old seed file and wallet deleted.",
-     "done": true
-    },
-    {
-     "name": "Put a light in the garage door opener",
-     "qty": "Garage door opener light installed on Nov 2, 2026 with an incandescent bulb.",
-     "done": true
-    },
-    {
-     "name": "Outlook filing rules fix",
-     "qty": "Additional sent-mail filing rules were added on Oct 25, 2026, but were not tested before the responsibility ended.",
-     "done": true
-    },
-    {
-     "name": "Narrowize shelf under RV sink",
-     "qty": "The shelf under the RV sink is completed.",
-     "done": true
-    },
-    {
-     "name": "Boca Chica RV trip for Starship Flight 15",
-     "qty": "Ship 42 was caught at 3:19 PM CT on November 14 from the front row at Isla Blanca.",
-     "done": true
-    },
-    {
-     "name": "Change out table in RV before Starship trip",
-     "qty": "The RV table swap is complete as of Oct 25, 2026.",
-     "done": true
-    },
-    {
-     "name": "Refrigerator door retainer",
-     "qty": "The Refrigerator door retainer task is complete.",
-     "done": true
-    },
-    {
-     "name": "SAFE database Import borrowing-balance fix",
-     "qty": "Import fix is verified with the refresh lines commented out and auto-refresh parked pending the Excel-open lead.",
-     "done": true
-    },
-    {
-     "name": "Street gas-line work and driveway easement",
-     "qty": "Resolved Nov 3: it was a fiber-optic box in the neighbor's yard, so the driveway will not be cut.",
-     "done": true
-    },
-    {
-     "name": "LabPadre Plex daily Starbase check",
-     "qty": "Flight 15 ended November 14 with Ship 42 caught and the final 5:00 PM Plex check completed.",
-     "done": true
-    },
-    {
-     "name": "Mrs.E communication channel",
-     "qty": "The test email to Tina was sent on Oct 20 and the communication channel responsibility is now complete.",
-     "done": true
-    },
-    {
-     "name": "Install driverside worklight",
-     "qty": "Worklight mounted and lit — Tina approved the beam.",
-     "done": true
-    },
-    {
-     "name": "Measure tractor dimensions after morning walk",
-     "qty": "Tractor measured at 77\" high, 8' wide, 10' long on Oct 15 and is ready for shelter fit evaluation.",
-     "done": true
-    },
-    {
-     "name": "Check RV switch size",
-     "qty": "Switches are 1/2 x 1/2 in with ~1/4 in of lettering space above them.",
-     "done": true
-    },
-    {
-     "name": "Buy oil and filter for Witherwings at Walmart",
-     "qty": "Oil (5W-30, 9 qt) and a Mobil M1-210 filter for Witherwings were purchased.",
-     "done": true
-    },
-    {
-     "name": "Indiana business site check for SAFEConcepts",
-     "qty": "The one-time Indiana business site check for SAFEConcepts is complete and quarterly checks are scheduled for Jan 16, Apr 16, Jul 16, and Oct 16.",
-     "done": true
-    },
-    {
-     "name": "Mrs.E retirement planning",
-     "qty": "Standing plan captured with her 401(k) ramp-up and the Medicare-at-65 timing question still open.",
-     "done": true
-    },
-    {
-     "name": "Pick up Tina — Thu Oct 22, 5:00 PM",
-     "qty": "The 5:00 PM pickup-Tina reminder was delivered.",
-     "done": true
-    },
-    {
-     "name": "Visits: Chloe Tue Oct 27 ~3 PM, Thomas Thu Oct 29 ~4 PM",
-     "qty": "Chloe's visit occurred Oct 27; Thomas missed the planned Oct 29 visit and no new date is set.",
-     "done": true
-    },
-    {
-     "name": "Intelligence/consciousness conversation email to Tina",
-     "qty": "The verbatim email to Tina was sent from Yahoo at 7:41 AM.",
-     "done": true
-    },
-    {
-     "name": "Joseph Anderson meeting — Fri Oct 23, 5:00 PM",
-     "qty": "The Joseph Anderson meeting is on the SAFEConcepts calendar for today at 5:00 PM with a one-hour reminder set.",
-     "done": true
-    },
-    {
-     "name": "Lighting for Tina's storage side (RV)",
-     "qty": "Lighting for Tina's storage side in the RV is complete as of Sun Oct 25, 2026.",
-     "done": true
-    },
-    {
-     "name": "Vacuum the living room",
-     "qty": "Vacuum task completed and the 9:45 reminder was cancelled.",
-     "done": true
-    },
-    {
-     "name": "Send Gordy the Diary of a CEO link",
-     "qty": "The reminder was delivered at ~7 PM on Wed, Nov 4, 2026.",
-     "done": true
-    },
-    {
-     "name": "Call with William Schmaus about borrowing more money",
-     "qty": "The scheduled Zoom call with William Schmaus on Saturday, November 7 at 12:00 PM has ended.",
-     "done": true
-    }
-   ]
-  }
- ]
+  ]
 }
