@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-13T23:45:54.747Z",
+  "updated": "2026-11-16T11:03:27.846Z",
   "stores": [
     {
       "items": [
@@ -35,6 +35,12 @@
       "items": [
         {
           "name": "Bug zapper refils",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Cooking spray",
           "qty": "",
           "done": false,
           "fresh": true
