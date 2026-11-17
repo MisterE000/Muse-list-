@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-17T22:49:24.766Z",
+  "updated": "2026-11-17T23:06:26.668Z",
   "stores": [
     {
       "items": [
@@ -40,12 +40,6 @@
           "fresh": true
         },
         {
-          "name": "Cooking spray",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Braats",
           "qty": "",
           "done": true,
@@ -68,6 +62,12 @@
           "name": "Coffee filters",
           "qty": "",
           "fresh": false
+        },
+        {
+          "name": "Cooking spray",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "done": true,
