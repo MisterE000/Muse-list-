@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-17T22:36:20.890Z",
+  "updated": "2026-11-17T22:42:24.427Z",
   "stores": [
     {
       "items": [
@@ -44,12 +44,6 @@
           "qty": "",
           "done": false,
           "fresh": true
-        },
-        {
-          "done": false,
-          "name": "Salad",
-          "qty": "1 bag",
-          "fresh": false
         },
         {
           "done": false,
@@ -133,6 +127,12 @@
           "done": true,
           "name": "Pizza sauce",
           "qty": "",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Salad",
+          "qty": "1 bag",
           "fresh": false
         },
         {
