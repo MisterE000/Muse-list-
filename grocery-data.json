@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-17T22:42:24.427Z",
+  "updated": "2026-11-17T22:49:24.766Z",
   "stores": [
     {
       "items": [
@@ -44,12 +44,6 @@
           "qty": "",
           "done": false,
           "fresh": true
-        },
-        {
-          "done": false,
-          "name": "Sweet onions",
-          "qty": "",
-          "fresh": false
         },
         {
           "name": "Braats",
@@ -138,6 +132,12 @@
         {
           "done": true,
           "name": "Soy sauce",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Sweet onions",
           "qty": "",
           "fresh": false
         },
