@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-16T11:03:27.846Z",
+  "updated": "2026-11-17T22:12:00.017Z",
   "stores": [
     {
       "items": [
@@ -50,6 +50,12 @@
           "qty": "",
           "done": false,
           "fresh": true
+        },
+        {
+          "done": false,
+          "name": "Milk 2%",
+          "qty": "1 gallon",
+          "fresh": false
         },
         {
           "done": false,
@@ -103,12 +109,6 @@
           "done": true,
           "name": "Jelly",
           "qty": "",
-          "fresh": false
-        },
-        {
-          "done": true,
-          "name": "Milk 2%",
-          "qty": "1 gallon",
           "fresh": false
         },
         {
