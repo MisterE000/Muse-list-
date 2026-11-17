@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-17T22:12:00.017Z",
+  "updated": "2026-11-17T22:12:04.966Z",
   "stores": [
     {
       "items": [
@@ -61,6 +61,12 @@
           "done": false,
           "name": "Salad",
           "qty": "1 bag",
+          "fresh": false
+        },
+        {
+          "done": false,
+          "name": "Sweet onions",
+          "qty": "",
           "fresh": false
         },
         {
@@ -132,12 +138,6 @@
         {
           "done": true,
           "name": "Soy sauce",
-          "qty": "",
-          "fresh": false
-        },
-        {
-          "done": true,
-          "name": "Sweet onions",
           "qty": "",
           "fresh": false
         },
