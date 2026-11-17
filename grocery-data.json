@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-17T22:29:14.341Z",
+  "updated": "2026-11-17T22:36:20.890Z",
   "stores": [
     {
       "items": [
@@ -41,12 +41,6 @@
         },
         {
           "name": "Cooking spray",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Ground turkey",
           "qty": "",
           "done": false,
           "fresh": true
@@ -98,6 +92,12 @@
           "name": "Eggs",
           "qty": "",
           "fresh": false
+        },
+        {
+          "name": "Ground turkey",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "name": "Ham/turkey",
