@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:50:01.249Z",
+  "updated": "2026-11-19T13:50:04.024Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -55,6 +55,11 @@
           "done": false
         },
         {
+          "name": "RV backup water system",
+          "qty": "Backup water system verified dry November 2 and ready for the Boca trip.",
+          "done": false
+        },
+        {
           "name": "Replace RV bathroom faucet",
           "qty": "Listed, not started",
           "done": false
@@ -62,11 +67,6 @@
         {
           "name": "Other side gravity fill",
           "qty": "Waiting to add the other side gravity fill.",
-          "done": false
-        },
-        {
-          "name": "RV backup water system",
-          "qty": "Backup water system verified dry November 2 and ready for the Boca trip.",
           "done": false
         },
         {
