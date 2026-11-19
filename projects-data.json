@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:48:56.169Z",
+  "updated": "2026-11-19T13:48:59.237Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -60,13 +60,13 @@
           "done": false
         },
         {
-          "name": "RV USB-C for dash cam",
-          "qty": "Waiting for you to wire USB-C power for the dash cam in the RV.",
+          "name": "Locate RV shower leak",
+          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
           "done": false
         },
         {
-          "name": "Locate RV shower leak",
-          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
+          "name": "RV USB-C for dash cam",
+          "qty": "Waiting for you to wire USB-C power for the dash cam in the RV.",
           "done": false
         },
         {
