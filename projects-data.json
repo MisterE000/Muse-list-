@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:48:37.588Z",
+  "updated": "2026-11-19T13:48:45.149Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -85,13 +85,13 @@
           "done": false
         },
         {
-          "name": "RV engine compartment light",
-          "qty": "Listed, not started",
+          "name": "Locate RV shower leak",
+          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
           "done": false
         },
         {
-          "name": "Locate RV shower leak",
-          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
+          "name": "RV engine compartment light",
+          "qty": "Listed, not started",
           "done": false
         },
         {
