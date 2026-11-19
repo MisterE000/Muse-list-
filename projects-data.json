@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:48:53.447Z",
+  "updated": "2026-11-19T13:48:56.169Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -65,13 +65,13 @@
           "done": false
         },
         {
-          "name": "DIY thermal deer detector for Witherwings",
-          "qty": "Proof-of-concept path picked: PureThermal Mini Pro JST-SR ($369.95) into Teensy 4.1 USB host; enclosure plan set — thin polyethylene film window for prototype, germanium window for the permanent waterproof mount.",
+          "name": "Locate RV shower leak",
+          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
           "done": false
         },
         {
-          "name": "Locate RV shower leak",
-          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
+          "name": "DIY thermal deer detector for Witherwings",
+          "qty": "Proof-of-concept path picked: PureThermal Mini Pro JST-SR ($369.95) into Teensy 4.1 USB host; enclosure plan set — thin polyethylene film window for prototype, germanium window for the permanent waterproof mount.",
           "done": false
         },
         {
