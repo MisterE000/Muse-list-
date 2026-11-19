@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:50:06.783Z",
+  "updated": "2026-11-19T13:50:09.507Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -40,13 +40,13 @@
           "done": false
         },
         {
-          "name": "Additional water tank",
-          "qty": "Nov 2 measurements confirm T-1800 fits the bay; order still held until after Boca.",
+          "name": "RV backup water system",
+          "qty": "Backup water system verified dry November 2 and ready for the Boca trip.",
           "done": false
         },
         {
-          "name": "RV backup water system",
-          "qty": "Backup water system verified dry November 2 and ready for the Boca trip.",
+          "name": "Additional water tank",
+          "qty": "Nov 2 measurements confirm T-1800 fits the bay; order still held until after Boca.",
           "done": false
         },
         {
