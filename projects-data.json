@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:50:04.024Z",
+  "updated": "2026-11-19T13:50:06.783Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -45,6 +45,11 @@
           "done": false
         },
         {
+          "name": "RV backup water system",
+          "qty": "Backup water system verified dry November 2 and ready for the Boca trip.",
+          "done": false
+        },
+        {
           "name": "Reseal around all RV windows",
           "qty": "RV wax done Oct 26; reseal still parked until frame margins and seam lines are wiped before stripping the old silicone.",
           "done": false
@@ -52,11 +57,6 @@
         {
           "name": "Cord make cargo door shelf",
           "qty": "Waiting for you to make the cargo door shelf.",
-          "done": false
-        },
-        {
-          "name": "RV backup water system",
-          "qty": "Backup water system verified dry November 2 and ready for the Boca trip.",
           "done": false
         },
         {
