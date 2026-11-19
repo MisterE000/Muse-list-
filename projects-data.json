@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T14:05:19.665Z",
+  "updated": "2026-11-19T14:06:39.710Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -213,6 +213,11 @@
       "store": "Electronics, W.H.A.T. & Builds",
       "items": [
         {
+          "name": "PEI flex plate for Ben's Ender 3 V2",
+          "qty": "PEI flex plate upgrade selected; a textured or double-sided 235×235 mm plate still needs finding.",
+          "done": false
+        },
+        {
           "name": "Lawnmooer animal mower",
           "qty": "v7 pinions fit the shaft and hold well without the pin, so the slight looseness needs no reprint.",
           "done": false
@@ -223,23 +228,18 @@
           "done": false
         },
         {
+          "name": "W.H.A.T. RemoteControl sketch fix",
+          "qty": "Compile-verified fix delivered; bench test still pending without a potentiometer on the road.",
+          "done": false
+        },
+        {
           "name": "Make Arduino setup for Ben",
           "qty": "Arduino presentation still pending 26 days past the October 20 target, after Ben's printer arrived October 22.",
           "done": false
         },
         {
-          "name": "PEI flex plate for Ben's Ender 3 V2",
-          "qty": "PEI flex plate upgrade selected; a textured or double-sided 235×235 mm plate still needs finding.",
-          "done": false
-        },
-        {
           "name": "Motor flyback energy capture",
           "qty": "Back-of-mind idea, parked — bridge rectifier to capacitor, next winding reuses flyback energy.",
-          "done": false
-        },
-        {
-          "name": "W.H.A.T. RemoteControl sketch fix",
-          "qty": "Compile-verified fix delivered; bench test still pending without a potentiometer on the road.",
           "done": false
         }
       ]
@@ -284,11 +284,6 @@
           "done": false
         },
         {
-          "name": "Shared reminders with Mrs.E",
-          "qty": "Shared reminders list stays live for new entries.",
-          "done": false
-        },
-        {
           "name": "Shared grocery list with Mrs.E",
           "qty": "Per-store Reset buttons are live, with new items showing green at the top of each store until reset.",
           "done": false
@@ -327,6 +322,11 @@
           "name": "Create Zoom link for Jenny McCloud meeting",
           "qty": "Scheduled for Sunday, November 15 at 10:30 AM Central, ahead of the 11:00 AM meeting.",
           "done": false
+        },
+        {
+          "name": "Shared reminders with Mrs.E",
+          "qty": "Shared reminders list stays live for new entries.",
+          "done": true
         },
         {
           "name": "Zoom link for William Schmaus meeting",
