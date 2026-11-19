@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:48:32.185Z",
+  "updated": "2026-11-19T13:48:34.837Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -95,6 +95,11 @@
           "done": false
         },
         {
+          "name": "Locate RV shower leak",
+          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
+          "done": false
+        },
+        {
           "name": "Shoe holder under fridge",
           "qty": "Waiting on you to buy and fit the shoe holder under the RV fridge.",
           "done": false
@@ -102,11 +107,6 @@
         {
           "name": "RV dash and floor illumination",
           "qty": "Listed, not started",
-          "done": false
-        },
-        {
-          "name": "Locate RV shower leak",
-          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
           "done": false
         },
         {
