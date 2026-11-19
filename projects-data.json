@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:49:52.700Z",
+  "updated": "2026-11-19T13:50:01.249Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -65,13 +65,13 @@
           "done": false
         },
         {
-          "name": "RV USB-C for dash cam",
-          "qty": "Waiting for you to wire USB-C power for the dash cam in the RV.",
+          "name": "RV backup water system",
+          "qty": "Backup water system verified dry November 2 and ready for the Boca trip.",
           "done": false
         },
         {
-          "name": "RV backup water system",
-          "qty": "Backup water system verified dry November 2 and ready for the Boca trip.",
+          "name": "RV USB-C for dash cam",
+          "qty": "Waiting for you to wire USB-C power for the dash cam in the RV.",
           "done": false
         },
         {
