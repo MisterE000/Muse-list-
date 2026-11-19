@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:48:03.246Z",
+  "updated": "2026-11-19T13:48:29.263Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -110,13 +110,13 @@
           "done": false
         },
         {
-          "name": "RV black tank level sensor replacement",
-          "qty": "Sensor always reads full; Garnet SeeLeveL II external system identified, with replacement to be done when home.",
+          "name": "Locate RV shower leak",
+          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
           "done": false
         },
         {
-          "name": "Locate RV shower leak",
-          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
+          "name": "RV black tank level sensor replacement",
+          "qty": "Sensor always reads full; Garnet SeeLeveL II external system identified, with replacement to be done when home.",
           "done": false
         }
       ]
