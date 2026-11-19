@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:49:06.717Z",
+  "updated": "2026-11-19T13:49:09.557Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -35,13 +35,13 @@
           "fresh": true
         },
         {
-          "name": "Additional water tank",
-          "qty": "Nov 2 measurements confirm T-1800 fits the bay; order still held until after Boca.",
+          "name": "Locate RV shower leak",
+          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
           "done": false
         },
         {
-          "name": "Locate RV shower leak",
-          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
+          "name": "Additional water tank",
+          "qty": "Nov 2 measurements confirm T-1800 fits the bay; order still held until after Boca.",
           "done": false
         },
         {
