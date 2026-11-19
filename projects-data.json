@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:49:12.062Z",
+  "updated": "2026-11-19T13:49:49.910Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -29,15 +29,15 @@
       "store": "RV — Witherwings",
       "items": [
         {
-          "name": "Locate RV shower leak",
-          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
-          "done": false
-        },
-        {
           "name": "RV Teensy touchscreen dashboard",
           "qty": "Ideas stage — board built (Teensy + touchscreen, MRF24J, onboard LM61); not yet installed in the RV.",
           "done": false,
           "fresh": true
+        },
+        {
+          "name": "Locate RV shower leak",
+          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
+          "done": false
         },
         {
           "name": "Additional water tank",
@@ -75,13 +75,13 @@
           "done": false
         },
         {
-          "name": "Soft run water pump switch",
-          "qty": "Waiting on you to specify what the soft-run water pump switch needs.",
+          "name": "RV backup water system",
+          "qty": "Backup water system verified dry November 2 and ready for the Boca trip.",
           "done": false
         },
         {
-          "name": "RV backup water system",
-          "qty": "Backup water system verified dry November 2 and ready for the Boca trip.",
+          "name": "Soft run water pump switch",
+          "qty": "Waiting on you to specify what the soft-run water pump switch needs.",
           "done": false
         },
         {
