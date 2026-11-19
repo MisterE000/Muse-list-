@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:48:50.464Z",
+  "updated": "2026-11-19T13:48:53.447Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -70,13 +70,13 @@
           "done": false
         },
         {
-          "name": "Soft run water pump switch",
-          "qty": "Waiting on you to specify what the soft-run water pump switch needs.",
+          "name": "Locate RV shower leak",
+          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
           "done": false
         },
         {
-          "name": "Locate RV shower leak",
-          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
+          "name": "Soft run water pump switch",
+          "qty": "Waiting on you to specify what the soft-run water pump switch needs.",
           "done": false
         },
         {
