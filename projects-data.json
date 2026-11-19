@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:48:59.237Z",
+  "updated": "2026-11-19T13:49:01.677Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -55,13 +55,13 @@
           "done": false
         },
         {
-          "name": "Other side gravity fill",
-          "qty": "Waiting to add the other side gravity fill.",
+          "name": "Locate RV shower leak",
+          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
           "done": false
         },
         {
-          "name": "Locate RV shower leak",
-          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
+          "name": "Other side gravity fill",
+          "qty": "Waiting to add the other side gravity fill.",
           "done": false
         },
         {
