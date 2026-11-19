@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:49:01.677Z",
+  "updated": "2026-11-19T13:49:04.280Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -45,6 +45,11 @@
           "done": false
         },
         {
+          "name": "Locate RV shower leak",
+          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
+          "done": false
+        },
+        {
           "name": "Cord make cargo door shelf",
           "qty": "Waiting for you to make the cargo door shelf.",
           "done": false
@@ -52,11 +57,6 @@
         {
           "name": "Replace RV bathroom faucet",
           "qty": "Listed, not started",
-          "done": false
-        },
-        {
-          "name": "Locate RV shower leak",
-          "qty": "Leak still present after re-caulking the old pipe hole and reseating the toilet; source not visible under or behind the shower.",
           "done": false
         },
         {
