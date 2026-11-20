@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-20T20:11:56.983Z",
+  "updated": "2026-11-20T20:12:09.812Z",
   "stores": [
     {
       "items": [
@@ -52,6 +52,12 @@
           "fresh": false
         },
         {
+          "done": false,
+          "name": "Eggs",
+          "qty": "",
+          "fresh": false
+        },
+        {
           "name": "Braats",
           "qty": "",
           "done": true,
@@ -79,12 +85,6 @@
           "done": true,
           "name": "Corned beef hash",
           "qty": "1 can",
-          "fresh": false
-        },
-        {
-          "done": true,
-          "name": "Eggs",
-          "qty": "",
           "fresh": false
         },
         {
