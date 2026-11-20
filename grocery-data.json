@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-20T20:12:09.812Z",
+  "updated": "2026-11-20T20:12:17.610Z",
   "stores": [
     {
       "items": [
@@ -54,6 +54,12 @@
         {
           "done": false,
           "name": "Eggs",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": false,
+          "name": "Sweet onions",
           "qty": "",
           "fresh": false
         },
@@ -138,12 +144,6 @@
         {
           "done": true,
           "name": "Soy sauce",
-          "qty": "",
-          "fresh": false
-        },
-        {
-          "done": true,
-          "name": "Sweet onions",
           "qty": "",
           "fresh": false
         },
