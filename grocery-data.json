@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-21T23:54:18.000Z",
+  "updated": "2026-11-21T23:54:50.914Z",
   "stores": [
     {
       "items": [
@@ -34,12 +34,6 @@
     {
       "items": [
         {
-          "name": "Toilet paper",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Bug zapper refils",
           "qty": "",
           "done": false,
@@ -52,39 +46,21 @@
           "fresh": true
         },
         {
-          "name": "Cooking spray",
+          "name": "Toilet paper",
           "qty": "",
           "done": false,
           "fresh": true
-        },
-        {
-          "name": "Windshield repair kit",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "done": false,
-          "name": "Bread",
-          "qty": "",
-          "fresh": false
-        },
-        {
-          "done": false,
-          "name": "Eggs",
-          "qty": "",
-          "fresh": false
-        },
-        {
-          "done": false,
-          "name": "Sweet onions",
-          "qty": "",
-          "fresh": false
         },
         {
           "name": "Braats",
           "qty": "",
           "done": true,
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Bread",
+          "qty": "",
           "fresh": false
         },
         {
@@ -100,9 +76,21 @@
           "fresh": false
         },
         {
+          "name": "Cooking spray",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
           "done": true,
           "name": "Corned beef hash",
           "qty": "1 can",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Eggs",
+          "qty": "",
           "fresh": false
         },
         {
@@ -160,6 +148,12 @@
           "fresh": false
         },
         {
+          "done": true,
+          "name": "Sweet onions",
+          "qty": "",
+          "fresh": false
+        },
+        {
           "name": "Taco lettuce",
           "qty": "",
           "done": true,
@@ -182,6 +176,12 @@
           "qty": "",
           "done": true,
           "fresh": false
+        },
+        {
+          "name": "Windshield repair kit",
+          "qty": "",
+          "done": true,
+          "fresh": true
         }
       ],
       "store": "Walmart"
@@ -202,8 +202,8 @@
     },
     {
       "items": [],
-      "note": "Hours: Saturdays 9:00 AM\u201312:30 PM \u2014 Showers Common, 401 N. Morton St. (Oct 24 & 31). Nov 7, 14 & 21: moves to Switchyard Park Pavilion, 1601 S. Rogers St., same hours.",
-      "store": "Farmers Market \u2014 Bloomington"
+      "note": "Hours: Saturdays 9:00 AM–12:30 PM — Showers Common, 401 N. Morton St. (Oct 24 & 31). Nov 7, 14 & 21: moves to Switchyard Park Pavilion, 1601 S. Rogers St., same hours.",
+      "store": "Farmers Market — Bloomington"
     },
     {
       "items": [],
