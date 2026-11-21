@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-21T23:52:39.047Z",
+  "updated": "2026-11-21T23:54:18.000Z",
   "stores": [
     {
       "items": [
@@ -33,6 +33,12 @@
     },
     {
       "items": [
+        {
+          "name": "Toilet paper",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
         {
           "name": "Bug zapper refils",
           "qty": "",
@@ -196,8 +202,8 @@
     },
     {
       "items": [],
-      "note": "Hours: Saturdays 9:00 AM–12:30 PM — Showers Common, 401 N. Morton St. (Oct 24 & 31). Nov 7, 14 & 21: moves to Switchyard Park Pavilion, 1601 S. Rogers St., same hours.",
-      "store": "Farmers Market — Bloomington"
+      "note": "Hours: Saturdays 9:00 AM\u201312:30 PM \u2014 Showers Common, 401 N. Morton St. (Oct 24 & 31). Nov 7, 14 & 21: moves to Switchyard Park Pavilion, 1601 S. Rogers St., same hours.",
+      "store": "Farmers Market \u2014 Bloomington"
     },
     {
       "items": [],
