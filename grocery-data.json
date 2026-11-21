@@ -1,225 +1,225 @@
 {
- "version": 1,
- "updated": "2026-11-20T21:44:30.000Z",
- "stores": [
-  {
-   "items": [
+  "version": 1,
+  "updated": "2026-11-21T23:52:39.047Z",
+  "stores": [
     {
-     "done": false,
-     "name": "Ground turkey",
-     "qty": "",
-     "fresh": false
+      "items": [
+        {
+          "done": false,
+          "name": "Ground turkey",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": false,
+          "name": "High-fiber tortillas",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": false,
+          "name": "Paper plates",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": false,
+          "name": "Paper towels",
+          "qty": "",
+          "fresh": false
+        }
+      ],
+      "store": "Sam's"
     },
     {
-     "done": false,
-     "name": "High-fiber tortillas",
-     "qty": "",
-     "fresh": false
+      "items": [
+        {
+          "name": "Bug zapper refils",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Charcoal",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Cooking spray",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Windshield repair kit",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "done": false,
+          "name": "Bread",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": false,
+          "name": "Eggs",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": false,
+          "name": "Sweet onions",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "name": "Braats",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "name": "Butter",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Coffee filters",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Corned beef hash",
+          "qty": "1 can",
+          "fresh": false
+        },
+        {
+          "name": "Ground turkey",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Ham/turkey",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "done": true,
+          "name": "Jelly",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Milk 2%",
+          "qty": "1 gallon",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Mozzarella",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Pizza crusts",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Pizza sauce",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Salad",
+          "qty": "1 bag",
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "Soy sauce",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "name": "Taco lettuce",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Water bottles",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        },
+        {
+          "done": true,
+          "name": "White American cheese",
+          "qty": "",
+          "fresh": false
+        },
+        {
+          "name": "White vinegar",
+          "qty": "",
+          "done": true,
+          "fresh": false
+        }
+      ],
+      "store": "Walmart"
     },
     {
-     "done": false,
-     "name": "Paper plates",
-     "qty": "",
-     "fresh": false
+      "items": [
+        {
+          "name": "Coffee",
+          "qty": "",
+          "done": false
+        }
+      ],
+      "store": "Aldi"
     },
     {
-     "done": false,
-     "name": "Paper towels",
-     "qty": "",
-     "fresh": false
+      "items": [],
+      "store": "Kroger"
+    },
+    {
+      "items": [],
+      "note": "Hours: Saturdays 9:00 AM–12:30 PM — Showers Common, 401 N. Morton St. (Oct 24 & 31). Nov 7, 14 & 21: moves to Switchyard Park Pavilion, 1601 S. Rogers St., same hours.",
+      "store": "Farmers Market — Bloomington"
+    },
+    {
+      "items": [],
+      "store": "Trader Joe's"
+    },
+    {
+      "items": [],
+      "store": "Fresh Thyme"
+    },
+    {
+      "items": [
+        {
+          "done": false,
+          "name": "Hydraulic fluid for tractor",
+          "qty": ""
+        }
+      ],
+      "store": "Tractor Supply"
+    },
+    {
+      "items": [],
+      "store": "Lowe's"
     }
-   ],
-   "store": "Sam's"
-  },
-  {
-   "items": [
-    {
-     "name": "Windshield repair kit",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Bug zapper refils",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "name": "Charcoal",
-     "qty": "",
-     "done": false,
-     "fresh": true
-    },
-    {
-     "done": false,
-     "name": "Bread",
-     "qty": "",
-     "fresh": false
-    },
-    {
-     "done": false,
-     "name": "Eggs",
-     "qty": "",
-     "fresh": false
-    },
-    {
-     "done": false,
-     "name": "Sweet onions",
-     "qty": "",
-     "fresh": false
-    },
-    {
-     "name": "Braats",
-     "qty": "",
-     "done": true,
-     "fresh": false
-    },
-    {
-     "name": "Butter",
-     "qty": "",
-     "done": true,
-     "fresh": false
-    },
-    {
-     "done": true,
-     "name": "Coffee filters",
-     "qty": "",
-     "fresh": false
-    },
-    {
-     "name": "Cooking spray",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "done": true,
-     "name": "Corned beef hash",
-     "qty": "1 can",
-     "fresh": false
-    },
-    {
-     "name": "Ground turkey",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Ham/turkey",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "done": true,
-     "name": "Jelly",
-     "qty": "",
-     "fresh": false
-    },
-    {
-     "done": true,
-     "name": "Milk 2%",
-     "qty": "1 gallon",
-     "fresh": false
-    },
-    {
-     "done": true,
-     "name": "Mozzarella",
-     "qty": "",
-     "fresh": false
-    },
-    {
-     "done": true,
-     "name": "Pizza crusts",
-     "qty": "",
-     "fresh": false
-    },
-    {
-     "done": true,
-     "name": "Pizza sauce",
-     "qty": "",
-     "fresh": false
-    },
-    {
-     "done": true,
-     "name": "Salad",
-     "qty": "1 bag",
-     "fresh": false
-    },
-    {
-     "done": true,
-     "name": "Soy sauce",
-     "qty": "",
-     "fresh": false
-    },
-    {
-     "name": "Taco lettuce",
-     "qty": "",
-     "done": true,
-     "fresh": true
-    },
-    {
-     "name": "Water bottles",
-     "qty": "",
-     "done": true,
-     "fresh": false
-    },
-    {
-     "done": true,
-     "name": "White American cheese",
-     "qty": "",
-     "fresh": false
-    },
-    {
-     "name": "White vinegar",
-     "qty": "",
-     "done": true,
-     "fresh": false
-    }
-   ],
-   "store": "Walmart"
-  },
-  {
-   "items": [
-    {
-     "name": "Coffee",
-     "qty": "",
-     "done": false
-    }
-   ],
-   "store": "Aldi"
-  },
-  {
-   "items": [],
-   "store": "Kroger"
-  },
-  {
-   "items": [],
-   "note": "Hours: Saturdays 9:00 AM\u201312:30 PM \u2014 Showers Common, 401 N. Morton St. (Oct 24 & 31). Nov 7, 14 & 21: moves to Switchyard Park Pavilion, 1601 S. Rogers St., same hours.",
-   "store": "Farmers Market \u2014 Bloomington"
-  },
-  {
-   "items": [],
-   "store": "Trader Joe's"
-  },
-  {
-   "items": [],
-   "store": "Fresh Thyme"
-  },
-  {
-   "items": [
-    {
-     "done": false,
-     "name": "Hydraulic fluid for tractor",
-     "qty": ""
-    }
-   ],
-   "store": "Tractor Supply"
-  },
-  {
-   "items": [],
-   "store": "Lowe's"
-  }
- ]
+  ]
 }
