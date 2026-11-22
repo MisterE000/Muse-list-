@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-22T16:59:06.712Z",
+  "updated": "2026-11-22T16:59:16.140Z",
   "stores": [
     {
       "items": [
@@ -35,12 +35,6 @@
       "items": [
         {
           "name": "Bug zapper refils",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Toilet paper",
           "qty": "",
           "done": false,
           "fresh": true
@@ -155,6 +149,12 @@
         },
         {
           "name": "Taco lettuce",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Toilet paper",
           "qty": "",
           "done": true,
           "fresh": true
