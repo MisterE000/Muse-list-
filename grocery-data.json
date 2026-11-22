@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-22T16:42:17.508Z",
+  "updated": "2026-11-22T16:59:03.065Z",
   "stores": [
     {
       "items": [
@@ -40,12 +40,6 @@
           "fresh": true
         },
         {
-          "name": "Charcoal",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
           "name": "Toilet paper",
           "qty": "",
           "done": false,
@@ -80,6 +74,12 @@
           "qty": "",
           "done": true,
           "fresh": false
+        },
+        {
+          "name": "Charcoal",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "done": true,
