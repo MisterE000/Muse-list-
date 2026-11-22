@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-22T16:41:49.404Z",
+  "updated": "2026-11-22T16:42:17.508Z",
   "stores": [
     {
       "items": [
@@ -47,6 +47,12 @@
         },
         {
           "name": "Toilet paper",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Windshield repair kit",
           "qty": "",
           "done": false,
           "fresh": true
@@ -176,12 +182,6 @@
           "qty": "",
           "done": true,
           "fresh": false
-        },
-        {
-          "name": "Windshield repair kit",
-          "qty": "",
-          "done": true,
-          "fresh": true
         }
       ],
       "store": "Walmart"
