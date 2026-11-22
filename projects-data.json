@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T14:06:39.710Z",
+  "updated": "2026-11-22T16:40:02.598Z",
   "stores": [
     {
       "store": "Top 3 — While Traveling",
@@ -284,16 +284,6 @@
           "done": false
         },
         {
-          "name": "Shared grocery list with Mrs.E",
-          "qty": "Per-store Reset buttons are live, with new items showing green at the top of each store until reset.",
-          "done": false
-        },
-        {
-          "name": "Shared travel journal with Mrs.E",
-          "qty": "Flight 15 journal entry complete, covering launch and catch, with the corrected Starlink sighting.",
-          "done": false
-        },
-        {
           "name": "Weekly list review",
           "qty": "Nov 15 review ready: Flight 15 wins celebrated and Top 3 picks open waiting on your choice.",
           "done": false
@@ -319,9 +309,14 @@
           "done": false
         },
         {
-          "name": "Create Zoom link for Jenny McCloud meeting",
-          "qty": "Scheduled for Sunday, November 15 at 10:30 AM Central, ahead of the 11:00 AM meeting.",
-          "done": false
+          "name": "Shared travel journal with Mrs.E",
+          "qty": "Flight 15 journal entry complete, covering launch and catch, with the corrected Starlink sighting.",
+          "done": true
+        },
+        {
+          "name": "Shared grocery list with Mrs.E",
+          "qty": "Per-store Reset buttons are live, with new items showing green at the top of each store until reset.",
+          "done": true
         },
         {
           "name": "Shared reminders with Mrs.E",
