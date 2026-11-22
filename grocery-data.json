@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-22T19:50:25.488Z",
+  "updated": "2026-11-22T22:27:49.000Z",
   "stores": [
     {
       "items": [
@@ -219,9 +219,15 @@
       "store": "Kroger"
     },
     {
-      "items": [],
-      "note": "Hours: Saturdays 9:00 AM–12:30 PM — Showers Common, 401 N. Morton St. (Oct 24 & 31). Nov 7, 14 & 21: moves to Switchyard Park Pavilion, 1601 S. Rogers St., same hours.",
-      "store": "Farmers Market — Bloomington"
+      "items": [
+        {
+          "name": "Chip clips",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        }
+      ],
+      "store": "Ross/TJMaxx"
     },
     {
       "items": [],
