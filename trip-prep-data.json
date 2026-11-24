@@ -1,16 +1,10 @@
 {
   "version": 1,
-  "updated": "2026-11-24T01:08:54.838Z",
+  "updated": "2026-11-24T01:09:00.998Z",
   "stores": [
     {
       "store": "In-transit",
       "items": [
-        {
-          "name": "Sink cabinet",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
         {
           "name": "Countertop",
           "qty": "",
@@ -33,6 +27,12 @@
           "name": "Windows closed",
           "qty": "",
           "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Sink cabinet",
+          "qty": "",
+          "done": true,
           "fresh": true
         },
         {
