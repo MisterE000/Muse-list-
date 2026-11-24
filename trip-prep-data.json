@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-24T15:06:08.961Z",
+  "updated": "2026-11-24T15:07:13.873Z",
   "stores": [
     {
       "store": "In-transit",
@@ -9,67 +9,67 @@
           "name": "Unplugged?",
           "qty": "",
           "done": false,
-          "fresh": true
+          "fresh": false
         },
         {
           "name": "Coffee pot seat belt",
           "qty": "",
-          "done": true,
-          "fresh": true
+          "done": false,
+          "fresh": false
         },
         {
           "name": "Destination in phone",
           "qty": "",
-          "done": true,
-          "fresh": true
+          "done": false,
+          "fresh": false
         },
         {
           "name": "Windows closed",
           "qty": "",
-          "done": true,
-          "fresh": true
+          "done": false,
+          "fresh": false
         },
         {
           "name": "Countertop",
           "qty": "",
-          "done": true,
-          "fresh": true
+          "done": false,
+          "fresh": false
         },
         {
           "name": "Sink cabinet",
           "qty": "",
-          "done": true,
-          "fresh": true
+          "done": false,
+          "fresh": false
         },
         {
           "name": "Pans",
           "qty": "",
-          "done": true,
-          "fresh": true
+          "done": false,
+          "fresh": false
         },
         {
           "name": "Water cup refills",
           "qty": "",
-          "done": true,
-          "fresh": true
+          "done": false,
+          "fresh": false
         },
         {
           "name": "Fridge",
           "qty": "",
-          "done": true,
-          "fresh": true
+          "done": false,
+          "fresh": false
         },
         {
           "name": "Vent closed",
           "qty": "",
-          "done": true,
-          "fresh": true
+          "done": false,
+          "fresh": false
         },
         {
           "name": "Tv stowed",
           "qty": "",
-          "done": true,
-          "fresh": true
+          "done": false,
+          "fresh": false
         }
       ]
     },
