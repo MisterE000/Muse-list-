@@ -1,28 +1,10 @@
 {
   "version": 1,
-  "updated": "2026-11-24T01:08:50.607Z",
+  "updated": "2026-11-24T01:08:54.838Z",
   "stores": [
     {
       "store": "In-transit",
       "items": [
-        {
-          "name": "Fridge",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Water cup refills",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Pans",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
         {
           "name": "Sink cabinet",
           "qty": "",
@@ -51,6 +33,24 @@
           "name": "Windows closed",
           "qty": "",
           "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Pans",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Water cup refills",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Fridge",
+          "qty": "",
+          "done": true,
           "fresh": true
         },
         {
