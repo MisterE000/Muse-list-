@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-24T01:09:04.733Z",
+  "updated": "2026-11-24T01:09:10.605Z",
   "stores": [
     {
       "store": "In-transit",
@@ -20,7 +20,7 @@
         {
           "name": "Windows closed",
           "qty": "",
-          "done": false,
+          "done": true,
           "fresh": true
         },
         {
