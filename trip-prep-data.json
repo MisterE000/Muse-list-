@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-24T01:09:14.050Z",
+  "updated": "2026-11-24T01:09:24.627Z",
   "stores": [
     {
       "store": "In-transit",
@@ -113,12 +113,6 @@
           "fresh": false
         },
         {
-          "name": "Water cup refills",
-          "qty": "",
-          "done": false,
-          "fresh": false
-        },
-        {
           "name": "Propane level",
           "qty": "",
           "done": false,
@@ -158,6 +152,12 @@
           "name": "Refrigerator latched, loose items stowed, cupboards latched",
           "qty": "",
           "done": false,
+          "fresh": false
+        },
+        {
+          "name": "Water cup refills",
+          "qty": "",
+          "done": true,
           "fresh": false
         }
       ]
