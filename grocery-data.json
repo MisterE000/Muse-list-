@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-24T23:41:16.892Z",
+  "updated": "2026-11-24T23:41:20.581Z",
   "stores": [
     {
       "items": [
@@ -35,18 +35,6 @@
       "items": [
         {
           "name": "Bug zapper refils",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Kleenex",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Rotel",
           "qty": "",
           "done": false,
           "fresh": true
@@ -118,6 +106,12 @@
           "fresh": false
         },
         {
+          "name": "Kleenex",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
           "done": true,
           "name": "Milk 2%",
           "qty": "1 gallon",
@@ -149,6 +143,12 @@
         },
         {
           "name": "Ranch powder",
+          "qty": "",
+          "done": true,
+          "fresh": true
+        },
+        {
+          "name": "Rotel",
           "qty": "",
           "done": true,
           "fresh": true
