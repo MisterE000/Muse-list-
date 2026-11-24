@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-24T01:09:28.897Z",
+  "updated": "2026-11-24T01:09:49.123Z",
   "stores": [
     {
       "store": "In-transit",
@@ -138,18 +138,6 @@
         },
         {
           "name": "Inside: Bathroom fan off/closed",
-          "qty": "",
-          "done": false,
-          "fresh": false
-        },
-        {
-          "name": "Vent fan closed/off",
-          "qty": "",
-          "done": false,
-          "fresh": false
-        },
-        {
-          "name": "Refrigerator latched, loose items stowed, cupboards latched",
           "qty": "",
           "done": false,
           "fresh": false
