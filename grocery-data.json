@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-23T17:54:08.267Z",
+  "updated": "2026-11-24T23:41:16.892Z",
   "stores": [
     {
       "items": [
@@ -41,12 +41,6 @@
         },
         {
           "name": "Kleenex",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
-        {
-          "name": "Peanut butter",
           "qty": "",
           "done": false,
           "fresh": true
@@ -134,6 +128,12 @@
           "name": "Mozzarella",
           "qty": "",
           "fresh": false
+        },
+        {
+          "name": "Peanut butter",
+          "qty": "",
+          "done": true,
+          "fresh": true
         },
         {
           "done": true,
