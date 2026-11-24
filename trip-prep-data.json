@@ -1,16 +1,10 @@
 {
   "version": 1,
-  "updated": "2026-11-24T01:09:00.998Z",
+  "updated": "2026-11-24T01:09:04.733Z",
   "stores": [
     {
       "store": "In-transit",
       "items": [
-        {
-          "name": "Countertop",
-          "qty": "",
-          "done": false,
-          "fresh": true
-        },
         {
           "name": "Coffee pot seat belt",
           "qty": "",
@@ -27,6 +21,12 @@
           "name": "Windows closed",
           "qty": "",
           "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Countertop",
+          "qty": "",
+          "done": true,
           "fresh": true
         },
         {
