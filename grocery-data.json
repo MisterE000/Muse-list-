@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-24T23:41:20.581Z",
+  "updated": "2026-11-27T15:15:58.782Z",
   "stores": [
     {
       "items": [
@@ -35,6 +35,12 @@
       "items": [
         {
           "name": "Bug zapper refils",
+          "qty": "",
+          "done": false,
+          "fresh": true
+        },
+        {
+          "name": "Mustard",
           "qty": "",
           "done": false,
           "fresh": true
